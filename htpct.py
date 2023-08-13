@@ -9,7 +9,7 @@ def mainMenu():
     os.system("title Main Menu")
     os.system('cls||clear')
     print("         _________ _______  _______ _________\n|\     /|\__   __/(  ____ )(  ____ \\__   __/\n| )   ( |   ) (   | (    )|| (    \/   ) (   \n| (___) |   | |   | (____)|| |         | |   \n|  ___  |   | |   |  _____)| |         | |   \n| (   ) |   | |   | (      | |         | |   \n| )   ( |   | |   | )      | (____/\   | |   \n|/     \|   )_(   |/       (_______/   )_(   ")
-    print("\n         v1.3 by 09beckerboy")
+    print("\n         v1.2 by 09beckerboy")
     print("_____________________________________________")
     print("Message me on Discord with any suggestions @09beckerboy")
     print("GUI version coming eventually!")
@@ -93,7 +93,11 @@ def newPack():
     name = input("Enter pack name (Can't be the same as an existing pack)\nEnter 'cancel' to return to main menu\n: ")
     if name == "cancel": mainMenu()
     os.mkdir("{0}/texture packs/{1}".format(script_dir, name))
-    moveTools(name)
+    shutil.copy2("{0}\\xbmp_converter\\convert_dds_to_xbmp.bat".format(script_dir), "{0}\\texture packs\\{1}\\convert_dds_to_xbmp.bat".format(script_dir, name))
+    shutil.copy2("{0}\\xbmp_converter\\convert_xbmp_to_dds.bat".format(script_dir), "{0}\\texture packs\\{1}\\convert_xbmp_to_dds.bat".format(script_dir, name))
+    shutil.copy2("{0}\\xbmp_converter\\xbmpconverter.exe".format(script_dir), "{0}\\texture packs\\{1}\\xbmpconverter.exe".format(script_dir, name))
+    shutil.copy2("{0}\\pack_dfs\\dfs.exe".format(script_dir), "{0}\\texture packs\\{1}\\dfs.exe".format(script_dir, name))
+    shutil.copy2("{0}\\pack_dfs\\pack_dfs_Drag'n'Drop.bat".format(script_dir), "{0}\\texture packs\\{1}\\pack_dfs_Drag'n'Drop.bat".format(script_dir, name))
     levels = []
     levelSelect = ""
     os.system("title Level Select")
@@ -136,15 +140,6 @@ def loadPack(pack_name):
     os.system("convert_xbmp_to_dds.bat")
     os.chdir(script_dir)
     os.system('cls||clear')
-    texture_level_pairs = []
-    try:
-        for level in os.listdir("{0}/texture packs/{1}".format(script_dir, pack_name)):
-            for root, dirs, files in os.walk("{0}/texture packs/{1}/{2}".format(script_dir, pack_name, level)):
-                for texture in files:
-                    if texture.endswith(".dds"):
-                        texture_level_pair = (texture, level)
-                        texture_level_pairs.append(texture_level_pair)
-    except Exception as e: print(e)
     command = ""
     selected = []
     while command != "exit":
@@ -165,9 +160,7 @@ def loadPack(pack_name):
             if base_command == "select":
                 temp_select = command_arg1.split(",")
                 for i in temp_select:
-                    for pair in texture_level_pairs:
-                        if i in pair:
-                            selected.append(i)
+                    selected.append(i)
             if base_command == "view":
                 if command_arg1 == "" or command_arg1 == "all":
                     for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, pack_name)):
@@ -268,19 +261,15 @@ def importPack(pack_path):
                 os.remove("{0}/texture packs/{1}/{2}/undfs.exe".format(script_dir, pack_name, name.split(".")[0]))
                 os.remove("{0}/texture packs/{1}/{2}/undfs.tgt".format(script_dir, pack_name, name.split(".")[0]))
                 os.remove("{0}/texture packs/{1}/{2}/undfs.wpj".format(script_dir, pack_name, name.split(".")[0]))
-        moveTools(pack_name)
+        shutil.copy2("{0}\\xbmp_converter\\convert_dds_to_xbmp.bat".format(script_dir), "{0}\\texture packs\\{1}\\convert_dds_to_xbmp.bat".format(script_dir, pack_name))
+        shutil.copy2("{0}\\xbmp_converter\\convert_xbmp_to_dds.bat".format(script_dir), "{0}\\texture packs\\{1}\\convert_xbmp_to_dds.bat".format(script_dir, pack_name))
+        shutil.copy2("{0}\\xbmp_converter\\xbmpconverter.exe".format(script_dir), "{0}\\texture packs\\{1}\\xbmpconverter.exe".format(script_dir, pack_name))
+        shutil.copy2("{0}\\pack_dfs\\dfs.exe".format(script_dir), "{0}\\texture packs\\{1}\\dfs.exe".format(script_dir, pack_name))
+        shutil.copy2("{0}\\pack_dfs\\pack_dfs_Drag'n'Drop.bat".format(script_dir), "{0}\\texture packs\\{1}\\pack_dfs_Drag'n'Drop.bat".format(script_dir, pack_name))
     except Exception as e: print(e)
     print("Pack successfully imported")
     input("Press Enter to continue to editing...")
     loadPack(pack_name)
-
-def moveTools(pack_name):
-    shutil.copy2("{0}\\xbmp_converter\\convert_dds_to_xbmp.bat".format(script_dir), "{0}\\texture packs\\{1}\\convert_dds_to_xbmp.bat".format(script_dir, pack_name))
-    shutil.copy2("{0}\\xbmp_converter\\convert_xbmp_to_dds.bat".format(script_dir), "{0}\\texture packs\\{1}\\convert_xbmp_to_dds.bat".format(script_dir, pack_name))
-    shutil.copy2("{0}\\xbmp_converter\\xbmpconverter.exe".format(script_dir), "{0}\\texture packs\\{1}\\xbmpconverter.exe".format(script_dir, pack_name))
-    shutil.copy2("{0}\\pack_dfs\\dfs.exe".format(script_dir), "{0}\\texture packs\\{1}\\dfs.exe".format(script_dir, pack_name))
-    shutil.copy2("{0}\\pack_dfs\\pack_dfs_Drag'n'Drop.bat".format(script_dir), "{0}\\texture packs\\{1}\\pack_dfs_Drag'n'Drop.bat".format(script_dir, pack_name))
-    
 
 if __name__ == '__main__':
     if os.path.exists("{}/texture packs".format(script_dir)): pass
@@ -288,16 +277,3 @@ if __name__ == '__main__':
     if os.path.exists("{}/exported packs".format(script_dir)): pass
     else: os.mkdir("{}/exported packs".format(script_dir))
     mainMenu()
-
-#TODO
-#Store textures in list with level attached, like (texture.dds,Ch00_Dre), list of tuples
-#select (texture) (level*)
-#* in command means optional
-#when listing textures, show path:
-#COMMON
-# BILBO
-#  texture1.dds
-#  texture2.dds
-#storing list of textures with level will make things easier, maybe
-#comments everywhere so people know what things do
-#multi level select in create pack
