@@ -1,4 +1,4 @@
-Hobbit Texture Pack Creation Tool (HTPCT) v1.2 by 09beckerboy
+Hobbit Texture Pack Creation Tool (HTPCT) v1.3 by 09beckerboy
 -------------------------------------------------------------
 
 Credit to Modera for the xbmp converter, unpack dfs, and dfs packer.
