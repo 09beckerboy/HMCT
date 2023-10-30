@@ -1,0 +1,14 @@
+{
+    "X" : "exit",
+    "B" : "back",
+    "Z" : "clear",
+    "C" : "convert",
+    "?" : "help",
+    "L" : "list",
+    "S" : "select",
+    "V" : "view",
+    "E" : "edit",
+    "+" : "add",
+    "-" : "remove",
+    "=" : "set"
+}

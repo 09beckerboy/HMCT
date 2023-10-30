@@ -3,15 +3,29 @@ import shutil
 from zipfile import ZipFile
 import sys
 import importlib
+import json
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append("{0}/extensions".format(script_dir))
+for file in os.listdir("{0}/extensions".format(script_dir)):
+    if file.endswith(".py"):
+        extension = importlib.import_module(file.split(".")[0])
+        if "__all__" in extension.__dict__:
+            names = extension.__dict__["__all__"]
+        else:
+            names = [x for x in extension.__dict__ if not x.startswith("_")]
+        globals().update({k: getattr(extension, k) for k in names})
+        if os.path.exists("{0}/extensions/{1}.runtime".format(script_dir, file.split(".")[0])):
+            exec(open("{0}/extensions/{1}".format(script_dir, file)).read())
+
+with open("shortcuts.json", "r") as read_file:
+    shortcuts = json.load(read_file)
 
 def mainMenu():
     os.system("title Main Menu")
     os.system('cls||clear')
     print("         _________ _______  _______ _________\n|\     /|\__   __/(  ____ )(  ____ \\__   __/\n| )   ( |   ) (   | (    )|| (    \/   ) (   \n| (___) |   | |   | (____)|| |         | |   \n|  ___  |   | |   |  _____)| |         | |   \n| (   ) |   | |   | (      | |         | |   \n| )   ( |   | |   | )      | (____/\   | |   \n|/     \|   )_(   |/       (_______/   )_(   ")
-    print("\n         v1.3 by 09beckerboy")
+    print("\n         v1.4 by 09beckerboy")
     print("_____________________________________________")
     print("Message me on Discord with any suggestions @09beckerboy")
     print("GUI version coming eventually!")
@@ -136,113 +150,166 @@ def newPack():
 
 def loadPack(pack_name):
     os.system("title Editing Pack")
-    os.chdir("{0}/texture packs/{1}".format(script_dir, pack_name))
-    os.system("convert_xbmp_to_dds.bat")
-    os.chdir(script_dir)
     os.system('cls||clear')
     texture_level_pairs = []
     try:
         for level in os.listdir("{0}/texture packs/{1}".format(script_dir, pack_name)):
             for root, dirs, files in os.walk("{0}/texture packs/{1}/{2}".format(script_dir, pack_name, level)):
                 for texture in files:
-                    if texture.endswith(".dds"):
+                    if texture.endswith(".dds") or texture.endswith(".XBMP"):
                         texture_level_pair = (texture, level)
                         texture_level_pairs.append(texture_level_pair)
     except Exception as e: print(e)
     command = ""
+    global selected
     selected = []
-    while command != "exit" or command != "x":
-        command = input("Enter command, or ? for help\n: ")
+    global current_pack
+    current_pack = pack_name
+    while True:
+        command = input("Enter command, type 'help' for help\n: ")
         try:
             base_command = command.split(" ")[0]
-            command_arg1 = command.split(" ")[1]
-            command_arg2 = command.split(" ")[2]
-            command_arg3 = command.split(" ")[3]
+            i = 0
+            command_args = []
+            for arg in command.split(" ")[1:]:
+                command_args.append(arg)
+                i += 1
         except Exception as e: pass
         try:
-            if base_command == "?": print("Command (arguments) : description\n\nexit : exits the tool\nback : returns back to the main menu\nlist : lists all levels in project\nview (*level) : views textures in level, level name must be spelled exactly\nopen (all/texture/level/selected) (*level) : opens textures in your default program, level name must be spelled exactly, or you can type 'all' to open textures in all levels, texture name must be spelled exactly\nselect (texture) : adds texture to selected, use view command to see changes\nadd (level) : adds a level to the pack, level name must be spelled correctly\nremove (level) : removes a level from the pack, level name must be spelled correctly\n+ (extension) (command) (*arguement)\n set (variable) (value) : sets a variable to the given value - CAUTION: ONLY USE IF YOU KNOW WHAT YOU ARE DOING")
-            if base_command == "back" or base_command == "b": mainMenu()
-            if base_command == "list" or base_command == "l":
-                for name in os.listdir("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                    level = os.path.join("{0}/texture packs/{1}".format(script_dir, pack_name), name)
-                    if os.path.isdir(level):
-                        print("   "+name)
-            if base_command == "select":
-                temp_select = command_arg1.split(",")
-                for texture in temp_select:
-                    selected.append(texture)
-            if base_command == "view" or base_command == "v":
-                if command_arg1 == "" or command_arg1 == "all":
-                    for level in os.listdir("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                        print(level+"/")
-                        for folder in os.listdir("{0}/texture packs/{1}/{2}".format(script_dir, pack_name, level)):
-                            print("-"+folder+"/")
-                            for folder1 in os.listdir("{0}/texture packs/{1}/{2}/{3}".format(script_dir, pack_name, level, folder)):
-                                print("--"+folder1+"/")
-                                for texture in os.listdir("{0}/texture packs/{1}/{2}/{3}/{4}".format(script_dir, pack_name, level, folder, folder1)):
-                                    if texture.endswith(".dds"):
-                                        if texture in selected: print(" * "+texture)
-                                        else: print("   "+texture)
-                else: 
-                    print(command_arg1+"/")
-                    for folder in os.listdir("{0}/texture packs/{1}/{2}".format(script_dir, pack_name, command_arg1)):
-                        print("-"+folder+"/")
-                        for folder1 in os.listdir("{0}/texture packs/{1}/{2}/{3}".format(script_dir, pack_name, command_arg1, folder)):
-                            print("--"+folder1+"/")
-                            for texture in os.listdir("{0}/texture packs/{1}/{2}/{3}/{4}".format(script_dir, pack_name, command_arg1, folder, folder1)):
-                                if texture.endswith(".dds"):
-                                    if texture in selected: print(" * "+texture)
-                                    else: print("   "+texture)
-            if base_command == "add" or base_command == "a": shutil.copytree("{0}\\The Hobbit(TM)\\{1}".format(script_dir, command_arg1), "{0}\\texture packs\\{1}\\{2}".format(script_dir, pack_name, command_arg1))
-            if base_command == "remove" or base_command == "r": shutil.rmtree("{0}\\texture packs\\{1}\\{2}".format(script_dir, pack_name, command_arg1))
-            if base_command == "set": setVariable(command_arg1, command_arg2)
-            if base_command == "+":
-                try:
-                    extension = importlib.import_module(command_arg1)
-                    command = getattr(extension, command_arg2)
-                    if "command_arg3" in locals(): command(command_arg3)
-                    else: command()
-                except Exception as e: print(e)
-            if base_command == "open" or base_command == "o":
-                if command_arg1 == "all":
-                    for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                        for name in files:
-                            if name.endswith(".dds"):
-                                os.startfile(os.path.join(root, name))
-                if command_arg1 == "selected":
-                    for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                        for name in files:
-                            if name.endswith(".dds"):
-                                if name in selected:
-                                    os.startfile(os.path.join(root, name))
-                if command_arg1.endswith(".dds"):
-                    if "command_arg2" in locals():
-                        for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                            for name in dirs:
-                                if name == command_arg2:
-                                    for root, dirs, files in os.walk("{0}/texture packs/{1}/{2}".format(script_dir, pack_name, name)):
-                                        for name2 in files:
-                                            if name2.endswith(".dds"):
-                                                if name2 == command_arg1:
-                                                    os.startfile(os.path.join(root, name2))
-                    else:
-                        for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                            for name in files:
-                                if name.endswith(".dds"):
-                                    if name == command_arg1:
-                                        os.startfile(os.path.join(root, name))
-                else:
-                    for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, pack_name)):
-                        for name in dirs:
-                            if name == command_arg1:
-                                for root, dirs, files in os.walk("{0}/texture packs/{1}/{2}".format(script_dir, pack_name, name)):
-                                    for name2 in files:
-                                        if name2.endswith(".dds"):
-                                            os.startfile(os.path.join(root, name2))
+            if base_command in shortcuts:
+                temp = getattr(sys.modules[__name__], shortcuts[base_command])
+            else: temp = getattr(sys.modules[__name__], base_command)
+            if command_args == []: temp()
+            else: temp(command_args)
         except Exception as e: print(e)
 
-def setVariable(variable, value):
-    exec(variable + " = " + value)
+def exit():
+    sys.exit()
+
+def back():
+    mainMenu()
+
+def clear():
+    os.system('cls||clear')
+
+def convert(args):
+    if args[0] == "dds":
+        os.chdir("{0}/texture packs/{1}".format(script_dir, current_pack))
+        os.system("convert_xbmp_to_dds.bat")
+        os.chdir(script_dir)
+    if args[0] == "xbmp":
+        os.chdir("{0}/texture packs/{1}".format(script_dir, current_pack))
+        os.system("convert_dds_to_xbmp.bat")
+        os.chdir(script_dir)
+
+def help():
+    try:
+        with open("htpct.help", "r") as f:
+            for line in f.readlines():
+                print(line, sep="")
+        for file in os.listdir("{0}/extensions".format(script_dir, current_pack)):
+            if file.endswith(".help"):
+                print("--{0}--".format(file.split(".")[0]))
+                os.chdir("{0}/extensions".format(script_dir))
+                with open(file, "r") as f:
+                    for line in f.readlines():
+                        print(line, sep="")
+                os.chdir(script_dir)
+    except Exception as e: print(e)
+
+def list():
+    try:
+        for name in os.listdir("{0}/texture packs/{1}".format(script_dir, current_pack)):
+            level = os.path.join("{0}/texture packs/{1}".format(script_dir, current_pack), name)
+            if os.path.isdir(level):
+                print("   "+name)
+    except Exception as e: print(e)
+
+def select(args):
+    try:
+        temp_select = args[0].split(",")
+        for texture in temp_select:
+            selected.append(texture)
+    except Exception as e: print(e)
+
+def view(args):
+    try:
+        if args[0] == "" or args[0] == "all":
+            for level in os.listdir("{0}/texture packs/{1}".format(script_dir, current_pack)):
+                print(level+"/")
+                for folder in os.listdir("{0}/texture packs/{1}/{2}".format(script_dir, current_pack, level)):
+                    print("-"+folder+"/")
+                    for folder1 in os.listdir("{0}/texture packs/{1}/{2}/{3}".format(script_dir, current_pack, level, folder)):
+                        print("--"+folder1+"/")
+                        for texture in os.listdir("{0}/texture packs/{1}/{2}/{3}/{4}".format(script_dir, current_pack, level, folder, folder1)):
+                            if texture.endswith(".dds") or texture.endswith(".XBMP"):
+                                if texture in selected: print(" * "+texture)
+                                else: print("   "+texture)
+        else: 
+            print(args[0]+"/")
+            for folder in os.listdir("{0}/texture packs/{1}/{2}".format(script_dir, current_pack, args[0])):
+                print("-"+folder+"/")
+                for folder1 in os.listdir("{0}/texture packs/{1}/{2}/{3}".format(script_dir, current_pack, args[0], folder)):
+                    print("--"+folder1+"/")
+                    for texture in os.listdir("{0}/texture packs/{1}/{2}/{3}/{4}".format(script_dir, current_pack, args[0], folder, folder1)):
+                        if texture.endswith(".dds") or texture.endswith(".XBMP"):
+                            if texture in selected: print(" * "+texture)
+                            else: print("   "+texture)
+    except Exception as e: print(e)
+
+def edit(args):
+    try:
+        if args[0] == "all":
+            for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, current_pack)):
+                for name in files:
+                    if name.endswith(".dds") or name.endswith(".XBMP"):
+                        os.startfile(os.path.join(root, name))
+        if args[0] == "selected":
+            for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, current_pack)):
+                for name in files:
+                    if name.endswith(".dds") or name.endswith(".XBMP"):
+                        if name in selected:
+                            os.startfile(os.path.join(root, name))
+        if args[0].endswith(".dds") or args[0].endswith(".XBMP"):
+            if "args[1]" in locals():
+                for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, current_pack)):
+                    for name in dirs:
+                        if name == args[1]:
+                            for root, dirs, files in os.walk("{0}/texture packs/{1}/{2}".format(script_dir, current_pack, name)):
+                                for name2 in files:
+                                    if name2.endswith(".dds") or name2.endswith(".XBMP"):
+                                        if name2 == args[0]:
+                                            os.startfile(os.path.join(root, name2))
+            else:
+                for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, current_pack)):
+                    for name in files:
+                        if name.endswith(".dds" or name.endswith(".XBMP")):
+                            if name == args[0]:
+                                os.startfile(os.path.join(root, name))
+        else:
+            for root, dirs, files in os.walk("{0}/texture packs/{1}".format(script_dir, current_pack)):
+                for name in dirs:
+                    if name == args[0]:
+                        for root, dirs, files in os.walk("{0}/texture packs/{1}/{2}".format(script_dir, current_pack, name)):
+                            for name2 in files:
+                                if name2.endswith(".dds" or name2.endswith(".XBMP")):
+                                    os.startfile(os.path.join(root, name2))
+    except Exception as e: print(e)
+
+def add(args):
+    try:
+        shutil.copytree("{0}\\The Hobbit(TM)\\{1}".format(script_dir, args[0]), "{0}\\texture packs\\{1}\\{2}".format(script_dir, current_pack, args[0]))
+    except Exception as e: print(e)
+
+def remove(args):
+    try:
+        shutil.rmtree("{0}\\texture packs\\{1}\\{2}".format(script_dir, current_pack, args[0]))
+    except Exception as e: print(e)
+
+def set(args):
+    try:
+        exec(args[0] + " = " + args[1])
+    except Exception as e: print(e)
 
 def exportPack(pack_name):
     os.system("title Export Pack")
@@ -303,7 +370,6 @@ def moveTools(pack_name):
     shutil.copy2("{0}\\xbmp_converter\\xbmpconverter.exe".format(script_dir), "{0}\\texture packs\\{1}\\xbmpconverter.exe".format(script_dir, pack_name))
     shutil.copy2("{0}\\pack_dfs\\dfs.exe".format(script_dir), "{0}\\texture packs\\{1}\\dfs.exe".format(script_dir, pack_name))
     shutil.copy2("{0}\\pack_dfs\\pack_dfs_Drag'n'Drop.bat".format(script_dir), "{0}\\texture packs\\{1}\\pack_dfs_Drag'n'Drop.bat".format(script_dir, pack_name))
-    
 
 if __name__ == '__main__':
     if os.path.exists("{}/texture packs".format(script_dir)): pass
