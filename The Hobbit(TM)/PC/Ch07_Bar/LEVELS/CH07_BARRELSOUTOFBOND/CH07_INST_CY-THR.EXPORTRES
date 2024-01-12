@@ -1,0 +1,27 @@
+[ Resources : 23 ]
+ { Name:s                              }
+// -----------------------------------
+   "EKH_METAL_BAR_01[D].XBMP"         
+   "EKH_METAL_BAR_01[A].XBMP"         
+   "EKH_REFLECT_GRAY_01[D].XBMP"      
+   "EKH_BIG_DOOR_BASE_04[D].XBMP"     
+   "EKH_BIG_DOOR_04[D].XBMP"          
+   "EKH_BIG_DOOR_TOP_02[D].XBMP"      
+   "EKH_BIG_DOOR_TOP_02[A].XBMP"      
+   "ALARMPEDESTAL[D].XBMP"            
+   "ENVIROMENTMAPC[D].XBMP"           
+   "ALARMPEDESTAL_SPECULAR[D].XBMP"   
+   "ALARMPEDESTAL_S[D].XBMP"          
+   "ENVIROMENTMAPE[D].XBMP"           
+   "LVL_BR_SMALLLEAF[D].XBMP"         
+   "LVL_BR_SMALLBARK[D].XBMP"         
+   "LVL_BR_DARKBARK[D].XBMP"          
+   "INST_EKH_CAVERN_GATE.ANIM"        
+   "INST_EKH_DOORLT.ANIM"             
+   "INST_EKH_DOORRT.ANIM"             
+   "ALARMPEDESTAL.ANIM"               
+   "INST_EKH_CAVERN_GATE.RGEOM"       
+   "INST_EKH_DOORLT.RGEOM"            
+   "INST_EKH_DOORRT.RGEOM"            
+   "ALARMPEDESTAL.RGEOM"              
+   

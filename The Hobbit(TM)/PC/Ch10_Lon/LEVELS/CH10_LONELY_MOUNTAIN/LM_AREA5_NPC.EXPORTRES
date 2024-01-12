@@ -1,0 +1,12 @@
+[ Resources : 8 ]
+ { Name:s                              }
+// -----------------------------------
+   "FX/SHADOWDISC.XBMP"               
+   "CHAR_GLOIN_DIFFUSE[D].XBMP"       
+   "CHARACTERS/DWARFANIMS.CHARANIM"   
+   "PROPS/WEAPON_BALIN_ AXE.RGEOM"    
+   "CHAR_GLOIN_BIND.NPCGEOM"          
+   "AI/CREATURELIST.INFO"             
+   "AI/DWARFSTATES.INFO"              
+   "AI/DWARFANIMS.INFO"               
+   

@@ -1,0 +1,21 @@
+[ Strings : 17 ]
+ { StringID:s                        }
+// ---------------------------------
+   "ID_QUEST_LOG_UPDATE"            
+   "INFO_GUARDIAN_HINT"             
+   "INFO_IMBUED_STONES"             
+   "INFO_KEY_ACQUIRED"              
+   "INFO_KILLED_MONSTER"            
+   "INFO_PICKED_UP_CP"              
+   "INFO_ROCKTHROW_2"               
+   "INFO_ROPE_TUTORIAL"             
+   "INFO_ROPE_TUTORIAL_PS2"         
+   "INFO_SKELETON_KEY"              
+   "INFO_STICKATTACK_2"             
+   "INFO_STICKATTACK_2_XBOX"        
+   "INFO_SWORDLIGHT_START"          
+   "INFO_WITCHKINGCRYSTAL_NEEDED"   
+   "INFO_WOV_ACQUIRED"              
+   "TRAINING_STICKSWING2"           
+   "WITCHKINGCRYSTAL_ACQUIRED"      
+   

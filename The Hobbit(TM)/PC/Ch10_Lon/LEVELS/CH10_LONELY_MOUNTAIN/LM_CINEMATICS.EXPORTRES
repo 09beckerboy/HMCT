@@ -1,0 +1,10 @@
+[ Resources : 6 ]
+ { Name:s                                 }
+// --------------------------------------
+   "ARKENSTONEREF[D].XBMP"               
+   "AKENSTONESPEC[D].XBMP"               
+   "CHP10_CINE02_ARKENSTONEANIM.ANIM"    
+   "BILBO.ANIM"                          
+   "CHAR_DWARF_BIND.ANIM"                
+   "CHP10_CINE02_ARKENSTONEANIM.RGEOM"   
+   

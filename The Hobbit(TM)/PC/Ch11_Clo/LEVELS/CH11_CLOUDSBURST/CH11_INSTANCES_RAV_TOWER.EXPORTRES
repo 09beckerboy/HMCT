@@ -1,0 +1,13 @@
+[ Resources : 9 ]
+ { Name:s                               }
+// ------------------------------------
+   "INST_CB_WOODPLANK03[D].XBMP"       
+   "RHT_WOODCHAR[D].XBMP"              
+   "INST_CB_WOODPLANK03EDGE[D].XBMP"   
+   "RHT_BRICK[D].XBMP"                 
+   "RHT_BRICKCHAR[D].XBMP"             
+   "INST_CB_STUCCO[D].XBMP"            
+   "INST_CB_STUCCOV2[D].XBMP"          
+   "INST_CB_STUCCOEDGE[D].XBMP"        
+   "CB_INST_RAVENHILLTOWER.RGEOM"      
+   

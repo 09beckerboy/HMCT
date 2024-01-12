@@ -1,0 +1,10 @@
+Command (arguments) : description
+exit : exits the tool
+back : returns back to the main menu
+clear : clears the screen
+convert (texture/export) (file type) : converts all textures to the given file type, either xbmp or dds
+list : lists all levels in project\nview (*level) : views textures in level, level name must be spelled exactly
+edit (texture/export/subtitle/model) (*level) : opens textures in your default program, level name must be spelled exactly, or you can type 'all' to open textures in all levels, texture name must be spelled exactly
+select (texture) : adds texture to selected, use view command to see changes
+add (level) : adds a level to the pack, level name must be spelled correctly
+remove (level) : removes a level from the pack, level name must be spelled correctly

@@ -1,0 +1,5 @@
+[ ItemCounts : 1 ]
+ { TreasureChestsCount:d CouragePtsCount:d MainQuestCount:d TotalSPThisLevel:d  }
+// --------------------- ----------------- ---------------- -------------------
+   5                     7203              11               150                
+   

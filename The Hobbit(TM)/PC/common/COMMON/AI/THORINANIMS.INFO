@@ -1,0 +1,35 @@
+[ AnimList : 20 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"StandIdle3"		"IDLE"					4.0			0.25			1.0				1.0					0.0				0.0				0
+"Sitdown"			"SPECIAL"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"SitIdle2"			"IDLE"			    	0.0			0.25			1.0				1.0					0.0				0.0				0
+"SitIdle3"			"IDLE"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Arm"				"DRAW_MELEE_WEAPON"		4.0			0.25			1.0				1.0					0.0				0.0				0
+
+"SwingAxe"			"ATTACK"				4.0			0.25			1.0				1.0					0.0				1.0				0
+"Drink"				"SPECIAL"				4.0			0.25			1.0				1.0					0.0				0.0				0
+"Fall"				"FALL"					4.0			0.25			1.0				1.0					0.0				0.0				0
+"Handoff"			"SPECIAL"				4.0			0.25			1.0				1.0					0.0				0.0				0
+"Run"				"RUN"					16.0		0.25			1.0				1.0					0.0				1.0				0
+
+"Sleep"				"SPECIAL"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"Lipsync"			"LIP_SYNC"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"SitIdle4"			"IDLE"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+"SitIdle5"			"IDLE"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+"SitIdle6"			"IDLE"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"StandIdle"			"IDLE"			    	4.0			0.25			1.0				1.0					0.0				0.0				0
+"StandIdle2"		"IDLE"			    	4.0			0.25			1.0				1.0					0.0				0.0				0
+"Headtrack"		    "HEAD_TRACKING"			0.0			0.0			    1.0				1.0					0.0				0.0				0 
+"TurnLeft45"		"TURN"			        0.0			0.0			    1.0				1.0					0.0				0.0				0
+"Turnright45"		"TURN"			        0.0			0.0			    1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Dwarf"
+
+
+/*
+*/

@@ -1,0 +1,4 @@
+[settings]
+locale = ENG
+font = 
+size =

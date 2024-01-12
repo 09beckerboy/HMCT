@@ -1,0 +1,18 @@
+[ AnimList : 4 ]
+ { AnimName:s				AnimType:s			YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d }
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+"Sleep"						"IDLE"				2.0			0.25			1.0				1.0					0.0				0.0				4
+"Squawk1"					"ALERT_IDLE"		2.0			0.25			1.0				1.0					0.0				0.0				4
+"Squawk2"					"ALERT_IDLEANIM"	2.0			0.25			1.0				1.0					0.0				0.0				4
+"HeadTracking"				"HEAD_TRACKING"		0.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "SleepingChicken"
+
+
+/*
+*/
+
+

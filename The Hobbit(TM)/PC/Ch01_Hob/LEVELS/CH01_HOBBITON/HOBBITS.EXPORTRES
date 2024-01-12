@@ -1,0 +1,13 @@
+[ Resources : 9 ]
+ { Name:s                               }
+// ------------------------------------
+   "FX/SHADOWDISC.XBMP"                
+   "SAWBLADE[D].XBMP"                  
+   "MALE[D].XBMP"                      
+   "CHARACTERS/HOBBITANIMS.CHARANIM"   
+   "HOBBIT_MALE_BIND_GEOM.NPCGEOM"     
+   "AI/CREATURELIST.INFO"              
+   "AI/HOBBITPATROLLINGSTATES.INFO"    
+   "AI/HOBBITANIMS.INFO"               
+   "AI/HOBBITSTATES.INFO"              
+   

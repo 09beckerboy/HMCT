@@ -1,0 +1,23 @@
+[ Strings : 19 ]
+ { StringID:s                   }
+// ----------------------------
+   "ID_QUEST_LOG_UPDATE"       
+   "INDO_HEALTH_POTION"        
+   "INFO_DIM_LIFT"             
+   "INFO_GOLD_KEY"             
+   "INFO_GRIT_LIFT"            
+   "INFO_KILLED_MONSTER"       
+   "INFO_LIFT_LEVER"           
+   "INFO_MUGG_KEY"             
+   "INFO_MUGG_LIFT"            
+   "INFO_PICKED_UP_CP"         
+   "INFO_ROCKS_LEVEL2"         
+   "INFO_ROCKTHROW_2"          
+   "INFO_SILVER_KEY"           
+   "INFO_SKELETON_KEY"         
+   "INFO_STICKATTACK_3"        
+   "INFO_STICKATTACK_3_PS2"    
+   "INFO_STICKATTACK_3_XBOX"   
+   "INFO_SWORDLIGHT_START"     
+   "INFO_WART_LIFT"            
+   

@@ -1,0 +1,10 @@
+[ Resources : 6 ]
+ { Name:s                     }
+// --------------------------
+   "RING[D].XBMP"            
+   "RING.ANIM"               
+   "BALFOUR_BIND.ANIM"       
+   "BILBO.ANIM"              
+   "CHAR_GOBLIN_BIND.ANIM"   
+   "RING.RGEOM"              
+   

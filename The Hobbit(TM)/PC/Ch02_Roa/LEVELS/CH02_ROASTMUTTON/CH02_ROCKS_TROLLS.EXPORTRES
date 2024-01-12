@@ -1,0 +1,19 @@
+[ Resources : 15 ]
+ { Name:s                                             }
+// --------------------------------------------------
+   "LVL_ROAST_M_GRASS03[D].XBMP"                     
+   "LVL_RIV_ROCK02[D].XBMP"                          
+   "LVL_ROAST_M_GROUND03[D].XBMP"                    
+   "LVL_ROAST_M_RAINWATER[D].XBMP"                   
+   "LVL_RIV_ROCK02RAIN_SPEC08[R].XBMP"               
+   "LVL_ROAST_MUTTON_ROCK01.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK02.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK03.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK04.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK05.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK06.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK07.RGEOM"                   
+   "LVL_ROAST_MUTTON_ROCK_LEDGE02.RGEOM"             
+   "LVL_ROAST_MUTTON_ROCK_TILT_PLATFORM.RGEOM"       
+   "LVL_ROAST_MUTTON_ROCK_TILT_PLATFORM_TOP.RGEOM"   
+   

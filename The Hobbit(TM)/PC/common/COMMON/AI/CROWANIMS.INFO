@@ -1,0 +1,21 @@
+[ AnimList : 8 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"Idle"			    "IDLE"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Evade1"			"EVADE_BACK"		    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Evade2"			"EVADE_BACK"		    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Evade3"			"EVADE_BACK"		    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Flyaway"			"FLY"					0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"Flyaway2"			"FLY"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"Flyaway3"			"FLY"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"		"HEAD_TRACKING"		    0.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Crow"
+
+
+/*
+*/

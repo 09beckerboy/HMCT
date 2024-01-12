@@ -1,0 +1,35 @@
+[ AnimList : 21 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f	NoiseLevel:f	Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+"Non-PositionedIdle"    "IDLE"				0.0		    0.25			1.0				1.0					0.0				0.0				0
+"OverhillCin11_Shot04A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot04B"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot04C"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot06A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot06B"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot06C"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot06D"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot07A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot07B"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+
+"OverhillCin11_Shot07C"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot07D"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot08A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot09A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot09B"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot09C"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot09D"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot10A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"OverhillCin11_Shot11A"	"SPECIAL"	        0.0			0.0				1.0				1.0					0.0				0.0				32768
+"HeadTracking"		    "HEAD_TRACKING"	    0.0			0.25			2.0				1.0					0.0				0.0				0           
+
+"LipSync"		        "LIP_SYNC"			0.0			0.25			2.0				1.0					0.0				0.0				0           
+
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "GoblinSlaveOH"
+
+/*
+*/

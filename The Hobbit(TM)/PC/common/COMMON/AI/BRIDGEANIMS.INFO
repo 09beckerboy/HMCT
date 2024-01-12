@@ -1,0 +1,17 @@
+[ AnimList : 5 ]
+ { AnimName:s					AnimType:s		YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"BridgeIdle"			        "IDLE"			0.0			0.0				1.0				1.0					0.0				0.0				32768
+"BridgeLeftFirst"			    "SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"BridgeLeftFirstLeft"			"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"BridgeRightFirst"			    "SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"BridgeRightFirstRight"			"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Bridge"
+
+
+/*
+*/

@@ -1,0 +1,20 @@
+[ AnimList : 8 ]
+ { AnimName:s					AnimType:s		YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"Non_Positioned_Idle"			"IDLE"			0.0			0.0				1.0				1.0					0.0				0.0				0
+"Cinema_Idle"					"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"CINEMA2_shot2_BILBO"			"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"CINEMA2_shot4_BILBO"			"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"CINEMA2_shot6_BILBO"			"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"CINEMA3_shot4_BILBO"			"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+"LipSync"						"LIP_SYNC"		0.0			0.0				1.0				1.0					0.0				0.0				0
+"Greenroom"						"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				32768
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "BilboSL"
+
+
+/*
+*/

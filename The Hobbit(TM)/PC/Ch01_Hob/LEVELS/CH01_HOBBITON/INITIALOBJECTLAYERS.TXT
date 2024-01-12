@@ -1,0 +1,28 @@
+[ Layers : 24 ]
+ { LayerName:s                  }
+// ----------------------------
+   "BagEnd"                    
+   "CinemaConversations"       
+   "Hob_GlobalsObject"         
+   "HtownLights"               
+   "Htown_Skybox"              
+   "LoadTriggers"              
+   "NavNodes"                  
+   "NavPaths"                  
+   "NavWalls"                  
+   "BrokenBridge"              
+   "BagEnd_Instances1"         
+   "BagEnd_lights1"            
+   "OverlayVolumes"            
+   "HtownCameras"              
+   "H-Town_Destruct"           
+   "Mikenewstuff"              
+   "AudioEmitters"             
+   "Cine02_BilboLostPennies"   
+   "Cine05_HolmanMeanders"     
+   "GreenRoom"                 
+   "Save_Peds"                 
+   "End_Of_Level"              
+   "CH01_Music"                
+   "HTown_CP"                  
+   

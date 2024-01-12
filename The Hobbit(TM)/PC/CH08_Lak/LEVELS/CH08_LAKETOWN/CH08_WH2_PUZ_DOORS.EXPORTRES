@@ -1,0 +1,14 @@
+[ Resources : 10 ]
+ { Name:s                              }
+// -----------------------------------
+   "LT_BRIDGE_DOOR_02[D].XBMP"        
+   "BARN_DOOR_01[D].XBMP"             
+   "INST_WH2_LT_BIGDOOR_O_15.ANIM"    
+   "INST_WH2_LT_DOOR_O_15.ANIM"       
+   "INST_WH2_RT_BIGDOOR_O_15.ANIM"    
+   "INST_WH2_RT_DOOR_O_15.ANIM"       
+   "INST_WH2_LT_BIGDOOR_O_15.RGEOM"   
+   "INST_WH2_LT_DOOR_O_15.RGEOM"      
+   "INST_WH2_RT_BIGDOOR_O_15.RGEOM"   
+   "INST_WH2_RT_DOOR_O_15.RGEOM"      
+   

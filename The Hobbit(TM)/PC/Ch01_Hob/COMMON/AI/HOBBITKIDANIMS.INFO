@@ -1,0 +1,22 @@
+[ AnimList : 9 ]
+ { AnimName:s				AnimType:s			YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d }
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+"Run"						"RUN"				8.0			0.25			1.0				1.0					0.0				0.0				0
+"SeatedPlay"				"SPECIAL"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"Walk"			            "WALK"		        4.0			0.25			1.0				1.0					0.0				0.0				0
+"LipSync"					"LIP_SYNC"		    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Idle"			            "IDLE"			    0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"Conversation"			    "SPECIAL"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"TurnLeft45"			    "TURN"			    2.0			0.25			1.0				1.0					0.0				0.0				0
+"Turnright45"			    "TURN"			    2.0			0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"			    "HEAD_TRACKING"		0.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "HobbitKid"
+
+/*
+*/
+

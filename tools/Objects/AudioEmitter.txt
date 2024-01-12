@@ -1,0 +1,6 @@
+[ AudioEmitter : 1 ]
+ { GUID:s              DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff                         Orientation:fff            LocalBoundingBox:ffffff                                                    ObjSaveFlag:d ObjName:s              Pos:fff                                TriggerRadius:f FarRadius:f NearRadius:f OffsetRadius:f MinDelay:f MaxDelay:f AudioFlags:d Playback:d FadeTime:f FadeVolume:f AttachedGuid:g    AttachedOffset:fff         }
+   "9D153F4B_8D04A000" 1                1                1               436           ""               -6768.570313 -615.248230 -11719.944336 0.000000 0.000000 0.000000 -1550.000000 -1550.000000 -1550.000000 1550.000000 1550.000000 1550.000000 0             "AE "                  -6768.570313 -615.248230 -11719.944336 1550.000000     1200.000000 200.000000   200.000000     2.000000   5.000000   12           0          0.000000   0.000000     00000000_00000000 0.000000 0.000000 0.000000 
+[ SoundList : 1 ]
+ { DescriptorName:s }
+   "WindCaveHowl"   

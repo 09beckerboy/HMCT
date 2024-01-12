@@ -1,0 +1,28 @@
+[ Resources : 24 ]
+ { Name:s                                 }
+// --------------------------------------
+   "OH_GRASS_04[D].XBMP"                 
+   "OH_GROUNDA_03[D].XBMP"               
+   "OH_ROCK11_BLEND_BASE[D].XBMP"        
+   "OH_CLIFF_WALL_01[D].XBMP"            
+   "OH_ROCK11_BLEND[D].XBMP"             
+   "OH_CLIFF_ROCK_01[D].XBMP"            
+   "OVERHILL_A_01_LINE10.RGEOM"          
+   "OVERHILL_A_01_LINE11.RGEOM"          
+   "OVERHILL_A_01_LINE13.RGEOM"          
+   "OVERHILL_A_01_LINE16.RGEOM"          
+   "OVERHILL_A_01_LINE17.RGEOM"          
+   "OVERHILL_A_01_LINE18.RGEOM"          
+   "OVERHILL_A_01_LINE19.RGEOM"          
+   "OVERHILL_A_01_OBJECT14.RGEOM"        
+   "OVERHILL_A_01_OBJECT17.RGEOM"        
+   "OVERHILL_A_01_OBJECT51.RGEOM"        
+   "OVERHILL_A_01_ROCK_BRIDGE07.RGEOM"   
+   "OVERHILL_A_01_ROCK_BRIDGE08.RGEOM"   
+   "OVERHILL_A_01_ROCK_BRIDGE09.RGEOM"   
+   "OVERHILL_A_01_ROCK_BRIDGE10.RGEOM"   
+   "OVERHILL_A_01_BR_ROCK205.RGEOM"      
+   "OVERHILL_A_01_BR_ROCK206.RGEOM"      
+   "OVERHILL_A_01_BR_ROCK207.RGEOM"      
+   "OVERHILL_A_01_ROCK502.RGEOM"         
+   

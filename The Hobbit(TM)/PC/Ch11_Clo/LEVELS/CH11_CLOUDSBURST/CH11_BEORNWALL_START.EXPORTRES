@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                               }
+// ------------------------------------
+   "INST_CB_STUCCO[D].XBMP"            
+   "INST_CB_STUCCOV2[D].XBMP"          
+   "INST_CB_STUCCOEDGE[D].XBMP"        
+   "INST_CB_WOODPLANK03[D].XBMP"       
+   "INST_CB_WOODPLANK03CHAR[D].XBMP"   
+   "CB_BEIORN_WALL_EXPLODE.ANIM"       
+   "CB_BEIORN_WALL_EXPLODE.RGEOM"      
+   

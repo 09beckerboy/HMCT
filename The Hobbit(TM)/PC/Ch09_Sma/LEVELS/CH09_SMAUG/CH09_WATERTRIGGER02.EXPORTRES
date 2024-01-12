@@ -1,0 +1,10 @@
+[ Resources : 6 ]
+ { Name:s                                     }
+// ------------------------------------------
+   "SM_WHIRLPOOL[D].XBMP"                    
+   "SM_WHIRLPOOL[A].XBMP"                    
+   "INST_SM_WHIRLPOOL_WHIRLPOOL__AI.ANIM"    
+   "INST_SM_WHIRLPOOL_WHIRLPOOL__AI.RGEOM"   
+   "TRIGGER_WATER02.XSC"                     
+   "TRIGGER_WATER02.SYM"                     
+   

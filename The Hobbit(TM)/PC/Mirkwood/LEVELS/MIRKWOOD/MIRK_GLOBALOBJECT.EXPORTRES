@@ -1,0 +1,16 @@
+[ Resources : 12 ]
+ { Name:s                              }
+// -----------------------------------
+   "BILBO/STING[D].XBMP"              
+   "BILBO/STAFF[D].XBMP"              
+   "THROWSTONE[D].XBMP"               
+   "PROPS/HUD_COP_A[D].XBMP"          
+   "PROPS/HUD_CO[D].XBMP"             
+   "MIRK_GRASSA[D].XBMP"              
+   "MIRK_SKY[D].XBMP"                 
+   "BILBO/STING.RGEOM"                
+   "BILBO/STAFF.RGEOM"                
+   "BILBO/THROWINGSTONE.RGEOM"        
+   "PROPS/CONEOFPOWER_YELLOW.RGEOM"   
+   "INST_MIRK_SKYBOX.RGEOM"           
+   

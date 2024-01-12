@@ -1,0 +1,41 @@
+[ AnimList : 24 ]
+ { AnimName:s				AnimType:s			YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d     AnimMode:d }
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"Walk"						"WALK"				8.0			0.25			1.0				1.0					0.0				0.0				0           0
+"AlertWalk"					"ALERT_WALK"		8.0			0.25			1.0				1.0					0.0				0.0				0           1
+"March"						"JOG"				16.0		0.25			1.0				1.0					0.0				0.0				0          -1
+"Run"						"RUN"				32.0		0.25			1.0				1.0					0.0				0.0				0          -1
+"Idle"						"IDLE"				2.0			0.25			1.0				1.0					0.0				0.0				32          0
+
+"Idle_combat"				"COMBAT_IDLE"		2.0			0.25			1.0				1.0					0.0				0.0				32          0
+"Conversation"				"SPECIAL"			0.0			0.25			1.0				1.0					0.0				0.0				36          0
+"Turn180"					"TURN"				0.0			0.25			1.0				1.0					0.0				0.0				0           0
+"TurnLeft45"				"TURN"				0.0			0.25			1.0				1.0					0.0				0.0				0           0
+"Idle_combat"				"ATTACK"			2.0			0.25			1.0				1.0					0.0				0.0				32           0
+
+"TurnRight45"				"TURN"				0.0			0.25			1.0				1.0					0.0				0.0				0           0
+"AlertTurnLeft45"			"TURN"				0.0			0.25			1.0				1.0					0.0				0.0				0           1
+"AlertTurnRight45"			"TURN"				0.0			0.25			1.0				1.0					0.0				0.0				0           1
+"AlertOne"					"ALERT_HALF"		2.0			0.25			1.0				1.0					0.0				0.0				512         1
+"AlertTwo"					"ALERT_IDLE"		2.0			0.25			1.0				1.0					0.0				0.0				512         1
+
+"AlertScratchHead"			"ALERT_IDLEANIM"	0.0			0.25			1.0				1.0					0.0				0.0				4           1
+"IdleStretch"				"IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				36           0
+"IdleFidget"				"IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				36           0
+"GuardYellForGuard"			"SPECIAL"			0.0			0.25			1.0				1.0					0.0				0.0				4           0
+"IdleLookAround"			"IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				36           0
+
+"StrafeRight"				"STRAFE_LEFT"		0.0			0.25			1.0				1.0					0.0				0.0				0           0
+"GuardFlipSwitch"		    "SPECIAL"			0.0			0.0				1.0				1.0					0.0				0.0				32768       0
+"HeadTrack"				    "HEAD_TRACKING"		0.0			0.25			1.0				1.0					0.0				0.0				0           0
+"LipSync"				    "LIP_SYNC"		    0.0			0.25			1.0				1.0					0.0				0.0				0           0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "ElfFemale"
+
+/*
+*/
+
+

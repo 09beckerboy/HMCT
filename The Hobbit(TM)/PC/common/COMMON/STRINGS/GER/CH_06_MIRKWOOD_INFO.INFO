@@ -1,0 +1,25 @@
+[ Strings : 21 ]
+ { StringID:s                   }
+// ----------------------------
+   "ID_QUEST_LOG_UPDATE"       
+   "INFO_BLUEURNACQUIRED"      
+   "INFO_PICKED_UP_CP"         
+   "INFO_REDURNACQUIRED"       
+   "INFO_STICKJUMP_2"          
+   "INFO_STICKJUMP_2_PS2"      
+   "INFO_STICKJUMP_2_XBOX"     
+   "INFO_STINGATTACK_3"        
+   "INFO_STINGATTACK_3_PS2"    
+   "INFO_STINGATTACK_3_XBOX"   
+   "INFO_STINGJUMP_2"          
+   "INFO_STINGJUMP_2_PS2"      
+   "INFO_STINGJUMP_2_XBOX"     
+   "INFO_YELLOWURNACQUIRED"    
+   "OIL_ACQUIRED"              
+   "RING_TUTORIAL_01"          
+   "RING_TUTORIAL_01_PS2"      
+   "RING_TUTORIAL_02"          
+   "RING_TUTORIAL_03"          
+   "SIGNET_RING_ACQUIRED"      
+   "TRAINING_JUMP2"            
+   

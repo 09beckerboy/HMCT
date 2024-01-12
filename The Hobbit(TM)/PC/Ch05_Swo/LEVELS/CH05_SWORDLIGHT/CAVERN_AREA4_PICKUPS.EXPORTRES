@@ -1,0 +1,22 @@
+[ Resources : 18 ]
+ { Name:s                                 }
+// --------------------------------------
+   "INST_COURAGEPOINT_10_TXTR[D].XBMP"   
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"    
+   "INST_COURAGEPOINT_50_TXTR[D].XBMP"   
+   "INST_COURAGEPOINT_5_TXTR[D].XBMP"    
+   "MUSHROOM[D].XBMP"                    
+   "MUSHROOM_G[D].XBMP"                  
+   "MUSHIE_ENV[D].XBMP"                  
+   "SILVERCOIN[D].XBMP"                  
+   "INST_SKELETONKEY_TXTR[D].XBMP"       
+   "THROWSTONE[D].XBMP"                  
+   "INST_COURAGEPOINT_10.RGEOM"          
+   "INST_COURAGEPOINT_1.RGEOM"           
+   "INST_COURAGEPOINT_50.RGEOM"          
+   "INST_COURAGEPOINT_5.RGEOM"           
+   "HEALTH.RGEOM"                        
+   "COINPICKUP05.RGEOM"                  
+   "SKELETONKEY.RGEOM"                   
+   "STONEPILE.RGEOM"                     
+   

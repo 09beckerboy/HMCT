@@ -1,0 +1,17 @@
+[ Resources : 13 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "FX/SHADOWDISC.XBMP"                       
+   "CHAR_BADGER1_TXTR[D].XBMP"                
+   "CHAR_IMP[D].XBMP"                         
+   "CHARACTERS/FIREFLIESANIMS.CHARANIM"       
+   "CHARACTERS/GOBLINANIMS.CHARANIM"          
+   "PROPS/GOBPICKAX.RGEOM"                    
+   "CHAR_LITTLEROCKBADGER_BINDPOSE.NPCGEOM"   
+   "CHAR_IMP_BIND.NPCGEOM"                    
+   "AI/CREATURELIST.INFO"                     
+   "AI/FIREFLIESSTATES.INFO"                  
+   "AI/FIREFLIESANIMS.INFO"                   
+   "AI/IMPSTATES.INFO"                        
+   "AI/IMPANIMS.INFO"                         
+   

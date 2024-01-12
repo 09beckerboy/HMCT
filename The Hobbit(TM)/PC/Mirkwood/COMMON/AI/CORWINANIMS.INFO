@@ -1,0 +1,36 @@
+[ AnimList : 18 ]
+ { AnimName:s		        AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"TurnLeft"			        "TURN"				    8.0			0.25			1.0				1.0					0.0				0.0				0
+"TurnRight"			        "TURN"		            8.0			0.25			1.0				1.0					0.0				0.0				0
+"Idle"				        "IDLE"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"LookingAtGrave"	        "SPECIAL"				0.0			0.25			1.0				1.0					0.0				0.0				4
+"CrossArmsLook"	            "IDLEANIM"				0.0			0.25			1.0				1.0					0.0				0.0				4
+
+"HearNoise"			        "ALERT_HALF"			0.0			0.25			1.0				1.0					0.0				0.0				4
+"Lipsync"				    "LIP_SYNC"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"Walk"				        "WALK"					4.0			0.25			1.0				1.0					0.0				0.0				0
+"Run"				        "RUN"					8.0		    0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"				"HEAD_TRACKING"		    0.0		    0.25			1.0				1.0					0.0				0.0				0
+
+"Cine01_CorwinConv1_Shot0_Corwin" "SPECIAL"			0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot2_Corwin" "SPECIAL"			0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot3_Corwin" "SPECIAL"			0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot4_Corwin" "SPECIAL"			0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot6_Corwin" "SPECIAL"			0.0			0.0			    1.0				1.0					0.0				0.0				32768  
+
+"Cine01_CorwinConv1_Shot8_Corwin" "SPECIAL"			0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"GrievingIdle"				"IDLE"		            0.0		    0.25			1.0				1.0					0.0				0.0				4
+"KneelingIdle"				"IDLE"		            0.0		    0.25			1.0				1.0					0.0				0.0				0
+
+
+
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Corwin"
+
+
+/*
+*/

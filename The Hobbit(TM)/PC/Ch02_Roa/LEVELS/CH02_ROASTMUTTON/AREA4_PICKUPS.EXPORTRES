@@ -1,0 +1,16 @@
+[ Resources : 12 ]
+ { Name:s                                }
+// -------------------------------------
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"   
+   "INST_COURAGEPOINT_5_TXTR[D].XBMP"   
+   "MUSHROOM[D].XBMP"                   
+   "MUSHROOM_G[D].XBMP"                 
+   "MUSHIE_ENV[D].XBMP"                 
+   "COINBAG25PU[D].XBMP"                
+   "SILVERCOIN[D].XBMP"                 
+   "INST_COURAGEPOINT_1.RGEOM"          
+   "INST_COURAGEPOINT_5.RGEOM"          
+   "HEALTH.RGEOM"                       
+   "COINPICKUP25.RGEOM"                 
+   "COINPICKUP05.RGEOM"                 
+   

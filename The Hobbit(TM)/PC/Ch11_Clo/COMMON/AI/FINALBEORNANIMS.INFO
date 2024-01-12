@@ -1,0 +1,23 @@
+[ AnimList : 10 ]
+ { AnimName:s		AnimType:s		YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+"idle"				"IDLE"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"struggle1"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+"struggle2"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+"struggle3"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+"thrash1"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+
+"thrash2"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+"thrash3"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+"thrash4"			"SPECIAL"		32.0		0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"		"HEAD_TRACKING"	0.0		    0.0			    1.0				1.0					0.0				0.0				0 
+"LipSync"		    "LIP_SYNC"	    0.0		    0.0			    1.0				1.0					0.0				0.0				0 
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "FinalBeorn"
+
+
+/*
+*/

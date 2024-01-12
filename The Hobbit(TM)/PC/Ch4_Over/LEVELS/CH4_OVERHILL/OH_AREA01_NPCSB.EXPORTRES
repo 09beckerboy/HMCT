@@ -1,0 +1,20 @@
+[ Resources : 16 ]
+ { Name:s                              }
+// -----------------------------------
+   "FX/SHADOWDISC.XBMP"               
+   "CHAR_GLOIN_DIFFUSE[D].XBMP"       
+   "CHAR_OIN_ DIFFUSE[D].XBMP"        
+   "PONY_MAP[D].XBMP"                 
+   "CHARACTERS/DWARFANIMS.CHARANIM"   
+   "CHARACTERS/PONYANIMS.CHARANIM"    
+   "PROPS/WEAPON_BALIN_ AXE.RGEOM"    
+   "PROPS/GOBBAG.RGEOM"               
+   "CHAR_GLOIN_BIND.NPCGEOM"          
+   "CHAR_OIN_BIND.NPCGEOM"            
+   "CHAR_PONY_BIND.NPCGEOM"           
+   "AI/CREATURELIST.INFO"             
+   "AI/DWARFSTATES.INFO"              
+   "AI/DWARFANIMS.INFO"               
+   "AI/PONYSTATES.INFO"               
+   "AI/PONYANIMS.INFO"                
+   

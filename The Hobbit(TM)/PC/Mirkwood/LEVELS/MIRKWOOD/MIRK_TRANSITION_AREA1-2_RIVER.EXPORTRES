@@ -1,0 +1,17 @@
+[ Resources : 13 ]
+ { Name:s                                    }
+// -----------------------------------------
+   "MIRK_GRASSA[D].XBMP"                    
+   "MIRK_ROCKA[D].XBMP"                     
+   "MIRK_BARK_TRANS[D].XBMP"                
+   "SCARY_OP[D].XBMP"                       
+   "SCARY_OP[A].XBMP"                       
+   "GLOSSMAP2[D].XBMP"                      
+   "GLOSSMAP2[A].XBMP"                      
+   "LVL_HTOWN_WATERCHURNEDB_MIP0[D].XBMP"   
+   "LVL_HTOWN_WATERCHURNEDB_MIP0[A].XBMP"   
+   "MIRK_ROCK.RGEOM"                        
+   "INST_MIRK_TREE_SCARYB.RGEOM"            
+   "INST_MIRK_TREE_SCARYD.RGEOM"            
+   "MIRKWOOD_WATERB.RGEOM"                  
+   

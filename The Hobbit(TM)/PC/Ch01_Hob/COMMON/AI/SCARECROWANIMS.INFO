@@ -1,0 +1,13 @@
+[ AnimList : 4 ]
+ { AnimName:s				AnimType:s					YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------
+"Idle"					    "IDLE"					    0.0			0.000				1.0				1.0					0.0				0.0				0
+"Flinch"				    "FLINCH_BACK"				0.0			0.000				1.0				1.0					0.0				0.0				0
+"Flinch"				    "FLINCH_FLINCH"				0.0			0.000				1.0				1.0					0.0				0.0				0
+"StrongFlinch"				"STRONG_FLINCH"				0.0			0.000				1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+"Scarecrow"
+

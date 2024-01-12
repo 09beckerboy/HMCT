@@ -1,0 +1,8 @@
+[ Resources : 4 ]
+ { Name:s                                }
+// -------------------------------------
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"   
+   "INST_COURAGEPOINT_5_TXTR[D].XBMP"   
+   "INST_COURAGEPOINT_1.RGEOM"          
+   "INST_COURAGEPOINT_5.RGEOM"          
+   

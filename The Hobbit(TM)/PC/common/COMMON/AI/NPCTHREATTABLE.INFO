@@ -1,0 +1,98 @@
+[ CreatureThreatValues : 81 ]
+ { CreatureName:s	            ThreatValue:f }
+// --------------------------------------------
+"LittleRockBadger"	            4.0
+"Bat"				            1.0     
+"FireBat"			            2.5     
+"BasicWaterLeaper"	            4.0
+"WaterLeaper"		            4.0
+"War Goblin"		            5.5
+"Flamey War Goblin"		        5.5
+"Goblin Slave"		            5.5
+"Goblin SlaveOH"		        5.5
+"Goblin Guard"		            5.0     
+
+"No Move Goblin Guard"          5.0
+"Goblin Shaman"		            5.0
+"Bolg Shaman"		            10.0
+"Goblin Bolg"		            20.0
+"Goblin Mugwart"	            7.0
+"Goblin Ugslap"		            15.0
+"EelNPC"			            1.5
+"NeedlePod"			            1.5
+"ThornPod"			            1.5
+"WightWarrior"		            10.0
+
+"WightArcher"		            7.0
+"WightCaster"		            7.0
+"WolfSpider"		            5.0
+"ChitnousSpider"	            20.0
+"RedSpider"	                    3.0
+"GreenSpider"	                3.0
+"BlackSpider"	                3.0
+"Wolf"				            3.0
+"Warg_Wolf"			            5.0
+"StormWolf"			            5.0
+
+"Wisp"				            1.0
+"FireFlies"			            0.00
+"Chicken"			            0.00
+"SleepingChicken"	            0.00
+"Crow"	                        0.00
+"Dog"	                        0.0
+"Pony"				            0.0
+"Fish_Bass"	                    0.0
+"Fish_BottomFeeder"	            0.0
+"Fish_Minnows"	                0.0
+
+"ElfGuard"			            0.0
+"ElfGuardFemale"	            0.0
+"ElfCommon"			            0.0
+"ElfCommonFemale"	            0.0
+"Hobbit"			            0.0
+"OldPeople"			            0.0
+"HobbitPatrolling"	            0.0
+"HobbitKid"			            0.0
+"Dwarf"				            0.0
+"WarElf"	                    5.0
+
+"WarHuman"	                    5.0
+"WarDwarf"	                    5.0
+"WarLiana"	                    7.0
+"TrollHoLiana"		            0.0
+"Gandalf"			            0.0
+"GandalfOH"			            0.0
+"Thorin"			            0.0
+"Corwin"			            0.0
+"Balfour"			            0.0
+"Wallet"			            0.0
+
+"TrollTom"			            0.0
+"TrollWilliam"		            0.0
+"TrollBert"			            0.0
+"BigRockBadger"		            10.0
+"WightBoss"			            10.0
+"BossSpiderWrath"	            15.0
+"BossSpiderWild"	            10.0
+"BossSpiderWicked"	            20.0
+"StoneGiant"		            1.0
+"BridgeTroll"		            10.0
+
+"SmaugSleeping"		            0.0
+"SmaugAlert"		            0.0
+"SmaugAttacking"	            35.0
+"Beorn"				            0.0
+"FinalBeorn"		            0.0
+"Scarecrow"	                    0.0
+"Bridge"	                    0.0
+"Bridge"	                    0.0
+"Bridge"	                    0.0
+"Bridge"	                    0.0
+"Imp Green"                     2.0
+"Imp Fong Green"                2.0
+"Imp Blue"		                2.0 
+"Imp Purple"	                2.0
+
+/*
+*/
+	

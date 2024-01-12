@@ -1,0 +1,23 @@
+[ Strings : 19 ]
+ { StringID:s                         }
+// ----------------------------------
+   "A_ID_QUEST_EXITCAVE_CH05"        
+   "B_ID_QUEST_EXTEND_BRIDGE_CH05"   
+   "C_ID_QUEST_LOWER_BRIDGE_CH05"    
+   "D_ID_QUEST_FREE_DWARF_CH05"      
+   "E_ID_QUEST_GOTO_JAIL_CH05"       
+   "F_ID_QUEST_SNEAK_CH05"           
+   "G_ID_QUEST_SWITCH_CH05"          
+   "H_ID_QUEST_BRIBE_GUARD_CH05"     
+   "I_ID_QUEST_ACTIVATE_WART_CH05"   
+   "J_ID_QUEST_WARTSTONE_CH05"       
+   "K_ID_QUEST_WARTSTONE2_CH05"      
+   "L_ID_QUEST_WARTLIFT_CH05"        
+   "M_ID_QUEST_MUGGLIFT_KEY_CH05"    
+   "N_ID_QUEST_ACTIVATE_MUGG_CH05"   
+   "O_ID_QUEST_GRITLIFT_KEY_CH05"    
+   "P_ID_QUEST_ACTIVATE_GRIT_CH05"   
+   "Q_ID_QUEST_DIMLIFT_KEY_CH05"     
+   "R_ID_QUEST_ACTIVATE_DIM_CH05"    
+   "S_ID_QUEST_WARTLEVER_CH05"       
+   

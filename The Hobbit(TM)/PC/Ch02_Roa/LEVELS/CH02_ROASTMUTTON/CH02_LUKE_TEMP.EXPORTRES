@@ -1,0 +1,20 @@
+[ Resources : 16 ]
+ { Name:s                                     }
+// ------------------------------------------
+   "LVL_HTOWN_TRUNKTILE[D].XBMP"             
+   "LVL_ROAST_M_GRASS03[D].XBMP"             
+   "LVL_HTOWN_TREEGRASSBLEND_MIP0[D].XBMP"   
+   "LVL_HTOWN_TRUNKSHADB_MIP0[D].XBMP"       
+   "LVL_HTOWN_ROOTSHADSB_MIP0[D].XBMP"       
+   "LVL_HTOWN_LIMBSHADB_MIP0[D].XBMP"        
+   "LVL_HTOWN_TREEB_LEAVES_MIP0[D].XBMP"     
+   "LVL_HTOWN_TREEB_LEAFOP_MIP0[D].XBMP"     
+   "LVL_HTOWN_TREEB_LEAVES_MIP1[D].XBMP"     
+   "LVL_HTOWN_TREEB_LEAFOP_MIP1[D].XBMP"     
+   "LVL_HTOWN_TREEB_LEAVES_MIP3[D].XBMP"     
+   "LVL_HTOWN_TREEB_LEAFOP_MIP2[D].XBMP"     
+   "RM_TREE_TRUNK.RGEOM"                     
+   "RM_GREEN_TREE_LEAVES.TREE"               
+   "RM_GREEN_TREE_LEAVES_LOD2.TREE"          
+   "RM_GREEN_TREE_LEAVES_LOD3.TREE"          
+   

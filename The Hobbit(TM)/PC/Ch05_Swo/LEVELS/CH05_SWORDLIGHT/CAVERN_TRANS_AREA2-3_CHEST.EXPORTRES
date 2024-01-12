@@ -1,0 +1,21 @@
+[ Resources : 17 ]
+ { Name:s                       }
+// ----------------------------
+   "COINBAG25PU[D].XBMP"       
+   "SILVERCOIN[D].XBMP"        
+   "COINBAG[D].XBMP"           
+   "ANTIDOTE[D].XBMP"          
+   "HEALTHPOTION[D].XBMP"      
+   "PROPS/CHEST_WOOD.ANIM"     
+   "PROPS/CHEST_BLACK.ANIM"    
+   "PROPS/CHEST_GOLD.ANIM"     
+   "PROPS/CHEST_WOOD.RGEOM"    
+   "PROPS/CHEST_BLACK.RGEOM"   
+   "PROPS/CHEST_GOLD.RGEOM"    
+   "PROPS/COIN.RGEOM"          
+   "COINPICKUP25.RGEOM"        
+   "COINBAG.RGEOM"             
+   "COINPICKUP05.RGEOM"        
+   "ANTIDOTE_POTION.RGEOM"     
+   "HEALTH_POTION.RGEOM"       
+   

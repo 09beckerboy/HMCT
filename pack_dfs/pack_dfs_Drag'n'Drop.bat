@@ -1,1 +1,0 @@
-dfs.exe -pack %1 %~n1.DFS
