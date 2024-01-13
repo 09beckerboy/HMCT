@@ -203,6 +203,7 @@ def loadProject(project_name):
             else: temp = getattr(sys.modules[__name__], base_command)
             if command_args == []: temp()
             else: temp(command_args)
+        except AttributeError: print("Command '{}' does not exist".format(base_command))
         except Exception as e: print(e)
 
 def exit(*none): sys.exit()
@@ -468,7 +469,3 @@ if __name__ == '__main__':
 #.SYM
 #.FXO
 #.bik
-
-#TODO
-#Settings: Debug mode (print and input everywhere), 
-#help (command)

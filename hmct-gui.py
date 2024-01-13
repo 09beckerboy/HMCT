@@ -164,12 +164,13 @@ def exportMod(project_name):
     game_dir = Entry(export_options_frame)
     def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); export_mod_window.lift(app)
     browse_files = Button(export_options_frame, text = "Browse", command = browse)
-    launch_game = Checkbutton(export_options_frame, text="Launch game after export")
+    launch_game = BooleanVar()
+    launch_game_button = Checkbutton(export_options_frame, variable=launch_game, text="Launch game after export")
     def select():
         if export_type.get() == 1:
             game_dir.pack_forget()
             browse_files.pack_forget()
-            launch_game.pack_forget()
+            launch_game_button.pack_forget()
             compress_button.pack(side=LEFT, anchor=N)
             export_options_frame.update()
         if export_type.get() == 2:
@@ -178,13 +179,13 @@ def exportMod(project_name):
             game_dir.insert(0,settings["game_directory"])
             game_dir.pack(side=TOP, anchor=W, fill=X)
             browse_files.pack(side=TOP, anchor=W)
-            launch_game.pack(side=TOP, anchor=W)
+            launch_game_button.pack(side=TOP, anchor=W)
             export_options_frame.update()
         if export_type.get() == 3:
             compress_button.pack_forget()
             game_dir.pack_forget()
             browse_files.pack_forget()
-            launch_game.pack_forget()
+            launch_game_button.pack_forget()
             export_options_frame.update()
     classic_button = Radiobutton(export_mod_window, text="Classic", variable=export_type, value=1, command=select).pack(anchor=W, side=TOP)
     dev_button = Radiobutton(export_mod_window, text="Development", variable=export_type, value=2, command=select).pack(anchor=W, side=TOP)
@@ -212,9 +213,7 @@ def exportMod(project_name):
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
                 if name.endswith(".000") or name.endswith(".DFS"):
                     shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], name))
-            confirm = str(input("Mod successfully exported, would you like to launch the game to test it? Y or N\n: ")).upper()
-            if confirm == "Y": os.chdir(settings["game_directory"]); os.startfile("Meridian.exe"); os.chdir(script_dir)
-            else: input("Press Enter to return to main menu...")
+            if launch_game.get() == 1: os.chdir(settings["game_directory"]); os.startfile("Meridian.exe"); os.chdir(script_dir)
         elif export_type.get() == 3:
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
                 level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
@@ -237,7 +236,6 @@ def exportMod(project_name):
                         zipped_file.write(path, path[rootlen:])
             shutil.rmtree("{0}\\exported mods\\{1}".format(script_dir, project_name))
             os.rename("{0}\\exported mods\\{1}.zip".format(script_dir, project_name), "{0}\\exported mods\\{1}.hobm".format(script_dir, project_name))
-            input("Press Enter to return to main menu...")
     export_button = Button(export_mod_window, text="Export", command=export).pack(anchor=W, side=TOP)
 
 def xbmpToDDS(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("xbmp_to_dds.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project)
