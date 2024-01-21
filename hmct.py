@@ -70,9 +70,9 @@ def mainMenu(*none):
         try:
             os.system("title Import Mod")
             os.system('cls||clear')
-            mod_import_path = input("Provide the path to the mod you wish to import\nMake sure to use '/' instead of '\' and end with .zip or .hobm (path/to/mod/mod.zip<hobm>)\nMake sure you don't already have a project with the same name!\nType 'cancel' to return to the main menu\n: ")
+            mod_import_path = input("Provide the path to the mod you wish to import\nMake sure to use '/' instead of '\' and end with .zip (path/to/mod/mod.zip)\nMake sure you don't already have a project with the same name!\nType 'cancel' to return to the main menu\n: ")
             if mod_import_path == "cancel": mainMenu()
-            else: importMod(mod_import_path)
+            elif not os.path.exists("{0}\\projects\\{1}".format(script_dir, mod_import_path.split("/")[-1])): importMod(mod_import_path)
         except Exception as e: mainMenu()
     if option == 4:
         try:
@@ -360,7 +360,7 @@ def exportMod(project_name):
     os.system("text_to_export.bat")
     os.system("text_to_subtitle.bat")
     os.chdir(script_dir)
-    export_type = str(input("Which format do you wish to export to? Classic(C), Development(D), or HOBM(H)?\n: ")).upper()
+    export_type = str(input("Which format do you wish to export to? Classic(C), Development(D), or HOBM <Alpha> (H)?\n: ")).upper()
     if os.path.exists("{0}/exported mods/{1}".format(script_dir, project_name)): pass
     else: os.mkdir("{0}/exported mods/{1}".format(script_dir, project_name))
     if export_type == "C":

@@ -142,6 +142,34 @@ def deleteProject(project):
         refreshExportMenu()
         refreshLoadMenu()
 
+def importMod():
+    project_path = filedialog.askopenfilename(initialdir = "\\", title = "Select a Mod to Import", filetypes = (("Zipped Mod", "*.zip"), ("HOBM Mod", "*.hobm")))
+    printGUI(project_path)
+    if project_path.endswith(".zip"):
+        project_name = project_path.split("/")[-1].split(".")[0]
+        printGUI(project_name)
+        with zipfile.ZipFile(project_path, 'r') as project_zip:
+            project_zip.extractall("{0}/projects".format(script_dir))
+        try:
+            for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
+                if name.endswith(".DFS") or name.endswith(".dfs"):
+                    os.mkdir("{0}/projects/{1}/{2}".format(script_dir, project_name, name.split(".")[0]))
+                    shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), "{0}\\projects\\{1}\\{2}\\{3}".format(script_dir, project_name, name.split(".")[0], name))
+                    shutil.move("{0}\\projects\\{1}\\{2}.000".format(script_dir, project_name, name.split(".")[0]), "{0}\\projects\\{1}\\{2}\\{3}.000".format(script_dir, project_name, name.split(".")[0], name.split(".")[0]))
+                    shutil.copy2("{0}\\tools\\dfs.exe".format(script_dir), "{0}\\projects\\{1}\\{2}\\dfs.exe".format(script_dir, project_name, name.split(".")[0]))
+                    os.chdir("{0}/projects/{1}/{2}".format(script_dir, project_name, name.split(".")[0]))
+                    os.system("dfs.exe -unpack {0}".format(name))
+                    os.remove("dfs.exe")
+                    os.remove("{0}".format(name))
+                    os.remove("{0}.000".format(name.split(".")[0]))
+                    os.chdir(script_dir)
+            moveTools(project_name)
+        except Exception as e: printGUI(e)
+        refreshDeleteMenu()
+        refreshExportMenu()
+        refreshLoadMenu()
+        loadProject(project_name)
+
 def exportMod(project_name):
     os.chdir("{0}/projects/{1}".format(script_dir, project_name))
     os.system("dds_to_xbmp.bat")
@@ -189,7 +217,7 @@ def exportMod(project_name):
             export_options_frame.update()
     classic_button = Radiobutton(export_mod_window, text="Classic", variable=export_type, value=1, command=select).pack(anchor=W, side=TOP)
     dev_button = Radiobutton(export_mod_window, text="Development", variable=export_type, value=2, command=select).pack(anchor=W, side=TOP)
-    hobm_button = Radiobutton(export_mod_window, text="HOBM", variable=export_type, value=3, command=select).pack(anchor=W, side=TOP)
+    hobm_button = Radiobutton(export_mod_window, text="HOBM (Alpha)", variable=export_type, value=3, command=select).pack(anchor=W, side=TOP)
     export_options_frame.pack(side=TOP, fill=BOTH)
     def export():
         if export_type.get() == 1:
@@ -383,7 +411,7 @@ def refreshDeleteMenu():
 refreshDeleteMenu()
 project_menu.add_cascade(label="Delete Project", menu=delete_menu)
 project_menu.add_separator()
-project_menu.add_command(label="Import Mod", command=doNothing)
+project_menu.add_command(label="Import Mod", command=importMod)
 export_menu = Menu(project_menu, tearoff=0)
 def refreshExportMenu():
     export_menu.delete(0, "end")
@@ -432,3 +460,8 @@ preview_image = image_canvas.create_image(0,0, anchor=NW, image=preview_image)
 #Load project
 app.config(menu=menu_bar)
 app.mainloop()
+
+#TODO
+#open
+#open selected (calls open)
+#printGUI selected file
