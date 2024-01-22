@@ -1,4 +1,4 @@
-#This is an example extension for HTPCT
+#This is an example extension for HMCT
 #Commands in extensions are use just like regular commands
 #Make sure your new commands do not have the same name as an existing function
 
@@ -20,15 +20,15 @@ def hello(args):
 #Each explanation should take one line and follow the given format:
 #Command (arguments) : description
 
-#You should not have any extra junk in the .help file
+#You should not have any extra stuff in the .help file
 
-#If you want to access functions from htpct.py, add the following code to import it
+#If you want to access functions from hmct.py, add the following code to import it
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 import hmct
 
-#This is a command that calls the newPack() function in htpct.py
+#This is a command that calls the newPack() function in hmct.py
 def newpack():
     hmct.newPack()
-#Notice how it doesn't have the EXACT same name as the function in htpct.py
+#Notice how it doesn't have the EXACT same name as the function in hmct.py

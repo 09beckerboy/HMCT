@@ -466,3 +466,16 @@ preview_image = image_canvas.create_image(0,0, anchor=NW, image=preview_image)
 #Load project
 app.config(menu=menu_bar)
 app.mainloop()
+
+#TODO
+#Boot screen - change to HMCT
+#Help top bar - do something
+#Settings - change them
+#Tree filter
+#Auto-update
+#Extensions
+#File preview
+# TXT/JSON
+# PNG
+# DDS
+#Reduce size of tool
