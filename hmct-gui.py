@@ -125,9 +125,6 @@ def newProject():
                 if level_checklist[level].get() == 1:
                     shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level), "{0}\\projects\\{1}\\{2}".format(script_dir, project_name.get(), level))
             moveTools(project_name.get())
-            os.chdir("{0}/projects/{1}".format(script_dir, project_name.get()))
-            os.system("xbmp_to_dds.bat")
-            os.chdir(script_dir)
             refreshDeleteMenu()
             refreshExportMenu()
             refreshLoadMenu()
@@ -322,9 +319,18 @@ def removeLevel():
         makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project)
     Button(delete_level_window, text="Remove selected level(s)", command=selectButton).pack(side=TOP)
 
-def openFile(file): os.startfile(str(project_tree.focus()))
+def openFile():
+    file = str(project_tree.focus())
+    if file.endswith("ALLUSEDLAYERS.TXT"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+    if file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+    else: os.startfile(file)
 
-def openSelected(): pass
+def openSelected(): 
+    for file in project_tree.get_checked():
+        if not os.path.isdir(file):
+            if file.endswith("ALLUSEDLAYERS.TXT"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+            if file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+            else: os.startfile(file)
 
 #Set up window
 app = Tk()  
@@ -358,7 +364,7 @@ open_button.pack(side=RIGHT, padx=(0,5))
 #open_with_button = Button(top_bar, text="Open With...", font=("Segoe UI", 11), image=open_with_image, compound=LEFT, command=doNothing, height=75, width=150)
 #open_with_button.pack(side=RIGHT, padx=(0,5))
 open_selected_image = ImageTk.PhotoImage(Image.open("{}/assets/open_selected.png".format(script_dir)).convert("RGBA"))
-open_selected_button = Button(top_bar, text="Open Selected", font=("Segoe UI", 11), image=open_selected_image, compound=LEFT, command=doNothing, height=75, width=150)
+open_selected_button = Button(top_bar, text="Open Selected", font=("Segoe UI", 11), image=open_selected_image, compound=LEFT, command=openSelected, height=75, width=150)
 open_selected_button.pack(side=RIGHT, padx=(0,5))
 #open_selected_with_image = ImageTk.PhotoImage(Image.open("{}/assets/open_selected_with.png".format(script_dir)).convert("RGBA"))
 #open_selected_with_button = Button(top_bar, text="Open Selected With...", font=("Segoe UI", 11), image=open_selected_with_image, compound=LEFT, command=doNothing, height=75, width=170)
@@ -460,8 +466,3 @@ preview_image = image_canvas.create_image(0,0, anchor=NW, image=preview_image)
 #Load project
 app.config(menu=menu_bar)
 app.mainloop()
-
-#TODO
-#open
-#open selected (calls open)
-#printGUI selected file
