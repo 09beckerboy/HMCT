@@ -70,8 +70,8 @@ def makeProjectTree(path, depth, parent, filter_text):
                 project_tree.insert(parent, "0", file_path, text = file)
                 project_tree.move(file_path, parent, "end")
                 values = list(filter_dropdown["values"])
-                extension = [str(file).split(".")[-1].upper()]
-                if str(file).split(".")[-1].upper() not in values: filter_dropdown["values"] = values + extension
+                extension = ["." + str(file).split(".")[-1].upper()]
+                if extension[0] not in values: filter_dropdown["values"] = values + extension
 
 def moveTools(project_name):
     shutil.copy2("{0}\\tools\\dds_to_xbmp.bat".format(script_dir), "{0}\\projects\\{1}\\dds_to_xbmp.bat".format(script_dir, project_name))
