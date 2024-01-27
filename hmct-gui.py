@@ -105,6 +105,7 @@ def loadProject(project_name):
     project_file_extensions = []
     project_tree.delete(*project_tree.get_children())
     project_tree.insert("", "0", project_name, text=project_name + "/")
+    filter_dropdown["values"] = ("All"); 
     makeProjectTree("{0}/projects/{1}".format(script_dir, project_name), 0, project_name, "*")
 
 def newProject():
@@ -271,16 +272,16 @@ def exportMod(project_name):
             os.rename("{0}\\exported mods\\{1}.zip".format(script_dir, project_name), "{0}\\exported mods\\{1}.hobm".format(script_dir, project_name))
     export_button = Button(export_mod_window, text="Export", command=export).pack(anchor=W, side=TOP)
 
-def xbmpToDDS(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("xbmp_to_dds.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def ddsToXBMP(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("dds_to_xbmp.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def xbmpToDDS(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("xbmp_to_dds.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def ddsToXBMP(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("dds_to_xbmp.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
 def ddsToPNG(): pass
 def pngToDDS(): pass
-def exportToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def exportToJSON(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_json.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def txtToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def jsonToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("json_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def subtitleToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("subtitle_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def txtToSUBTITLE(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_subtitle.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def exportToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def exportToJSON(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_json.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def txtToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def jsonToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("json_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def subtitleToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("subtitle_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def txtToSUBTITLE(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_subtitle.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
 def addLevel():
     add_level_window = Toplevel(app)
     add_level_window.lift(app)
@@ -301,6 +302,7 @@ def addLevel():
                     shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level), "{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level))
         project_tree.delete(*project_tree.get_children())
         project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All"); 
         makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
     Button(add_level_window, text="Add selected level(s)", command=selectButton).pack(side=TOP)
 
@@ -324,6 +326,7 @@ def removeLevel():
                     shutil.rmtree("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level))
         project_tree.delete(*project_tree.get_children())
         project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All"); 
         makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
     Button(delete_level_window, text="Remove selected level(s)", command=selectButton).pack(side=TOP)
 
@@ -397,6 +400,7 @@ def searchTree():
     try:
         project_tree.delete(*project_tree.get_children())
         project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All"); 
         makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, str(search_box.get()))
     except Exception as e: printGUI(e)
 
@@ -404,8 +408,8 @@ def filterTree(*none):
     try:
         project_tree.delete(*project_tree.get_children())
         project_tree.insert("", "0", current_project, text=current_project + "/")
-        if str(filter_dropdown.get()).lower() == "all": makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-        else: makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, str(filter_dropdown.get()))
+        if str(filter_dropdown.get()).lower() == "all": filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        else: filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, str(filter_dropdown.get()))
     except Exception as e: printGUI(e)
 
 project_tree = CheckboxTreeview(file_window)
