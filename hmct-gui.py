@@ -393,6 +393,25 @@ file_window.pack(side=LEFT, fill=Y, padx=(5,0), pady=(0,0))
 ttk.Label(file_window, text ="Project Files").pack(side=TOP)
 file_window_top = Frame(file_window)
 file_window_top.pack(side=TOP)
+
+def expandTree():
+    def expand(parent): 
+        project_tree.item(parent, open=True)
+        for child in project_tree.get_children(parent):
+            expand(child)
+    try: expand(current_project)
+    except Exception: pass
+
+def collapseTree():
+    def collapse(parent):
+        project_tree.item(parent, open=False)
+        for child in project_tree.get_children(parent):
+            collapseTree(child)
+    try: collapse(current_project)
+    except Exception: pass
+
+expand_tree_button = Button(file_window_top, text="↓", command=partial(expandTree)).pack(side=LEFT)
+collapse_tree_button = Button(file_window_top, text="↑", command=partial(collapseTree)).pack(side=LEFT)
 search_box = Entry(file_window_top)
 search_box.pack(side=LEFT)
 
@@ -402,7 +421,7 @@ def searchTree():
         project_tree.insert("", "0", current_project, text=current_project + "/")
         filter_dropdown["values"] = ("All"); 
         makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, str(search_box.get()))
-    except Exception as e: printGUI(e)
+    except Exception: pass
 
 def filterTree(*none):
     try:
@@ -410,10 +429,10 @@ def filterTree(*none):
         project_tree.insert("", "0", current_project, text=current_project + "/")
         if str(filter_dropdown.get()).lower() == "all": filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
         else: filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, str(filter_dropdown.get()))
-    except Exception as e: printGUI(e)
+    except Exception: pass
 
 project_tree = CheckboxTreeview(file_window)
-search_button = Button(file_window_top, text="Search", command=searchTree).pack(side=LEFT, padx=(0, 75))
+search_button = Button(file_window_top, text="Search", command=searchTree).pack(side=LEFT, padx=(0, 50))
 filter_option = StringVar()
 filter_option = "All"
 filter_dropdown = ttk.Combobox(file_window_top, textvariable=filter_option)
@@ -507,9 +526,9 @@ app.config(menu=menu_bar)
 app.mainloop()
 
 #TODO
+#expand all / contract all
 #Help top bar - do something
 #Settings - change them
-#Tree filter
 #Auto-update
 #Extensions
 #File preview
@@ -517,4 +536,3 @@ app.mainloop()
 # PNG
 # DDS
 #Reduce size of tool
-#Search tree for filename
