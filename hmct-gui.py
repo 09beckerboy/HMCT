@@ -509,11 +509,45 @@ plugins_menu = Menu(tools_menu, tearoff=0)
 tools_menu.add_cascade(label="Plugins", menu=plugins_menu)
 menu_bar.add_cascade(label="Tools", menu=tools_menu)
 
-settings_menu = Menu(menu_bar, tearoff=0)
-menu_bar.add_cascade(label="Settings", menu=settings_menu)
+def settingsWindow():
+    printGUI(bool(settings["debug_mode"]))
+    settings_window = Toplevel(app)
+    settings_window.lift(app)
+    settings_window.geometry("500x400")
+    settings_window.title("Settings")
+    settings_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
+    settings_frame = Frame(settings_window, bd=5, height=150, width=500)
+    settings_frame.pack_propagate(False)
+    settings_frame.pack(side=TOP, anchor=W)
+    game_dir = Entry(settings_frame)
+    game_dir.delete(0,END)
+    game_dir.insert(0, settings["game_directory"])
+    game_dir.pack(side=TOP, anchor=W, fill=X)
+    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); settings_window.lift(app)
+    Button(settings_frame, text="Browse", command=browse).pack(side=TOP, anchor=W)
+    # debug_mode_enabled = BooleanVar() #value=eval(str(settings["debug_mode"]))
+    # debug_mode = Checkbutton(settings_frame, variable=debug_mode_enabled, text="Debug Mode")
+    # debug_mode.pack(side=TOP, anchor=W)
+    def saveSettings():
+        settings["game_directory"] = game_dir.get()
+        json_object = json.dumps(settings, indent=4)
+        with open("settings.json", "w") as outfile:
+            outfile.write(json_object)
+        messagebox.showinfo(title="Settings Saved!", message="Settings saved successfully")
+        settings_window.lift(app)
+    Button(settings_window, text="Save", command=saveSettings).pack(side=TOP, anchor=W)
 
-help_menu = Menu(menu_bar, tearoff=0)
-menu_bar.add_cascade(label="Help", menu=help_menu)
+menu_bar.add_command(label="Settings", command=settingsWindow)
+
+def help():
+    help_window = Toplevel(app)
+    help_window.lift(app)
+    help_window.geometry("400x400")
+    help_window.title("Help")
+    help_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
+    Label(help_window, text="Made by 09beckerboy").pack(side=LEFT, anchor=N)
+
+menu_bar.add_command(label="Help", command=help)
 
 image_canvas = Canvas(preview_window, height=990, width=1285)
 image_canvas.pack(side=TOP)
@@ -526,8 +560,6 @@ app.config(menu=menu_bar)
 app.mainloop()
 
 #TODO
-#expand all / contract all
-#Help top bar - do something
 #Settings - change them
 #Auto-update
 #Extensions
