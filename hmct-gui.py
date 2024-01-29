@@ -12,15 +12,28 @@ import json
 import zipfile
 import filecmp
 from tkinter import filedialog
+import importlib
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-
+sys.path.append("{0}/plugins".format(script_dir))
 splashes = []
 #Import splashes
 with open("splashes.txt", "r") as f:
     for line in f.readlines():
         splashes.append(line[:-1])
 splash_text = random.choice(splashes)
+
+#Import plugins
+for file in os.listdir("{0}/plugins".format(script_dir)):
+    if file.endswith("-gui.py"):
+        plugin = importlib.import_module(file.split(".")[0])
+        if "__all__" in plugin.__dict__:
+            names = plugin.__dict__["__all__"]
+        else:
+            names = [x for x in plugin.__dict__ if not x.startswith("_")]
+        globals().update({k: getattr(plugin, k) for k in names})
+        if os.path.exists("{0}/plugins/{1}.runtime".format(script_dir, file.split(".")[0])):
+            exec(open("{0}/plugins/{1}".format(script_dir, file)).read())
 
 #Import settings
 with open("settings.json", "r") as read_file:
@@ -32,29 +45,39 @@ def doNothing(): messagebox.showwarning(title="Nothing happened...", message="Th
 def previewFile(x):
     console_text.delete(0, END)
     printGUI(project_tree.focus())
-    if project_tree.focus().endswith(".dds"):
-        preview_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
-        preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-        #app.iconphoto(False, preview_image)
-        #image_canvas.config(image=preview_image)
-        image_canvas.delete('all')
-        image_canvas.create_image(0,0, anchor=NW, image=preview_image)
-    if project_tree.focus().endswith(".png"):
+    # if project_tree.focus().endswith(".dds"):
+    #     preview_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
+    #     preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
+    #     #hmct.iconphoto(False, preview_image)
+    #     #preview_image_canvas.config(image=preview_image)
+    #     preview_image_canvas.delete('all')
+    #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+    if str(project_tree.focus()).lower().endswith(".png"):
+        preview_text.pack_forget()
+        preview_image_canvas.pack(side=TOP, anchor=W)
         temp_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
         temp_image = ImageTk.PhotoImage(temp_image.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST))
-        #app.iconphoto(False, preview_image)
-        image_canvas.config(preview_image, image=temp_image)
-        #image_canvas.delete('all')
-        #image_canvas.create_image(0,0, anchor=NW, image=preview_image)
-    if project_tree.focus().endswith(".txt"):
-        pass
-    else:
-        preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA") #Image.open(projectTree.focus()
-        preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-        #app.iconphoto(False, preview_image)
-        #image_canvas.config(image=preview_image)
-        image_canvas.delete('all')
-        image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+        #hmct.iconphoto(False, preview_image)
+        preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
+        #preview_image_canvas.config(preview_image, image=temp_image)
+        preview_image_canvas.delete('all')
+        preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+    if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json"):
+        preview_image_canvas.pack_forget()
+        preview_text.pack(side=TOP, anchor=W, fill=BOTH)
+        with open(project_tree.focus(), "r") as text_file:
+            preview_text.configure(state='normal')
+            preview_text.delete('1.0', END)
+            for line in text_file.readlines():
+                preview_text.insert('end', line)
+            preview_text.configure(state='disabled')
+    # else:
+    #     preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA") #Image.open(projectTree.focus()
+    #     preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
+    #     hmct.iconphoto(False, preview_image)
+    #     preview_image_canvas.config(image=preview_image)
+    #     preview_image_canvas.delete('all')
+    #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
 
 #Build file tree
 def makeProjectTree(path, depth, parent, filter_text):
@@ -109,8 +132,8 @@ def loadProject(project_name):
     makeProjectTree("{0}/projects/{1}".format(script_dir, project_name), 0, project_name, "*")
 
 def newProject():
-    new_project_window = Toplevel(app)
-    new_project_window.lift(app)
+    new_project_window = Toplevel(hmct)
+    new_project_window.lift(hmct)
     new_project_window.geometry("350x650")
     new_project_window.title("New Project")
     new_project_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -184,8 +207,8 @@ def exportMod(project_name):
     os.chdir(script_dir)
     if os.path.exists("{0}/exported mods/{1}".format(script_dir, project_name)): pass
     else: os.mkdir("{0}/exported mods/{1}".format(script_dir, project_name))
-    export_mod_window = Toplevel(app)
-    export_mod_window.lift(app)
+    export_mod_window = Toplevel(hmct)
+    export_mod_window.lift(hmct)
     export_mod_window.geometry("650x350")
     export_mod_window.title("Export Mod")
     export_mod_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -196,7 +219,7 @@ def exportMod(project_name):
     compress = BooleanVar()
     compress_button = Checkbutton(export_options_frame, variable=compress, text="Compress after export")
     game_dir = Entry(export_options_frame)
-    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); export_mod_window.lift(app)
+    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); export_mod_window.lift(hmct)
     browse_files = Button(export_options_frame, text = "Browse", command = browse)
     launch_game = BooleanVar()
     launch_game_button = Checkbutton(export_options_frame, variable=launch_game, text="Launch game after export")
@@ -283,8 +306,8 @@ def jsonToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_proje
 def subtitleToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("subtitle_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
 def txtToSUBTITLE(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_subtitle.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
 def addLevel():
-    add_level_window = Toplevel(app)
-    add_level_window.lift(app)
+    add_level_window = Toplevel(hmct)
+    add_level_window.lift(hmct)
     add_level_window.geometry("350x650")
     add_level_window.title("Add Level(s)")
     add_level_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -307,8 +330,8 @@ def addLevel():
     Button(add_level_window, text="Add selected level(s)", command=selectButton).pack(side=TOP)
 
 def removeLevel():
-    delete_level_window = Toplevel(app)
-    delete_level_window.lift(app)
+    delete_level_window = Toplevel(hmct)
+    delete_level_window.lift(hmct)
     delete_level_window.geometry("350x650")
     delete_level_window.title("Remove Level(s)")
     delete_level_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -344,13 +367,13 @@ def openSelected():
             else: os.startfile(file)
 
 #Set up window
-app = Tk()  
-app.title("HMCT v2.0  |  {}".format(splash_text))
-app.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
-app.geometry("1800x1000")
+hmct = Tk()  
+hmct.title("HMCT v2.0  |  {}".format(splash_text))
+hmct.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
+hmct.geometry("1800x1000")
 
 #Set up console thingy
-console_frame = Frame(app, height=20, width=1800, relief=SUNKEN)
+console_frame = Frame(hmct, height=20, width=1800, relief=SUNKEN)
 console_frame.pack(side=BOTTOM, fill=X, padx=(5,5))
 console_frame.pack_propagate(False)
 console_text = Entry(console_frame)
@@ -365,7 +388,7 @@ def printGUI(output):
 printGUI("Welcome to HMCT!")
 
 #Set up top bar
-top_bar = Frame(app, bd=5, height=75, width=1800)
+top_bar = Frame(hmct, bd=5, height=75, width=1800)
 top_bar.pack(side=TOP, fill=X)
 top_bar.pack_propagate(False)
 open_image = ImageTk.PhotoImage(Image.open("{}/assets/open.png".format(script_dir)).convert("RGBA"))
@@ -388,7 +411,7 @@ delete_level_button = Button(top_bar, text="Remove Level", font=("Segoe UI", 11)
 delete_level_button.pack(side=LEFT, padx=(5,0))
 
 #Set up mod file structure window
-file_window = Frame(app, bd=5, width=500, relief=SUNKEN)
+file_window = Frame(hmct, bd=5, width=500, relief=SUNKEN)
 file_window.pack(side=LEFT, fill=Y, padx=(5,0), pady=(0,0))
 ttk.Label(file_window, text ="Project Files").pack(side=TOP)
 file_window_top = Frame(file_window)
@@ -446,13 +469,21 @@ project_tree.column("#0", minwidth=0, width=400, stretch=NO)
 project_tree.bind('<Double-1>', previewFile)
 
 #Set up file preview window
-preview_window = Frame(app, bd=5, relief=SUNKEN, height=1000, width=1285)
-preview_window.pack(side=TOP, fill=BOTH, padx=(15,5), pady=(0,0))
-preview_window.pack_propagate(False)
-ttk.Label(preview_window, text ="File Preview").pack(side=TOP, fill=Y)
+preview_frame = Frame(hmct, bd=5, relief=SUNKEN, height=1000, width=1285)
+#preview_frame.pack_propagate(False)
+preview_frame.pack(side=TOP, fill=BOTH, padx=(15,5), pady=(0,0))
+ttk.Label(preview_frame, text ="File Preview").pack(side=TOP, fill=Y)
+
+preview_image_canvas = Canvas(preview_frame, height=990, width=1285)
+#preview_image_canvas.pack(side=TOP, anchor=W)
+# preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA")
+# preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
+# preview_image = preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+
+preview_text = Text(preview_frame, state='disabled', width=1285, height=1000)
 
 #Set up menu bar
-menu_bar = Menu(app)
+menu_bar = Menu(hmct)
 
 project_menu = Menu(menu_bar, tearoff=0)
 project_menu.add_command(label="New Project", command=newProject)
@@ -511,8 +542,8 @@ menu_bar.add_cascade(label="Tools", menu=tools_menu)
 
 def settingsWindow():
     printGUI(bool(settings["debug_mode"]))
-    settings_window = Toplevel(app)
-    settings_window.lift(app)
+    settings_window = Toplevel(hmct)
+    settings_window.lift(hmct)
     settings_window.geometry("500x400")
     settings_window.title("Settings")
     settings_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -523,7 +554,7 @@ def settingsWindow():
     game_dir.delete(0,END)
     game_dir.insert(0, settings["game_directory"])
     game_dir.pack(side=TOP, anchor=W, fill=X)
-    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); settings_window.lift(app)
+    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); settings_window.lift(hmct)
     Button(settings_frame, text="Browse", command=browse).pack(side=TOP, anchor=W)
     # debug_mode_enabled = BooleanVar() #value=eval(str(settings["debug_mode"]))
     # debug_mode = Checkbutton(settings_frame, variable=debug_mode_enabled, text="Debug Mode")
@@ -534,14 +565,14 @@ def settingsWindow():
         with open("settings.json", "w") as outfile:
             outfile.write(json_object)
         messagebox.showinfo(title="Settings Saved!", message="Settings saved successfully")
-        settings_window.lift(app)
+        settings_window.lift(hmct)
     Button(settings_window, text="Save", command=saveSettings).pack(side=TOP, anchor=W)
 
 menu_bar.add_command(label="Settings", command=settingsWindow)
 
 def help():
-    help_window = Toplevel(app)
-    help_window.lift(app)
+    help_window = Toplevel(hmct)
+    help_window.lift(hmct)
     help_window.geometry("400x400")
     help_window.title("Help")
     help_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -549,22 +580,18 @@ def help():
 
 menu_bar.add_command(label="Help", command=help)
 
-image_canvas = Canvas(preview_window, height=990, width=1285)
-image_canvas.pack(side=TOP)
-preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA")
-preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-preview_image = image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+def pluginSetup(plugin_name, commands, seperators):
+    plugin_menu = Menu(plugins_menu, tearoff=0)
+    plugins_menu.add_cascade(label=plugin_name, menu=plugin_menu)
 
 #Load project
-app.config(menu=menu_bar)
-app.mainloop()
+hmct.config(menu=menu_bar)
+hmct.mainloop()
 
 #TODO
-#Settings - change them
 #Auto-update
-#Extensions
+#Plugins
 #File preview
-# TXT/JSON
 # PNG
 # DDS
 #Reduce size of tool

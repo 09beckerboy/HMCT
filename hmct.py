@@ -18,12 +18,12 @@ with open("splashes.txt", "r") as f:
 #Import plugins
 for file in os.listdir("{0}/plugins".format(script_dir)):
     if file.endswith(".py"):
-        extension = importlib.import_module(file.split(".")[0])
-        if "__all__" in extension.__dict__:
-            names = extension.__dict__["__all__"]
+        plugin = importlib.import_module(file.split(".")[0])
+        if "__all__" in plugin.__dict__:
+            names = plugin.__dict__["__all__"]
         else:
-            names = [x for x in extension.__dict__ if not x.startswith("_")]
-        globals().update({k: getattr(extension, k) for k in names})
+            names = [x for x in plugin.__dict__ if not x.startswith("_")]
+        globals().update({k: getattr(plugin, k) for k in names})
         if os.path.exists("{0}/plugins/{1}.runtime".format(script_dir, file.split(".")[0])):
             exec(open("{0}/plugins/{1}".format(script_dir, file)).read())
 #Import shortcuts
