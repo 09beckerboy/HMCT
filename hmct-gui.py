@@ -52,17 +52,17 @@ def previewFile(x):
     #     #preview_image_canvas.config(image=preview_image)
     #     preview_image_canvas.delete('all')
     #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
-    if str(project_tree.focus()).lower().endswith(".png"):
-        preview_text.pack_forget()
-        preview_image_canvas.pack(side=TOP, anchor=W)
-        temp_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
-        temp_image = ImageTk.PhotoImage(temp_image.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST))
-        #hmct.iconphoto(False, preview_image)
-        preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
-        #preview_image_canvas.config(preview_image, image=temp_image)
-        preview_image_canvas.delete('all')
-        preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
-    if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json"):
+    # if str(project_tree.focus()).lower().endswith(".png"):
+    #     preview_text.pack_forget()
+    #     preview_image_canvas.pack(side=TOP, anchor=W)
+    #     temp_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
+    #     temp_image = ImageTk.PhotoImage(temp_image.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST))
+    #     #hmct.iconphoto(False, preview_image)
+    #     preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
+    #     #preview_image_canvas.config(preview_image, image=temp_image)
+    #     preview_image_canvas.delete('all')
+    #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+    if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json") or str(project_tree.focus()).lower().endswith(".bin") or str(project_tree.focus()).lower().endswith(".h"):
         preview_image_canvas.pack_forget()
         preview_text.pack(side=TOP, anchor=W, fill=BOTH)
         with open(project_tree.focus(), "r") as text_file:
@@ -110,14 +110,6 @@ def moveTools(project_name):
     shutil.copy2("{0}\\tools\\subtitletool.exe".format(script_dir), "{0}\\projects\\{1}\\subtitletool.exe".format(script_dir, project_name))
 
 def loadProject(project_name):
-    #file_level_pairs = []
-    #try:
-        #for level in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
-            #for root, dirs, files in os.walk("{0}/projects/{1}/{2}".format(script_dir, project_name, level)):
-                #for file in files:
-                    #file_level_pair = (level, file)
-                    #file_level_pairs.append(file_level_pair)
-    #except Exception as e: print(e)
     global selected
     selected = []
     global current_project
@@ -251,23 +243,31 @@ def exportMod(project_name):
     def export():
         if export_type.get() == 1:
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
-                level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
-                if os.path.isdir(level):
-                    os.chdir("{0}/projects/{1}".format(script_dir, project_name))
-                    os.system("dfs.exe -pack {0} {0}.DFS".format(name))
-                    os.chdir(script_dir)
+                if name != "Common-" or name != "Extras":
+                    level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
+                    if os.path.isdir(level):
+                        os.chdir("{0}/projects/{1}".format(script_dir, project_name))
+                        os.system("dfs.exe -pack {0} {0}.DFS".format(name))
+                        os.chdir(script_dir)
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
+                if name == "Common-": shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), "{0}\\exported mods\\{1}\\Common".format(script_dir, project_name))
+                if name == "Extras":
+                    for item in os.listdir("{0}/projects/{1}/Extras"): shutil.move("{0}\\projects\\{1}\\Extras\\{2}".format(script_dir, project_name, item), "{0}\\exported mods\\{1}\\{2}".format(script_dir, project_name, item))
                 if name.endswith(".000") or name.endswith(".DFS"):
                     shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), "{0}\\exported mods\\{1}\\{2}".format(script_dir, project_name, name))
             if compress.get() == 1: shutil.make_archive(project_name, 'zip', "{0}\\exported mods\\{1}".format(script_dir, project_name))
         elif export_type.get() == 2:
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
-                level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
-                if os.path.isdir(level):
-                    os.chdir("{0}/projects/{1}".format(script_dir, project_name))
-                    os.system("dfs.exe -pack {0} {0}.DFS".format(name))
-                    os.chdir(script_dir)
+                if name != "Common-" or name != "Extras":
+                    level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
+                    if os.path.isdir(level):
+                        os.chdir("{0}/projects/{1}".format(script_dir, project_name))
+                        os.system("dfs.exe -pack {0} {0}.DFS".format(name))
+                        os.chdir(script_dir)
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
+                if name == "Common-": shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], "Common"))
+                if name == "Extras":
+                    for item in os.listdir("{0}/projects/{1}/Extras"): shutil.move("{0}\\projects\\{1}\\Extras\\{2}".format(script_dir, project_name, item), os.path.join(settings["game_directory"], item))
                 if name.endswith(".000") or name.endswith(".DFS"):
                     shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], name))
             if launch_game.get() == 1: os.chdir(settings["game_directory"]); os.startfile("Meridian.exe"); os.chdir(script_dir)
@@ -536,9 +536,15 @@ convert_menu.add_separator()
 convert_menu.add_command(label="SUBTITLE to TXT", command=subtitleToTXT)
 convert_menu.add_command(label="TXT to SUBTITLE", command=txtToSUBTITLE)
 tools_menu.add_cascade(label="Convert", menu=convert_menu)
-plugins_menu = Menu(tools_menu, tearoff=0)
-tools_menu.add_cascade(label="Plugins", menu=plugins_menu)
+tools_menu.add_separator()
+def openRGeomView(): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe"); os.chdir(script_dir)
+tools_menu.add_command(label="RGeomView", command=openRGeomView)
+def openGlobalsEditor(): os.chdir("{}/tools".format(script_dir)); os.system("globals-editor.exe"); os.chdir(script_dir)
+tools_menu.add_command(label="Globals Editor", command=openGlobalsEditor)
 menu_bar.add_cascade(label="Tools", menu=tools_menu)
+
+plugins_menu = Menu(menu_bar, tearoff=0)
+menu_bar.add_cascade(label="Plugins", menu=plugins_menu)
 
 def settingsWindow():
     printGUI(bool(settings["debug_mode"]))

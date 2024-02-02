@@ -132,7 +132,7 @@ def newProject(*none):
     try:
         while levelSelect != "done":
             os.system('cls||clear')
-            print("Levels:\nboot\ncommon\nCommon\nCh00_Dre\nCh01_Hob\nCh02_Roa\nCh02a_Tr\nCh4_Over\nCh05_Swo\nMirkwood\nCh07_Bar\nCH08_Lak\nCh09_Sma\nCh10_Lon\nCh11_Clo\nExtras")
+            print("Levels:\nboot\ncommon\nCh00_Dre\nCh01_Hob\nCh02_Roa\nCh02a_Tr\nCh4_Over\nCh05_Swo\nMirkwood\nCh07_Bar\nCH08_Lak\nCh09_Sma\nCh10_Lon\nCh11_Clo\nCommon-\nExtras")
             print("Currently selected levels:\n"+str(levels))
             levelSelect = input("Select level, type name exactly as shown\nType 'all' to select all levels\nType a level name again to remove\nType 'done' if done selecting or 'cancel' to return to main menu\n: ")
             if levelSelect != "done":
@@ -146,10 +146,10 @@ def newProject(*none):
                             print("Adding {0}...".format(level_name), end="\r")
                             levels.append(level_name)
                             shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level_name), "{0}\\projects\\{1}\\{2}".format(script_dir, name, level_name))
-                elif levelSelect == "Common":
-                    levels.append("Common0")
+                elif levelSelect == "Common-":
+                    levels.append("Common-")
                     print("Adding {0}...".format(levelSelect))
-                    shutil.copytree("{0}\\The Hobbit(TM)\\PC\\Common0".format(script_dir), "{0}\\projects\\{1}\\Common0".format(script_dir, name))
+                    shutil.copytree("{0}\\The Hobbit(TM)\\PC\\Common-".format(script_dir), "{0}\\projects\\{1}\\Common-".format(script_dir, name))
                 else:
                     if levelSelect in levels:
                         levels.remove(levelSelect)
@@ -365,12 +365,16 @@ def exportMod(project_name):
     else: os.mkdir("{0}/exported mods/{1}".format(script_dir, project_name))
     if export_type == "C":
         for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
-            level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
-            if os.path.isdir(level):
-                os.chdir("{0}/projects/{1}".format(script_dir, project_name))
-                os.system("dfs.exe -pack {0} {0}.DFS".format(name))
-                os.chdir(script_dir)
+            if name != "Common-" or name != "Extras":
+                level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
+                if os.path.isdir(level):
+                    os.chdir("{0}/projects/{1}".format(script_dir, project_name))
+                    os.system("dfs.exe -pack {0} {0}.DFS".format(name))
+                    os.chdir(script_dir)
         for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
+            if name == "Common-": shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), "{0}\\exported mods\\{1}\\Common".format(script_dir, project_name))
+            if name == "Extras":
+                for item in os.listdir("{0}/projects/{1}/Extras"): shutil.move("{0}\\projects\\{1}\\Extras\\{2}".format(script_dir, project_name, item), "{0}\\exported mods\\{1}\\{2}".format(script_dir, project_name, item))
             if name.endswith(".000") or name.endswith(".DFS"):
                 shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), "{0}\\exported mods\\{1}\\{2}".format(script_dir, project_name, name))
         confirm = str(input("Mod successfully exported, do you want to compress it too? Y or N\n: ")).upper()
@@ -379,12 +383,16 @@ def exportMod(project_name):
     elif export_type == "D":
         if input("Is {} the correct path? Y or N".format(settings["game_directory"])).upper() == "Y":
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
-                level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
-                if os.path.isdir(level):
-                    os.chdir("{0}/projects/{1}".format(script_dir, project_name))
-                    os.system("dfs.exe -pack {0} {0}.DFS".format(name))
-                    os.chdir(script_dir)
+                if name != "Common-" or name != "Extras":
+                    level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
+                    if os.path.isdir(level):
+                        os.chdir("{0}/projects/{1}".format(script_dir, project_name))
+                        os.system("dfs.exe -pack {0} {0}.DFS".format(name))
+                        os.chdir(script_dir)
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
+                if name == "Common-": shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], "Common"))
+                if name == "Extras":
+                    for item in os.listdir("{0}/projects/{1}/Extras"): shutil.move("{0}\\projects\\{1}\\Extras\\{2}".format(script_dir, project_name, item), os.path.join(settings["game_directory"], item))
                 if name.endswith(".000") or name.endswith(".DFS"):
                     shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], name))
             confirm = str(input("Mod successfully exported, would you like to launch the game to test it? Y or N\n: ")).upper()
