@@ -132,7 +132,8 @@ def newProject(*none):
     try:
         while levelSelect != "done":
             os.system('cls||clear')
-            print("Levels:\nboot\ncommon\nCh00_Dre\nCh01_Hob\nCh02_Roa\nCh02a_Tr\nCh4_Over\nCh05_Swo\nMirkwood\nCh07_Bar\nCH08_Lak\nCh09_Sma\nCh10_Lon\nCh11_Clo\nCommon-\nExtras")
+            print("Levels:\n")
+            for print_level in os.listdir("{0}\\The Hobbit(TM)\\PC\\".format(script_dir)): print("{0}\n".format(print_level))
             print("Currently selected levels:\n"+str(levels))
             levelSelect = input("Select level, type name exactly as shown\nType 'all' to select all levels\nType a level name again to remove\nType 'done' if done selecting or 'cancel' to return to main menu\n: ")
             if levelSelect != "done":
