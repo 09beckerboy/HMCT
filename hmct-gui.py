@@ -52,16 +52,17 @@ def previewFile(x):
     #     #preview_image_canvas.config(image=preview_image)
     #     preview_image_canvas.delete('all')
     #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+    # preview_text.pack_forget()
+    #     preview_image_canvas.pack(side=TOP, anchor=W)
+    #     #temp_image =  #.convert("RGBA") #Image.open(projectTree.focus()
+    #     preview_image = ImageTk.PhotoImage(Image.open(project_tree.focus())) #.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST)
+    #     #hmct.iconphoto(False, preview_image)
+    #     #preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
+    #     #preview_image_canvas.config(preview_image, image=temp_image)
+    #     preview_image_canvas.delete('all')
+    #     preview_image_canvas.create_image(0, 0, anchor=NW, image=preview_image)
     if str(project_tree.focus()).lower().endswith(".png"):
-        preview_text.pack_forget()
-        preview_image_canvas.pack(side=TOP, anchor=W)
-        #temp_image =  #.convert("RGBA") #Image.open(projectTree.focus()
-        preview_image = ImageTk.PhotoImage(Image.open(project_tree.focus())) #.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST)
-        #hmct.iconphoto(False, preview_image)
-        #preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
-        #preview_image_canvas.config(preview_image, image=temp_image)
-        preview_image_canvas.delete('all')
-        preview_image_canvas.create_image(0, 0, anchor=NW, image=preview_image)
+        pass
     if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json") or str(project_tree.focus()).lower().endswith(".bin") or str(project_tree.focus()).lower().endswith(".h"):
         preview_image_canvas.pack_forget()
         preview_text.pack(side=TOP, anchor=W, fill=BOTH)
@@ -599,3 +600,6 @@ hmct.mainloop()
 #File preview
 # PNG
 # DDS
+#Delete files
+#Sync all copies of files
+#Open game in blender
