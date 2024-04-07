@@ -1,0 +1,3 @@
+[ NavPoint : 1 ]
+ { GUID:s              JumpToTarget:g    NavFlags:d Pos:fff                            Radius:f  DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff                     Orientation:fff            LocalBoundingBox:ffffff                                        ObjSaveFlag:d ObjName:s       }
+   "C4CD79CF_4BB00800" D0C8D4D0_C8000000 0          3179.143066 -483.387360 914.230896 75.000000 1                1                1               436           ""               3179.143066 -483.387360 914.230896 0.000000 0.000000 0.000000 -75.000000 -74.999969 -75.000000 75.000000 75.000000 75.000000 0             "Nav Nodes 001" 

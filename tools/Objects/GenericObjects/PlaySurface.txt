@@ -1,0 +1,6 @@
+[ PlaySurface : 1 ]
+ { GUID:s              Name:s                   Resource:s                                         BBox:ffffff                                                           HasPrivData:d HasSurfaceFlags:d DoesNotCollide:d DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff             Orientation:fff            LocalBoundingBox:ffffff                                               ObjSaveFlag:d ObjName:s                IsGoldPile:d IsHidden:d Decals:d IsSqueakyChickenBoard:d 'Surface Type:s' }
+   "C4CD7412_A675B811" "PS_WH3_BigBeams2_84847" "laketown_warehouse3_ps_wh3_bigbeams2_84847.rgeom" 3447.471924 -2617.656250 -3.915322 3882.559082 -2039.729126 44.211571 1             0                 0                1                0                1               408           ""               0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 3447.471924 -2617.656250 -3.915322 3882.559082 -2039.729126 44.211571 0             "PS_WH3_BigBeams2_84847" 0            0          1        0                       "Dirt"           
+[ VertColors : 1 ]
+ { Color:dddd   }
+   0 0 0 0 

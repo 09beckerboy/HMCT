@@ -1,0 +1,11 @@
+[ LoadTrigger : 1 ]
+ { GUID:s              Teleport:d DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff                        Orientation:fff            LocalBoundingBox:ffffff                                        ObjSaveFlag:d ObjName:s      Name:s         Pos:fff                               BBox:ffffff                                                                 Orient:fff                 HalfDimensions:fff            Pain:s }
+   "C4CD734F_F06B6C00" 0          1                1                1               433           ""               -2656.108398 -2170.406982 7148.995605 0.000000 0.000000 0.000000 -50.000000 -50.000000 -50.000000 50.000000 50.000000 50.000000 0             "Load Goblins" "Load Goblins" -2656.108398 -2170.406982 7148.995605 -2706.108398 -2220.406982 7098.995605 -2606.108398 -2120.406982 7198.995605 0.000000 0.000000 0.000000 50.000000 50.000000 50.000000 "none" 
+[ LoadLayers : 0 ]
+ { }
+[ UnloadLayer : 0 ]
+ { }
+[ LoadResources : 0 ]
+ { }
+[ UnloadResources : 0 ]
+ { }

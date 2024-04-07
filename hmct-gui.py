@@ -13,6 +13,7 @@ import zipfile
 import filecmp
 from tkinter import filedialog
 import importlib
+import sv_ttk
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append("{0}/plugins".format(script_dir))
@@ -119,9 +120,14 @@ def loadProject(project_name):
     working_dir = current_project
     global project_file_extensions
     project_file_extensions = []
+    global project_config
+    project_config= {}
     project_tree.delete(*project_tree.get_children())
     project_tree.insert("", "0", project_name, text=project_name + "/")
-    filter_dropdown["values"] = ("All"); 
+    filter_dropdown["values"] = ("All")
+    with open("{0}/projects/{1}/config.json".format(script_dir, project_name), "r") as read_file:
+        project_config = json.load(read_file)
+    printGUI('Loaded project: "{}"'.format(project_name))
     makeProjectTree("{0}/projects/{1}".format(script_dir, project_name), 0, project_name, "*")
 
 def newProject():
@@ -147,10 +153,16 @@ def newProject():
             for level in level_checklist.keys():
                 if level_checklist[level].get() == 1:
                     shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level), "{0}\\projects\\{1}\\{2}".format(script_dir, project_name.get(), level))
+            
+            new_project_config = {"texture_state": "xbmp", "export_state": "export", "subtitle_state": "bin"}
+            json_object = json.dumps(new_project_config, indent=4)
+            with open("{0}/projects/{1}/config.json".format(script_dir, project_name.get()), "w") as outfile:
+                outfile.write(json_object)
             moveTools(project_name.get())
             refreshDeleteMenu()
             refreshExportMenu()
             refreshLoadMenu()
+            printGUI('Created project: "{}"'.format(project_name.get()))
             loadProject(project_name.get())
             new_project_window.destroy()
     Button(new_project_window, text="Create Project", command=selectButton).pack(side=TOP)
@@ -163,6 +175,7 @@ def deleteProject(project):
         refreshExportMenu()
         refreshLoadMenu()
         project_tree.delete(*project_tree.get_children())
+        printGUI('Deleted project: "{}"'.format(project))
 
 def importMod():
     project_path = filedialog.askopenfilename(initialdir = "\\", title = "Select a Mod to Import", filetypes = (("Zipped Mod", "*.zip"), ("HOBM Mod", "*.hobm")))
@@ -190,6 +203,7 @@ def importMod():
         refreshDeleteMenu()
         refreshExportMenu()
         refreshLoadMenu()
+        printGUI('Imported mod: "{}"'.format(project_name))
         loadProject(project_name)
 
 def exportMod(project_name):
@@ -296,16 +310,122 @@ def exportMod(project_name):
             os.rename("{0}\\exported mods\\{1}.zip".format(script_dir, project_name), "{0}\\exported mods\\{1}.hobm".format(script_dir, project_name))
     export_button = Button(export_mod_window, text="Export", command=export).pack(anchor=W, side=TOP)
 
-def xbmpToDDS(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("xbmp_to_dds.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def ddsToXBMP(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("dds_to_xbmp.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def ddsToPNG(): pass
-def pngToDDS(): pass
-def exportToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def exportToJSON(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_json.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def txtToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
-def jsonToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("json_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+#def xbmpToDDS(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("xbmp_to_dds.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+#def ddsToXBMP(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("dds_to_xbmp.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def convertXBMPDDS():
+    if project_config["texture_state"] == "xbmp":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["texture_state"] = "dds"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted textures to DDS")
+    elif project_config["texture_state"] == "dds":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["texture_state"] = "xbmp"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted textures to XBMP")
+
+# def ddsToPNG(): pass
+# def pngToDDS(): pass
+def convertXBMPPNG(): doNothing()
+
+# def exportToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+# def exportToJSON(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("export_to_json.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def convertEXPORTTXT():
+    if project_config["export_state"] == "export":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("export_to_text.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["export_state"] = "txt"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted export files to TXT")
+    elif project_config["export_state"] == "txt":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("text_to_export.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["export_state"] = "export"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted export files to EXPORT")
+
+# def txtToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+# def jsonToEXPORT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("json_to_export.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def convertEXPORTJSON():
+    if project_config["export_state"] == "export":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("export_to_json.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["export_state"] = "json"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted export files to JSON")
+    elif project_config["export_state"] == "json":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("json_to_export.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["export_state"] = "export"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted export files to EXPORT")
+
 def subtitleToTXT(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("subtitle_to_text.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
 def txtToSUBTITLE(): os.chdir("{0}/projects/{1}".format(script_dir, current_project)); os.system("text_to_subtitle.bat"); os.chdir(script_dir); project_tree.delete(*project_tree.get_children()); project_tree.insert("", "0", current_project, text=current_project + "/"); filter_dropdown["values"] = ("All"); makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+def convertSUBTITLETXT():
+    if project_config["subtitle_state"] == "bin":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("subtitle_to_text.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["subtitle_state"] = "txt"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted subtitle files to TXT")
+    elif project_config["subtitle_state"] == "txt":
+        os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+        os.system("text_to_subtitle.bat"); os.chdir(script_dir)
+        project_tree.delete(*project_tree.get_children())
+        project_tree.insert("", "0", current_project, text=current_project + "/")
+        filter_dropdown["values"] = ("All")
+        makeProjectTree("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, "*")
+        project_config["subtitle_state"] = "bin"
+        json_object = json.dumps(project_config, indent=4)
+        with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+            outfile.write(json_object)
+        printGUI("Converted subtitle files to BIN")
+
 def addLevel():
     add_level_window = Toplevel(hmct)
     add_level_window.lift(hmct)
@@ -524,18 +644,23 @@ menu_bar.add_cascade(label="Project", menu=project_menu)
 
 tools_menu = Menu(menu_bar, tearoff=0)
 convert_menu = Menu(tools_menu, tearoff=0)
-convert_menu.add_command(label="XBMP to DDS", command=xbmpToDDS)
-convert_menu.add_command(label="DDS to XBMP", command=ddsToXBMP)
-convert_menu.add_command(label="DDS to PNG", command=doNothing)
-convert_menu.add_command(label="PNG to DDS", command=doNothing)
+# convert_menu.add_command(label="XBMP to DDS", command=xbmpToDDS)
+# convert_menu.add_command(label="DDS to XBMP", command=ddsToXBMP)
+convert_menu.add_command(label="XBMP <=> DDS", command=convertXBMPDDS)
+# convert_menu.add_command(label="DDS to PNG", command=doNothing)
+# convert_menu.add_command(label="PNG to DDS", command=doNothing)
+    #convert_menu.add_command(label="XBMP <=> PNG", command=convertXBMPPNG)
 convert_menu.add_separator()
-convert_menu.add_command(label="EXPORT to TXT", command=exportToTXT)
-convert_menu.add_command(label="EXPORT to JSON", command=exportToJSON)
-convert_menu.add_command(label="TXT to EXPORT", command=txtToEXPORT)
-convert_menu.add_command(label="JSON to EXPORT", command=jsonToEXPORT)
+# convert_menu.add_command(label="EXPORT to TXT", command=exportToTXT)
+# convert_menu.add_command(label="EXPORT to JSON", command=exportToJSON)
+convert_menu.add_command(label="EXPORT <=> TXT", command=convertEXPORTTXT)
+# convert_menu.add_command(label="TXT to EXPORT", command=txtToEXPORT)
+# convert_menu.add_command(label="JSON to EXPORT", command=jsonToEXPORT)
+convert_menu.add_command(label="EXPORT <=> JSON", command=convertEXPORTJSON)
 convert_menu.add_separator()
-convert_menu.add_command(label="SUBTITLE to TXT", command=subtitleToTXT)
-convert_menu.add_command(label="TXT to SUBTITLE", command=txtToSUBTITLE)
+# convert_menu.add_command(label="SUBTITLE to TXT", command=subtitleToTXT)
+# convert_menu.add_command(label="TXT to SUBTITLE", command=txtToSUBTITLE)
+convert_menu.add_command(label="SUBTITLE <=> TXT", command=convertSUBTITLETXT)
 tools_menu.add_cascade(label="Convert", menu=convert_menu)
 tools_menu.add_separator()
 def openRGeomView(): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe"); os.chdir(script_dir)
@@ -592,6 +717,7 @@ def pluginSetup(plugin_name, commands, seperators):
     plugins_menu.add_cascade(label=plugin_name, menu=plugin_menu)
 
 #Load project
+#sv_ttk.set_theme("dark")
 hmct.config(menu=menu_bar)
 hmct.mainloop()
 
