@@ -10,4 +10,4 @@ After exporting a mod, you can either zip the folder in exported mods, or move t
 It's strongly advised that you make a backup of the default files before you make any mods.
 You can do this with the tool itself, by adding all levels, then not editing anything.
 
-Message me with any suggestions, @09beckerboy on Discord, or feel free to do a pull request and edit the GitHub yourself..
+Message me with any suggestions, @09beckerboy on Discord, or feel free to do a pull request and edit the GitHub yourself
