@@ -1,7 +1,5 @@
-bpy==3.6.0
 mathutils==3.3.0
-numpy==1.25.1
-Pillow==10.1.0
-Pillow==10.3.0
-rembg==2.0.56
+numpy==2.2.0
+Pillow==11.0.0
+sv_ttk==2.6.0
 ttkwidgets==0.13.0
