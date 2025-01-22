@@ -1,0 +1,12 @@
+newmtl Ladder_Planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_04[D].xbmp
+map_Kd wood_beam_04[D].xbmp
+newmtl Plank_Wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka plank[D].xbmp
+map_Kd plank[D].xbmp

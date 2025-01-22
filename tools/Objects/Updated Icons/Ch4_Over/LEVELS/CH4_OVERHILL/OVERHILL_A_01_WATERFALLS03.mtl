@@ -1,0 +1,18 @@
+newmtl waterin
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_mWaterfallin[RGBA].xbmp
+map_Kd OH_mWaterfallin[RGBA].xbmp
+newmtl waterout
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_mWaterfallOut[RGBA].xbmp
+map_Kd OH_mWaterfallOut[RGBA].xbmp
+newmtl WaterChurned
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_mWater-churned[RGBA].xbmp
+map_Kd OH_mWater-churned[RGBA].xbmp

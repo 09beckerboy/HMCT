@@ -1,0 +1,6 @@
+newmtl Range5B
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range5B[D].xbmp
+map_Kd Lvl_Riddles_Range5B[D].xbmp

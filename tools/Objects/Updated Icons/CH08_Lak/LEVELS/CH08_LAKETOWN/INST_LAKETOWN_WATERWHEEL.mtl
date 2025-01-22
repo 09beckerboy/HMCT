@@ -1,0 +1,30 @@
+newmtl poles
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_poles_Mip0[D].xbmp
+map_Kd Lvl_Htown_poles_Mip0[D].xbmp
+newmtl BoltPlate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoltPlate_Mip0[D].xbmp
+map_Kd Lvl_Htown_BoltPlate_Mip0[D].xbmp
+newmtl Skullplaque
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Skullplaque_Mip0[D].xbmp
+map_Kd Lvl_Htown_Skullplaque_Mip0[D].xbmp
+newmtl BoardC
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoardD_Mip0[D].xbmp
+map_Kd Lvl_Htown_BoardD_Mip0[D].xbmp
+newmtl BoardA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoardA_Mip0[D].xbmp
+map_Kd Lvl_Htown_BoardA_Mip0[D].xbmp

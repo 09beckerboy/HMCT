@@ -1,0 +1,51 @@
+[ AnimList : 36 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"ChargePrep"		"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				4
+"Beltch"			"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				0
+"ChargeRecover"		"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				4
+"ChargeAttack"		"SPECIAL"				16.0		0.1				1.25			1.0					0.0				0.0				4
+"ColumnHit"			"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				4
+
+"Flinch"			"FLINCH_BACK"			0.0			0.1				1.0				1.0					0.0				0.0				0
+"Death"				"DEATH_BACK"			0.0			0.1				1.0				1.0					0.0				0.0				0
+"GroundSmash"		"ATTACK"				0.0			0.1				1.0				1.0					0.0				0.0				4
+"Idle"				"IDLE"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"Run"				"RUN"					8.0			0.1				1.0				1.0					0.0				0.0				0
+
+"IdleTurnRight"		"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"IdleTurnLeft"		"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"Walk"				"WALK"					4.0			0.1				1.0				1.0					0.0				0.0				0
+"Yell"				"COMBAT_IDLEANIM"		0.0			0.1				1.0				1.0					0.0				0.0				4
+"ChargeTurnLeft"	"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				4
+
+"ChargeTurnRight"	"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				4
+"CombatIdle"		"COMBAT_IDLE"			0.0			0.1				1.0				1.0					0.0				0.0				0
+"CombatTurnRight"	"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"CombatTurnLeft"	"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"StandingFlinch"	"FLINCH_BACK"			0.0			0.1				1.0				1.0					0.0				0.0				4
+
+"IdleToWalk"		"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				0
+"PoundToIdle"		"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				0
+"Block"				"BLOCK_JUMP"			0.0			0.1				1.0				1.0					0.0				0.0				4
+"RunToCenter"		"SPECIAL"				4.0			0.1				1.0				1.0					0.0				0.0				0
+"VerticalSmash"		"ATTACK"				0.0			0.1				1.0				1.0					0.0				0.0				4
+
+"ScratchHead"		"IDLEANIM"				0.0			0.1				1.0				1.0					0.0				0.0				4
+"IntroCinemaWalk"	"SPECIAL"				4.0			0.1				1.0				1.0					0.0				0.0				0
+"CombatWalkForward"	"SPECIAL"				4.0			0.1				1.0				1.0					0.0				0.0				0
+"CombatWalkBack"	"STRAFE_BACK"			4.0			0.1				1.0				1.0					0.0				0.0				0
+"LookAround"		"SPECIAL"				0.0			0.1				1.0				1.0					0.0				0.0				4
+
+"CombatTurnRight90"	"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"CombatTurnLeft90"	"TURN"					0.0			0.1				1.0				1.0					0.0				0.0				0
+"JumpSmash"			"ATTACK"				0.0			0.1				1.0				1.0					0.0				0.0				4
+"SlapLow"			"ATTACK"				0.0			0.1				1.0				1.0					0.0				0.0				0
+"HeadTrack"			"HEAD_TRACKING"			0.0			0.1				1.0				1.0					0.0				0.0				0
+
+"LipSync"			"LIP_SYNC"				0.0			0.1				1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "BridgeTroll"

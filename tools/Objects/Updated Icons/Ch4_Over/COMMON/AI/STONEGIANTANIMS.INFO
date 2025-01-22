@@ -1,0 +1,14 @@
+[ AnimList : 2 ]
+ { AnimName:s				AnimType:s					YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f	NoiseLevel:f	Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------
+"rockpickup"				"IDLE"					    0.0 		0.0				1.0 			1.0 				0.0 			0.0 			0
+"rockthrowup"				"SPECIAL"					0.0 		0.0             1.0 			1.0 				0.0 			0.0 			0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "StoneGiant"
+
+/* 
+*/
+

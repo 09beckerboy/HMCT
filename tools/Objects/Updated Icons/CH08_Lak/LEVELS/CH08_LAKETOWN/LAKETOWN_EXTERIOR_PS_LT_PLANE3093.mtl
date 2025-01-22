@@ -1,0 +1,6 @@
+newmtl Shingles
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka shingles[D].xbmp
+map_Kd shingles[D].xbmp

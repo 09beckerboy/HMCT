@@ -1,0 +1,6 @@
+newmtl war_dwarf
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka War_dwarf[D].xbmp
+map_Kd War_dwarf[D].xbmp

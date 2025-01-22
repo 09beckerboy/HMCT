@@ -1,0 +1,16 @@
+[ Resources : 12 ]
+ { Name:s                                 }
+// --------------------------------------
+   "MIRK_BARK_TRANS[D].XBMP"             
+   "MIRK_BARK[D].XBMP"                   
+   "LVL_TROLLHOLE_SLIME_MIP0[D].XBMP"    
+   "LVL_TROLLHOLE_SLIME_MIP0[A].XBMP"    
+   "SLIME_ALPHA[D].XBMP"                 
+   "INST_COURAGEPOINT_5_TXTR[D].XBMP"    
+   "INST_COURAGEPOINT_10_TXTR[D].XBMP"   
+   "MIRKWOOD_INSIDETUBE.RGEOM"           
+   "MIRKWOOD_OBJECT01.RGEOM"             
+   "MIRKWOOD_TUBE02.RGEOM"               
+   "INST_COURAGEPOINT_5.RGEOM"           
+   "INST_COURAGEPOINT_10.RGEOM"          
+   

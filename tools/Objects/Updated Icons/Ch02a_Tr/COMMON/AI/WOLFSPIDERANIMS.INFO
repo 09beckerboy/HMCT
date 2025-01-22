@@ -1,0 +1,44 @@
+[ AnimList : 22 ]
+ { AnimName:s		AnimType:s		YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d}
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+"idle"				"IDLE"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"combat_idle"		"COMBAT_IDLE"	0.0			0.25			1.0				1.0					0.0				0.0				0
+"walk"				"WALK"			8.0			0.25			1.0				1.0					0.0				0.0				0
+"run"				"RUN"			16.0	    0.25			1.0				1.0					0.0				0.0				0
+"bite"				"ATTACK"        1.0			0.25			1.0				1.0					0.0				0.0				0
+
+"claw"				"ATTACK"	    1.0			0.25			1.0				1.0					0.0				0.0				0
+"ranged"			"RANGED_ATTACK"	0.0			0.25			1.0				1.0					0.0				0.0				0
+"jump"				"JUMP"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"swing"				"SWING"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"land"				"SPECIAL"		0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"turn_left"			"TURN"		    0.0			0.25			1.0				1.0					0.0				0.0				0
+"turn_right"		"TURN"	        0.0			0.25			1.0				1.0					0.0				0.0				0
+"strafe_left"		"STRAFE_LEFT"	8.0			0.25			1.0				1.0					0.0				0.0				0
+"strafe_right"		"STRAFE_RIGHT"	8.0			0.25			1.0				1.0					0.0				0.0				0
+"strafe_back"		"STRAFE_BACK"	4.0			0.25			1.0				1.0					0.0				0.0				0
+
+"jump_strafe_left"	"STRAFE_LEFT"	8.0			0.25			1.0				1.0					0.0				0.0				0
+"jump_strafe_right"	"STRAFE_RIGHT"	8.0			0.25			1.0				1.0					0.0				0.0				0
+"jump_strafe_back"	"STRAFE_BACK"	4.0			0.25			1.0				1.0					0.0				0.0				0
+"miniflinchLeft"	"FLINCH_BACK"	0.0			0.25			1.0				1.0					0.0				0.0				0
+"miniflinchRight"	"FLINCH_BACK"	0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"explodeflinch"		"STRONG_FLINCH"	0.0			0.25			1.0				1.0					0.0				0.0				0
+"spawn"				"SPECIAL"		0.0			0.0				1.0				1.0					0.0				0.0				8192
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Spider"
+
+
+[ AnimTransitionTable : 1 ]
+ { CurrentAnim:s			Transition1:s			Transition2:s				NextAnim:s		Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------
+"jump"						"land"					"*"							"*"				1
+
+
+/*
+*/

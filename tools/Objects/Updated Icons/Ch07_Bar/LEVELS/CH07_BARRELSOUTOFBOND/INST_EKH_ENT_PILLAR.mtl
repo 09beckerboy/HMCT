@@ -1,0 +1,12 @@
+newmtl Rock_Grass_Blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Entrance_Grass[D].xbmp
+map_Kd EKH_Entrance_Grass[D].xbmp
+newmtl Cliff_Wall
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_cliff_wall_01[D].xbmp
+map_Kd EKH_cliff_wall_01[D].xbmp

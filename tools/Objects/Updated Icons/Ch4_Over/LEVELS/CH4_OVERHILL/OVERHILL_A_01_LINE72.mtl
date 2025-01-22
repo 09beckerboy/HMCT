@@ -1,0 +1,24 @@
+newmtl Rock_wall1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_cliff_wall_01[D].xbmp
+map_Kd OH_cliff_wall_01[D].xbmp
+newmtl Rock_top_blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_rock11_blend[D].xbmp
+map_Kd OH_rock11_blend[D].xbmp
+newmtl Rock_wall1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_cliff_wall_01[D].xbmp
+map_Kd OH_cliff_wall_01[D].xbmp
+newmtl rock_blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_rock11_blend[D].xbmp
+map_Kd OH_rock11_blend[D].xbmp

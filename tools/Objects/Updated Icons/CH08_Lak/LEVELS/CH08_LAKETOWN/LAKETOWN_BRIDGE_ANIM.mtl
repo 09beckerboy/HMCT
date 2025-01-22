@@ -1,0 +1,30 @@
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl Dock_boards
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_wall_04[D].xbmp
+map_Kd wood_wall_04[D].xbmp
+newmtl LTcog_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_cog_01[RGBA].xbmp
+map_Kd LT_cog_01[RGBA].xbmp
+newmtl cog_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_cog_side02[D].xbmp
+map_Kd LT_cog_side02[D].xbmp
+newmtl bridge_rope
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka rope[D].xbmp
+map_Kd rope[D].xbmp

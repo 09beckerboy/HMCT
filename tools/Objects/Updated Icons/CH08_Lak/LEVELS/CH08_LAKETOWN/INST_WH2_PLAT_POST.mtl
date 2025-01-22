@@ -1,0 +1,30 @@
+newmtl GuideTop
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_door_guide_top_01[RGBA].xbmp
+map_Kd LT_door_guide_top_01[RGBA].xbmp
+newmtl Guide
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_door_guide_01[D].xbmp
+map_Kd LT_door_guide_01[D].xbmp
+newmtl WoodPlate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pipeGasket[D].xbmp
+map_Kd pipeGasket[D].xbmp
+newmtl Drop_Panel_Back
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka plank[D].xbmp
+map_Kd plank[D].xbmp
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp

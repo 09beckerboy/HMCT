@@ -1,0 +1,18 @@
+newmtl vsdblt
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA[D].xbmp
+map_Kd Sm_marbleA[D].xbmp
+newmtl 18_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_crumble[D].xbmp
+map_Kd Sm_crumble[D].xbmp
+newmtl Material_#67436
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA_rubble[D].xbmp
+map_Kd Sm_marbleA_rubble[D].xbmp

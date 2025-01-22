@@ -1,0 +1,12 @@
+newmtl mushieReg
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mushroom[D].xbmp
+map_Kd mushroom[D].xbmp
+newmtl mushieSpec
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mushroom[D].xbmp
+map_Kd mushroom[D].xbmp

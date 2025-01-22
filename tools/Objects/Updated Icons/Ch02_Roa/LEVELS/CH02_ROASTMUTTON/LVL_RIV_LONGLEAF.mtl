@@ -1,0 +1,12 @@
+newmtl lVL_RIV_leaf03.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lVL_RIV_leaf03[RGBA].xbmp
+map_Kd lVL_RIV_leaf03[RGBA].xbmp
+newmtl RM_lstem02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RM_lstem02[D].xbmp
+map_Kd RM_lstem02[D].xbmp

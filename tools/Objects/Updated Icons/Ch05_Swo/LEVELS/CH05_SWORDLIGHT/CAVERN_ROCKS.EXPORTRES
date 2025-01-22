@@ -1,0 +1,15 @@
+[ Resources : 11 ]
+ { Name:s                                    }
+// -----------------------------------------
+   "HANDLE_ROPE_02[D].XBMP"                 
+   "HANDLE_ROPE_02[A].XBMP"                 
+   "BUCKET_SIDE_02[D].XBMP"                 
+   "LVL_SWORDLIGHT_ORE2[D].XBMP"            
+   "LVL_SWORDLIGHT_BRUSHDMTL[D].XBMP"       
+   "LVL_SWORDLIGHT_SHOVELHANDLE[D].XBMP"    
+   "LVL_SWORDLIGHT_BOULDERA_MIP0[D].XBMP"   
+   "INST_SWORDLIGHT_BUCKET_02.RGEOM"        
+   "INST_SWORDLIGHT_OREC.RGEOM"             
+   "INST_SWORDLIGHT_SHOVEL.RGEOM"           
+   "INST_SWORDLIGHT_ROCKA.RGEOM"            
+   

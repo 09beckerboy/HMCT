@@ -1,0 +1,6 @@
+newmtl Grass_blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_path_03[D].xbmp
+map_Kd EKH_path_03[D].xbmp

@@ -1,0 +1,6 @@
+newmtl Inst_CB_woodplank03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03[D].xbmp
+map_Kd Inst_CB_woodplank03[D].xbmp

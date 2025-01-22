@@ -1,0 +1,112 @@
+[ CreatureList : 95 ]
+ { CreatureName:s	StateList:s			AnimList:s			DeathFx:s				DeathAudio:s			StatInfo:s		MaxHitPoints:f  HitsTillAngry:d  WeaponGeom:s	RangedGeom:s	ShieldGeom:s    ThrownGeom:s	HeldAmmoGeom:s	Scale:f	MinCameraDist:f ArmorFactor:f	SkidFactor:f PersonalSpace:f DefaultCP:d }
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"BilboBOB"			"BilboBOB"			"BilboBOB"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0            0
+"BilboCB"			"BilboCB"			"BilboCB"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"		    "NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0            0			
+"BilboEK"			"BilboEK"			"BilboEK"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboHB"			"BilboHB"			"BilboHB"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboLT"			"BilboLT"			"BilboLT"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboLM"			"BilboLM"			"BilboLM"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboMW"			"BilboMW"			"BilboMW"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboOH"			"BilboOH"			"BilboOH"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboRM"			"BilboRM"			"BilboRM"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboSL"			"BilboSL"			"BilboSL"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+
+"BilboSM"			"BilboSM"			"BilboSM"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"BilboTH"			"BilboTH"			"BilboTH"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	500.0			1.0				0.1				50.0			0
+"GandalfOH"			"Gandalf"		    "GandalfOH"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "Gand_Sword"	"NONE"		    "gand_staff"	"NONE"		    "NONE"		    1.0		500.0			1.0				0.05			50.0			0
+"Goblin SlaveOH"	"GoblinSlave"		"GobSlaveOH"		"DeathGoblin"			"GolbinDeath"			"Wimpy"			70.0            0               "gobpickax"		"NONE"		    "NONE"			"gobbag"		"NONE"		0.75    350.0			1.0				0.05			50.0			0
+"LittleRockBadger"	"LittleRockBadger"	"LittleRockBadger"	"DeathRockBadger"		"EnemyDeathFade"		"Aggressive"	45.0            4               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		350.0			1.0				0.1				40.0			10
+"Bat"				"Bat"				"Bat"				"DeathBat"				"EnemyDeathFade"		"Aggressive"	5.0             0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			2.0		500.0			1.0				0.1				20.0			10
+"FireBat"			"FireBat"			"FireBat"			"DeathFireBat"			"EnemyDeathFade"		"Aggressive"	5.0             0               "NONE"			"gobbag"		"NONE"			"NONE"			"NONE"			2.0		500.0			1.0				0.1				20.0			15
+"BasicWaterLeaper"	"WaterLeaper"	    "BasicWaterLeaper"	"DeathLeaper"			"LeaperDeath"			"Average"		50.0            0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			0.25	500.0			1.0				0.075			45.0			15
+"WaterLeaper"		"WaterLeaper"		"WaterLeaper"		"DeathLeaper"			"LeaperDeath"			"Average"		140.0           0               "NONE"			"NONE"			"NONE"			"belch"			"NONE"			0.25	500.0			1.0				0.075			45.0			25
+"Imp Red"		    "Imp"		        "Imp"			    "DeathEffect"			"EnemyDeathFade"		"Wimpy"			15.0            0               "gobpickax"		"NONE"          "NONE"			"NONE"	        "NONE"	        0.3     250.0			1.0				0.1			    20.0			3
+
+"Imp Green"		    "Imp"		        "Imp"			    "DeathEffect"			"EnemyDeathFade"		"Wimpy"			15.0            0               "gobpickax"		"NONE"          "NONE"			"NONE"	        "NONE"	        0.3     250.0			1.0				0.1			    20.0			3
+"Imp Fong Green"	"Imp"		        "Imp"			    "DeathEffect"			"EnemyDeathFade"		"Wimpy"			15.0            0               "gobpickax"		"NONE"          "NONE"			"NONE"	        "NONE"	        0.3     250.0			1.0				0.1			    20.0			3
+"Imp Blue"		    "Imp"		        "Imp"			    "DeathEffect"			"EnemyDeathFade"		"Wimpy"			15.0            0               "gobpickax"		"NONE"          "NONE"			"NONE"      	"NONE"      	0.3     250.0			1.0				0.1			    20.0			3
+"Imp Purple"		"Imp"		        "Imp"			    "DeathEffect"			"EnemyDeathFade"		"Wimpy"			15.0            0               "gobpickax"		"NONE"          "NONE"			"NONE"	        "NONE"	        0.3     250.0			1.0				0.1			    20.0			3
+"War Goblin"		"WarGoblin"		    "WarGoblin"			"DeathGoblin"			"GolbinDeath"			"Aggressive"	120.0           4               "sword_goblin"	"bow_goblin"    "NONE"		    "arrow_goblin"	"arrow_goblin"	1.0	    300.0			1.0				0.05			50.0			35
+"Flamey War Goblin"	"WarGoblin"		    "FlameyWarGoblin"	"DeathGoblin"			"GolbinDeath"			"Aggressive"	120.0           4               "sword_goblin"	"bow_goblin"    "NONE"		    "arrow_goblin"	"arrow_goblin"	1.0	    300.0			1.0				0.05			50.0			35
+"Goblin Bolg Guard"	"GoblinGuard"		"GobGuard"			"DeathGoblin"			"GolbinDeath"			"Aggressive"	140.0           3               "gobsword"		"NONE"	        "gobshield"		"NONE"			"NONE"			1.25	300.0			1.0				0.05			50.0		    50
+"Goblin Slave"		"GoblinSlave"		"GobSlave"			"DeathGoblin"			"GolbinDeath"			"Wimpy"			70.0            0               "gobpickax"     "NONE"          "NONE"	        "gobbag"		"NONE"		0.75    300.0			1.0				0.05			40.0		    25
+"Goblin Guard"		"GoblinGuard"		"GobGuard"			"DeathGoblin"			"GolbinDeath"			"Aggressive"	140.0           4               "gobsword"		"NONE"	        "gobshield"		"NONE"			"NONE"			1.0		300.0			1.0				0.05			50.0		    30
+"No Move Goblin Guard"	"GoblinGuard"	"NoMoveGoblin"		"DeathGoblin"			"GolbinDeath"			"Aggressive"	140.0           4               "gobsword"		"NONE"	        "gobshield"		"NONE"			"NONE"			1.0		300.0			1.0				0.0			    50.0		    50
+
+"Goblin Shaman"		"GobShaman"			"GobShaman"			"DeathGoblin"			"GolbinDeath"			"Average"		100.0           0               "staff_goblin"	"NONE"			"NONE"			"NONE"			"NONE"			1.0		300.0			1.0				0.05			50.0			30
+"Bolg Shaman"		"GobBolgShaman"		"GobBolgShaman"		"DeathGoblin"			"GolbinDeath"			"Average"		5.0             0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		300.0			1.0				0.05			50.0			0
+"Goblin Bolg"		"GobBolg"			"GobBolg"			"DeathGoblin"			"GolbinDeath"			"Aggressive"	1000.0          0               "gobsword"		"NONE"			"NONE"			"NONE"			"NONE"			4.0		300.0			1.0				0.05			200.0			0
+"Goblin Mugwart"	"GoblinGuard"		"GobMugwart"		"DeathGoblin"			"GolbinDeath"			"Aggressive"	100.0           0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		300.0			1.0				0.05			50.0			0
+"Goblin Ugslap"		"GoblinGuard"		"GobGuard"			"DeathGoblin"			"GolbinDeath"			"Aggressive"	100.0           0               "gobsword"		"NONE"			"gobshield"		"NONE"			"NONE"			1.0		300.0			1.0				0.05			50.0			3
+"EelNPC"			"Eel"				"Eel"				"DeathEels"				"EnemyDeathFade"		"Average"		5.0             0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.0				0.0			    3
+"NeedlePod"			"NeedlePod"			"NeedlePod"			"DeathPods"				"PodDeath"				"Aggressive"	100.0           0               "NONE"			"NONE"			"NONE"			"PodBomb"		"NONE"		1.5		300.0			1.0			    0.0				40.0			20
+"ThornPod"			"ThornPod"			"ThornPod"			"DeathPods"				"PodDeath"				"Aggressive"	10.0            0               "NONE"			"NONE"			"NONE"			"Gas"			"NONE"			1.0		300.0			1.0			    0.0				40.0			3
+"WightWarrior"		"WightWarrior"		"WraithWarrior"		"DeathWight"			"EnemyDeathFade"		"Aggressive"	200.0           3               "sword_wight"	"NONE"			"wightshield"	"NONE"			"NONE"			1.0		400.0			1.0				0.03			50.0			45
+"WightArcher"		"WightRanged"		"WraithArcher"		"DeathWight"			"EnemyDeathFade"		"Aggressive"	150.0           4               "sword_wight"	"bow_wraith"	"NONE"			"arrow_wraith"	"arrow_wraith"	1.0		400.0			1.0				0.03			50.0			35
+
+"WightCaster"		"WightCaster"		"WraithCaster"		"DeathWight"			"EnemyDeathFade"		"Aggressive"	100.0           5               "sword_wight"	"NONE"			"NONE"			"NONE"			"NONE"			1.0		400.0			1.0				0.03			50.0			35
+"WolfSpider"		"WolfSpider"		"WolfSpider"		"DeathSpiderChitnous"	"WolfSpiderDeath"		"Aggressive"	80.0            0               "NONE"			"NONE"			"NONE"			"webs"			"NONE"			1.0		400.0			1.0				0.05			50.0			15
+"ChitnousSpider"	"ChitnousSpider"	"ChitnousSpider"	"DeathSpiderChitnous"	"ChitinousSpiderDeath"	"Aggressive"	100.0           0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.5		500.0			0.1				0.02			75.0			35
+"RedSpider"	        "RedSpider"	        "PoisonousSpider"	"DeathSpiderRed"		"RedSpiderDeath"		"Aggressive"	150.0           0               "NONE"			"NONE"			"NONE"			"webs"			"NONE"			0.65	300.0			1.0				0.1				30.0			35
+"GreenSpider"	    "GreenSpider"	    "PoisonousSpider"	"DeathSpiderGreen"		"GreenSpiderDeath"		"Aggressive"	10.0            0               "NONE"			"NONE"			"NONE"			"webs"			"NONE"			0.5		300.0			1.0				0.1				25.0			7
+"BlackSpider"	    "BlackSpider"	    "PoisonousSpider"	"DeathSpiderBlack"		"BlackSpiderDeath"		"Aggressive"	5.0             0               "NONE"			"NONE"			"NONE"			"webs"			"NONE"			0.4		300.0			1.0				0.1				20.0			2
+"Wolf"				"Wolf"				"Wolf"				"DeathWolf"				"WolfDeath"				"Aggressive"	75.0            4               "NONE"			"gobbag"		"NONE"			"NONE"			"NONE"			1.0	    300.0			1.2				0.05			40.0			9
+"Warg_Wolf"			"Warg_Wolf"			"Warg_Wolf"			"DeathWolf"				"WolfDeath"				"Aggressive"	175.0           4               "NONE"			"gobbag"		"NONE"			"NONE"			"NONE"			1.25	300.0			1.0				0.05			60.0			40
+"StormWolf"			"StormWolf"			"StormWolf"			"DeathWolf"				"WolfDeath"				"Aggressive"	105.0           3               "NONE"			"gobbag"		"NONE"			"NONE"			"NONE"			1.0	    300.0			1.0				0.05			50.0			50
+"Wisp"				"Wisp"				"Wisp"				"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			4.00	650.0			1.0				0.0				0.0			    0
+
+"FireFlies"			"FireFlies"			"FireFlies"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.0				0.0			    0
+"Chicken"			"Chicken"			"Chicken"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.0				0.0			    0
+"SleepingChicken"	"SleepingChicken"	"SleepingChicken"	"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.0				0.0			    0
+"Crow"	            "Crow"			    "Crow"			    "DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			0.2	    650.0			1.0				0.0				0.0			    0
+"Dog"	            "Dog"			    "Dog"			    "DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.0				0.0			    0
+"Pony"				"Pony"		        "Pony"				"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"gobbag"		"NONE"			"NONE"			"NONE"			1.5		650.0			1.0				0.0				60.0			0
+"Fish_Bass"	        "Fish"			    "Bass"			    "DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0	    650.0			1.0				0.0				0.0			    0
+"Fish_BottomFeeder"	"Fish"			    "BottomFeeder"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0	    650.0			1.0				0.0				0.0			    0
+"Fish_Minnows"	    "Fish"			    "Minnow"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0	    650.0			1.0				0.0				0.0			    0
+"ElfGuard"			"ElfGuard"			"ElfGuard"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.05			40.0			0
+
+"ElfGuardFemale"	"ElfGuard"			"ElfGuardFemale"	"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.05			40.0			0
+"ElfCommon"			"ElfCommon"			"ElfCommon"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "Torch"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.05			40.0			0
+"ElfCommonFemale"	"ElfCommon"			"ElfCommonFemale"	"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.05			40.0			0
+"Hobbit"			"Hobbit"			"Hobbit"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.05			30.0			0
+"OldPeople"			"OldFolks"			"OldFolks"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.05			40.0			0
+"HobbitPatrolling"	"HobbitPatrolling"	"Hobbit"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.05			30.0			0
+"HobbitKid"			"HobbitKid"			"HobbitKid"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.05			25.0			0
+"Dwarf"				"Dwarf"		        "Dwarf"				"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "Weapon_Balin_ Axe"	"NONE"		"NONE"			"NONE"			"NONE"			1.0		450.0			1.0				0.05			40.0			0
+"WarElf"	        "WarElf"			"WarElf"	        "DeathEffect"			"EnemyDeathFade"		"Average"		200.0           0               "sword_elf"	    "bow_elf"	    "NONE"			"arrow_elf"     "arrow_elf"     1.00	650.0			1.0				0.05			50.0			0
+"WarHuman"	        "WarHuman"			"WarHuman"	        "DeathEffect"			"EnemyDeathFade"		"Average"		200.0           0               "sword_man"	    "bow_man"	    "NONE"			"arrow_man"	    "arrow_man"	    1.00	650.0			1.0				0.05			50.0			0
+
+"WarDwarf"	        "WarDwarf"			"WarDwarf"	        "DeathEffect"			"EnemyDeathFade"		"Average"		200.0           0               "Weapon_Balin_ Axe"	"NONE"	    "NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.05			45.0			0
+"WarLiana"	        "WarLiana"			"WarLiana"	        "DeathEffect"			"EnemyDeathFade"		"Average"		200.0           0               "sword_elf"	    "bow_elf"	    "NONE"			"arrow_elf"     "arrow_elf"     1.00	650.0			1.0				0.05			50.0			0
+"TrollHoLiana"		"WarLiana"		    "Liana"				"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		450.0			1.0				0.05			50.0			0
+"Gandalf"			"Gandalf"		    "Gandalf"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "Gand_Sword"	"NONE"		    "gand_staff"	"NONE"		    "NONE"		    1.0		450.0			1.0				0.05			50.0			0
+"Thorin"			"Dwarf"		        "Thorin"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		450.0			1.0				0.05			45.0			0
+"Corwin"			"Corwin"		    "Corwin"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"bow_man"		"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.05			50.0			0
+"Balfour"			"Balfour"			"Balfour"			"DeathEffect"			"EnemyDeathFade"		"Average"		1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	650.0			1.0				0.05			45.0			0
+"Wallet"			"IdleOnly"			"Wallet"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		350.0			1.0				0.0				0.0			    0
+"TrollTom"			"Troll"		        "TrollTom"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "rock_troll"	"NONE"			"NONE"			"rock_troll"	"rock_troll"	1.0		550.0			1.0				0.02			100.0			0
+"TrollWilliam"		"Troll"		        "TrollWilliam"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "rock_troll"	"NONE"			"NONE"			"rock_troll"	"rock_troll"	1.0		550.0			1.0				0.02			100.0			0
+
+"TrollBert"			"Troll"		        "TrollBert"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "rock_troll"	"NONE"			"Mutton"		"rock_troll"	"rock_troll"	1.0		550.0			1.0				0.02			100.0			0
+"BigRockBadger"		"BigRockBadger"		"BigRockBadger"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	245.0           0               "NONE"			"NONE"			"NONE"			"dirtball"		"dirtball"		2.0		800.0			0.01			0.01			125.0			100
+"WightBoss"			"WightBoss"		    "WightBoss"		    "DeathEffect"			"EnemyDeathFade"		"Aggressive"	400.0           0               "sword_wight"	"NONE"			"NONE"			"NONE"			"NONE"			1.5		650.0			1.0				0.01			75.0			100
+"BossSpiderWrath"	"BossSpiderWrath"   "BossSpiderWrath"	"DeathEffect"			"BossSpiderDeath"		"Aggressive"	640.0           0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			3.125	800.0			1.0			    0.03			125.0			100
+"BossSpiderWild"	"BossSpiderWild"	"BossSpiderWild"	"DeathEffect"			"BossSpiderDeath"		"Aggressive"	320.0           0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.875	800.0			1.0			    0.05			100.0			100
+"BossSpiderWicked"	"BossSpiderWicked"	"BossSpiderWicked"	"DeathEffect"			"BossSpiderDeath"		"Aggressive"	480.0           0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			3.5		800.0			1.0				0.03			115.0			100
+"StoneGiant"		"StoneGiant"		"StoneGiant"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "rock_troll"	"NONE"			"NONE"			"rock_troll"	"rock_troll"	2.5		550.0			1.0				0.0				0.0			    0
+"BridgeTroll"		"BridgeTroll"		"BridgeTroll"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	3500.0          0               "NONE"			"rock_troll"	"NONE"			"rock_troll"	"rock_troll"	1.0		750.0			0.0001	        0.01			150.0			200
+"SmaugSleeping"		"SmaugSleeping"		"SmaugSleeping"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		800.0			0.00000001		0.0				0.0             0
+"SmaugAlert"		"SmaugAlert"		"SmaugAlert"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	800.0			0.00000001		0.0				0.0             0
+
+"SmaugAttacking"	"SmaugAttacking"	"SmaugAttacking"	"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	800.0			0.00000001		0.0				0.0             0
+"Beorn"				"Beorn"				"Beorn"				"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	800.0			1.0		        0.0				150.0           0
+"FinalBeorn"		"FinalBeorn"		"FinalBeorn"		"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.00	800.0			1.0		        0.0				150.0           0
+"Scarecrow"	        "Scarecrow"			"Scarecrow"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.0				25.0			0
+"Bridge"	        "Bridge"			"Bridge"			"DeathEffect"			"EnemyDeathFade"		"Aggressive"	1000.0          0               "NONE"			"NONE"			"NONE"			"NONE"			"NONE"			1.0		650.0			1.0				0.0				0.0			    0
+
+/*
+*/
+	
+

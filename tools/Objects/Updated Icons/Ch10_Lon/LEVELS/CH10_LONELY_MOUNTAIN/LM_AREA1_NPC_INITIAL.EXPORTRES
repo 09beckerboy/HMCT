@@ -1,0 +1,18 @@
+[ Resources : 14 ]
+ { Name:s                              }
+// -----------------------------------
+   "FX/SHADOWDISC.XBMP"               
+   "CHAR_BIFUR_ DIFFUSE[D].XBMP"      
+   "CHAR_BOMBUR_ DIFFUSE[D].XBMP"     
+   "CHAR_GLOIN_DIFFUSE[D].XBMP"       
+   "CHAR_NORI_DIFFUSE[D].XBMP"        
+   "CHARACTERS/DWARFANIMS.CHARANIM"   
+   "PROPS/WEAPON_BALIN_ AXE.RGEOM"    
+   "CHAR_BIFUR_BIND.NPCGEOM"          
+   "CHAR_BOMBUR_BIND.NPCGEOM"         
+   "CHAR_GLOIN_BIND.NPCGEOM"          
+   "CHAR_NORI_BIND.NPCGEOM"           
+   "AI/CREATURELIST.INFO"             
+   "AI/DWARFSTATES.INFO"              
+   "AI/DWARFANIMS.INFO"               
+   

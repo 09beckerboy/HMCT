@@ -1,0 +1,24 @@
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_02[D].xbmp
+map_Kd wood_plank_02[D].xbmp
+newmtl Material_#23802
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_side_01Mip0[D].xbmp
+map_Kd barrel_side_01Mip0[D].xbmp
+newmtl ger
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_top_01Mip0[RGBA].xbmp
+map_Kd barrel_top_01Mip0[RGBA].xbmp
+newmtl 9_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka brushedlong_metal[D].xbmp
+map_Kd brushedlong_metal[D].xbmp

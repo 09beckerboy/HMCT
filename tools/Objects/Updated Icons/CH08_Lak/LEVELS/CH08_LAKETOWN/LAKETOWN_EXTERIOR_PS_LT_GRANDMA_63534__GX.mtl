@@ -1,0 +1,102 @@
+newmtl Shingles
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka shingles[D].xbmp
+map_Kd shingles[D].xbmp
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl large_beams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_05[D].xbmp
+map_Kd wood_beam_05[D].xbmp
+newmtl wall_wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_wall_01[D].xbmp
+map_Kd wood_wall_01[D].xbmp
+newmtl log_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl large_beams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_05[D].xbmp
+map_Kd wood_beam_05[D].xbmp
+newmtl wood_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_04[D].xbmp
+map_Kd wood_beam_04[D].xbmp
+newmtl dark_wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka dark_wood_07[D].xbmp
+map_Kd dark_wood_07[D].xbmp
+newmtl log_end
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl log_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl wood_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_04[D].xbmp
+map_Kd wood_beam_04[D].xbmp
+newmtl large_beams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_05[D].xbmp
+map_Kd wood_beam_05[D].xbmp
+newmtl shutters
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka shutter_02[D].xbmp
+map_Kd shutter_02[D].xbmp
+newmtl trim_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka trim_01[D].xbmp
+map_Kd trim_01[D].xbmp
+newmtl wood_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_04[D].xbmp
+map_Kd wood_beam_04[D].xbmp
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl wood_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_04[D].xbmp
+map_Kd wood_beam_04[D].xbmp

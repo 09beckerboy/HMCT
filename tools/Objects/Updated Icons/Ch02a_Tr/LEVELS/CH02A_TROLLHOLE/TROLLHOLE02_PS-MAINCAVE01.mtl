@@ -1,0 +1,54 @@
+newmtl RockWallA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallA_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallA_Mip0[D].xbmp
+newmtl StalagTile3
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_StalagTile3_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_StalagTile3_Mip0[D].xbmp
+newmtl FloorA2Edge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA2edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA2edge_Mip0[D].xbmp
+newmtl FloorACorner1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+newmtl FloorA1Edge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+newmtl StalagTile3a
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_StalagTile3a_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_StalagTile3a_Mip0[D].xbmp
+newmtl FloorA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA_Mip0[D].xbmp
+newmtl StalagTile2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_StalagTile2_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_StalagTile2_Mip0[D].xbmp
+newmtl StalagTile2a
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_StalagTile2a_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_StalagTile2a_Mip0[D].xbmp

@@ -1,0 +1,26 @@
+[ AnimList : 13 ]
+ { AnimName:s		AnimType:s	YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d}
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+"idle"				"IDLE"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"combat_idle"		"COMBAT_IDLE"		0.0			0.25			1.0				1.0					0.0				0.0				0
+"chitnous_walk"		"WALK"				8.0			0.25			1.5				1.0					0.0				0.0				0
+"bite"				"ATTACK"		    1.0			0.25			1.0				1.0					0.0				0.0				0
+"claw"				"ATTACK"		    1.0			0.25			1.0				1.0					0.0				0.0				0
+
+"turn_left"			"TURN"			    0.0			0.25			1.0				1.0					0.0				0.0				0
+"turn_right"		"TURN"		        0.0			0.25			1.0				1.0					0.0				0.0				0
+"flinch_left"		"FLINCH_FORWARD"	0.0			0.25			1.0				1.0					0.0				0.0				0
+"flinch_right"		"FLINCH_BACK"		0.0			0.25			1.0				1.0					0.0				0.0				0
+"flinchFallOnBack"	"STRONG_FLINCH"		0.0			0.25			1.5				0.1				    0.0				0.0				8
+
+"spawn"				"SPECIAL"			0.0			0.0				1.0				1.0					0.0				0.0				8192
+"miniflinchLeft"	"ARMORED_FLINCH"	0.0			0.25			1.0				1.0					0.0				0.0				0
+"miniflinchRight"	"ARMORED_FLINCH"	0.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Spider"
+
+/*
+*/

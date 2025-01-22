@@ -1,0 +1,25 @@
+[ Resources : 21 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "FX/SHADOWDISC.XBMP"                   
+   "XT_CHAR_WARRIOR_TXTR COPY[D].XBMP"    
+   "CHAR_THIEF2[D].XBMP"                  
+   "CHAR_THIEF1[D].XBMP"                  
+   "CHAR_THIEF3[D].XBMP"                  
+   "CHARACTERS/GOBLINANIMS.CHARANIM"      
+   "CHARACTERS/WARMANELFANIMS.CHARANIM"   
+   "PROPS/GOBSWORD.RGEOM"                 
+   "PROPS/GOBSHIELD.RGEOM"                
+   "PROPS/SWORD_MAN.RGEOM"                
+   "PROPS/BOW_MAN.RGEOM"                  
+   "PROPS/ARROW_MAN.RGEOM"                
+   "CHAR_WARRIOR_MODEL.NPCGEOM"           
+   "CHAR_THIEF2_GEOM.NPCGEOM"             
+   "CHAR_THIEF1_GEOM.NPCGEOM"             
+   "CHAR_THIEF3_GEOM.NPCGEOM"             
+   "AI/CREATURELIST.INFO"                 
+   "AI/GOBLINGUARDSTATES.INFO"            
+   "AI/GOBGUARDANIMS.INFO"                
+   "AI/WARHUMANSTATES.INFO"               
+   "AI/WARHUMANANIMS.INFO"                
+   

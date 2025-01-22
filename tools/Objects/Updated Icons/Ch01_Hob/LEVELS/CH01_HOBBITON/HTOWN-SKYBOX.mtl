@@ -1,0 +1,72 @@
+newmtl 1TopClouds1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-Clouds1[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-Clouds1[RGBA].xbmp
+newmtl 1TopClous2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-Clouds2[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-Clouds2[RGBA].xbmp
+newmtl 0Sky
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-sky[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-sky[RGBA].xbmp
+newmtl 3Hills1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills1[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills1[RGBA].xbmp
+newmtl 3Hills2R
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills2R[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills2R[RGBA].xbmp
+newmtl 3Hills2L
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills2L[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills2L[RGBA].xbmp
+newmtl 3Hills3L
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills3L[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills3L[RGBA].xbmp
+newmtl 3Hills3R
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills3R[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills3R[RGBA].xbmp
+newmtl 3Hills4L
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills4L[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills4L[RGBA].xbmp
+newmtl 3Hills4R
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-hills4R[RGBA].xbmp
+map_Kd Lvl_Htown_Sky-hills4R[RGBA].xbmp
+newmtl 00backbottom
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-Back2[D].xbmp
+map_Kd Lvl_Htown_Sky-Back2[D].xbmp
+newmtl oobacktop
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Sky-Back1[D].xbmp
+map_Kd Lvl_Htown_Sky-Back1[D].xbmp

@@ -1,0 +1,9 @@
+[ Resources : 5 ]
+ { Name:s                              }
+// -----------------------------------
+   "LVL_HTOWN_BOARDC COPY2[D].XBMP"   
+   "LVL_HTOWN_ROPE2[D].XBMP"          
+   "LVL_HTOWN_WOOD_PLANK[D].XBMP"     
+   "LVL_HTOWN_WOOD_FENCE[D].XBMP"     
+   "BRIDGE_BROKEN.RGEOM"              
+   

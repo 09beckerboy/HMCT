@@ -1,0 +1,25 @@
+[ Resources : 21 ]
+ { Name:s                              }
+// -----------------------------------
+   "LVL_HTOWN_LOGEND_MIP0[D].XBMP"    
+   "LVL_HTOWN_WOOD_FENCE[D].XBMP"     
+   "LVL_HTOWN_BOARDC[D].XBMP"         
+   "LVL_HTOWN_SOIL[D].XBMP"           
+   "LVL_HTOWN_TULIPORNGE[D].XBMP"     
+   "LVL_HTOWN_TULIPORNGE[A].XBMP"     
+   "LVL_HTOWN_TULIPPURP[D].XBMP"      
+   "LVL_HTOWN_TULIPPURP[A].XBMP"      
+   "LVL_HTOWN_TULIP[D].XBMP"          
+   "LVL_HTOWN_TULIP[A].XBMP"          
+   "INST_HTOWN_FENCEBRN20DEG.RGEOM"   
+   "INST_HTOWN_FENCEBRN10DEG.RGEOM"   
+   "INST_HTOWN_FENCEBRN00DEG.RGEOM"   
+   "INST_HTOWN_FENCEBRN30DEG.RGEOM"   
+   "INST_HTOWN_BOARDC.RGEOM"          
+   "HTOWN01_GARDEN01.RGEOM"           
+   "HTOWN01_GARDEN02.RGEOM"           
+   "HTOWN01_GARDEN03.RGEOM"           
+   "HTOWN01_TULIPORANG01.RGEOM"       
+   "HTOWN01_TULIPPURP01.RGEOM"        
+   "HTOWN01_TULIPYELLOW01.RGEOM"      
+   

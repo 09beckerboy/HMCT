@@ -1,0 +1,48 @@
+newmtl RockwallB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+newmtl RockwallCorner
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_WallBNiteCrnr_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_WallBNiteCrnr_Mip0[D].xbmp
+newmtl FloorBCorner-4
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+newmtl FloorBCorner-2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+newmtl FloorBCorner-3
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+newmtl 2edge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+newmtl 1edge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+newmtl FloorBCorner-4-2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallBNight_Mip0[D].xbmp

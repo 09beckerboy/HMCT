@@ -1,0 +1,6 @@
+newmtl goblin_gate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka goblin_gate_01[D].xbmp
+map_Kd goblin_gate_01[D].xbmp

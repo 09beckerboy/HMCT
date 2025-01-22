@@ -1,0 +1,18 @@
+newmtl CoopSide
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Hobbiton_CoopSide_Mip0[D].xbmp
+map_Kd Lvl_Hobbiton_CoopSide_Mip0[D].xbmp
+newmtl CoopFloor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Hobbiton_CoopFloor_Mip0[D].xbmp
+map_Kd Lvl_Hobbiton_CoopFloor_Mip0[D].xbmp
+newmtl thatchRoof
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_ThatchRoof_Mip0[D].xbmp
+map_Kd Lvl_Htown_ThatchRoof_Mip0[D].xbmp

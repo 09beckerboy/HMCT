@@ -1,0 +1,12 @@
+newmtl 21_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_thorn_stem03[D].xbmp
+map_Kd EKH_thorn_stem03[D].xbmp
+newmtl Thorn
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_thorn_03[D].xbmp
+map_Kd EKH_thorn_03[D].xbmp

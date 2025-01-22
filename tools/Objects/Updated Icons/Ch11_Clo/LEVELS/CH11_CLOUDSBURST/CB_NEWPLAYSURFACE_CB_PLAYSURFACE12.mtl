@@ -1,0 +1,6 @@
+newmtl Lvl_Cburst_gground_mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_ground05[D].xbmp
+map_Kd Lvl_Cburst_ground05[D].xbmp

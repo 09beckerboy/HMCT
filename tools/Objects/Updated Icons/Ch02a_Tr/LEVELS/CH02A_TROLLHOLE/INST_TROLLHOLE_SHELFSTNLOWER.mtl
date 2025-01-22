@@ -1,0 +1,12 @@
+newmtl Stalag
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_Stalag_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_Stalag_Mip0[D].xbmp
+newmtl Stalagtile1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_StalagTile1_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_StalagTile1_Mip0[D].xbmp

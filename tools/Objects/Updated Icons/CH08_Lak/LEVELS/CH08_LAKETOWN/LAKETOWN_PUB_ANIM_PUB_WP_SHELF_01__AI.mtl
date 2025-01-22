@@ -1,0 +1,54 @@
+newmtl pot4
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pot4_01[D].xbmp
+map_Kd pot4_01[D].xbmp
+newmtl pot2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pot2_01[D].xbmp
+map_Kd pot2_01[D].xbmp
+newmtl flask_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka flask_02[D].xbmp
+map_Kd flask_02[D].xbmp
+newmtl cork_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cork_01[D].xbmp
+map_Kd cork_01[D].xbmp
+newmtl shelfFinial
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_shelfFinial[RGBA].xbmp
+map_Kd Inst_LT_shelfFinial[RGBA].xbmp
+newmtl Hard_wood6
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka hard_wood_06[D].xbmp
+map_Kd hard_wood_06[D].xbmp
+newmtl Material_#57
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_shelf[D].xbmp
+map_Kd Inst_LT_shelf[D].xbmp
+newmtl wood_end3
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl wb4
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_wineBottle4[D].xbmp
+map_Kd Inst_LT_wineBottle4[D].xbmp

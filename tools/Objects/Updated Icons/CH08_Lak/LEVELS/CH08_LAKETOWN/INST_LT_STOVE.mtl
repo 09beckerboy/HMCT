@@ -1,0 +1,12 @@
+newmtl Stove_Metal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka stove_01[D].xbmp
+map_Kd stove_01[D].xbmp
+newmtl Stove_Front
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_stove_front_01[D].xbmp
+map_Kd wood_stove_front_01[D].xbmp

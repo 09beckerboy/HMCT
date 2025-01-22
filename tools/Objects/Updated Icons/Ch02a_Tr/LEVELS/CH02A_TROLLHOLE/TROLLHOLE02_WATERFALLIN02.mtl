@@ -1,0 +1,12 @@
+newmtl waterin
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_Waterfallin[RGBA].xbmp
+map_Kd Lvl_TrollHole_Waterfallin[RGBA].xbmp
+newmtl waterout
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_Waterfallout[RGBA].xbmp
+map_Kd Lvl_TrollHole_Waterfallout[RGBA].xbmp

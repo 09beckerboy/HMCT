@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                                        }
+// ---------------------------------------------
+   "FX/SHADOWDISC.XBMP"                         
+   "CHICKEN2[D].XBMP"                           
+   "CHARACTERS/SLEEPINGCHICKENANIMS.CHARANIM"   
+   "CHICKEN_BIND.NPCGEOM"                       
+   "AI/CREATURELIST.INFO"                       
+   "AI/SLEEPINGCHICKENSTATES.INFO"              
+   "AI/SLEEPINGCHICKENANIMS.INFO"               
+   

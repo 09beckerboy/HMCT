@@ -1,0 +1,27 @@
+[ AnimList : 12 ]
+ { AnimName:s					    AnimType:s		YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"Non_Positioned_Idle"			    "IDLE"	        0.0			0.0			    1.0				1.0					0.0				0.0				0
+"Cine01_CorwinConv1_Shot0_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot1_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot3_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot4_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+
+"Cine01_CorwinConv1_Shot5_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot6_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot7_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine01_CorwinConv1_Shot8_Bilbo"    "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"Cine00_Bilbo_VO_Shot00_Bilbo"      "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+
+"Bilbo_in_arena"	 	            "SPECIAL"       0.0			0.0			    1.0				1.0					0.0				0.0				32768
+"LipSync"	 	                    "LIP_SYNC"      0.0			0.0			    1.0				1.0					0.0				0.0				0
+
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "BilboMW"
+
+
+/*
+*/

@@ -1,0 +1,19 @@
+[ Resources : 15 ]
+ { Name:s                             }
+// ----------------------------------
+   "EELHOLE128GREY[D].XBMP"          
+   "FX/SHADOWDISC.XBMP"              
+   "EEL[D].XBMP"                     
+   "CRITTER_WOLF_TEXTURE[D].XBMP"    
+   "CHARACTERS/EELANIMS.CHARANIM"    
+   "CHARACTERS/WOLFANIMS.CHARANIM"   
+   "EELHOLE.RGEOM"                   
+   "PROPS/GOBBAG.RGEOM"              
+   "EEL_MODEL.NPCGEOM"               
+   "WOLF_BINDPOSE.NPCGEOM"           
+   "AI/CREATURELIST.INFO"            
+   "AI/EELSTATES.INFO"               
+   "AI/EELANIMS.INFO"                
+   "AI/WOLFSTATES.INFO"              
+   "AI/WOLFANIMS.INFO"               
+   

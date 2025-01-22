@@ -1,0 +1,57 @@
+// BridgeTrollStates.info
+// =============================================================================
+[ StateList : 7 ]
+ { StateName:s }
+// ------- 
+   "Idle"       
+   "Alert"       
+   "BridgeTrollAttack"       
+   "TakeCover"
+   "Retreat"
+   "Flee"
+   "RangedAttack"
+
+
+[ Defaults : 1]
+ { LocalBBox:ffffff								DoesNotCollide:d	RunAI:d	MaxHitPoints:f	Invulnerable:d	Team:d }
+// ----------------------------------------------------------------------------------------------------------------
+ -250.0	0.0	-250.0	250.0	275.0	250.0		0					1		100.0			0				2
+
+[ SensesDefaults : 1 ]
+ { SightRange:f	HearingRange:f	LoudHearingRange:f	SmellRange:f }
+// --------------------------------------------------------------
+2500.0			2500.0			5000.0				300.0
+
+[ AITweaksDefaults : 1 ]
+ { BlockPercent:f	EvadePercent:f	ShovePercent:f	StrafePercent:f	AttackAlly:f	Aggression:f	CanBlockStones:d	BlockingDamageModifier:f	ShieldBlockingDamageModifier:f }
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0					50				0				10				5				25				0					0.25						0.001
+
+[ IdleDefaults : 1 ]
+ { LeashRadius:f	AnimationDelay:f	WanderDelay:f }
+// ---------------------------------------------------
+5000.0				3.0					5.0
+
+[ AlertDefaults : 1 ]
+ { Alert1Duration:f	Alert2Duration:f }
+// ----------------------------------
+10.0				10.0
+
+[ AttackDefaults : 1 ]
+ { AttackIdleRadius:f	AttackRadius:f	AttackHeight:f	JumpAttackPercent:f	JumpAttackRadius:f	MinJumpAttackRadius:f	TimeoutDuration:f }
+// -------------------------------------------------------------------------------------------------------------------
+500.0					300.0			0.0				10.0				300.0				150.0					2.0
+
+[ TakeCoverDefaults : 1 ]
+ { MinimumCoverTime:f }
+// -------------------
+0.0
+
+[ RangedAttackDefaults : 1 ]
+ { SwitchToMeleeRange:f	RangedAttackDelay:f	RangedAttackRange:f	TimeoutDuration:f }
+// -------------------------------------------------------------
+500.0					4.0					2000.0				10.0
+
+
+/*
+*/

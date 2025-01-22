@@ -1,0 +1,6 @@
+newmtl 2_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka b_button[D].xbmp
+map_Kd b_button[D].xbmp

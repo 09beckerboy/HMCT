@@ -1,0 +1,6 @@
+newmtl Finalaxe
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka BalinsAxe_Txtr copy[D].xbmp
+map_Kd BalinsAxe_Txtr copy[D].xbmp

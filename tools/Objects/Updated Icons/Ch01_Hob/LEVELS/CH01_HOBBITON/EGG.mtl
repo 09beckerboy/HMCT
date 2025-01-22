@@ -1,0 +1,6 @@
+newmtl egg
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Egg[D].xbmp
+map_Kd Egg[D].xbmp

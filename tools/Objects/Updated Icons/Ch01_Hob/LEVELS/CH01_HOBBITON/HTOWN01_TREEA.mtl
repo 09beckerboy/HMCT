@@ -1,0 +1,30 @@
+newmtl Roots
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Trunktile[D].xbmp
+map_Kd Lvl_Htown_Trunktile[D].xbmp
+newmtl TrunkB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Trunktile[D].xbmp
+map_Kd Lvl_Htown_Trunktile[D].xbmp
+newmtl LimbsB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Trunktile[D].xbmp
+map_Kd Lvl_Htown_Trunktile[D].xbmp
+newmtl LimbsB-2sided
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Trunktile[D].xbmp
+map_Kd Lvl_Htown_Trunktile[D].xbmp
+newmtl TrunkGrassBlend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Trunktile[D].xbmp
+map_Kd Lvl_Htown_Trunktile[D].xbmp

@@ -1,0 +1,19 @@
+[ Resources : 15 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "MIRK_BARK[D].XBMP"                    
+   "MIRK_WALLAA[D].XBMP"                  
+   "MIRK_GRASSA[D].XBMP"                  
+   "MIRK_BARK_TRANS[D].XBMP"              
+   "MIRK_BRANCHB[D].XBMP"                 
+   "MIRK_BRANCHB[A].XBMP"                 
+   "INST_TOPTREE_BRANCHES.RGEOM"          
+   "MIRKWOOD_AREA0.RGEOM"                 
+   "MIRKWOOD_MIRK_PLAYSURFACE153.RGEOM"   
+   "MIRKWOOD_MIRK_PLAYSURFACE156.RGEOM"   
+   "MIRKWOOD_MIRK_PLAYSURFACE158.RGEOM"   
+   "MIRKWOOD_MIRK_PLAYSURFACE160.RGEOM"   
+   "MIRKWOOD_MIRK_PLAYSURFACE166.RGEOM"   
+   "MIRKWOOD_MIRK_PLAYSURFACE173.RGEOM"   
+   "MIRK_LEAF.TREE"                       
+   

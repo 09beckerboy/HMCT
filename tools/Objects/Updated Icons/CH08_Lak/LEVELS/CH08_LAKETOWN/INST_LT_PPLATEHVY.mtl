@@ -1,0 +1,12 @@
+newmtl heavy
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_PressurePlatePuz_heavy[D].xbmp
+map_Kd LT_PressurePlatePuz_heavy[D].xbmp
+newmtl woodPlank
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp

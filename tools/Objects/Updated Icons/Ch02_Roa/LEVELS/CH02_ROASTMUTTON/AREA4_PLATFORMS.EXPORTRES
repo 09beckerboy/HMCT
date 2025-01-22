@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                            }
+// ---------------------------------
+   "WOOD_PLANK_01[D].XBMP"          
+   "RM_FLOATING_PLATFORM03.ANIM"    
+   "RM_FLOATING_PLATFORM01.ANIM"    
+   "RM_FLOATING_PLATFORM02.ANIM"    
+   "RM_FLOATING_PLATFORM03.RGEOM"   
+   "RM_FLOATING_PLATFORM01.RGEOM"   
+   "RM_FLOATING_PLATFORM02.RGEOM"   
+   

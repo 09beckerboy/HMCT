@@ -1,0 +1,6 @@
+newmtl spike
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_troll_spike_01[D].xbmp
+map_Kd Overhill_troll_spike_01[D].xbmp

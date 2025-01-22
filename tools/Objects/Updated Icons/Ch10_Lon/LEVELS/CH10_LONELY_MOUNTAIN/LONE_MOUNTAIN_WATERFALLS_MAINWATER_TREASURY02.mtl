@@ -1,0 +1,12 @@
+newmtl Material_#124
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka GlossMap2[RGBA].xbmp
+map_Kd GlossMap2[RGBA].xbmp
+newmtl Material_#125
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_WaterchurnedB_Mip0[RGBA].xbmp
+map_Kd Lvl_Htown_WaterchurnedB_Mip0[RGBA].xbmp

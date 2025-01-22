@@ -1,0 +1,12 @@
+newmtl haybail
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka haybail[D].xbmp
+map_Kd haybail[D].xbmp
+newmtl haybail_op
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka haybail[RGBA].xbmp
+map_Kd haybail[RGBA].xbmp

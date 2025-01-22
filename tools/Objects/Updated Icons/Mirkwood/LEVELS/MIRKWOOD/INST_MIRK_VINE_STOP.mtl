@@ -1,0 +1,12 @@
+newmtl stem
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_VineStopStem[D].xbmp
+map_Kd Mirk_VineStopStem[D].xbmp
+newmtl thorn
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_Thorn[D].xbmp
+map_Kd Mirk_Thorn[D].xbmp

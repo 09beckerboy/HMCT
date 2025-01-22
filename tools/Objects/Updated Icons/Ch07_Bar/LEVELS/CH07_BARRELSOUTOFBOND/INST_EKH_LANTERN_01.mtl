@@ -1,0 +1,18 @@
+newmtl Lantern
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_lantern_01[D].xbmp
+map_Kd EKH_lantern_01[D].xbmp
+newmtl Lantern_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Lantern_top_02[D].xbmp
+map_Kd EKH_Lantern_top_02[D].xbmp
+newmtl Lantern_holder
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_lamp_holder_03[RGBA].xbmp
+map_Kd EKH_lamp_holder_03[RGBA].xbmp

@@ -1,0 +1,12 @@
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka plant_thickbush_roastmutton[RGBA].xbmp
+map_Kd plant_thickbush_roastmutton[RGBA].xbmp
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka plant_thorn_leaves_mirkwood[RGBA].xbmp
+map_Kd plant_thorn_leaves_mirkwood[RGBA].xbmp

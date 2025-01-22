@@ -1,0 +1,210 @@
+newmtl Lvl_Cburst_woodplank01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank01[D].xbmp
+map_Kd Lvl_Cburst_woodplank01[D].xbmp
+newmtl Lvl_riv_gearpart01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart01[D].xbmp
+map_Kd Lvl_riv_gearpart01[D].xbmp
+newmtl Lvl_riv_gear03.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gear03[D].xbmp
+map_Kd Lvl_riv_gear03[D].xbmp
+newmtl Lvl_riv_gearpart05.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart05[D].xbmp
+map_Kd Lvl_riv_gearpart05[D].xbmp
+newmtl Lvl_riv_gear03.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gear03[D].xbmp
+map_Kd Lvl_riv_gear03[D].xbmp
+newmtl Lvl_riv_gearpart05.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart05[D].xbmp
+map_Kd Lvl_riv_gearpart05[D].xbmp
+newmtl Lvl_Cburst_brick01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_brick01[D].xbmp
+map_Kd Lvl_Cburst_brick01[D].xbmp
+newmtl Lvl_Cburst_metalplate01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_metalplate01[D].xbmp
+map_Kd Lvl_Cburst_metalplate01[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_riv_metalplate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate[D].xbmp
+map_Kd Lvl_riv_metalplate[D].xbmp
+newmtl Lvl_Cburst_woodplank02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank02[D].xbmp
+map_Kd Lvl_Cburst_woodplank02[D].xbmp
+newmtl Lvl_Cburst_woodplank01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank01[D].xbmp
+map_Kd Lvl_Cburst_woodplank01[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_Cburst_woodplank02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank02[D].xbmp
+map_Kd Lvl_Cburst_woodplank02[D].xbmp
+newmtl Lvl_riv_metalplate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate[D].xbmp
+map_Kd Lvl_riv_metalplate[D].xbmp
+newmtl Lvl_riv_gear03.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gear03[D].xbmp
+map_Kd Lvl_riv_gear03[D].xbmp
+newmtl Lvl_riv_gearpart05.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart05[D].xbmp
+map_Kd Lvl_riv_gearpart05[D].xbmp
+newmtl Lvl_riv_metalplate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate[D].xbmp
+map_Kd Lvl_riv_metalplate[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_Cburst_woodplank02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank02[D].xbmp
+map_Kd Lvl_Cburst_woodplank02[D].xbmp
+newmtl Lvl_riv_metalplate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate[D].xbmp
+map_Kd Lvl_riv_metalplate[D].xbmp
+newmtl Lvl_Cburst_woodplank02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank02[D].xbmp
+map_Kd Lvl_Cburst_woodplank02[D].xbmp
+newmtl Lvl_Cburst_woodplank02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank02[D].xbmp
+map_Kd Lvl_Cburst_woodplank02[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_Cburst_woodplank02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank02[D].xbmp
+map_Kd Lvl_Cburst_woodplank02[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_Cburst_brick02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_brick02[D].xbmp
+map_Kd Lvl_Cburst_brick02[D].xbmp
+newmtl Lvl_Cburst_woodplank01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank01[D].xbmp
+map_Kd Lvl_Cburst_woodplank01[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_riv_rope04.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_rope04[D].xbmp
+map_Kd Lvl_riv_rope04[D].xbmp
+newmtl Lvl_Cburst_woodplank01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank01[D].xbmp
+map_Kd Lvl_Cburst_woodplank01[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp
+newmtl Lvl_riv_metalplate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate[D].xbmp
+map_Kd Lvl_riv_metalplate[D].xbmp
+newmtl Lvl_Cburst_woodplank01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplank01[D].xbmp
+map_Kd Lvl_Cburst_woodplank01[D].xbmp
+newmtl Lvl_Cburst_woodplankend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankend[D].xbmp
+map_Kd Lvl_Cburst_woodplankend[D].xbmp

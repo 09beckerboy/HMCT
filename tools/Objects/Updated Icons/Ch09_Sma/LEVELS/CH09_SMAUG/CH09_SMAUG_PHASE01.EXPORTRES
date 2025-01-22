@@ -1,0 +1,17 @@
+[ Resources : 13 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "FX/SHADOWDISC.XBMP"                       
+   "LEFTEYE2[D].XBMP"                         
+   "MC_SMAUG_HEAD[D].XBMP"                    
+   "MC_SMAUG_BODY[D].XBMP"                    
+   "MC_SMAUG_WINGARM[D].XBMP"                 
+   "MC_SMAUG_WING[D].XBMP"                    
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"         
+   "CHARACTERS/SMAUGSLEEPINGANIMS.CHARANIM"   
+   "INST_COURAGEPOINT_1.RGEOM"                
+   "SMAUG_GEOM.NPCGEOM"                       
+   "AI/CREATURELIST.INFO"                     
+   "AI/SMAUGSLEEPINGSTATES.INFO"              
+   "AI/SMAUGSLEEPINGANIMS.INFO"               
+   

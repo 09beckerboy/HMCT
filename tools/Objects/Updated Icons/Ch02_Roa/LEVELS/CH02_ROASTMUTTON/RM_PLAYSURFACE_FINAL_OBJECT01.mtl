@@ -1,0 +1,18 @@
+newmtl RM_grass_dirt_mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RM_ground02[D].xbmp
+map_Kd RM_ground02[D].xbmp
+newmtl RM_grass_rock_mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RM_ground01[D].xbmp
+map_Kd RM_ground01[D].xbmp
+newmtl RM_rock_dirt_mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RM_ground01[D].xbmp
+map_Kd RM_ground01[D].xbmp

@@ -1,0 +1,6 @@
+newmtl 2_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_Ore[D].xbmp
+map_Kd Lvl_Swordlight_Ore[D].xbmp

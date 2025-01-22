@@ -1,0 +1,18 @@
+newmtl tree_bark
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_tree_bark_01[D].xbmp
+map_Kd EKH_tree_bark_01[D].xbmp
+newmtl tree_base
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_tree_base_01[D].xbmp
+map_Kd EKH_tree_base_01[D].xbmp
+newmtl Log_end
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_log_end_03[D].xbmp
+map_Kd EKH_log_end_03[D].xbmp

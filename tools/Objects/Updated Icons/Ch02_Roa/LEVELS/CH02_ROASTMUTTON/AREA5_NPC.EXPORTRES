@@ -1,0 +1,16 @@
+[ Resources : 12 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "FX/SHADOWDISC.XBMP"                       
+   "CHAR_BADGER1_TXTR[D].XBMP"                
+   "THORN_POD[D].XBMP"                        
+   "CHARACTERS/FIREFLIESANIMS.CHARANIM"       
+   "CHARACTERS/PODANIMS.CHARANIM"             
+   "CHAR_LITTLEROCKBADGER_BINDPOSE.NPCGEOM"   
+   "THORN_POD.NPCGEOM"                        
+   "AI/CREATURELIST.INFO"                     
+   "AI/FIREFLIESSTATES.INFO"                  
+   "AI/FIREFLIESANIMS.INFO"                   
+   "AI/THORNPODSTATES.INFO"                   
+   "AI/THORNPODANIMS.INFO"                    
+   

@@ -1,0 +1,12 @@
+newmtl steps
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_steps[D].xbmp
+map_Kd Lvl_Htown_steps[D].xbmp
+newmtl landing
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Landing_Mip0[D].xbmp
+map_Kd Lvl_Htown_Landing_Mip0[D].xbmp

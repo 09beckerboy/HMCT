@@ -1,0 +1,6 @@
+newmtl Throne_Root
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Throne_root_01[D].xbmp
+map_Kd Throne_root_01[D].xbmp

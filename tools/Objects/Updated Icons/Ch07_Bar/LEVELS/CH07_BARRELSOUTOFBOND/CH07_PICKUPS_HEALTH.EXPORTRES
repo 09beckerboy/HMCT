@@ -1,0 +1,12 @@
+[ Resources : 8 ]
+ { Name:s                     }
+// --------------------------
+   "ANTIDOTE[D].XBMP"        
+   "MUSHROOM[D].XBMP"        
+   "MUSHROOM_G[D].XBMP"      
+   "MUSHIE_ENV[D].XBMP"      
+   "HEALTHPOTION[D].XBMP"    
+   "ANTIDOTE_POTION.RGEOM"   
+   "HEALTH.RGEOM"            
+   "HEALTH_POTION.RGEOM"     
+   

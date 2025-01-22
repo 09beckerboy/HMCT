@@ -1,0 +1,21 @@
+[ Resources : 17 ]
+ { Name:s                                           }
+// ------------------------------------------------
+   "OH_GRASS_04[D].XBMP"                           
+   "OH_CLIFF_ROCK_01[D].XBMP"                      
+   "PROPS/HANGVINE.XBMP"                           
+   "PROPS/THORNVINE.XBMP"                          
+   "OH_GROUNDA_03[D].XBMP"                         
+   "OH_CLIFF_WALL_01[D].XBMP"                      
+   "OH_ROCK11_BLEND[D].XBMP"                       
+   "ANIMATEDINSTANCES_BAT_ROCKFALL_01__BA.ANIM"    
+   "ANIMATEDINSTANCES_BAT_ROCKFALL_02__BA.ANIM"    
+   "ANIMATEDINSTANCES_BAT_ROCKFALL_03__BA.ANIM"    
+   "INST_OH_ROCK_01.RGEOM"                         
+   "INST_OH_ROCK_02.RGEOM"                         
+   "INST_OH_ROCK_03.RGEOM"                         
+   "INST_OH_ROCK_04.RGEOM"                         
+   "ANIMATEDINSTANCES_BAT_ROCKFALL_01__BA.RGEOM"   
+   "ANIMATEDINSTANCES_BAT_ROCKFALL_02__BA.RGEOM"   
+   "ANIMATEDINSTANCES_BAT_ROCKFALL_03__BA.RGEOM"   
+   

@@ -1,0 +1,18 @@
+[ Resources : 14 ]
+ { Name:s                                 }
+// --------------------------------------
+   "FX/SHADOWDISC.XBMP"                  
+   "XT_CHAR_WARRIOR_TXTR COPY[D].XBMP"   
+   "CHAR_BALFOUR[D].XBMP"                
+   "CHARACTERS/GOBLINANIMS.CHARANIM"     
+   "CHARACTERS/BALFOURANIMS.CHARANIM"    
+   "PROPS/GOBSWORD.RGEOM"                
+   "PROPS/GOBSHIELD.RGEOM"               
+   "CHAR_WARRIOR_MODEL.NPCGEOM"          
+   "BALFOUR_BIND.NPCGEOM"                
+   "AI/CREATURELIST.INFO"                
+   "AI/GOBLINGUARDSTATES.INFO"           
+   "AI/GOBGUARDANIMS.INFO"               
+   "AI/BALFOURSTATES.INFO"               
+   "AI/BALFOURANIMS.INFO"                
+   

@@ -1,0 +1,54 @@
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Smaug_floorA[D].xbmp
+map_Kd Smaug_floorA[D].xbmp
+newmtl Material_#66704
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA_crack[D].xbmp
+map_Kd Sm_marbleA_crack[D].xbmp
+newmtl 12_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marble_slash[D].xbmp
+map_Kd Sm_marble_slash[D].xbmp
+newmtl vsdblt
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA[D].xbmp
+map_Kd Sm_marbleA[D].xbmp
+newmtl vsdblt
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA[D].xbmp
+map_Kd Sm_marbleA[D].xbmp
+newmtl facessm
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_face[D].xbmp
+map_Kd sm_face[D].xbmp
+newmtl 19_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marble[D].xbmp
+map_Kd Sm_marble[D].xbmp
+newmtl Material_#66692
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_goldtrim[D].xbmp
+map_Kd sm_goldtrim[D].xbmp
+newmtl facemarble
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka flatgold[D].xbmp
+map_Kd flatgold[D].xbmp

@@ -1,0 +1,12 @@
+newmtl goblin_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_beam_01[D].xbmp
+map_Kd Over_Hill_gob_beam_01[D].xbmp
+newmtl log_end
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_log_end_01[D].xbmp
+map_Kd Overhill_log_end_01[D].xbmp

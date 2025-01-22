@@ -1,0 +1,24 @@
+newmtl Troll_Door
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_swordlight_TrollDoorA_Mip0[D].xbmp
+map_Kd Lvl_swordlight_TrollDoorA_Mip0[D].xbmp
+newmtl Metal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_Metal1_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_Metal1_Mip0[D].xbmp
+newmtl Door_head
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_doorface_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_doorface_Mip0[D].xbmp
+newmtl spike
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_spike_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_spike_Mip0[D].xbmp

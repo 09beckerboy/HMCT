@@ -1,0 +1,12 @@
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mirk_black[D].xbmp
+map_Kd mirk_black[D].xbmp
+newmtl rocky
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_SignetRing[D].xbmp
+map_Kd Mirk_SignetRing[D].xbmp

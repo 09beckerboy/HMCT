@@ -1,0 +1,24 @@
+newmtl adggggggdag
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_gate_stone[D].xbmp
+map_Kd Mirk_gate_stone[D].xbmp
+newmtl Material_#1641
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_gateA[RGBA].xbmp
+map_Kd Mirk_gateA[RGBA].xbmp
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mirk_black[D].xbmp
+map_Kd mirk_black[D].xbmp
+newmtl seethrouhj
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_BARK[D].xbmp
+map_Kd Mirk_BARK[D].xbmp

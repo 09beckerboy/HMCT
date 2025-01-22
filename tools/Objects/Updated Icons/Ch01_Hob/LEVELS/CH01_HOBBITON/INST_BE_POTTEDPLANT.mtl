@@ -1,0 +1,18 @@
+newmtl maps
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_maps[D].xbmp
+map_Kd LVL_BE_maps[D].xbmp
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_maps[D].xbmp
+map_Kd LVL_BE_maps[D].xbmp
+newmtl Material_#4211
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_leaf01[RGBA].xbmp
+map_Kd LVL_BE_leaf01[RGBA].xbmp

@@ -1,0 +1,12 @@
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_extraStuff[D].xbmp
+map_Kd LVL_BE_extraStuff[D].xbmp
+newmtl flame
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_flame[D].xbmp
+map_Kd LVL_BE_flame[D].xbmp

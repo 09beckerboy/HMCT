@@ -1,0 +1,24 @@
+newmtl bucket
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_bucket[D].xbmp
+map_Kd Inst_LT_bucket[D].xbmp
+newmtl bucket2s
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_bucket[D].xbmp
+map_Kd Inst_LT_bucket[D].xbmp
+newmtl bucketFish2S
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_bucketFish[D].xbmp
+map_Kd Inst_LT_bucketFish[D].xbmp
+newmtl bucketFish
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_bucketFish[D].xbmp
+map_Kd Inst_LT_bucketFish[D].xbmp

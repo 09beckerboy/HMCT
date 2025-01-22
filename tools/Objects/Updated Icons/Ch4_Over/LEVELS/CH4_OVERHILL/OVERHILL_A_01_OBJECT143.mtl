@@ -1,0 +1,6 @@
+newmtl Stone_Moss_Blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Oh_Moss_01[D].xbmp
+map_Kd Oh_Moss_01[D].xbmp

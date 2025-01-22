@@ -1,0 +1,6 @@
+newmtl Fog_Bank_TopV2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Blue_Fog_01[RGBA].xbmp
+map_Kd OH_Blue_Fog_01[RGBA].xbmp

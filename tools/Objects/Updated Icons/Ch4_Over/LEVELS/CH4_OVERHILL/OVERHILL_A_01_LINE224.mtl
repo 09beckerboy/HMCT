@@ -1,0 +1,6 @@
+newmtl Big_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_big_beam_01[D].xbmp
+map_Kd Over_Hill_big_beam_01[D].xbmp

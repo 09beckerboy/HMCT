@@ -1,0 +1,24 @@
+[ AnimList : 13]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d     AnimMode:d }
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+"OverhillCin11_Shot01"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin11_Shot02"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin11_Shot03"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin11_Shot05"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin11_Shot07"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin11_Shot09"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin11_Shot11"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin03Shot00"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin03Shot02"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+"OverhillCin03Shot04"	"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768 0
+
+"Non-PositionedIdle"	"IDLE"			        0.0			0.0			    1.0				1.0					0.0				0.0				0     0
+"HeadTracking"		    "HEAD_TRACKING"			0.0			0.25			1.0				1.0					0.0				0.0				0     0
+"LipSync"		        "LIP_SYNC"			    0.0			0.25			1.0				1.0					0.0				0.0				0     0
+
+[ AnimFileName ]     
+ { FileName:s }
+// ---------------     
+  "gandalfOH"          
+/*
+*/

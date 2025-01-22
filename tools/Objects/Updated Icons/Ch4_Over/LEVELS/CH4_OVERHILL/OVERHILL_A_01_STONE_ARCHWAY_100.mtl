@@ -1,0 +1,30 @@
+newmtl Lvl_dwarven_plc_stone08
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone08[D].xbmp
+map_Kd OH_dwarven_plc_stone08[D].xbmp
+newmtl Lvl_dwarven_plc_stone06
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone06[D].xbmp
+map_Kd OH_dwarven_plc_stone06[D].xbmp
+newmtl Lvl_dwarven_plc_stone02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone02[D].xbmp
+map_Kd OH_dwarven_plc_stone02[D].xbmp
+newmtl Dwarf_Slab
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Dwarf_slabs_01[D].xbmp
+map_Kd OH_Dwarf_slabs_01[D].xbmp
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone07[D].xbmp
+map_Kd OH_dwarven_plc_stone07[D].xbmp

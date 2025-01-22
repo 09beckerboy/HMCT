@@ -1,0 +1,18 @@
+newmtl bridge_board_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_bridge_wood_02[D].xbmp
+map_Kd Over_Hill_bridge_wood_02[D].xbmp
+newmtl bridge_board_02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_bridge_wood_02a[D].xbmp
+map_Kd Over_Hill_bridge_wood_02a[D].xbmp
+newmtl bridge_rope
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_rope[D].xbmp
+map_Kd Over_Hill_rope[D].xbmp

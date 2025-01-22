@@ -1,0 +1,30 @@
+newmtl Material_#578
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka end_table_side_01[D].xbmp
+map_Kd end_table_side_01[D].xbmp
+newmtl Material_#577
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka dresser_ft_01[D].xbmp
+map_Kd dresser_ft_01[D].xbmp
+newmtl End_cap
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka table_side_03[D].xbmp
+map_Kd table_side_03[D].xbmp
+newmtl Material_#591
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka end_table_plank_01[D].xbmp
+map_Kd end_table_plank_01[D].xbmp
+newmtl Material_#592
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka end_table_plank_02[D].xbmp
+map_Kd end_table_plank_02[D].xbmp

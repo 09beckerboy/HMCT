@@ -1,0 +1,24 @@
+newmtl 4_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka toolbox[D].xbmp
+map_Kd toolbox[D].xbmp
+newmtl sawHorse
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoardC[D].xbmp
+map_Kd Lvl_Htown_BoardC[D].xbmp
+newmtl Material_#114
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoardC[D].xbmp
+map_Kd Lvl_Htown_BoardC[D].xbmp
+newmtl yellowWood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoardD_Mip0[D].xbmp
+map_Kd Lvl_Htown_BoardD_Mip0[D].xbmp

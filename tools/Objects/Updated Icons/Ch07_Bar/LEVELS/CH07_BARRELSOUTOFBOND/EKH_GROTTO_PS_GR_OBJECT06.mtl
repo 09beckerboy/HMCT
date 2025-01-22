@@ -1,0 +1,12 @@
+newmtl Royal_Slab
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Royal_Slab_01[D].xbmp
+map_Kd EKH_Royal_Slab_01[D].xbmp
+newmtl Slab_Trim
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Royal_Slab_Trim[D].xbmp
+map_Kd EKH_Royal_Slab_Trim[D].xbmp

@@ -1,0 +1,18 @@
+newmtl Cave_Blender
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_GroundA_03[D].xbmp
+map_Kd OH_GroundA_03[D].xbmp
+newmtl Main_Wall_No_Vines
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_N_CaveWall_01[D].xbmp
+map_Kd OH_N_CaveWall_01[D].xbmp
+newmtl Wall_Stream_Blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_river_bottom_01[D].xbmp
+map_Kd EKH_river_bottom_01[D].xbmp

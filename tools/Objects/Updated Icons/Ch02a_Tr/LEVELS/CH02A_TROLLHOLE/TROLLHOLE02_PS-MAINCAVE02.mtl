@@ -1,0 +1,18 @@
+newmtl RockWallA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallA_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallA_Mip0[D].xbmp
+newmtl FloorACorner1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+newmtl FloorA1Edge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA1edge_Mip0[D].xbmp

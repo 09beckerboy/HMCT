@@ -1,0 +1,18 @@
+newmtl burntground
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart05[D].xbmp
+map_Kd Lvl_riv_gearpart05[D].xbmp
+newmtl Inst_CB_woodplank03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03[D].xbmp
+map_Kd Inst_CB_woodplank03[D].xbmp
+newmtl Lvl_dwarven_plc_tile02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_spikehole[D].xbmp
+map_Kd Lvl_Cburst_spikehole[D].xbmp

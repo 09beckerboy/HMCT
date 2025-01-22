@@ -1,0 +1,12 @@
+newmtl wood_board
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka well_plank_01[D].xbmp
+map_Kd well_plank_01[D].xbmp
+newmtl log_end
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_01[D].xbmp
+map_Kd log_end_01[D].xbmp

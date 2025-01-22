@@ -1,0 +1,12 @@
+newmtl 3_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka coinbag[D].xbmp
+map_Kd coinbag[D].xbmp
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka SILVERCOIN[D].xbmp
+map_Kd SILVERCOIN[D].xbmp

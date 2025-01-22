@@ -1,0 +1,22 @@
+[ Resources : 18 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "FX/SHADOWDISC.XBMP"                       
+   "XT_CHAR_GUARDBREAKUP_TXTR COPY[D].XBMP"   
+   "WARELF[D].XBMP"                           
+   "WARELF_GLOSS[D].XBMP"                     
+   "WARELF_ENV[D].XBMP"                       
+   "CHARACTERS/GOBLINANIMS.CHARANIM"          
+   "CHARACTERS/WARMANELFANIMS.CHARANIM"       
+   "PROPS/GOBSWORD.RGEOM"                     
+   "PROPS/GOBSHIELD.RGEOM"                    
+   "PROPS/SWORD_ELF.RGEOM"                    
+   "PROPS/BOW_ELF.RGEOM"                      
+   "CHAR_BOLGGUARD_MODEL.NPCGEOM"             
+   "WARELF_GEOM.NPCGEOM"                      
+   "AI/CREATURELIST.INFO"                     
+   "AI/GOBLINGUARDSTATES.INFO"                
+   "AI/GOBGUARDANIMS.INFO"                    
+   "AI/WARELFSTATES.INFO"                     
+   "AI/WARELFANIMS.INFO"                      
+   

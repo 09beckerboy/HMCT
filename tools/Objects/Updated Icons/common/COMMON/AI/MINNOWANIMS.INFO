@@ -1,0 +1,15 @@
+[ AnimList : 3 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"swim"					"IDLE"					4.0			0.25			1.0				1.0					0.0				0.0			0
+"swim"					"WALK"					4.0			0.25			1.0				1.0					0.0				0.0			0
+"swim"					"RUN"					4.0			0.25			3.0				1.0					0.0				0.0			0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Minnow"
+
+
+/*
+*/

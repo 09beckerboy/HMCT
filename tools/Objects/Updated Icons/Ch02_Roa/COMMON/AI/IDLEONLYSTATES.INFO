@@ -1,0 +1,34 @@
+[ StateList : 1 ]
+ { StateName:s }
+// ------- 
+   "Idle"
+
+[ Defaults : 1]
+ { LocalBBox:ffffff								DoesNotCollide:d	RunAI:d	MaxHitPoints:f	Invulnerable:d	Team:d }
+// ----------------------------------------------------------------------------------------------------------------
+ -20.0	-20.0	-20.0	20.0	20.0	20.0	1					0		1.0				1				0
+
+[ SensesDefaults : 1 ]
+ { SightRange:f	HearingRange:f	LoudHearingRange:f	SmellRange:f }
+// --------------------------------------------------------------
+	0.0			0.0				0.0					0.0
+
+[ AITweaksDefaults : 1 ]
+ { BlockPercent:f	EvadePercent:f	ShovePercent:f	StrafePercent:f	AttackAlly:f	Aggression:f	CanBlockStones:d	BlockingDamageModifier:f	ShieldBlockingDamageModifier:f }
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+50					50				50				50				50				50				0					0.25						0.001
+
+[ IdleDefaults : 1 ]
+ { LeashRadius:f	AnimationDelay:f	WanderDelay:f }
+// ---------------------------------------------------
+	0.0				0.0					0.0
+
+[ AlertDefaults : 1 ]
+ { Alert1Duration:f	Alert2Duration:f }
+// ----------------------------------
+	0.0				0.0
+
+
+
+/*
+*/

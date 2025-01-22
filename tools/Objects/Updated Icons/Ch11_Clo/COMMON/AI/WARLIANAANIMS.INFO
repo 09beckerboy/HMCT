@@ -1,0 +1,47 @@
+[ AnimList : 25 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d  AnimMode:d }
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------
+"CombatIdleSword"	"IDLE"			        0.0			0.25			1.0				1.0					0.0				0.0				0       1
+"CombatIdleBow"	    "IDLE"			        0.0			0.25			1.0				1.0					0.0				0.0				0       2
+"Attack"		    "ATTACK"			    1.0			0.25			1.0				1.0					0.0				0.0				0       1
+"DrawBow"		    "SPECIAL"	            0.0			0.25			1.0				1.0					0.0				0.0				0       2
+"EquipBow"			"DRAW_RANGED_WEAPON"	0.0		    0.25			1.0				1.0					0.0				0.0				2       2
+
+"EquipSword"		"DRAW_MELEE_WEAPON"		0.0			0.25			1.0				1.0					0.0				0.0				2       1
+"CombatIdleBow"		"RANGED_IDLE"			0.0			0.25			1.0				1.0					0.0				0.0				2       2
+"CombatIdleSword"	"COMBAT_IDLE"			0.0			0.25			1.0				1.0					0.0				0.0				2       1
+"ShootArrow"		"RANGED_ATTACK"			0.0			0.25			1.0				1.0					0.0				0.0				0       2
+"Fall"		        "FALL"			        4.0			0.25			1.0				1.0					0.0				0.0				0       -1
+
+"Flinch"		    "FLINCH_BACK"			0.0			0.25			1.0				1.0					0.0				0.0				0       1
+"FlinchBow"		    "FLINCH_BACK"			0.0			0.25			1.0				1.0					0.0				0.0				0       2
+"Jump"		        "JUMP"			        2.0			0.25			1.0				1.0					0.0				0.0				0       -1
+"Land"		        "LAND"			        0.0			0.25			1.0				1.0					0.0				0.0				0       -1
+"RunSword"		    "RUN"			        16.0		0.25			1.0				1.0					0.0				0.0				0       1
+
+"RunBow"		    "RUN"			        16.0	    0.25			1.0				1.0					0.0				0.0				0       2
+"TurnLeft45"		"TURN"			        0.0			0.25			1.0				1.0					0.0				0.0				0       1
+"TurnRight45"		"TURN"			        0.0			0.25			1.0				1.0					0.0				0.0				0       1
+"TurnLeft45Bow"		"TURN"			        0.0			0.25			1.0				1.0					0.0				0.0				0       2
+"TurnRight45Bow"	"TURN"			        0.0			0.25			1.0				1.0					0.0				0.0				0       2
+
+"HeadTracking"		"HEAD_TRACKING"			0.0			0.25			1.0				1.0					0.0				0.0				0       -1
+"LipSync"		    "LIP_SYNC"			    0.0			0.25			1.0				1.0					0.0				0.0				0       -1
+
+"Idle2Conversation"	"SPECIAL"	            0.0			0.25			1.0				1.0					0.0				0.0				0       -1
+"Conversation"	    "SPECIAL"	            0.0			0.25			1.0				1.0					0.0				0.0				0       -1
+"Conversation2Idle"	"SPECIAL"	            0.0			0.25			1.0				1.0					0.0				0.0				0       -1
+
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "WarLiana"
+
+[ AnimTransitionTable : 1 ]
+{ CurrentAnim:s				Transition1:s				Transition2:s					NextAnim:s		Flags:d }
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+"*"                         "*"                         "DrawBow"						"ShootArrow"      0
+
+/*
+*/

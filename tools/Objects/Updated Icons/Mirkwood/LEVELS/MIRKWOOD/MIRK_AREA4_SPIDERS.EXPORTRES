@@ -1,0 +1,19 @@
+[ Resources : 15 ]
+ { Name:s                               }
+// ------------------------------------
+   "FX/SHADOWDISC.XBMP"                
+   "SPIDERARMOR[D].XBMP"               
+   "POISONGREEN[D].XBMP"               
+   "WOLF[D].XBMP"                      
+   "CHARACTERS/SPIDERANIMS.CHARANIM"   
+   "CHAR_SPIDER_ARMOR_BIND.NPCGEOM"    
+   "CHAR_SPID_POISON_GREEN.NPCGEOM"    
+   "CHAR_WOLFSPIDER_MODEL.NPCGEOM"     
+   "AI/CREATURELIST.INFO"              
+   "AI/CHITNOUSSPIDERSTATES.INFO"      
+   "AI/CHITNOUSSPIDERANIMS.INFO"       
+   "AI/GREENSPIDERSTATES.INFO"         
+   "AI/POISONOUSSPIDERANIMS.INFO"      
+   "AI/WOLFSPIDERSTATES.INFO"          
+   "AI/WOLFSPIDERANIMS.INFO"           
+   

@@ -1,0 +1,8 @@
+[ Resources : 4 ]
+ { Name:s                  }
+// -----------------------
+   "SAVE[D].XBMP"         
+   "SAVE_GLOSS[D].XBMP"   
+   "SAVE_ENV[D].XBMP"     
+   "SAVE.RGEOM"           
+   

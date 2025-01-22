@@ -1,0 +1,18 @@
+newmtl Material_#23802
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_side_01Mip0[D].xbmp
+map_Kd barrel_side_01Mip0[D].xbmp
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka grain[D].xbmp
+map_Kd grain[D].xbmp
+newmtl ger
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka brushed_metal[RGBA].xbmp
+map_Kd brushed_metal[RGBA].xbmp

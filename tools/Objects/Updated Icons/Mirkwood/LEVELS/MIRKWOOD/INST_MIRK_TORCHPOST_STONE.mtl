@@ -1,0 +1,12 @@
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_gate_stone[D].xbmp
+map_Kd Mirk_gate_stone[D].xbmp
+newmtl Material_#0
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka torchpost_metal[RGBA].xbmp
+map_Kd torchpost_metal[RGBA].xbmp

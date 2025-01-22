@@ -1,0 +1,6 @@
+newmtl Material_#dscs
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone25[D].xbmp
+map_Kd Lvl_dwarven_plc_stone25[D].xbmp

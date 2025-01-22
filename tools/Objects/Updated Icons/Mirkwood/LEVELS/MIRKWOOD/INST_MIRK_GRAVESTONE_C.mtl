@@ -1,0 +1,6 @@
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gravestone_c[D].xbmp
+map_Kd gravestone_c[D].xbmp

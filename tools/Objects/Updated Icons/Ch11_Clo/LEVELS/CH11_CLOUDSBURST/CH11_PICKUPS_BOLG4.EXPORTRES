@@ -1,0 +1,10 @@
+[ Resources : 6 ]
+ { Name:s                                }
+// -------------------------------------
+   "LVL_CBURST_WOODPLANKB[D].XBMP"      
+   "CLIMB_CHAIN[RGBP].XBMP"             
+   "CLIMB_CHAIN_TOPPER[RGBP].XBMP"      
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"   
+   "CON3_ENDCOLLISION.RGEOM"            
+   "INST_COURAGEPOINT_1.RGEOM"          
+   

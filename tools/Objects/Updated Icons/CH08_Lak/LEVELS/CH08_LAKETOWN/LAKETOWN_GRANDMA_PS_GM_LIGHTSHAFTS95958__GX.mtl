@@ -1,0 +1,18 @@
+newmtl Light_Ray
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_lightray_01[D].xbmp
+map_Kd LT_lightray_01[D].xbmp
+newmtl Donut_Win_Light
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_Donut_Win_Light[D].xbmp
+map_Kd LT_Donut_Win_Light[D].xbmp
+newmtl Lg_Window_Light
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_LgWindow_Light[D].xbmp
+map_Kd LT_LgWindow_Light[D].xbmp

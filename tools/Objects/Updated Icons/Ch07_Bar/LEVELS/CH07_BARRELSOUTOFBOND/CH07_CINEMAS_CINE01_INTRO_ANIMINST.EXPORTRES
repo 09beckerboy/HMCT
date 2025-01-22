@@ -1,0 +1,22 @@
+[ Resources : 18 ]
+ { Name:s                              }
+// -----------------------------------
+   "ALARMPEDESTAL[D].XBMP"            
+   "ENVIROMENTMAPC[D].XBMP"           
+   "ALARMPEDESTAL_SPECULAR[D].XBMP"   
+   "ALARMPEDESTAL_S[D].XBMP"          
+   "ENVIROMENTMAPE[D].XBMP"           
+   "LVL_BR_SMALLLEAF[D].XBMP"         
+   "LVL_BR_SMALLBARK[D].XBMP"         
+   "LVL_BR_DARKBARK[D].XBMP"          
+   "EKH_BIG_DOOR_BASE_04[D].XBMP"     
+   "EKH_BIG_DOOR_04[D].XBMP"          
+   "EKH_BIG_DOOR_TOP_02[D].XBMP"      
+   "EKH_BIG_DOOR_TOP_02[A].XBMP"      
+   "ELVENSWITCH.ANIM"                 
+   "INST_EKH_DOORLT.ANIM"             
+   "INST_EKH_DOORRT.ANIM"             
+   "ALARMPEDESTAL.RGEOM"              
+   "INST_EKH_DOORLT.RGEOM"            
+   "INST_EKH_DOORRT.RGEOM"            
+   

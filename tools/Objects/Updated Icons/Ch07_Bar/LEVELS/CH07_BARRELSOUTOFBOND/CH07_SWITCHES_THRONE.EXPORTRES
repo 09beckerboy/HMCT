@@ -1,0 +1,16 @@
+[ Resources : 12 ]
+ { Name:s                              }
+// -----------------------------------
+   "TRIGGER_OPENING_PEDESTAL_1.XSC"   
+   "TRIGGER_OPENING_PEDESTAL_2.XSC"   
+   "TRIGGER_OPENING_PEDESTAL_3.XSC"   
+   "TRIGGER_PUSHBLOCK001.XSC"         
+   "TRIGGER_PUSHBLOCK002.XSC"         
+   "TRIGGER_PUSHBLOCK003.XSC"         
+   "TRIGGER_OPENING_PEDESTAL_1.SYM"   
+   "TRIGGER_OPENING_PEDESTAL_2.SYM"   
+   "TRIGGER_OPENING_PEDESTAL_3.SYM"   
+   "TRIGGER_PUSHBLOCK001.SYM"         
+   "TRIGGER_PUSHBLOCK002.SYM"         
+   "TRIGGER_PUSHBLOCK003.SYM"         
+   

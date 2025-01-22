@@ -1,0 +1,23 @@
+[ Resources : 19 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "FX/SHADOWDISC.XBMP"                   
+   "CHAR_BARD_TXTR[D].XBMP"               
+   "CHAR_OLDMAN[D].XBMP"                  
+   "CHAR_JOSEF[D].XBMP"                   
+   "LAKE_DUDE1[D].XBMP"                   
+   "LAKE_DUDE3[D].XBMP"                   
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"     
+   "CHARACTERS/ELFMALEANIMS.CHARANIM"     
+   "CHARACTERS/OLDPEOPLEANIMS.CHARANIM"   
+   "PROPS/TORCH.RGEOM"                    
+   "INST_COURAGEPOINT_1.RGEOM"            
+   "WAR_BARD.NPCGEOM"                     
+   "CHAR_OLDMAN_GEOM.NPCGEOM"             
+   "LAKE_DUDE4.NPCGEOM"                   
+   "AI/CREATURELIST.INFO"                 
+   "AI/ELFCOMMONSTATES.INFO"              
+   "AI/ELFCOMMONANIMS.INFO"               
+   "AI/OLDFOLKSSTATES.INFO"               
+   "AI/OLDFOLKSANIMS.INFO"                
+   

@@ -1,0 +1,20 @@
+[ Resources : 16 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "FX/SHADOWDISC.XBMP"                   
+   "CHAR_WOODELFKING[D].XBMP"             
+   "CHAR_WOODELFGUARD_TXTR[D].XBMP"       
+   "CHAR_WOODELF_FEMALE2[D].XBMP"         
+   "CHARACTERS/ELFMALEANIMS.CHARANIM"     
+   "CHARACTERS/ELFFEMALEANIMS.CHARANIM"   
+   "PROPS/TORCH.RGEOM"                    
+   "WOODELF_KING_GEOM.NPCGEOM"            
+   "WOODELF_MALEGUARD_GEOM.NPCGEOM"       
+   "WOODELF_FEMALE2_GEOM.NPCGEOM"         
+   "AI/CREATURELIST.INFO"                 
+   "AI/ELFCOMMONSTATES.INFO"              
+   "AI/ELFCOMMONANIMS.INFO"               
+   "AI/ELFGUARDSTATES.INFO"               
+   "AI/ELFGUARDANIMS.INFO"                
+   "AI/ELFCOMMONFEMALEANIMS.INFO"         
+   

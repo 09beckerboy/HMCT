@@ -1,0 +1,20 @@
+[ AnimList : 10 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d   AnimMode:d }
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+"idle"				"IDLE"					2.0			0.25			1.0				1.0					0.0				0.0			    0       1
+"lookbilbo"			"IDLEANIM"				2.0			0.25			1.0				1.0					0.0				0.0			    0       2    
+"sitting"			"IDLE"					0.0			0.25			1.0				1.0					0.0				0.0			    0       1
+"turnLeft"			"TURN"					0.0			0.25			1.0				1.0					0.0				0.0			    0       1
+"turnRight"			"TURN"					0.0			0.25			1.0				1.0					0.0				0.0			    0       1
+
+"Walk"			    "WALK"					0.0			0.25			1.0				1.0					0.0				0.0			    0       1
+"LipSync"			"LIP_SYNC"				0.0			0.25			1.0				1.0					0.0				0.0			    0       -1
+"HeadTracking"		"HEAD_TRACKING"		    0.0			0.25			1.0				1.0					0.0				0.0			    0       -1
+"TalkIdle"		    "SPECIAL"		        2.0			0.25			1.0				1.0					0.0				0.0			    0       -1
+"ListenIdle"		"SPECIAL"		        2.0			0.25			1.0				1.0					0.0				0.0			    0       -1
+ 
+[ AnimFileName ] 
+ { FileName:s } 
+// --------------- 
+  "OldPeople" 
+ 

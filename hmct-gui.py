@@ -14,6 +14,7 @@ import filecmp
 from tkinter import filedialog
 import importlib
 import sv_ttk
+import webbrowser
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append("{0}/plugins".format(script_dir))
@@ -662,6 +663,38 @@ convert_menu.add_separator()
 # convert_menu.add_command(label="TXT to SUBTITLE", command=txtToSUBTITLE)
 convert_menu.add_command(label="SUBTITLE <-> TXT", command=convertSUBTITLETXT)
 tools_menu.add_cascade(label="Convert", menu=convert_menu)
+
+def openWebsite(url): webbrowser.open_new(url)
+
+def parserWindow():
+    parser_window = Toplevel(hmct)
+    parser_window.lift(hmct)
+    parser_window.geometry("760x520")
+    parser_window.title("Parser")
+    parser_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
+    parser_frame = Frame(parser_window, bd=5, height=300, width=600)
+    parser_frame.pack_propagate(False)
+    parser_frame.pack(side=TOP, anchor=W)
+    parser_text = Text(parser_frame, borderwidth=3, relief="sunken")
+    parser_text.config(font=("consolas", 12), undo=True, wrap="word")
+    parser_text.grid(row=0, column=0, sticky="nsew", padx=2, pady=2)
+    scrollb = Scrollbar(parser_frame, command=parser_text.yview)
+    scrollb.grid(row=0, column=1, sticky="nsew")
+    parser_text["yscrollcommand"] = scrollb.set
+    def parse():
+        text = parser_text.get('1.0', END).splitlines()
+        for line in text:
+            effected_files = line.split(":")[0]
+            parse_commands = line.split(":")[1]
+            for root, dirs, files in os.walk("{0}/projects/{1}".format(script_dir, current_project)):
+                for file in files:
+                    pass
+    Button(parser_frame, text="Parse!", command=parse).grid(row=1, column=0, sticky="nsew")
+    help_link = Label(parser_frame, text="Parser Help", fg="blue", cursor="hand2")
+    help_link.grid(row=2, column=0, sticky="nsew")
+    help_link.bind("<Button-1>", lambda e: openWebsite("https://github.com/09beckerboy/HMCT/wiki/How-to-Use-the-Parser"))
+tools_menu.add_command(label="Parser", command=parserWindow)
+
 tools_menu.add_separator()
 def openRGeomView(): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe"); os.chdir(script_dir)
 tools_menu.add_command(label="RGeomView", command=openRGeomView)
@@ -708,7 +741,10 @@ def help():
     help_window.geometry("400x400")
     help_window.title("Help")
     help_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
-    Label(help_window, text="Made by 09beckerboy").pack(side=LEFT, anchor=N)
+    Label(help_window, text="Made by 09beckerboy").grid(row=0, column=0, sticky="nesw")
+    github_link = Label(help_window, text="Github", fg="blue", cursor="hand2")
+    github_link.grid(row=1, column=0, sticky="w")
+    github_link.bind("<Button-1>", lambda e: openWebsite("https://github.com/09beckerboy/HMCT"))
 
 menu_bar.add_command(label="Help", command=help)
 

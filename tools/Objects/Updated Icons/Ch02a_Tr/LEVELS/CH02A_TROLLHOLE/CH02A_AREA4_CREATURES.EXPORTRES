@@ -1,0 +1,26 @@
+[ Resources : 22 ]
+ { Name:s                                         }
+// ----------------------------------------------
+   "EELHOLE128GREY[D].XBMP"                      
+   "FX/SHADOWDISC.XBMP"                          
+   "CHAR_BADGER2_TXTR[D].XBMP"                   
+   "EEL[D].XBMP"                                 
+   "CHAR_BADGER1_TXTR[D].XBMP"                   
+   "CHARACTERS/BIGROCKBADGERANIMS.CHARANIM"      
+   "CHARACTERS/EELANIMS.CHARANIM"                
+   "CHARACTERS/FIREFLIESANIMS.CHARANIM"          
+   "CHARACTERS/LITTLEROCKBADGERANIMS.CHARANIM"   
+   "EELHOLE.RGEOM"                               
+   "CHAR_BIGROCKBADGER_BIND.NPCGEOM"             
+   "EEL_MODEL.NPCGEOM"                           
+   "CHAR_LITTLEROCKBADGER_BINDPOSE.NPCGEOM"      
+   "AI/CREATURELIST.INFO"                        
+   "AI/BIGROCKBADGERSTATES.INFO"                 
+   "AI/BIGROCKBADGERANIMS.INFO"                  
+   "AI/EELSTATES.INFO"                           
+   "AI/EELANIMS.INFO"                            
+   "AI/FIREFLIESSTATES.INFO"                     
+   "AI/FIREFLIESANIMS.INFO"                      
+   "AI/LITTLEROCKBADGERSTATES.INFO"              
+   "AI/LITTLEROCKBADGERANIMS.INFO"               
+   

@@ -1,0 +1,12 @@
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bedroll[D].xbmp
+map_Kd bedroll[D].xbmp
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bedroll_side[RGBA].xbmp
+map_Kd bedroll_side[RGBA].xbmp

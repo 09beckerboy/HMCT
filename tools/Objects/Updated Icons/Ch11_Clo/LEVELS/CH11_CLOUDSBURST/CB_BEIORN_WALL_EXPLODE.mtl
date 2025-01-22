@@ -1,0 +1,24 @@
+newmtl StuccoMixv2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stucco[D].xbmp
+map_Kd Inst_CB_stucco[D].xbmp
+newmtl Inst_CB_stuccoEdge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stuccoEdge[D].xbmp
+map_Kd Inst_CB_stuccoEdge[D].xbmp
+newmtl wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03[D].xbmp
+map_Kd Inst_CB_woodplank03[D].xbmp
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03char[D].xbmp
+map_Kd Inst_CB_woodplank03char[D].xbmp

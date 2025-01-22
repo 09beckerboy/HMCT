@@ -1,0 +1,12 @@
+newmtl Post
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_wood_board_02[D].xbmp
+map_Kd Overhill_wood_board_02[D].xbmp
+newmtl Torch_Top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_fire_log_01[D].xbmp
+map_Kd OH_fire_log_01[D].xbmp

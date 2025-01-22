@@ -1,0 +1,9 @@
+[ Resources : 5 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "FX/SHADOWDISC.XBMP"                   
+   "CHARACTERS/FIREFLIESANIMS.CHARANIM"   
+   "AI/CREATURELIST.INFO"                 
+   "AI/FIREFLIESSTATES.INFO"              
+   "AI/FIREFLIESANIMS.INFO"               
+   

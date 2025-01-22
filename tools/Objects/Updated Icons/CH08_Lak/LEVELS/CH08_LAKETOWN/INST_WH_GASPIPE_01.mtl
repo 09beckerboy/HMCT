@@ -1,0 +1,12 @@
+newmtl pipe_Gasket
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pipeGasket[D].xbmp
+map_Kd pipeGasket[D].xbmp
+newmtl pipe
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pipe[D].xbmp
+map_Kd pipe[D].xbmp

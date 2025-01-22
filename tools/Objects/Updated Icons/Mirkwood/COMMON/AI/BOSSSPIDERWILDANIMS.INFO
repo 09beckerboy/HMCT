@@ -1,0 +1,42 @@
+[ AnimList : 24 ]
+ { AnimName:s		AnimType:s		YawRate:f		BlendFactor:f		SpeedScalar:f			DistanceScalar:f			AnimRotation:f  		NoiseLevel:f	    	Flags:d     AnimMode:d }
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"idle"			    "IDLE"			0.0			    0.25			    1.0				        1.0					        0.0				        0.0			            2           0
+"AggressiveIdle"    "COMBAT_IDLE"	0.0			    0.25			    1.0				        1.0					        0.0				        0.0			            2           0
+"HangingIdle"	    "SPECIAL"	    0.0			    0.25			    1.0				        1.0					        0.0				        0.0			            130         1
+"walk"		        "WALK"			8.0			    0.25			    1.0				        1.0					        0.0				        0.0			            0           0
+//"run"		        "RUN"			16.0			0.25			    1.0				        1.0					        0.0				        0.0			            0           0
+"jump"		        "JUMP"			4.0			    0.25			    1.0				        1.0					        0.0				        0.0			            0           0
+"Fall"		        "FALL"			4.0			    0.25			    1.0				        1.0				            0.0			          	0.0		            	0           0  			            
+"land"		        "LAND"			0.0			    0.25			    1.0				        1.0				            0.0			        	0.0		            	0           0
+"turn_left"		    "TURN"			0.0			    0.25			    1.5				        1.0				            0.0			        	0.0		            	0           0
+"turn_right"		"TURN"		    0.0			    0.25			    1.5				        1.0				            0.0			        	0.0		            	0           0
+"strafe_back"		"STRAFE_BACK"	4.0			    0.25			    0.75			        1.0				            0.0			        	0.0		            	0           0
+"claw"			    "ATTACK"		2.0			    0.25			    1.0				        1.0				            0.0			        	0.0		            	0           0
+"ShortBite"		    "ATTACK"		2.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           0
+//"RangedBite"		"JUMP_ATTACK"   2.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           0
+//"BigSpit"		    "ATTACK"		2.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           0
+"damageflinch"	    "FLINCH_FORWARD" 0.0			0.25			    1.0			        	0.5				            0.0			        	0.0		            	0           -1
+"damageflinch"      "FLINCH_BACK"	0.0			    0.25			    1.0			        	0.5				            0.0			        	0.0		            	0           -1
+"MiniFlinchLeft"	"ARMORED_FLINCH"0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           -1
+"MiniFlinchRight"   "ARMORED_FLINCH"0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           -1
+"bigeyeflinch"		"STRONG_FLINCH"	0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           -1         
+"flinch_upright"	"FLINCH_BACK"	0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	0           -1
+"attach_to_ceiling"	"SPECIAL"	    0.0			    0.25			    1.0			        	1.0			                0.0			        	0.0		            	0           0
+"roar"	            "TAUNT"	        0.0			    0.25			    1.0			        	1.0			                0.0			        	0.0		            	0           0
+"CutWeb"	        "SPECIAL"	    0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	128         0
+"UpWeb"             "SPECIAL"	    0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	128         0
+"DownWeb"           "SPECIAL"	    0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	128         0
+"CallMinions"       "SPECIAL"	    0.0			    0.25			    1.0			        	1.0				            0.0			        	0.0		            	128         0
+
+
+                                                                        
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "BossSpider"
+
+/*
+*/
+
+

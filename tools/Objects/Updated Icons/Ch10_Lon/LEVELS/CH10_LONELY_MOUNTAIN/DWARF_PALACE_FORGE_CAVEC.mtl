@@ -1,0 +1,12 @@
+newmtl Lvl_dwarven_plc_stonerockmix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone21a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone21a[D].xbmp
+newmtl bullshits
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone21a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone21a[D].xbmp

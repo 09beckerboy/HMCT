@@ -1,0 +1,12 @@
+newmtl gloin
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_Oin_ Diffuse[D].xbmp
+map_Kd Char_Oin_ Diffuse[D].xbmp
+newmtl 3_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_Oin_ Diffuse[D].xbmp
+map_Kd Char_Oin_ Diffuse[D].xbmp

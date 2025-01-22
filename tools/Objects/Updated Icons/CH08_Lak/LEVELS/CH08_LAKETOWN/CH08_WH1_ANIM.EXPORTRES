@@ -1,0 +1,13 @@
+[ Resources : 9 ]
+ { Name:s                                                    }
+// ---------------------------------------------------------
+   "BARN_DOOR_01[D].XBMP"                                   
+   "CRANEBOLT[D].XBMP"                                      
+   "PIPEGASKET[D].XBMP"                                     
+   "LAKETOWN_WAREHOUSE1_ANIM_WH1_LOWER_DOOR192__AI.ANIM"    
+   "LAKETOWN_WAREHOUSE1_ANIM_WH1_LOWER_DOOR193__AI.ANIM"    
+   "INST_WH_SWITCH_01.ANIM"                                 
+   "LAKETOWN_WAREHOUSE1_ANIM_WH1_LOWER_DOOR192__AI.RGEOM"   
+   "LAKETOWN_WAREHOUSE1_ANIM_WH1_LOWER_DOOR193__AI.RGEOM"   
+   "INST_WH_SWITCH_01.RGEOM"                                
+   
