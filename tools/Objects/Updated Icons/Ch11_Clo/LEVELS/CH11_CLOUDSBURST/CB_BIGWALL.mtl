@@ -1,0 +1,66 @@
+newmtl Material_#77514
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_rock03[D].xbmp
+map_Kd Lvl_Cburst_rock03[D].xbmp
+newmtl Material_#77515
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_rock03[D].xbmp
+map_Kd Lvl_Cburst_rock03[D].xbmp
+newmtl Material_#77516
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_ground04a[D].xbmp
+map_Kd Lvl_Cburst_ground04a[D].xbmp
+newmtl edges
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stuccoEdge[D].xbmp
+map_Kd Inst_CB_stuccoEdge[D].xbmp
+newmtl Material_#77540
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stucco[D].xbmp
+map_Kd Inst_CB_stucco[D].xbmp
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03edge[D].xbmp
+map_Kd Inst_CB_woodplank03edge[D].xbmp
+newmtl woodBeamSide
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03[D].xbmp
+map_Kd Inst_CB_woodplank03[D].xbmp
+newmtl Lvl_Cburst_rockground_mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_rock03[D].xbmp
+map_Kd Lvl_Cburst_rock03[D].xbmp
+newmtl Lvl_Cburst_rock03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_rock03[D].xbmp
+map_Kd Lvl_Cburst_rock03[D].xbmp
+newmtl woodChar
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03char[D].xbmp
+map_Kd Inst_CB_woodplank03char[D].xbmp
+newmtl woodEdges
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03edge[D].xbmp
+map_Kd Inst_CB_woodplank03edge[D].xbmp

@@ -1,0 +1,18 @@
+newmtl gob_cog_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_star_cog_Sil_01[RGBA].xbmp
+map_Kd OH_star_cog_Sil_01[RGBA].xbmp
+newmtl cog_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_cog_side_Sil_02[D].xbmp
+map_Kd Over_Hill_gob_cog_side_Sil_02[D].xbmp
+newmtl P1_Cog_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Tech_cog_side_Sil_01[D].xbmp
+map_Kd OH_Tech_cog_side_Sil_01[D].xbmp

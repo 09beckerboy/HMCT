@@ -1,0 +1,24 @@
+newmtl Troll_Door
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_troll_door_01[D].xbmp
+map_Kd Overhill_troll_door_01[D].xbmp
+newmtl spike
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_troll_spike_01[D].xbmp
+map_Kd Overhill_troll_spike_01[D].xbmp
+newmtl Door_head
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_door_facel_01[D].xbmp
+map_Kd Over_Hill_door_facel_01[D].xbmp
+newmtl Metal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_metal_01[D].xbmp
+map_Kd Over_Hill_metal_01[D].xbmp

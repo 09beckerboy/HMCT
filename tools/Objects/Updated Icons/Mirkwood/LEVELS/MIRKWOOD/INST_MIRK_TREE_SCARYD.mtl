@@ -1,0 +1,12 @@
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_BARK_trans[D].xbmp
+map_Kd Mirk_BARK_trans[D].xbmp
+newmtl gfgfsgsgfgggg
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka scary_op[RGBA].xbmp
+map_Kd scary_op[RGBA].xbmp

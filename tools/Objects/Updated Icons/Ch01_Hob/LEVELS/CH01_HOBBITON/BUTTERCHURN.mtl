@@ -1,0 +1,12 @@
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka ButterChurnWood[D].xbmp
+map_Kd ButterChurnWood[D].xbmp
+newmtl butterTop
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka ButterChurnTop[D].xbmp
+map_Kd ButterChurnTop[D].xbmp

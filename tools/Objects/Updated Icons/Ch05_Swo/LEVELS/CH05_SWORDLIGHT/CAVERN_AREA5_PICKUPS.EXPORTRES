@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                                }
+// -------------------------------------
+   "RING[D].XBMP"                       
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"   
+   "HEALTHPOTION[D].XBMP"               
+   "CHP5CIN10_RING.ANIM"                
+   "CHP5CIN10_RING.RGEOM"               
+   "INST_COURAGEPOINT_1.RGEOM"          
+   "HEALTH_POTION.RGEOM"                
+   

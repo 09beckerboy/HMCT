@@ -1,0 +1,12 @@
+newmtl Lvl_Cburst_woodplankBend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankBend[D].xbmp
+map_Kd Lvl_Cburst_woodplankBend[D].xbmp
+newmtl Lvl_Cburst_woodplankB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_woodplankB[D].xbmp
+map_Kd Lvl_Cburst_woodplankB[D].xbmp

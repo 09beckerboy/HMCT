@@ -1,0 +1,18 @@
+newmtl Lvl_dwarven_plc_tileB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_tileB[D].xbmp
+map_Kd Lvl_dwarven_plc_tileB[D].xbmp
+newmtl Lvl_dwarven_plc_tile01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_tile01[D].xbmp
+map_Kd Lvl_dwarven_plc_tile01[D].xbmp
+newmtl Lvl_dwarven_plc_tileBa
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_tileBa[D].xbmp
+map_Kd Lvl_dwarven_plc_tileBa[D].xbmp

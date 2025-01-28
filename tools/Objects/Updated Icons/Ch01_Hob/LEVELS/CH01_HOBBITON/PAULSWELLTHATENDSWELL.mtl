@@ -1,0 +1,24 @@
+newmtl stone_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_WellWall[D].xbmp
+map_Kd Lvl_Htown_WellWall[D].xbmp
+newmtl wood_board
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_Well_Plank[D].xbmp
+map_Kd Lvl_Htown_Well_Plank[D].xbmp
+newmtl Wellcorner
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_WellCorner[D].xbmp
+map_Kd Lvl_Htown_WellCorner[D].xbmp
+newmtl shingles
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_shingles[D].xbmp
+map_Kd Lvl_Htown_shingles[D].xbmp

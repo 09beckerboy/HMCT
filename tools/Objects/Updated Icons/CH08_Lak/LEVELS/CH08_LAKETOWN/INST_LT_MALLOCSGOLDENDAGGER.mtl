@@ -1,0 +1,12 @@
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_MallocsGoldenDagger[D].xbmp
+map_Kd Inst_LT_MallocsGoldenDagger[D].xbmp
+newmtl daggerNoGloss
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_MallocsGoldenDagger[D].xbmp
+map_Kd Inst_LT_MallocsGoldenDagger[D].xbmp

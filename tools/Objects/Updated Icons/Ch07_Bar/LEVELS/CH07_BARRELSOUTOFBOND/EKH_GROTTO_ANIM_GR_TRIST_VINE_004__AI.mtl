@@ -1,0 +1,12 @@
+newmtl Vine_Leaf
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_vine_leaf_01[RGBA].xbmp
+map_Kd EKH_vine_leaf_01[RGBA].xbmp
+newmtl GrowVine
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Twist_Vine_01[D].xbmp
+map_Kd EKH_Twist_Vine_01[D].xbmp

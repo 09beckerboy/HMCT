@@ -1,0 +1,18 @@
+newmtl poles
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_trollhole_poles_Mip0[D].xbmp
+map_Kd Lvl_trollhole_poles_Mip0[D].xbmp
+newmtl logend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_logend_Mip0[D].xbmp
+map_Kd Lvl_Trollhole_logend_Mip0[D].xbmp
+newmtl x
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA2edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA2edge_Mip0[D].xbmp

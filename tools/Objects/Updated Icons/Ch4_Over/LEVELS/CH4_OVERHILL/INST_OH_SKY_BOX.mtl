@@ -1,0 +1,30 @@
+newmtl Sky_Top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Night_Sky_Top_01[RGBA].xbmp
+map_Kd Night_Sky_Top_01[RGBA].xbmp
+newmtl CloudsV2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Night_Clouds_01[RGBA].xbmp
+map_Kd Night_Clouds_01[RGBA].xbmp
+newmtl Sky_Blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Night_Sky_Blend_01[RGBA].xbmp
+map_Kd Night_Sky_Blend_01[RGBA].xbmp
+newmtl sky2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Thunder_Sky_05[RGBA].xbmp
+map_Kd OH_Thunder_Sky_05[RGBA].xbmp
+newmtl Mountains
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Mountain_Range_01[RGBA].xbmp
+map_Kd OH_Mountain_Range_01[RGBA].xbmp

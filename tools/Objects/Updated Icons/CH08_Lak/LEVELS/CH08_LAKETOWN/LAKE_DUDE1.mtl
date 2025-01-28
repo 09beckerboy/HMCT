@@ -1,0 +1,6 @@
+newmtl lkj
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lake_dude1[D].xbmp
+map_Kd lake_dude1[D].xbmp

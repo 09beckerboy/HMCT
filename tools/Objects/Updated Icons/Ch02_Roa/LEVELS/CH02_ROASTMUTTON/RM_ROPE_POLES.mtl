@@ -1,0 +1,36 @@
+newmtl wood_plank_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl Lvl_riv_gear03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gear03[D].xbmp
+map_Kd Lvl_riv_gear03[D].xbmp
+newmtl Lvl_riv_rope03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_rope03[D].xbmp
+map_Kd Lvl_riv_rope03[D].xbmp
+newmtl Lvl_riv_gearpart02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart02[D].xbmp
+map_Kd Lvl_riv_gearpart02[D].xbmp
+newmtl wood_wall_01a
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_wall_01a[D].xbmp
+map_Kd wood_wall_01a[D].xbmp
+newmtl Material_#77542
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_rope03[D].xbmp
+map_Kd Lvl_riv_rope03[D].xbmp

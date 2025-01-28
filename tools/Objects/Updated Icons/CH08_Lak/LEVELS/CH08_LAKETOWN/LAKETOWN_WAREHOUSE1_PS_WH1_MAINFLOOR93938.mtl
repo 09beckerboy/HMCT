@@ -1,0 +1,6 @@
+newmtl LT_Floor_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka planks_nails_03[D].xbmp
+map_Kd planks_nails_03[D].xbmp

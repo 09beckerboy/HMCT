@@ -1,0 +1,18 @@
+newmtl FlowersAll
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lvl_hob_flowers[RGBA].xbmp
+map_Kd lvl_hob_flowers[RGBA].xbmp
+newmtl leaf1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lvl_hob_leaf1[D].xbmp
+map_Kd lvl_hob_leaf1[D].xbmp
+newmtl clayPots
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lvl_hob_clayPots[D].xbmp
+map_Kd lvl_hob_clayPots[D].xbmp

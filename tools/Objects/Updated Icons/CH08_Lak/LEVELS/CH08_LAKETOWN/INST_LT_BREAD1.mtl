@@ -1,0 +1,6 @@
+newmtl Oval_bread_hactched
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bread_hatched_02[D].xbmp
+map_Kd bread_hatched_02[D].xbmp

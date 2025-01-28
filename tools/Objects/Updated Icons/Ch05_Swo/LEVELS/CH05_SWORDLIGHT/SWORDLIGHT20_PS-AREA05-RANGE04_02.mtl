@@ -1,0 +1,48 @@
+newmtl Lvl_Riddles_Range4C
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4C[D].xbmp
+map_Kd Lvl_Riddles_Range4C[D].xbmp
+newmtl Lvl_Riddles_Range4E
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4E[D].xbmp
+map_Kd Lvl_Riddles_Range4E[D].xbmp
+newmtl Lvl_Riddles_Range4D
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4D[D].xbmp
+map_Kd Lvl_Riddles_Range4D[D].xbmp
+newmtl Lvl_Riddles_Range4Q
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4Q[RGBA].xbmp
+map_Kd Lvl_Riddles_Range4Q[RGBA].xbmp
+newmtl Lvl_Riddles_Range4P
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4P[RGBA].xbmp
+map_Kd Lvl_Riddles_Range4P[RGBA].xbmp
+newmtl Lvl_Riddles_Range4o
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4o[RGBA].xbmp
+map_Kd Lvl_Riddles_Range4o[RGBA].xbmp
+newmtl Lvl_Riddles_Range4N
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4N[RGBA].xbmp
+map_Kd Lvl_Riddles_Range4N[RGBA].xbmp
+newmtl Lvl_Riddles_Range4R
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Range4R[RGBA].xbmp
+map_Kd Lvl_Riddles_Range4R[RGBA].xbmp

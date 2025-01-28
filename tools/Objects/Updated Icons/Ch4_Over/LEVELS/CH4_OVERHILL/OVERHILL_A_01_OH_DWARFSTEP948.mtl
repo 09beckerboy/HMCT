@@ -1,0 +1,18 @@
+newmtl Material_#43802
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone02[D].xbmp
+map_Kd OH_dwarven_plc_stone02[D].xbmp
+newmtl Lvl_dwarven_plc_stone02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone02[D].xbmp
+map_Kd OH_dwarven_plc_stone02[D].xbmp
+newmtl Dwarf_Stone_Step
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_step_01[D].xbmp
+map_Kd Over_Hill_step_01[D].xbmp

@@ -1,0 +1,22 @@
+[ Resources : 18 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "FX/SHADOWDISC.XBMP"                       
+   "CHAR_BADGER1_TXTR[D].XBMP"                
+   "THORN_POD[D].XBMP"                        
+   "CRITTER_WOLF_TEXTURE[D].XBMP"             
+   "CHARACTERS/FIREFLIESANIMS.CHARANIM"       
+   "CHARACTERS/PODANIMS.CHARANIM"             
+   "CHARACTERS/WOLFANIMS.CHARANIM"            
+   "PROPS/GOBBAG.RGEOM"                       
+   "CHAR_LITTLEROCKBADGER_BINDPOSE.NPCGEOM"   
+   "THORN_POD.NPCGEOM"                        
+   "WOLF_BINDPOSE.NPCGEOM"                    
+   "AI/CREATURELIST.INFO"                     
+   "AI/FIREFLIESSTATES.INFO"                  
+   "AI/FIREFLIESANIMS.INFO"                   
+   "AI/THORNPODSTATES.INFO"                   
+   "AI/THORNPODANIMS.INFO"                    
+   "AI/WOLFSTATES.INFO"                       
+   "AI/WOLFANIMS.INFO"                        
+   

@@ -1,0 +1,66 @@
+newmtl goblin_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_beam_01[D].xbmp
+map_Kd Over_Hill_gob_beam_01[D].xbmp
+newmtl Gate_guide_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_door_guide_top_01[RGBA].xbmp
+map_Kd Over_Hill_door_guide_top_01[RGBA].xbmp
+newmtl gate_guide
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_door_guide_01[D].xbmp
+map_Kd Over_Hill_door_guide_01[D].xbmp
+newmtl gob_cog_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_cog_01[RGBA].xbmp
+map_Kd Over_Hill_gob_cog_01[RGBA].xbmp
+newmtl cog_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_cog_side02[D].xbmp
+map_Kd Over_Hill_gob_cog_side02[D].xbmp
+newmtl Gate_guide_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_door_guide_top_01[RGBA].xbmp
+map_Kd Over_Hill_door_guide_top_01[RGBA].xbmp
+newmtl gob_cog_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_cog_01[RGBA].xbmp
+map_Kd Over_Hill_gob_cog_01[RGBA].xbmp
+newmtl cog_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_gob_cog_side02[D].xbmp
+map_Kd Over_Hill_gob_cog_side02[D].xbmp
+newmtl bridge_rope
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_rope[D].xbmp
+map_Kd Over_Hill_rope[D].xbmp
+newmtl bridge_rope
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_rope[D].xbmp
+map_Kd Over_Hill_rope[D].xbmp
+newmtl goblin_gate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka goblin_gate_01[D].xbmp
+map_Kd goblin_gate_01[D].xbmp

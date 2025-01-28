@@ -1,0 +1,30 @@
+newmtl GuideTop
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_door_guide_top_01[RGBA].xbmp
+map_Kd LT_door_guide_top_01[RGBA].xbmp
+newmtl Guide
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_door_guide_01[D].xbmp
+map_Kd LT_door_guide_01[D].xbmp
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl LT_Floor_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka planks_nails_03[D].xbmp
+map_Kd planks_nails_03[D].xbmp
+newmtl Post_End
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp

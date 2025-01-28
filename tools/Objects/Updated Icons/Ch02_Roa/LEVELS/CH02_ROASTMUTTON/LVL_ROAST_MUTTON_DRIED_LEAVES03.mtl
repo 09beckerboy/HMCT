@@ -1,0 +1,36 @@
+newmtl Lvl_roast_M_leaf04
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lVL_roast_m_leaf02[RGBA].xbmp
+map_Kd lVL_roast_m_leaf02[RGBA].xbmp
+newmtl Lvl_roast_M_leaf04_c
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lVL_roast_m_leaf02[RGBA].xbmp
+map_Kd lVL_roast_m_leaf02[RGBA].xbmp
+newmtl leaf2_c
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_roast_M_leaf04[RGBA].xbmp
+map_Kd Lvl_roast_M_leaf04[RGBA].xbmp
+newmtl leaf2_b
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_roast_M_leaf04[RGBA].xbmp
+map_Kd Lvl_roast_M_leaf04[RGBA].xbmp
+newmtl Lvl_roast_M_leaf04_b
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lVL_roast_m_leaf02[RGBA].xbmp
+map_Kd lVL_roast_m_leaf02[RGBA].xbmp
+newmtl leaf2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_roast_M_leaf04[RGBA].xbmp
+map_Kd Lvl_roast_M_leaf04[RGBA].xbmp

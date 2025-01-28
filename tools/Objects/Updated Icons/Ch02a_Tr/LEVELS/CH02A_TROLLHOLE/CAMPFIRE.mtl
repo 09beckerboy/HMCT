@@ -1,0 +1,66 @@
+newmtl Material_#14
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mutton[D].xbmp
+map_Kd mutton[D].xbmp
+newmtl lVL_roast_M_stone07
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lVL_roast_m_ground03[D].xbmp
+map_Kd lVL_roast_m_ground03[D].xbmp
+newmtl Material_#29
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka burntground[RGBA].xbmp
+map_Kd burntground[RGBA].xbmp
+newmtl 3_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka burninglog[D].xbmp
+map_Kd burninglog[D].xbmp
+newmtl Material_#0
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03Mip1[D].xbmp
+map_Kd log_end_03Mip1[D].xbmp
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pot[D].xbmp
+map_Kd pot[D].xbmp
+newmtl 9_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_rock02[D].xbmp
+map_Kd Lvl_riv_rock02[D].xbmp
+newmtl 2_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka stew[RGBA].xbmp
+map_Kd stew[RGBA].xbmp
+newmtl Material_#31
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka biglog[D].xbmp
+map_Kd biglog[D].xbmp
+newmtl Material_#32
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka biglogend[D].xbmp
+map_Kd biglogend[D].xbmp
+newmtl wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka rotten_beam_01Mip0[D].xbmp
+map_Kd rotten_beam_01Mip0[D].xbmp

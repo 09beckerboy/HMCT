@@ -1,0 +1,564 @@
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka treasurechest2 copy[D].xbmp
+map_Kd treasurechest2 copy[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 10_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_coin_floorB[RGBA].xbmp
+map_Kd Sm_coin_floorB[RGBA].xbmp
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sword[D].xbmp
+map_Kd sword[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 15_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl 13_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_side_coin[D].xbmp
+map_Kd Sm_side_coin[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_top_coin[D].xbmp
+map_Kd sm_top_coin[D].xbmp
+newmtl djdhjd
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wightshield[D].xbmp
+map_Kd wightshield[D].xbmp
+newmtl 6_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_flatA_Gold[RGBA].xbmp
+map_Kd Sm_flatA_Gold[RGBA].xbmp

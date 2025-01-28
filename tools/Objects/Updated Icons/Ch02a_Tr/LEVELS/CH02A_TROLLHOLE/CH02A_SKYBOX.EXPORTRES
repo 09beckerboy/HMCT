@@ -1,0 +1,24 @@
+[ Resources : 20 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "LVL_TROLLHOLE_SKYA_MIP0[D].XBMP"          
+   "LVL_TROLLHOLE_SKYB_MIP0[D].XBMP"          
+   "LVL_TROLLHOLE_BACKGROUND2_MIP0[D].XBMP"   
+   "LVL_TROLLHOLE_TREELINEC_MIP0[D].XBMP"     
+   "LVL_TROLLHOLE_TREELINEC_MIP0[A].XBMP"     
+   "LVL_TROLLHOLE_TREELINEB_MIP0[D].XBMP"     
+   "LVL_TROLLHOLE_TREELINEB_MIP0[A].XBMP"     
+   "LVL_TROLLHOLE_TREELINEA_MIP0[D].XBMP"     
+   "LVL_TROLLHOLE_TREELINEA_MIP0[A].XBMP"     
+   "CLOUDS2[D].XBMP"                          
+   "CLOUDS2[A].XBMP"                          
+   "CLOUDS1[D].XBMP"                          
+   "CLOUDS1[A].XBMP"                          
+   "LVL_TROLLHOLE_BACKGROUND_MIP0[D].XBMP"    
+   "LVL_TROLLHOLE_SUNBEAMSB[D].XBMP"          
+   "LVL_TROLLHOLE_SUNBEAMSB[A].XBMP"          
+   "LVL_TROLLHOLE_SUNBEAMSA[D].XBMP"          
+   "LVL_TROLLHOLE_SUNBEAMSA[A].XBMP"          
+   "TROLLHOLESKYBOX.ANIM"                     
+   "TROLLHOLESKYBOX.RGEOM"                    
+   

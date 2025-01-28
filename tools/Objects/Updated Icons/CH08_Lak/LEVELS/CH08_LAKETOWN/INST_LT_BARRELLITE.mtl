@@ -1,0 +1,24 @@
+newmtl barrel_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_side_02[D].xbmp
+map_Kd barrel_side_02[D].xbmp
+newmtl barrel_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_top_02[D].xbmp
+map_Kd barrel_top_02[D].xbmp
+newmtl portal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_PressurePlatePuz_portal[D].xbmp
+map_Kd LT_PressurePlatePuz_portal[D].xbmp
+newmtl Portal_Lit
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_PressurePlatePuz_portal[D].xbmp
+map_Kd LT_PressurePlatePuz_portal[D].xbmp

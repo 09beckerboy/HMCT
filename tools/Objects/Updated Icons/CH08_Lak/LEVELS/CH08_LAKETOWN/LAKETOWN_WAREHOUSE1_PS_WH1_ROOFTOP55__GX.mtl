@@ -1,0 +1,24 @@
+newmtl wall_wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_wall_01[D].xbmp
+map_Kd wood_wall_01[D].xbmp
+newmtl Shingles
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka shingles[D].xbmp
+map_Kd shingles[D].xbmp
+newmtl log_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl wood_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_04[D].xbmp
+map_Kd wood_beam_04[D].xbmp

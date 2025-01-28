@@ -1,0 +1,6 @@
+newmtl der
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_halberd1[D].xbmp
+map_Kd Sm_halberd1[D].xbmp

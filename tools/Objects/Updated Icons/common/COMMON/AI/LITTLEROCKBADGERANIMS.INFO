@@ -1,0 +1,60 @@
+[ AnimList : 35 ]
+ { AnimName:s				AnimType:s					YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+"sleep"						"IDLE"						0.0			0.25			1.0				1.0					0.0				0.0				0
+"block"						"IDLE"						0.0			0.25			1.0				1.0					0.0				0.0				0
+"idle"						"IDLE"						0.0			0.25			1.0				1.0					0.0				0.0				0
+"looklisten"				"IDLEANIM"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"Fidget1"				    "IDLEANIM"					0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"Fidget2"				    "IDLEANIM"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"Fidget3"				    "IDLEANIM"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"looklisten"				"ALERT_IDLE"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"combat_idle"				"COMBAT_IDLE"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"enter_block"				"SPECIAL"					0.0			0.0				1.0				1.0					0.0				0.0				0
+
+"block"						"BLOCK"						0.0			0.0				1.0				1.0					0.0				0.0				0
+"block_hit"					"BLOCK_HIT"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"exit_block"				"SPECIAL"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"bite"						"ATTACK"				    1.0			0.25			1.0				1.0					0.0				0.0				0
+"claw"						"ATTACK"				    1.0			0.25			1.0				1.0					0.0				0.0				0
+
+"jumpattack"				"JUMP_ATTACK"				0.5			0.25			1.0				1.0					0.0				0.0				0
+"deathfront"				"DEATH_FORWARD"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"walk"						"WALK"						4.0			0.25			1.0				1.0					0.0				0.0				0
+"run"						"RUN"						8.0			0.25			1.0				1.0					0.0				0.0				0
+"forwardflinch"				"FLINCH_FORWARD"			0.0			0.0				1.0				1.0					0.0				0.0				0
+
+"leftflinch"				"FLINCH_FORWARD"			0.0			0.0				1.0				1.0					0.0				0.0				0
+"rightflinch"				"FLINCH_FORWARD"			0.0			0.0				1.0				1.0					0.0				0.0				0
+"strongflinch"				"STRONG_FLINCH"				0.0			0.0				1.0				1.0					0.0				0.0				0
+"getup"						"STAND_UP"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"turn_left"					"TURN"				        0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"turn_right"				"TURN"				        0.0			0.25			1.0				1.0					0.0				0.0				0
+"strafe_left"				"STRAFE_LEFT"				2.0			0.25			1.0				1.0					0.0				0.0				0
+"strafe_right"				"STRAFE_RIGHT"				2.0			0.25			1.0				1.0					0.0				0.0				0
+"strafe_back"				"STRAFE_BACK"				2.0			0.50			1.0				1.0					0.0				0.0				0
+"enter_strafe_left"			"SPECIAL"					0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"enter_strafe_right"		"SPECIAL"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"Exit_Strafe_Left"			"SPECIAL"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"exit_strafe_right"		    "SPECIAL"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"confused"		            "SPECIAL"					0.0			0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"		        "HEAD_TRACKING"			    0.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "littlerockbadger"
+
+[ AnimTransitionTable : 7 ]
+ { CurrentAnim:s			Transition1:s				Transition2:s				NextAnim:s				Flags:d }
+// -------------------------------------------------------------------------------------------------------------------------------------
+"block"						"exit_block"				"*"							"*"						1
+"*"							"*"							"enter_block"				"block"					1
+"strongflinch"				"getup"						"*"							"*"						1
+"strafe_left"				"exit_strafe_left"	        "*"							"*"						1
+"*"							"*"							"enter_strafe_left"			"strafe_left"			1
+"strafe_right"				"exit_strafe_right"	        "*"							"*"						1
+"*"							"*"							"enter_strafe_right"		"strafe_right"			1

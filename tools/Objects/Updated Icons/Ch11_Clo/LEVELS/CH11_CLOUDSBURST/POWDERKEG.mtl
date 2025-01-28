@@ -1,0 +1,12 @@
+newmtl ger
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka brushed_metal[RGBA].xbmp
+map_Kd brushed_metal[RGBA].xbmp
+newmtl Material_#23802
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka powderkeg[D].xbmp
+map_Kd powderkeg[D].xbmp

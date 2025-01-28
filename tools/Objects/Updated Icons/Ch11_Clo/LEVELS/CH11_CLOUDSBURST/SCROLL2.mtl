@@ -1,0 +1,6 @@
+newmtl scroll
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka scroll2[D].xbmp
+map_Kd scroll2[D].xbmp

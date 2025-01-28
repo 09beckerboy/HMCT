@@ -1,0 +1,6 @@
+newmtl Head
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka XT_Char_Warrior_Txtr copy[D].xbmp
+map_Kd XT_Char_Warrior_Txtr copy[D].xbmp

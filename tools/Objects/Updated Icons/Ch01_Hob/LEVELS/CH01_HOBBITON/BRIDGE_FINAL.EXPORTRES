@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                                }
+// -------------------------------------
+   "LVL_HTOWN_BOARDC COPY2[D].XBMP"     
+   "LVL_HTOWN_ROPE2[D].XBMP"            
+   "LVL_HTOWN_WOOD_PLANK[D].XBMP"       
+   "LVL_HTOWN_LOGEND_MIP0[D].XBMP"      
+   "INST_COURAGEPOINT_1_TXTR[D].XBMP"   
+   "BRIDGE_FINAL.RGEOM"                 
+   "INST_COURAGEPOINT_1.RGEOM"          
+   

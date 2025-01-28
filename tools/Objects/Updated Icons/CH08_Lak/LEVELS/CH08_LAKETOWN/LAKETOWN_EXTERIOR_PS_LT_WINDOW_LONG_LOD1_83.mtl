@@ -1,0 +1,12 @@
+newmtl Large_window
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka window_long_02_Lit[D].xbmp
+map_Kd window_long_02_Lit[D].xbmp
+newmtl window_grid
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka window_long_grid01[RGBA].xbmp
+map_Kd window_long_grid01[RGBA].xbmp

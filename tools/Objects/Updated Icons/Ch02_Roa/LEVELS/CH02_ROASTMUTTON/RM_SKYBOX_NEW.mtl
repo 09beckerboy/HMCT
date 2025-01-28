@@ -1,0 +1,132 @@
+newmtl skynew
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-StarBack[D].xbmp
+map_Kd RoastMutton_Skynew-StarBack[D].xbmp
+newmtl Material_#1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-StarBack[D].xbmp
+map_Kd RoastMutton_Skynew-StarBack[D].xbmp
+newmtl 0skyfloor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Sky-ground[D].xbmp
+map_Kd RoastMutton_Sky-ground[D].xbmp
+newmtl 5TreeLineC
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_TreeLineC[RGBA].xbmp
+map_Kd RoastMutton_TreeLineC[RGBA].xbmp
+newmtl 6TreeLineB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_TreeLineB[RGBA].xbmp
+map_Kd RoastMutton_TreeLineB[RGBA].xbmp
+newmtl 7TreeLineA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_TreeLineA[RGBA].xbmp
+map_Kd RoastMutton_TreeLineA[RGBA].xbmp
+newmtl 1Roof
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Roof[D].xbmp
+map_Kd RoastMutton_Skynew-Roof[D].xbmp
+newmtl Material_#382
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud1A[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud1A[RGBA].xbmp
+newmtl Material_#377
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud2A[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud2A[RGBA].xbmp
+newmtl Material_#378
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud2B[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud2B[RGBA].xbmp
+newmtl Material_#379
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud2C[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud2C[RGBA].xbmp
+newmtl Material_#380
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud2D[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud2D[RGBA].xbmp
+newmtl Material_#381
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud2E[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud2E[RGBA].xbmp
+newmtl Material_#373
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud3A[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud3A[RGBA].xbmp
+newmtl Material_#374
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud3B[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud3B[RGBA].xbmp
+newmtl Material_#375
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud3C[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud3C[RGBA].xbmp
+newmtl Material_#376
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud3D[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud3D[RGBA].xbmp
+newmtl Material_#345
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud4A[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud4A[RGBA].xbmp
+newmtl Material_#371
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud4B[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud4B[RGBA].xbmp
+newmtl Material_#372
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Cloud4C[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Cloud4C[RGBA].xbmp
+newmtl 3TopClouds2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Clouds[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Clouds[RGBA].xbmp
+newmtl Material_#344
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RoastMutton_Skynew-Clouds[RGBA].xbmp
+map_Kd RoastMutton_Skynew-Clouds[RGBA].xbmp

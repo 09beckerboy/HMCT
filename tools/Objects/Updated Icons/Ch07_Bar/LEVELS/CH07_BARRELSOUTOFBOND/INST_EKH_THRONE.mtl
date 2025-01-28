@@ -1,0 +1,42 @@
+newmtl ThroneSeat
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_ThroneSeat_01[D].xbmp
+map_Kd EKH_ThroneSeat_01[D].xbmp
+newmtl Throne_Trim
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Throne_Trim_01[D].xbmp
+map_Kd EKH_Throne_Trim_01[D].xbmp
+newmtl Throne_wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Throne_wood[D].xbmp
+map_Kd EKH_Throne_wood[D].xbmp
+newmtl Twist_vine
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_vinetwist_01[RGBA].xbmp
+map_Kd EKH_vinetwist_01[RGBA].xbmp
+newmtl Throne_Back
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_ThroneBack_01[D].xbmp
+map_Kd EKH_ThroneBack_01[D].xbmp
+newmtl Throne_Top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Throne_Top_01[D].xbmp
+map_Kd EKH_Throne_Top_01[D].xbmp
+newmtl Throne_Root
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Throne_root_01[D].xbmp
+map_Kd Throne_root_01[D].xbmp

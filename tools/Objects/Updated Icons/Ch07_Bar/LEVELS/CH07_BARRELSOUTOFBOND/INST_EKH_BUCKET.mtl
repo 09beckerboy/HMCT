@@ -1,0 +1,12 @@
+newmtl barrel_handel2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_handle_02[RGBA].xbmp
+map_Kd EKH_handle_02[RGBA].xbmp
+newmtl barrel
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_barrel_side_02[D].xbmp
+map_Kd EKH_barrel_side_02[D].xbmp

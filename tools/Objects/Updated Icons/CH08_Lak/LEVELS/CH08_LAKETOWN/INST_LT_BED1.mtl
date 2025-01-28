@@ -1,0 +1,24 @@
+newmtl Bed_Wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl wood_end
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl bed_front
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bed_front_01[D].xbmp
+map_Kd bed_front_01[D].xbmp
+newmtl Bed_cover
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bed_cover_01[D].xbmp
+map_Kd bed_cover_01[D].xbmp

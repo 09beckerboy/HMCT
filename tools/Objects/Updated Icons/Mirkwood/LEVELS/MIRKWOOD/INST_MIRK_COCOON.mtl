@@ -1,0 +1,6 @@
+newmtl 5555
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka SB_Webwall_Nofade[RGBA].xbmp
+map_Kd SB_Webwall_Nofade[RGBA].xbmp

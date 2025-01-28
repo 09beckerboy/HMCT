@@ -1,0 +1,378 @@
+newmtl panelWall
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodPanelWall[D].xbmp
+map_Kd LVL_BagEnd_WoodPanelWall[D].xbmp
+newmtl Material_#3689
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodCrossBeams[D].xbmp
+map_Kd LVL_BagEnd_WoodCrossBeams[D].xbmp
+newmtl woodBeam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodBeam[D].xbmp
+map_Kd LVL_BagEnd_WoodBeam[D].xbmp
+newmtl WoodBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodBeam[D].xbmp
+map_Kd LVL_BagEnd_WoodBeam[D].xbmp
+newmtl wallStucco
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WallStucco[D].xbmp
+map_Kd LVL_BagEnd_WallStucco[D].xbmp
+newmtl woodCrossBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodCrossBeams[D].xbmp
+map_Kd LVL_BagEnd_WoodCrossBeams[D].xbmp
+newmtl panelWall
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodPanelWall[D].xbmp
+map_Kd LVL_BagEnd_WoodPanelWall[D].xbmp
+newmtl fpTrim
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FPtopTrim[D].xbmp
+map_Kd LVL_BagEnd_FPtopTrim[D].xbmp
+newmtl FP_sides
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FPSides[D].xbmp
+map_Kd LVL_BagEnd_FPSides[D].xbmp
+newmtl FirePlaceBrick
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FPBrick[D].xbmp
+map_Kd LVL_BagEnd_FPBrick[D].xbmp
+newmtl fpFloor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FPFloor[D].xbmp
+map_Kd LVL_BagEnd_FPFloor[D].xbmp
+newmtl FP_blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FPFloor[D].xbmp
+map_Kd LVL_BagEnd_FPFloor[D].xbmp
+newmtl checks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka checkers[D].xbmp
+map_Kd checkers[D].xbmp
+newmtl FloorTile
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FloorTile[D].xbmp
+map_Kd LVL_BagEnd_FloorTile[D].xbmp
+newmtl FloorInset
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FloorInset[D].xbmp
+map_Kd LVL_BagEnd_FloorInset[D].xbmp
+newmtl FloorWoodStrip
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FloorWoodStrip[D].xbmp
+map_Kd LVL_BagEnd_FloorWoodStrip[D].xbmp
+newmtl tableLeg
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_TableLeg[D].xbmp
+map_Kd LVL_BagEnd_TableLeg[D].xbmp
+newmtl TableTop
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_TableTopPlain[D].xbmp
+map_Kd LVL_BagEnd_TableTopPlain[D].xbmp
+newmtl tableTopDecorative
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_TableTopDecorative[D].xbmp
+map_Kd LVL_BagEnd_TableTopDecorative[D].xbmp
+newmtl tableEdge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_TableEdge[D].xbmp
+map_Kd LVL_BagEnd_TableEdge[D].xbmp
+newmtl trim
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka trim[D].xbmp
+map_Kd trim[D].xbmp
+newmtl shelves
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_shelves[D].xbmp
+map_Kd LVL_shelves[D].xbmp
+newmtl extras
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_extraStuff[D].xbmp
+map_Kd LVL_BE_extraStuff[D].xbmp
+newmtl misc
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_misc[D].xbmp
+map_Kd LVL_BE_misc[D].xbmp
+newmtl misc2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_misc[D].xbmp
+map_Kd LVL_BE_misc[D].xbmp
+newmtl ovalRug
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_ovalRug[D].xbmp
+map_Kd LVL_BE_ovalRug[D].xbmp
+newmtl woodShelf
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_woodShelf[D].xbmp
+map_Kd LVL_BE_woodShelf[D].xbmp
+newmtl trim
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka trim[D].xbmp
+map_Kd trim[D].xbmp
+newmtl shelves
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_shelves[D].xbmp
+map_Kd LVL_shelves[D].xbmp
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_shelves[D].xbmp
+map_Kd LVL_shelves[D].xbmp
+newmtl log
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka burninglog[D].xbmp
+map_Kd burninglog[D].xbmp
+newmtl WoodBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodBeam[D].xbmp
+map_Kd LVL_BagEnd_WoodBeam[D].xbmp
+newmtl wallStucco
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WallStucco[D].xbmp
+map_Kd LVL_BagEnd_WallStucco[D].xbmp
+newmtl panelWall
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodPanelWall[D].xbmp
+map_Kd LVL_BagEnd_WoodPanelWall[D].xbmp
+newmtl woodCrossBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodCrossBeams[D].xbmp
+map_Kd LVL_BagEnd_WoodCrossBeams[D].xbmp
+newmtl wallStucco
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WallStucco[D].xbmp
+map_Kd LVL_BagEnd_WallStucco[D].xbmp
+newmtl WoodBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodBeam[D].xbmp
+map_Kd LVL_BagEnd_WoodBeam[D].xbmp
+newmtl woodCrossBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodCrossBeams[D].xbmp
+map_Kd LVL_BagEnd_WoodCrossBeams[D].xbmp
+newmtl wallStucco
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WallStucco[D].xbmp
+map_Kd LVL_BagEnd_WallStucco[D].xbmp
+newmtl panelWall
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodPanelWall[D].xbmp
+map_Kd LVL_BagEnd_WoodPanelWall[D].xbmp
+newmtl WoodBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodBeam[D].xbmp
+map_Kd LVL_BagEnd_WoodBeam[D].xbmp
+newmtl woodCrossBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodCrossBeams[D].xbmp
+map_Kd LVL_BagEnd_WoodCrossBeams[D].xbmp
+newmtl WoodBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodBeam[D].xbmp
+map_Kd LVL_BagEnd_WoodBeam[D].xbmp
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodInset[D].xbmp
+map_Kd LVL_BagEnd_WoodInset[D].xbmp
+newmtl woodCrossBeams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodCrossBeams[D].xbmp
+map_Kd LVL_BagEnd_WoodCrossBeams[D].xbmp
+newmtl seatFabric
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_SeatFabric[D].xbmp
+map_Kd LVL_BagEnd_SeatFabric[D].xbmp
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_WoodInset[D].xbmp
+map_Kd LVL_BagEnd_WoodInset[D].xbmp
+newmtl FloorTile
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_FloorTile[D].xbmp
+map_Kd LVL_BagEnd_FloorTile[D].xbmp
+newmtl RedDoor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_RedDoor[D].xbmp
+map_Kd LVL_BagEnd_RedDoor[D].xbmp
+newmtl greenDoor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_GreenDoor[D].xbmp
+map_Kd LVL_BagEnd_GreenDoor[D].xbmp
+newmtl maps
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_maps[D].xbmp
+map_Kd LVL_BE_maps[D].xbmp
+newmtl misc3
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_misc[D].xbmp
+map_Kd LVL_BE_misc[D].xbmp
+newmtl bigRug
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_bigRug01[D].xbmp
+map_Kd LVL_BagEnd_bigRug01[D].xbmp
+newmtl EasyChair
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BE_easyChair[D].xbmp
+map_Kd LVL_BE_easyChair[D].xbmp
+newmtl tableEdge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_TableEdge[D].xbmp
+map_Kd LVL_BagEnd_TableEdge[D].xbmp
+newmtl tableTop
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BagEnd_TableTopPlain[D].xbmp
+map_Kd LVL_BagEnd_TableTopPlain[D].xbmp
+newmtl trim
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka trim[D].xbmp
+map_Kd trim[D].xbmp
+newmtl shelves
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_shelves[D].xbmp
+map_Kd LVL_shelves[D].xbmp
+newmtl shelves
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_shelves[D].xbmp
+map_Kd LVL_shelves[D].xbmp
+newmtl coat2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka male[D].xbmp
+map_Kd male[D].xbmp
+newmtl coat4
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka hobbit kid4[D].xbmp
+map_Kd hobbit kid4[D].xbmp
+newmtl 11_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka oldman2[D].xbmp
+map_Kd oldman2[D].xbmp
+newmtl misc2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka coatrack[D].xbmp
+map_Kd coatrack[D].xbmp

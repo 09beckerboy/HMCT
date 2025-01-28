@@ -1,0 +1,6 @@
+newmtl Web_Wall_Ground_Mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Gray_GroundA_01[D].xbmp
+map_Kd EKH_Gray_GroundA_01[D].xbmp

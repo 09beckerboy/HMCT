@@ -1,0 +1,12 @@
+newmtl Cog_front_03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Tech_Small_Cog_Gold_01[D].xbmp
+map_Kd OH_Tech_Small_Cog_Gold_01[D].xbmp
+newmtl Cog_Side_03
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Tech_cog_side_Gold_01[D].xbmp
+map_Kd OH_Tech_cog_side_Gold_01[D].xbmp

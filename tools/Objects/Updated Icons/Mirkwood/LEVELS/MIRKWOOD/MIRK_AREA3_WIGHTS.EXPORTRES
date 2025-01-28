@@ -1,0 +1,21 @@
+[ Resources : 17 ]
+ { Name:s                               }
+// ------------------------------------
+   "FX/SHADOWDISC.XBMP"                
+   "MAGE WRAITH[D].XBMP"               
+   "WARRIOR WRAITH[D].XBMP"            
+   "LORD COPY[D].XBMP"                 
+   "CHARACTERS/WRAITHANIMS.CHARANIM"   
+   "PROPS/SWORD_WIGHT.RGEOM"           
+   "PROPS/WIGHTSHIELD.RGEOM"           
+   "WRAITH_MAGE_BIND.NPCGEOM"          
+   "MARK_WRAIH_BIND.NPCGEOM"           
+   "CHAR_WRAIH_LORD_BIND.NPCGEOM"      
+   "AI/CREATURELIST.INFO"              
+   "AI/WIGHTCASTERSTATES.INFO"         
+   "AI/WRAITHCASTERANIMS.INFO"         
+   "AI/WIGHTWARRIORSTATES.INFO"        
+   "AI/WRAITHWARRIORANIMS.INFO"        
+   "AI/WIGHTBOSSSTATES.INFO"           
+   "AI/WIGHTBOSSANIMS.INFO"            
+   

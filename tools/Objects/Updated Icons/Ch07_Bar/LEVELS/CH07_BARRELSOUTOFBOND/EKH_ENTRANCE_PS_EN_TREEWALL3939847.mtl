@@ -1,0 +1,6 @@
+newmtl EKH_Tree_Wall
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_tree_wall_02[RGBA].xbmp
+map_Kd EKH_tree_wall_02[RGBA].xbmp

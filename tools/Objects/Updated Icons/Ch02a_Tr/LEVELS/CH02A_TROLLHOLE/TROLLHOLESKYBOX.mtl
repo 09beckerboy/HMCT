@@ -1,0 +1,66 @@
+newmtl skynew
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_SkyA_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_SkyA_Mip0[D].xbmp
+newmtl Material_#1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_SkyB_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_SkyB_Mip0[D].xbmp
+newmtl 0skyfloor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_background2_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_background2_Mip0[D].xbmp
+newmtl 5TreeLineC
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_TreeLineC_Mip0[RGBA].xbmp
+map_Kd Lvl_TrollHole_TreeLineC_Mip0[RGBA].xbmp
+newmtl 6TreeLineB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_TreeLineB_Mip0[RGBA].xbmp
+map_Kd Lvl_TrollHole_TreeLineB_Mip0[RGBA].xbmp
+newmtl 7TreeLineA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_TreeLineA_Mip0[RGBA].xbmp
+map_Kd Lvl_TrollHole_TreeLineA_Mip0[RGBA].xbmp
+newmtl 3TopClouds2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Clouds2[RGBA].xbmp
+map_Kd Clouds2[RGBA].xbmp
+newmtl 4TopClouds1
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Clouds1[RGBA].xbmp
+map_Kd Clouds1[RGBA].xbmp
+newmtl 1Roof
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_background_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_background_Mip0[D].xbmp
+newmtl 8SunbeamsB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_SunbeamsB[RGBA].xbmp
+map_Kd Lvl_Trollhole_SunbeamsB[RGBA].xbmp
+newmtl 9SunbeamsA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_SunbeamsA[RGBA].xbmp
+map_Kd Lvl_Trollhole_SunbeamsA[RGBA].xbmp

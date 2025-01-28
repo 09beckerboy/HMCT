@@ -1,0 +1,12 @@
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka blueleaves[RGBA].xbmp
+map_Kd blueleaves[RGBA].xbmp
+newmtl Material_#3359
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka BriarTop_op[RGBA].xbmp
+map_Kd BriarTop_op[RGBA].xbmp

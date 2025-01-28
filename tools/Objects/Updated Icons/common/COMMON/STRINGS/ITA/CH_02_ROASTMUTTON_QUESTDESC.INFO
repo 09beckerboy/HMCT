@@ -1,0 +1,18 @@
+[ Strings : 14 ]
+ { StringID:s                       }
+// --------------------------------
+   "A_ID_QUEST_NAME_START"         
+   "B_ID_QUEST_NAME_CAMPFIRE"      
+   "C_ID_QUEST_NAME_LWRWATER"      
+   "D_ID_QUEST_NAME_RSEWATER"      
+   "E_ID_QUEST_NAME_WALLET"        
+   "F_ID_QUEST_NAME_BERT001"       
+   "G_ID_QUEST_NAME_BERT002"       
+   "H_ID_QUEST_NAME_TOM001"        
+   "ID_QUEST_NAME_MAX_CH02"        
+   "I_ID_QUEST_NAME_TOM002"        
+   "J_ID_QUEST_NAME_BILL"          
+   "K_ID_QUEST_NAME_BURB_FIND"     
+   "L_ID_QUEST_NAME_BURB_FIND2"    
+   "M_ID_QUEST_NAME_BURB_RETURN"   
+   

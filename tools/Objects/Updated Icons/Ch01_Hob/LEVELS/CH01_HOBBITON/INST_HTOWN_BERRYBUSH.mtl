@@ -1,0 +1,18 @@
+newmtl Material_#126
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lvl_hob_leaf1[D].xbmp
+map_Kd lvl_hob_leaf1[D].xbmp
+newmtl Material_#128
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_hob_treeLayer1[RGBA].xbmp
+map_Kd Lvl_hob_treeLayer1[RGBA].xbmp
+newmtl Material_#127
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_hob_bberry[RGBA].xbmp
+map_Kd Lvl_hob_bberry[RGBA].xbmp

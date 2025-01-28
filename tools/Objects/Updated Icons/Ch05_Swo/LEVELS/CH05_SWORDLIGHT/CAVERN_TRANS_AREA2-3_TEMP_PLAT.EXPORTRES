@@ -1,0 +1,17 @@
+[ Resources : 13 ]
+ { Name:s                                      }
+// -------------------------------------------
+   "CRATE_04[D].XBMP"                         
+   "LVL_SWORDLIGHT_BOARDB_MIP0[D].XBMP"       
+   "LVL_SWORDLIGHT_BOARDA_MIP0[D].XBMP"       
+   "LVL_SWORDLIGHT_BOARDC_MIP0[D].XBMP"       
+   "LVL_SWORDLIGHT_WOODLADDER_MIP0[D].XBMP"   
+   "CLIMB_CHAIN[RGBP].XBMP"                   
+   "CLIMB_CHAIN_TOPPER[RGBP].XBMP"            
+   "INST_SWORDLIGHT_CRATES.RGEOM"             
+   "INST_SWORDLIGHT_FIREPLATB.RGEOM"          
+   "INST_SWORDLIGHT_BOARDA.RGEOM"             
+   "INST_SWORDLIGHT_WALLPLATA.RGEOM"          
+   "INST_SWORDLIGHT_SUPPORT.RGEOM"            
+   "INST_SWORDLIGHT_LADDERA.RGEOM"            
+   

@@ -1,0 +1,18 @@
+newmtl wood_beam_warm
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl craneBracket
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka craneBracket[D].xbmp
+map_Kd craneBracket[D].xbmp
+newmtl crane
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka CraneBolt[D].xbmp
+map_Kd CraneBolt[D].xbmp

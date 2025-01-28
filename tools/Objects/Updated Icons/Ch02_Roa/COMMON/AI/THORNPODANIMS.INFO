@@ -1,0 +1,27 @@
+[ AnimList : 12 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"CombatIdle"		"COMBAT_IDLE"			8.0			0.25			1.0				1.0					0.0				0.0				0
+"Idle"				"ALERT_IDLE"			8.0			0.25			1.0				1.0					0.0				0.0				0
+"Alert"				"SPECIAL"				8.0			0.25			1.0				1.0					0.0				0.0				0
+"Bite"		        "ATTACK"			    8.0			0.25			1.0				1.0					0.0				0.0				0
+
+"Death"				"DEATH_FORWARD"			8.0			0.25			1.0				1.0					0.0				0.0				0
+"FlinchOpen1"		"FLINCH_FORWARD"		8.0			0.25			1.0				1.0					0.0				0.0				0
+"FlinchOpen2"		"FLINCH_FORWARD"		8.0			0.25			1.0				1.0					0.0				0.0				0
+"FlingBig"			"STRONG_FLINCH"			8.0			0.25			1.0				1.0					0.0				0.0				0
+"Sleep"				"IDLE"					8.0			0.25			1.0				1.0					0.0				0.0				0
+
+"Open"				"SPECIAL"				8.0			0.25			1.0				1.0					0.0				0.0				0
+"Flinch"			"ARMORED_FLINCH"		8.0			0.25			1.0				1.0					0.0				0.0				0
+"Flinch2"			"ARMORED_FLINCH"		8.0			0.25			1.0				1.0					0.0				0.0				0
+//"HeadTracking"		"HEAD_TRACKING"		    8.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Pod"
+
+
+/*
+*/

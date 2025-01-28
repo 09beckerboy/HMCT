@@ -1,0 +1,36 @@
+newmtl Material_#1109
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka glamdring[D].xbmp
+map_Kd glamdring[D].xbmp
+newmtl Material_#1107
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gobsword[D].xbmp
+map_Kd gobsword[D].xbmp
+newmtl 3_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka BalinsAxe_Txtr[D].xbmp
+map_Kd BalinsAxe_Txtr[D].xbmp
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka goblin_bow[D].xbmp
+map_Kd goblin_bow[D].xbmp
+newmtl NeckFur
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gobshield[D].xbmp
+map_Kd gobshield[D].xbmp
+newmtl crate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka crate_04[D].xbmp
+map_Kd crate_04[D].xbmp

@@ -1,0 +1,12 @@
+newmtl vsdblt
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA[D].xbmp
+map_Kd Sm_marbleA[D].xbmp
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Smaug_floorA[D].xbmp
+map_Kd Smaug_floorA[D].xbmp

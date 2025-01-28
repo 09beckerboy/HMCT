@@ -1,0 +1,24 @@
+newmtl BridgeRope
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_rope_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_rope_Mip0[D].xbmp
+newmtl BoardA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_swordlight_BoardA_Mip0[D].xbmp
+map_Kd Lvl_swordlight_BoardA_Mip0[D].xbmp
+newmtl Material_#16
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_swordlight_logend_Mip0[D].xbmp
+map_Kd Lvl_swordlight_logend_Mip0[D].xbmp
+newmtl 4_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_swordlight_poles_Mip0[D].xbmp
+map_Kd Lvl_swordlight_poles_Mip0[D].xbmp

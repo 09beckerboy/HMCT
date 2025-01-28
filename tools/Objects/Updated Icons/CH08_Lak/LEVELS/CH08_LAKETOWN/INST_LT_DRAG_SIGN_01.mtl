@@ -1,0 +1,12 @@
+newmtl signArm
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_SignArm[RGBA].xbmp
+map_Kd Inst_LT_SignArm[RGBA].xbmp
+newmtl signDragon
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_SignDragon[D].xbmp
+map_Kd Inst_LT_SignDragon[D].xbmp

@@ -1,0 +1,42 @@
+newmtl chain
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_chain_Mip0[RGBA].xbmp
+map_Kd Lvl_Swordlight_chain_Mip0[RGBA].xbmp
+newmtl Material_#67456
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sm_bolt[D].xbmp
+map_Kd sm_bolt[D].xbmp
+newmtl Material_#67482
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_wood_plank[D].xbmp
+map_Kd Sm_wood_plank[D].xbmp
+newmtl vsdblt
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA[D].xbmp
+map_Kd Sm_marbleA[D].xbmp
+newmtl Material_#67973
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_BoltPlate[D].xbmp
+map_Kd Sm_BoltPlate[D].xbmp
+newmtl 24_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_cauldren[D].xbmp
+map_Kd Sm_cauldren[D].xbmp
+newmtl Material_#67974
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_coals[D].xbmp
+map_Kd Sm_coals[D].xbmp

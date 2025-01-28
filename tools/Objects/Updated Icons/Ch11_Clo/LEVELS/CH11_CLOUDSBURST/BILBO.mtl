@@ -1,0 +1,54 @@
+newmtl mithril
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_mithril[D].xbmp
+map_Kd bilbo_mithril[D].xbmp
+newmtl leather
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_mithril[D].xbmp
+map_Kd bilbo_mithril[D].xbmp
+newmtl skin_clothes
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_mithril[D].xbmp
+map_Kd bilbo_mithril[D].xbmp
+newmtl velvet
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_mithril[D].xbmp
+map_Kd bilbo_mithril[D].xbmp
+newmtl hair
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka hair[D].xbmp
+map_Kd hair[D].xbmp
+newmtl eye_shadow
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_alphas[RGBA].xbmp
+map_Kd bilbo_alphas[RGBA].xbmp
+newmtl teeth
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_alphas[RGBA].xbmp
+map_Kd bilbo_alphas[RGBA].xbmp
+newmtl iris
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo_alphas[RGBA].xbmp
+map_Kd bilbo_alphas[RGBA].xbmp
+newmtl 21_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka bilbo-eye[D].xbmp
+map_Kd bilbo-eye[D].xbmp

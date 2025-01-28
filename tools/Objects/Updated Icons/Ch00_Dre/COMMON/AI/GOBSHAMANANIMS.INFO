@@ -1,0 +1,51 @@
+[ AnimList : 29 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f	NoiseLevel:f	Flags:d }
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+"ShamanCast1"		"CAST_HEAL"				0.0		    0.25			1.0				1.0					0.0				0.0				0
+"ShamanCast2"		"CAST_ATTACK"		    0.0		    0.25			1.0				1.0					0.0				0.0				0
+"idle"				"IDLE"					0.0		    0.25			1.0				1.0					0.0				0.0				0
+"combat_idle"		"COMBAT_IDLE"			0.0		    0.25			1.0				1.0					0.0				0.0				0	
+"taunt"				"TAUNT"					0.0		    0.25			1.0				1.0					0.0				0.0				0
+
+"roar"				"COMBAT_IDLEANIM"		0.0		    0.25			1.0				1.0					0.0				1.0				0	
+"walk"				"WALK"					8.0		    0.25			1.0				1.0					0.0				0.0				0	
+"jog"				"JOG"					16.0		0.25			1.0				1.0					0.0				1.0				0	
+"run"				"RUN"					32.0		0.25			1.0				1.0					0.0				1.0				0
+"l_jump"			"JUMP"					32.0		0.25			1.0				1.0					0.0				0.0				128
+
+"fall"				"FALL"					8.0			0.25			1.0				1.0					0.0				0.0				0
+"land"				"LAND"					0.0			0.25			1.0				1.0					0.0				1.0				0
+"block"				"BLOCK"					32.0		0.0				1.0				1.0					0.0				0.0				0
+"block_hit"			"BLOCK_HIT"				0.0			0.0				1.0				1.0					0.0				0.0				0
+"s_left"			"ATTACK"			    2.0			0.125			1.0				1.0					0.0				1.0				0
+
+"s_right"			"ATTACK"			    2.0			0.125			1.0				1.0					0.0				1.0				0
+"s_double"			"ATTACK"				2.0			0.125			1.0				1.0					0.0				1.0				0
+//"s_jump"			"JUMP_ATTACK"			1.0			0.125			1.0				1.0					0.0				1.0				0
+"backflinch"		"FLINCH_BACK"			0.0			0.0				1.0				1.0					0.0				0.0				0
+"forwardflinch"		"FLINCH_FORWARD"		0.0			0.0				1.0				1.0					0.0				0.0				0
+
+"strongflinch"		"STRONG_FLINCH"			0.0			0.0				1.5				0.2					0.0				0.0				0
+"death"				"DEATH_BACK"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"deathforward"		"DEATH_FORWARD"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"talk"				"SPECIAL"				0.0			0.25			1.0				1.0					0.0				0.0				0
+"HeadScratch"		"SPECIAL"				0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"standup"			"STAND_UP"				0.0			0.25			1.0				1.0					0.0				0.0				512
+"TurnLeft"		    "TURN"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+"TurnRight"		    "TURN"				    0.0			0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"		"HEAD_TRACKING"			0.0			0.25			2.0				1.0					0.0				0.0				0
+"LipSync"		    "LIP_SYNC"				0.0			0.25			2.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Goblin"
+
+[ AnimTransitionTable : 1 ]
+{ CurrentAnim:s				Transition1:s				Transition2:s					NextAnim:s		Flags:d }
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+"strongflinch"              "standup"                   "*"							    "*"             0
+
+/*
+*/

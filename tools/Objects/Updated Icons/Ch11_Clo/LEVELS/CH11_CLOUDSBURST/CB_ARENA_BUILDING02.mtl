@@ -1,0 +1,42 @@
+newmtl stucco
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stucco[D].xbmp
+map_Kd Inst_CB_stucco[D].xbmp
+newmtl edge_mix
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stuccoEdgeU[D].xbmp
+map_Kd Inst_CB_stuccoEdgeU[D].xbmp
+newmtl woodChar
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03char[D].xbmp
+map_Kd Inst_CB_woodplank03char[D].xbmp
+newmtl woodEdges
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03edge[D].xbmp
+map_Kd Inst_CB_woodplank03edge[D].xbmp
+newmtl wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_woodplank03[D].xbmp
+map_Kd Inst_CB_woodplank03[D].xbmp
+newmtl brick
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_brick[D].xbmp
+map_Kd Inst_CB_brick[D].xbmp
+newmtl StuccoMixv2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_CB_stucco[D].xbmp
+map_Kd Inst_CB_stucco[D].xbmp

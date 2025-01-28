@@ -1,0 +1,20 @@
+[ Strings : 16 ]
+ { StringID:s                      }
+// -------------------------------
+   "A_ID_THORIN_ARKEN_CH10"       
+   "B_ID_OPEN_DOORS_CH10"         
+   "C_ID_GEARROOM_CH10"           
+   "D_ID_GEARROOM_REPAIR_CH10"    
+   "E_ID_GEARROOM_PGEARS_CH10"    
+   "F_ID_FORGE_CH10"              
+   "G_ID_FORGE_LIGHT_CH10"        
+   "H_ID_FORGE_PBELLOWS_CH10"     
+   "I_ID_FORGE_PCOOLER_CH10"      
+   "J_ID_TREASURYKEY_CH10"        
+   "K_ID_TREASURYKEY_ONE_CH10"    
+   "L_ID_TREASURYKEY_TWO_CH10"    
+   "M_ID_TREASURY_CH10"           
+   "N_ID_TREASURY_PDOOR_CH10"     
+   "O_ID_TREASURY_CHAIN_CH10"     
+   "P_ID_TREASURY_KEYHOLE_CH10"   
+   

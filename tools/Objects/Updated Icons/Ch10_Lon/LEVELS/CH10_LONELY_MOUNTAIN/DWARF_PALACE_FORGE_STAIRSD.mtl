@@ -1,0 +1,78 @@
+newmtl Lvl_dwarven_plc_stone30
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone30a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone30a[D].xbmp
+newmtl Lvl_dwarven_plc_stone25
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone25a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone25a[D].xbmp
+newmtl Lvl_dwarven_plc_stone26
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone26a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone26a[D].xbmp
+newmtl Lvl_dwarven_plc_stone28c
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone28a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone28a[D].xbmp
+newmtl Lvl_dwarven_plc_stone29
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone29a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone29a[D].xbmp
+newmtl Lvl_riv_gear03.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gear03[D].xbmp
+map_Kd Lvl_riv_gear03[D].xbmp
+newmtl Lvl_riv_gearpart05.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart05[D].xbmp
+map_Kd Lvl_riv_gearpart05[D].xbmp
+newmtl Lvl_riv_woodpostB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_woodpostB[D].xbmp
+map_Kd Lvl_riv_woodpostB[D].xbmp
+newmtl Lvl_riv_metalplate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate[D].xbmp
+map_Kd Lvl_riv_metalplate[D].xbmp
+newmtl Lvl_riv_gearpart01.tga
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_gearpart01[D].xbmp
+map_Kd Lvl_riv_gearpart01[D].xbmp
+newmtl Lvl_riv_woodpostend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_woodpostend[D].xbmp
+map_Kd Lvl_riv_woodpostend[D].xbmp
+newmtl Lvl_riv_woodpostC
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_woodpostC[D].xbmp
+map_Kd Lvl_riv_woodpostC[D].xbmp
+newmtl Lvl_dwarven_plc_metal04
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal04[D].xbmp
+map_Kd Lvl_dwarven_plc_metal04[D].xbmp

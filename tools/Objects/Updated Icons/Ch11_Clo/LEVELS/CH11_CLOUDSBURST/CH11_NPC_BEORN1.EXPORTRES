@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                              }
+// -----------------------------------
+   "FX/SHADOWDISC.XBMP"               
+   "CHAR_BEORN[D].XBMP"               
+   "CHARACTERS/BEORNANIMS.CHARANIM"   
+   "CHAR_BEORN_GEOM.NPCGEOM"          
+   "AI/CREATURELIST.INFO"             
+   "AI/BEORNSTATES.INFO"              
+   "AI/BEORNANIMS.INFO"               
+   

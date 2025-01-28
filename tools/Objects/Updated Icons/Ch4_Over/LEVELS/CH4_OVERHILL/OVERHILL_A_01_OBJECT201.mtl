@@ -1,0 +1,6 @@
+newmtl Material_#44425
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone12[D].xbmp
+map_Kd OH_dwarven_plc_stone12[D].xbmp

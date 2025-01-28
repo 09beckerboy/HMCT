@@ -1,0 +1,18 @@
+newmtl Piece5_Blue
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Crank_arm_Blue_01[D].xbmp
+map_Kd OH_Crank_arm_Blue_01[D].xbmp
+newmtl Piston_Side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Tech_cog_side_Blue_01[D].xbmp
+map_Kd OH_Tech_cog_side_Blue_01[D].xbmp
+newmtl Piston_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Tech_Cog_Blue_01[D].xbmp
+map_Kd OH_Tech_Cog_Blue_01[D].xbmp

@@ -1,0 +1,12 @@
+newmtl Gear
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_poles_Mip0[D].xbmp
+map_Kd Lvl_Htown_poles_Mip0[D].xbmp
+newmtl BoardC
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Htown_BoardC[D].xbmp
+map_Kd Lvl_Htown_BoardC[D].xbmp

@@ -1,0 +1,12 @@
+[ Resources : 8 ]
+ { Name:s                            }
+// ---------------------------------
+   "FX/SHADOWDISC.XBMP"             
+   "FIREBAT[D].XBMP"                
+   "CHARACTERS/BATANIMS.CHARANIM"   
+   "PROPS/GOBBAG.RGEOM"             
+   "FIREBAT_GEOM.NPCGEOM"           
+   "AI/CREATURELIST.INFO"           
+   "AI/FIREBATSTATES.INFO"          
+   "AI/FIREBATANIMS.INFO"           
+   

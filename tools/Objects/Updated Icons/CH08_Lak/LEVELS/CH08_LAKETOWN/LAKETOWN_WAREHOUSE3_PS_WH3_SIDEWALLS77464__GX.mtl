@@ -1,0 +1,30 @@
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl Main_Wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_wall_01[D].xbmp
+map_Kd wood_wall_01[D].xbmp
+newmtl Big_Oak_Beams
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_beam_05[D].xbmp
+map_Kd wood_beam_05[D].xbmp
+newmtl Dock_boards
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_wall_04[D].xbmp
+map_Kd wood_wall_04[D].xbmp
+newmtl WH_Floor
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka planks_nails_03[D].xbmp
+map_Kd planks_nails_03[D].xbmp

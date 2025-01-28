@@ -1,0 +1,12 @@
+newmtl 23_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_bert_texture[D].xbmp
+map_Kd Char_bert_texture[D].xbmp
+newmtl RED
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka ихr
+map_Kd ихr

@@ -1,0 +1,6 @@
+newmtl RM_ground02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka RM_ground02[D].xbmp
+map_Kd RM_ground02[D].xbmp

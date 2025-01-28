@@ -1,0 +1,36 @@
+newmtl 3_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_Bawlin_Diffuse[D].xbmp
+map_Kd Char_Bawlin_Diffuse[D].xbmp
+newmtl 9_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_Bifur_ Diffuse[D].xbmp
+map_Kd Char_Bifur_ Diffuse[D].xbmp
+newmtl 9_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_Bofur_Diffuse[D].xbmp
+map_Kd Char_Bofur_Diffuse[D].xbmp
+newmtl Bombur
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Char_Bombur_ Diffuse[D].xbmp
+map_Kd Char_Bombur_ Diffuse[D].xbmp
+newmtl webbbb
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka SB_QueenWeb[RGBA].xbmp
+map_Kd SB_QueenWeb[RGBA].xbmp
+newmtl 5_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka sb_dwarvesbody[D].xbmp
+map_Kd sb_dwarvesbody[D].xbmp

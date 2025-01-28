@@ -1,0 +1,28 @@
+[ Layers : 24 ]
+ { LayerName:s                            }
+// --------------------------------------
+   "CH09_Ext_Playsurfaces"               
+   "Smaug_GlobalsObject"                 
+   "Smaug_Lights"                        
+   "CH09_Entry_Playsurfaces"             
+   "CH09_LoadLayers"                     
+   "CH09_Entry_NPCs"                     
+   "CH09_Ext_Instances"                  
+   "CH09_Triggers"                       
+   "CH09_Skybox"                         
+   "CH09_InvisWalls_ExitBlocker"         
+   "CH09_LoadLayerPhase01"               
+   "CH09_Switches"                       
+   "CH09_Cameras"                        
+   "CH09_Volumes"                        
+   "CH09_Occluders"                      
+   "CH09_Ext_NavNodes"                   
+   "CH09_Cinemas_Cine01_CameraPaths"     
+   "CH09_Cinemas_Cine01_SmaugEyeOpens"   
+   "CH09_Cinemas_Cine01_Vols"            
+   "CH09_The_Green_Room"                 
+   "CH09_Cinema_NPCs"                    
+   "CH09_Pickups"                        
+   "CH09_Music"                          
+   "CH09_Audio_Emitters"                 
+   

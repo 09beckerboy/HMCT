@@ -1,0 +1,8 @@
+[ Resources : 4 ]
+ { Name:s                 }
+// ----------------------
+   "TRIG_STORMOFF.XSC"   
+   "TRIG_STORMON.XSC"    
+   "TRIG_STORMOFF.SYM"   
+   "TRIG_STORMON.SYM"    
+   

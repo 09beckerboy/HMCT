@@ -1,0 +1,30 @@
+newmtl Material_#117
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LEFTEYE2[D].xbmp
+map_Kd LEFTEYE2[D].xbmp
+newmtl Head
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka MC_Smaug_Head[D].xbmp
+map_Kd MC_Smaug_Head[D].xbmp
+newmtl body
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka MC_Smaug_Body[D].xbmp
+map_Kd MC_Smaug_Body[D].xbmp
+newmtl wing_arm
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka MC_Smaug_WingArm[D].xbmp
+map_Kd MC_Smaug_WingArm[D].xbmp
+newmtl wing
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka MC_Smaug_Wing[D].xbmp
+map_Kd MC_Smaug_Wing[D].xbmp

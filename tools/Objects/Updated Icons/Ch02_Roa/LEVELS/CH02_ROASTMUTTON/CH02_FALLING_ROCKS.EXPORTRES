@@ -1,0 +1,9 @@
+[ Resources : 5 ]
+ { Name:s                   }
+// ------------------------
+   "RM_GROUND02[D].XBMP"   
+   "FALLING_ROCKS.ANIM"    
+   "FALLING_ROCKS.RGEOM"   
+   "FALLINGROCKS.XSC"      
+   "FALLINGROCKS.SYM"      
+   

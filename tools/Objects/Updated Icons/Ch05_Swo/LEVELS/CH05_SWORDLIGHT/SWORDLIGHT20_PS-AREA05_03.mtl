@@ -1,0 +1,36 @@
+newmtl RockwallA
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_RockWallA_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_RockWallA_Mip0[D].xbmp
+newmtl FloorA2edge
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_FloorA2edge_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_FloorA2edge_Mip0[D].xbmp
+newmtl FloorAStalag4
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_FloorAstalag4_Mip0[D].xbmp
+map_Kd Lvl_Riddles_FloorAstalag4_Mip0[D].xbmp
+newmtl Stalag
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_Stalag_Mip0[D].xbmp
+map_Kd Lvl_Riddles_Stalag_Mip0[D].xbmp
+newmtl FloorAStalag3
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Riddles_FloorAstalag3_Mip0[D].xbmp
+map_Kd Lvl_Riddles_FloorAstalag3_Mip0[D].xbmp
+newmtl Golem_blend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_FloorA2edge_Mip0[D].xbmp
+map_Kd Lvl_Swordlight_FloorA2edge_Mip0[D].xbmp

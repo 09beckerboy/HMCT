@@ -1,0 +1,14 @@
+[ Resources : 10 ]
+ { Name:s                                       }
+// --------------------------------------------
+   "IMBUEDSTONESPU_EXPLOSION[D].XBMP"          
+   "CRYSTALPEDCRYSTAL_S[D].XBMP"               
+   "CRYSTALPEDCRYSTAL_BLUE[D].XBMP"            
+   "ENVIROMENTMAPBLUE2[D].XBMP"                
+   "SCROLL[D].XBMP"                            
+   "THROWSTONE[D].XBMP"                        
+   "IMBUEDEXPLOSION.RGEOM"                     
+   "OPENINGCRYSTAL_CRYSTALPED_BLUE_PU.RGEOM"   
+   "SCROLL.RGEOM"                              
+   "STONEPILE.RGEOM"                           
+   

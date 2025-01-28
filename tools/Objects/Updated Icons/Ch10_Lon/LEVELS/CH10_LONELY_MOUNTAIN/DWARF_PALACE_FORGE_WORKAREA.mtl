@@ -1,0 +1,36 @@
+newmtl Lvl_dwarven_plc_stone26
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone26a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone26a[D].xbmp
+newmtl Lvl_dwarven_plc_stone30
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone30a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone30a[D].xbmp
+newmtl Lvl_dwarven_plc_stone25
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone25a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone25a[D].xbmp
+newmtl Lvl_riv_woodpostB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_woodpostB[D].xbmp
+map_Kd Lvl_riv_woodpostB[D].xbmp
+newmtl Lvl_riv_woodpostend
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_woodpostend[D].xbmp
+map_Kd Lvl_riv_woodpostend[D].xbmp
+newmtl Lvl_riv_tarp02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_tarp03[RGBA].xbmp
+map_Kd Lvl_riv_tarp03[RGBA].xbmp

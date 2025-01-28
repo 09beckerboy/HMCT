@@ -1,0 +1,6 @@
+newmtl Underwood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LT_Underwood_01[D].xbmp
+map_Kd LT_Underwood_01[D].xbmp

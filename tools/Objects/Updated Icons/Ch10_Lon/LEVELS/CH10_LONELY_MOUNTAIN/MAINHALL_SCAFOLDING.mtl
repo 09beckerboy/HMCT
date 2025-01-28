@@ -1,0 +1,6 @@
+newmtl Lvl_riv_woodpostB
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_woodpostB[D].xbmp
+map_Kd Lvl_riv_woodpostB[D].xbmp

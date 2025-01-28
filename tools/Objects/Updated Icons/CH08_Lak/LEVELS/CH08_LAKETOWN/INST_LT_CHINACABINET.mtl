@@ -1,0 +1,24 @@
+newmtl Orange_wood
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Orange_wood_01[D].xbmp
+map_Kd Orange_wood_01[D].xbmp
+newmtl clock_front
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka clock_front_01[D].xbmp
+map_Kd clock_front_01[D].xbmp
+newmtl drawer
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka drawer_01[D].xbmp
+map_Kd drawer_01[D].xbmp
+newmtl plate
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka plate_01[RGBA].xbmp
+map_Kd plate_01[RGBA].xbmp

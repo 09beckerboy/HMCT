@@ -1,0 +1,24 @@
+newmtl Lvl_dwarven_plc_stone25
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone25a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone25a[D].xbmp
+newmtl Lvl_dwarven_plc_stone30
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone30a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone30a[D].xbmp
+newmtl Lvl_dwarven_plc_floor01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_floor01[D].xbmp
+map_Kd Lvl_dwarven_plc_floor01[D].xbmp
+newmtl Lvl_dwarven_plc_stone38
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone38a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone38a[D].xbmp

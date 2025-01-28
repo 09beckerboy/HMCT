@@ -1,0 +1,6 @@
+newmtl 1_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gamecube[D].xbmp
+map_Kd gamecube[D].xbmp

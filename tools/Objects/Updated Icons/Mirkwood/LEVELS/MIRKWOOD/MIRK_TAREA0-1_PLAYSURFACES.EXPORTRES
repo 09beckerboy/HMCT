@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                            }
+// ---------------------------------
+   "MIRK_WALLAA[D].XBMP"            
+   "MIRK_GRASSA[D].XBMP"            
+   "MIRK_MUD[D].XBMP"               
+   "MIRK_MUD[A].XBMP"               
+   "MIRKWOOD_AREA0-1.RGEOM"         
+   "MIRKWOOD_AREA0_BARRIER.RGEOM"   
+   "MIRKWOOD_PLANE57.RGEOM"         
+   

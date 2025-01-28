@@ -1,0 +1,24 @@
+newmtl BrushedLong
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_brshdLngMtl[D].xbmp
+map_Kd Lvl_Swordlight_brshdLngMtl[D].xbmp
+newmtl side_minecart
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_MineCartSide[D].xbmp
+map_Kd Lvl_Swordlight_MineCartSide[D].xbmp
+newmtl Brushed
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_brushdMtl[D].xbmp
+map_Kd Lvl_Swordlight_brushdMtl[D].xbmp
+newmtl Wheel
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_MinecartWhl[RGBA].xbmp
+map_Kd Lvl_Swordlight_MinecartWhl[RGBA].xbmp

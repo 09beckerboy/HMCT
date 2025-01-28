@@ -1,0 +1,34 @@
+[ AnimList : 10 ]
+ { AnimName:s		AnimType:s				YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d  AnimMode:d }
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+"TurnsCorner"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"BridgeIdle"        "IDLE"		            0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"CrossesBridge"		"SPECIAL"	            0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"RoundsCorner"		"SPECIAL"	            0.0		    0.0			    1.0				1.0					0.0				0.0				32768   0
+//"Cinema1Shot3"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+
+//"Cinema1Shot4"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+//"Cinema1Shot5"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+//"Cinema1Shot6"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"Cinema2Shot1"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"Cinema2Shot2"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+
+//"Cinema3Shot1"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+//"Cinema3Shot2"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+//"Cinema3Shot3"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"Cinema4Shot1"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+"Cinema4Shot2"		"SPECIAL"			    0.0			0.0			    1.0				1.0					0.0				0.0				32768   0
+
+//"NonPositionedIdle" "IDLE"		            0.0			0.0			    1.0				1.0					0.0				0.0				0       0
+"HeadTracking"		"HEAD_TRACKING"	        0.0		    0.0			    1.0				1.0					0.0				0.0				0       0
+"LipSync"		    "LIP_SYNC"	            0.0		    0.0			    1.0				1.0					0.0				0.0				0       0
+
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "Beorn"
+
+/*
+*/

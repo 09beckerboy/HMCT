@@ -1,0 +1,12 @@
+newmtl barrel_side_wet_02
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_side_wet_02[D].xbmp
+map_Kd barrel_side_wet_02[D].xbmp
+newmtl barrel_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_top_02[D].xbmp
+map_Kd barrel_top_02[D].xbmp

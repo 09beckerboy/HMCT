@@ -1,0 +1,6 @@
+newmtl Grain_bag
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka grain_bag_05[D].xbmp
+map_Kd grain_bag_05[D].xbmp

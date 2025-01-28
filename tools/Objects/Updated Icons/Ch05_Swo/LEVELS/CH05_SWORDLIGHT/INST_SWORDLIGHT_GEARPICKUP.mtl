@@ -1,0 +1,12 @@
+newmtl 19_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_swordlight_axlewood_Mip0[D].xbmp
+map_Kd Lvl_swordlight_axlewood_Mip0[D].xbmp
+newmtl Material_#14
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_swordlight_axlewoodend_Mip0[D].xbmp
+map_Kd Lvl_swordlight_axlewoodend_Mip0[D].xbmp

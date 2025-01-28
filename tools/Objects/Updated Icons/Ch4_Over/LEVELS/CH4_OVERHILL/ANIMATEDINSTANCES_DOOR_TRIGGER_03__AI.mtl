@@ -1,0 +1,12 @@
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_dwarven_plc_stone07[D].xbmp
+map_Kd OH_dwarven_plc_stone07[D].xbmp
+newmtl Trigger
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Trigger_01[D].xbmp
+map_Kd OH_Trigger_01[D].xbmp

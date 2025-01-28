@@ -1,0 +1,48 @@
+newmtl Lvl_dwarven_plc_metal07
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal07[D].xbmp
+map_Kd Lvl_dwarven_plc_metal07[D].xbmp
+newmtl Lvl_dwarven_plc_metal17
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal17[D].xbmp
+map_Kd Lvl_dwarven_plc_metal17[D].xbmp
+newmtl Lvl_dwarven_plc_metal05
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal05[D].xbmp
+map_Kd Lvl_dwarven_plc_metal05[D].xbmp
+newmtl Lvl_dwarven_plc_metal15
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal15[D].xbmp
+map_Kd Lvl_dwarven_plc_metal15[D].xbmp
+newmtl Lvl_dwarven_plc_metal13
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal13[D].xbmp
+map_Kd Lvl_dwarven_plc_metal13[D].xbmp
+newmtl Lvl_dwarven_plc_metal06
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal06[D].xbmp
+map_Kd Lvl_dwarven_plc_metal06[D].xbmp
+newmtl Lvl_dwarven_plc_metal22
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_metal22[D].xbmp
+map_Kd Lvl_dwarven_plc_metal22[D].xbmp
+newmtl Lvl_dwarven_plc_stone26
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone26a[D].xbmp
+map_Kd Lvl_dwarven_plc_stone26a[D].xbmp

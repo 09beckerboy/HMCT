@@ -1,0 +1,24 @@
+newmtl Material_#3378
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gravestone_1[D].xbmp
+map_Kd gravestone_1[D].xbmp
+newmtl ddsdg
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mirk_black[D].xbmp
+map_Kd mirk_black[D].xbmp
+newmtl 22_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_gate_stone[D].xbmp
+map_Kd Mirk_gate_stone[D].xbmp
+newmtl Pedastals
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka GatePedastals copy[D].xbmp
+map_Kd GatePedastals copy[D].xbmp

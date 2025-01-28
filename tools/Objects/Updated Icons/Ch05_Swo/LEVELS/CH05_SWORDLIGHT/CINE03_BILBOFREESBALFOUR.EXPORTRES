@@ -1,0 +1,13 @@
+[ Resources : 9 ]
+ { Name:s                                        }
+// ---------------------------------------------
+   "BALINSAXE_TXTR[D].XBMP"                     
+   "LVL_SWORDLIGHT_SWITCHBOX_MIP0TGA[D].XBMP"   
+   "LVL_SWORDLIGHT_COALBOWL_MIP0[D].XBMP"       
+   "CINEMA3_SHOT2_AXE.ANIM"                     
+   "INST_SWORDLIGHT_SWITCHA.ANIM"               
+   "CINEMA3_SHOT1_DOOR.ANIM"                    
+   "CINEMA3_SHOT2_AXE.RGEOM"                    
+   "INST_SWORDLIGHT_SWITCHA.RGEOM"              
+   "CINEMA3_SHOT1_DOOR.RGEOM"                   
+   

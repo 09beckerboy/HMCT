@@ -1,0 +1,24 @@
+[ Strings : 20 ]
+ { StringID:s                     }
+// ------------------------------
+   "ID_QUEST_LOG_UPDATE"         
+   "INFO_CHASM_REMINDER"         
+   "INFO_GET_GOLBET"             
+   "INFO_GET_NECKLACE"           
+   "INFO_GET_RUBY"               
+   "INFO_GET_SPEARS"             
+   "INFO_GET_TRAY"               
+   "INFO_MAX_INFO"               
+   "INFO_PICKED_UP_CP"           
+   "INFO_SKELETON_KEY"           
+   "INFO_SMAUG_AWAKE_METER"      
+   "INFO_SMAUG_BREATHING_HINT"   
+   "INFO_SMAUG_DONT_LEAVE"       
+   "INFO_SMAUG_EYE_HINT"         
+   "INFO_STICKJUMP_3"            
+   "INFO_STICKJUMP_3_PS2"        
+   "INFO_STICKJUMP_3_XBOX"       
+   "INFO_STINGJUMP_3"            
+   "INFO_STINGJUMP_3_PS2"        
+   "INFO_STINGJUMP_3_XBOX"       
+   

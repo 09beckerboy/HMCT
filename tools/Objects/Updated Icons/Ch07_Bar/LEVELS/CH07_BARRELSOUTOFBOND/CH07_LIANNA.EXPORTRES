@@ -1,0 +1,11 @@
+[ Resources : 7 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "FX/SHADOWDISC.XBMP"                   
+   "WOODELF_LIANA[D].XBMP"                
+   "CHARACTERS/ELFFEMALEANIMS.CHARANIM"   
+   "WOODELF_LIANA_BIND.NPCGEOM"           
+   "AI/CREATURELIST.INFO"                 
+   "AI/ELFGUARDSTATES.INFO"               
+   "AI/ELFGUARDFEMALEANIMS.INFO"          
+   

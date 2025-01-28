@@ -1,0 +1,36 @@
+newmtl stove_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka stove_01[D].xbmp
+map_Kd stove_01[D].xbmp
+newmtl stove_fire
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka stove_fire_02[D].xbmp
+map_Kd stove_fire_02[D].xbmp
+newmtl oven_door
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka oven_door_01[D].xbmp
+map_Kd oven_door_01[D].xbmp
+newmtl pot_handle
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pot_handle_01[D].xbmp
+map_Kd pot_handle_01[D].xbmp
+newmtl pot_metal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka pot_metal_01[D].xbmp
+map_Kd pot_metal_01[D].xbmp
+newmtl stove_eye
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka stove_eye_01[RGBA].xbmp
+map_Kd stove_eye_01[RGBA].xbmp

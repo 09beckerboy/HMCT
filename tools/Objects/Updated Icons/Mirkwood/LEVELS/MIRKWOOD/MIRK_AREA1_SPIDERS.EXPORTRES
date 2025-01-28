@@ -1,0 +1,15 @@
+[ Resources : 11 ]
+ { Name:s                               }
+// ------------------------------------
+   "FX/SHADOWDISC.XBMP"                
+   "POISONGBLACK[D].XBMP"              
+   "WOLF[D].XBMP"                      
+   "CHARACTERS/SPIDERANIMS.CHARANIM"   
+   "CHAR_SPID_POISON_BLACK.NPCGEOM"    
+   "CHAR_WOLFSPIDER_MODEL.NPCGEOM"     
+   "AI/CREATURELIST.INFO"              
+   "AI/BLACKSPIDERSTATES.INFO"         
+   "AI/POISONOUSSPIDERANIMS.INFO"      
+   "AI/WOLFSPIDERSTATES.INFO"          
+   "AI/WOLFSPIDERANIMS.INFO"           
+   

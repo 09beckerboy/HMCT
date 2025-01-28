@@ -1,0 +1,16 @@
+[ AnimList : 4 ]
+ { AnimName:s					AnimType:s		YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f  Flags:d}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+"Non_Positioned_Idle"			"IDLE"			0.0			0.0				1.0				1.0					0.0				0.0				0
+"LipSync"	 	                "LIP_SYNC"      0.0			0.0			    1.0				1.0					0.0				0.0				0
+"run_no_weapon"	 	            "RUN"           32.0		0.0			    1.0				1.0					0.0				0.0				0
+"walk_no_weapon"	 	        "WALK"          16.0		0.0			    1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "BilboBOB"
+
+
+/*
+*/

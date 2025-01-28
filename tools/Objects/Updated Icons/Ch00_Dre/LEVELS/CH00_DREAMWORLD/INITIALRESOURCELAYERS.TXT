@@ -1,0 +1,22 @@
+[ Layers : 18 ]
+ { LayerName:s                          }
+// ------------------------------------
+   "CH00_NPC_Bal1"                     
+   "CH00_Inst_Bal1"                    
+   "CH00_NPC_Bolg"                     
+   "CH00_Inst_Mug1"                    
+   "CH00_PlaySurface_BagEnd"           
+   "CH00_Globals"                      
+   "Temporary_Lvl_cloudburst_lights"   
+   "CH00_PlaySurface"                  
+   "CH00_Volumes"                      
+   "CH00_LoadTriggers"                 
+   "CH00_NPC_Rav"                      
+   "CH00_Inst_Rav"                     
+   "CH00_NavNodes"                     
+   "CH00_Cinemas"                      
+   "BagEnd_lights1"                    
+   "CH00_InvisoWalls"                  
+   "CH00_Music"                        
+   "CH00_AudioEmitters"                
+   

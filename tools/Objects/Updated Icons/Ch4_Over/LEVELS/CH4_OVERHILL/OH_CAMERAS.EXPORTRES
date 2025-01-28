@@ -1,0 +1,22 @@
+[ Resources : 18 ]
+ { Name:s                                  }
+// ---------------------------------------
+   "LVL_TROLLHOLE_POLES_MIP0[D].XBMP"     
+   "LVL_TROLLHOLE_LOGEND_MIP0[D].XBMP"    
+   "FX/SHADOWDISC.XBMP"                   
+   "CHAR_GANDALF[D].XBMP"                 
+   "CHARACTERS/GANDALFOHANIMS.CHARANIM"   
+   "CH4_INTRO_ANIM_INST.ANIM"             
+   "BILBO.ANIM"                           
+   "CHAR_GANDALF_BIND.ANIM"               
+   "CHAR_DWARF_BIND.ANIM"                 
+   "TROLL_BRIDGE_BIND.ANIM"               
+   "CHAR_GOBLIN_BIND.ANIM"                
+   "CH4_INTRO_ANIM_INST.RGEOM"            
+   "PROPS/GAND_SWORD.RGEOM"               
+   "PROPS/GAND_STAFF.RGEOM"               
+   "CHAR_GANDALF_BIND.NPCGEOM"            
+   "AI/CREATURELIST.INFO"                 
+   "AI/GANDALFSTATES.INFO"                
+   "AI/GANDALFOHANIMS.INFO"               
+   

@@ -1,0 +1,12 @@
+newmtl Material_#2719
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_FloorA2edge_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_FloorA2edge_Mip0[D].xbmp
+newmtl RockPlat
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_TrollHole_RockWallA_Mip0[D].xbmp
+map_Kd Lvl_TrollHole_RockWallA_Mip0[D].xbmp

@@ -1,0 +1,120 @@
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cata_plank2[D].xbmp
+map_Kd cata_plank2[D].xbmp
+newmtl 10_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cart[D].xbmp
+map_Kd cart[D].xbmp
+newmtl 9_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cata_wheel[D].xbmp
+map_Kd cata_wheel[D].xbmp
+newmtl 10_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cata_rim[D].xbmp
+map_Kd cata_rim[D].xbmp
+newmtl 15_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka plank_wall_04[D].xbmp
+map_Kd plank_wall_04[D].xbmp
+newmtl 11_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_barrel[D].xbmp
+map_Kd Lvl_riv_barrel[D].xbmp
+newmtl 6_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cata_plank[D].xbmp
+map_Kd cata_plank[D].xbmp
+newmtl 14_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_riv_metalplate copy[D].xbmp
+map_Kd Lvl_riv_metalplate copy[D].xbmp
+newmtl 16_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka crate_04[D].xbmp
+map_Kd crate_04[D].xbmp
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka log_end_03[D].xbmp
+map_Kd log_end_03[D].xbmp
+newmtl 7_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cata_plank2[D].xbmp
+map_Kd cata_plank2[D].xbmp
+newmtl 6_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka cata_plank[D].xbmp
+map_Kd cata_plank[D].xbmp
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_rock03[D].xbmp
+map_Kd Lvl_Cburst_rock03[D].xbmp
+newmtl barrel_side
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_Blue[D].xbmp
+map_Kd barrel_Blue[D].xbmp
+newmtl barrel_top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka barrel_top_blue[D].xbmp
+map_Kd barrel_top_blue[D].xbmp
+newmtl brickb
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_brick05b[D].xbmp
+map_Kd Lvl_Cburst_brick05b[D].xbmp
+newmtl brickd
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_brick05d[D].xbmp
+map_Kd Lvl_Cburst_brick05d[D].xbmp
+newmtl bricka
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_brick05[D].xbmp
+map_Kd Lvl_Cburst_brick05[D].xbmp
+newmtl brickc
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Cburst_brick05c[D].xbmp
+map_Kd Lvl_Cburst_brick05c[D].xbmp

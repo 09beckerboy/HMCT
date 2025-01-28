@@ -1,0 +1,19 @@
+[ Resources : 15 ]
+ { Name:s                                 }
+// --------------------------------------
+   "INST_COURAGEPOINT_20_TXTR[D].XBMP"   
+   "COINBAG50PU[D].XBMP"                 
+   "SILVERCOIN[D].XBMP"                  
+   "COINBAG100PU[D].XBMP"                
+   "PROPS/CHEST_WOOD.ANIM"               
+   "PROPS/CHEST_BLACK.ANIM"              
+   "PROPS/CHEST_GOLD.ANIM"               
+   "INST_COURAGEPOINT_20.RGEOM"          
+   "INST_COURAGEPOINT_50.RGEOM"          
+   "PROPS/CHEST_WOOD.RGEOM"              
+   "PROPS/CHEST_BLACK.RGEOM"             
+   "PROPS/CHEST_GOLD.RGEOM"              
+   "COIN.RGEOM"                          
+   "COINPICKUP50.RGEOM"                  
+   "COINPICKUP100.RGEOM"                 
+   

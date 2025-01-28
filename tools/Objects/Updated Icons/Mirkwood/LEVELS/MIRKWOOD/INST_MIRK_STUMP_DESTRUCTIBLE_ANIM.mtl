@@ -1,0 +1,12 @@
+newmtl 22_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mirk_deadlog[D].xbmp
+map_Kd mirk_deadlog[D].xbmp
+newmtl 21_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mirk_deadlogtop[D].xbmp
+map_Kd mirk_deadlogtop[D].xbmp

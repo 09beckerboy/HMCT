@@ -1,0 +1,18 @@
+newmtl Mush_Top
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Mushroom_top_01[D].xbmp
+map_Kd EKH_Mushroom_top_01[D].xbmp
+newmtl Mush_Bottom
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_mush_bottom_01[D].xbmp
+map_Kd EKH_mush_bottom_01[D].xbmp
+newmtl Mush_Stem
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_Mushroom_stem_01[D].xbmp
+map_Kd EKH_Mushroom_stem_01[D].xbmp

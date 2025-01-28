@@ -1,0 +1,17 @@
+[ Strings : 13 ]
+ { StringID:s                       }
+// --------------------------------
+   "A_ID_QUEST_BARD"               
+   "B_ID_QUEST_DWARVES"            
+   "C_ID_QUEST_CORWIN"             
+   "D_ID_QUEST_GANDALF_RETURN"     
+   "E_ID_QUEST_LIANNA_FIND"        
+   "F_ID_QUEST_LIANNA_ESC"         
+   "G_ID_QUEST_BEORN_FIND"         
+   "H_ID_QUEST_BEORN_HELP"         
+   "ID_QUEST_LIANNA_SAVE"          
+   "ID_QUEST_NAME_MAX_CH02"        
+   "I_ID_QUEST_BEORN_FOLLOW_SUB"   
+   "J_ID_QUEST_BRIDGE_SUB"         
+   "K_ID_QUEST_BEORN_FREE"         
+   

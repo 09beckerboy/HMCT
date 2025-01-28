@@ -1,0 +1,12 @@
+newmtl Warg
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka warg[RGBA].xbmp
+map_Kd warg[RGBA].xbmp
+newmtl 9_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka WargBridal[D].xbmp
+map_Kd WargBridal[D].xbmp

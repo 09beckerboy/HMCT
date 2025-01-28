@@ -1,0 +1,8 @@
+[ Resources : 4 ]
+ { Name:s                                }
+// -------------------------------------
+   "LVL_CBURST_ROCK03[D].XBMP"          
+   "LVL_CBURST_GROUND04A[D].XBMP"       
+   "LVL_CBURST_GROUND05[D].XBMP"        
+   "CB_NEWPLAYSURFACE_OBJECT07.RGEOM"   
+   

@@ -1,0 +1,24 @@
+newmtl Stem
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_PlatPlantStalk_Mip0[D].xbmp
+map_Kd Lvl_Trollhole_PlatPlantStalk_Mip0[D].xbmp
+newmtl Pestal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_PlatPlantPestal_Mip0[D].xbmp
+map_Kd Lvl_Trollhole_PlatPlantPestal_Mip0[D].xbmp
+newmtl Leaf
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_PlatPlantLeaf_Mip0[D].xbmp
+map_Kd Lvl_Trollhole_PlatPlantLeaf_Mip0[D].xbmp
+newmtl Petals
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Trollhole_PlatPlantPetal_Mip0[D].xbmp
+map_Kd Lvl_Trollhole_PlatPlantPetal_Mip0[D].xbmp

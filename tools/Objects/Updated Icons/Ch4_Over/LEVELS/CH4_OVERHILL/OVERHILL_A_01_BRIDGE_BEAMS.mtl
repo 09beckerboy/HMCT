@@ -1,0 +1,30 @@
+newmtl Lake_bridge_board
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_wood_board_02[D].xbmp
+map_Kd Overhill_wood_board_02[D].xbmp
+newmtl bridge_board_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_bridge_wood_02[D].xbmp
+map_Kd Over_Hill_bridge_wood_02[D].xbmp
+newmtl bridge_broken_board_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_bridge_wood_02b[RGBA].xbmp
+map_Kd Over_Hill_bridge_wood_02b[RGBA].xbmp
+newmtl Cave_bridge_board_b
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_wood_board_B_01[D].xbmp
+map_Kd Overhill_wood_board_B_01[D].xbmp
+newmtl repeat_beam
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Overhill_wood_beam_01[D].xbmp
+map_Kd Overhill_wood_beam_01[D].xbmp

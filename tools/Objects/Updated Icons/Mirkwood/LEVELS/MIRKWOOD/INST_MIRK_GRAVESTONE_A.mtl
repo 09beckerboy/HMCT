@@ -1,0 +1,12 @@
+newmtl back
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gravestone_back[RGBA].xbmp
+map_Kd gravestone_back[RGBA].xbmp
+newmtl front
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka gravestone_1[RGBA].xbmp
+map_Kd gravestone_1[RGBA].xbmp

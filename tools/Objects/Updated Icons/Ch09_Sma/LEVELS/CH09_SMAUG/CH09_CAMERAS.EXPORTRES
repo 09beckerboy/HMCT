@@ -1,0 +1,16 @@
+[ Resources : 12 ]
+ { Name:s                          }
+// -------------------------------
+   "SM_GOBLET[D].XBMP"            
+   "SM_GOBLET ALPHA[D].XBMP"      
+   "GOLDREF[D].XBMP"              
+   "SM_RUBYGOLD[D].XBMP"          
+   "SM_RUBYGOLD_ALPHA[D].XBMP"    
+   "CH9GRAB_CUP_ANIMINST.ANIM"    
+   "CH9CIN4_ANIMINST.ANIM"        
+   "SMAUG_BIND.ANIM"              
+   "BILBO.ANIM"                   
+   "CHAR_DWARF_BIND.ANIM"         
+   "CH9GRAB_CUP_ANIMINST.RGEOM"   
+   "CH9CIN4_ANIMINST.RGEOM"       
+   

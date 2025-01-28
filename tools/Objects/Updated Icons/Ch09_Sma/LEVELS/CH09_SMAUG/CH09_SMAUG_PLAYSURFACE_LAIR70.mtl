@@ -1,0 +1,48 @@
+newmtl xcgv
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_crumble_B[D].xbmp
+map_Kd Sm_crumble_B[D].xbmp
+newmtl vsdblt
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_marbleA[D].xbmp
+map_Kd Sm_marbleA[D].xbmp
+newmtl Material_#67482
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone26[D].xbmp
+map_Kd Lvl_dwarven_plc_stone26[D].xbmp
+newmtl 24_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone38[D].xbmp
+map_Kd Lvl_dwarven_plc_stone38[D].xbmp
+newmtl 8_-_Default
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Smaug_floorA[D].xbmp
+map_Kd Smaug_floorA[D].xbmp
+newmtl _ccb
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone28[D].xbmp
+map_Kd Lvl_dwarven_plc_stone28[D].xbmp
+newmtl hn
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_dwarven_plc_stone42[D].xbmp
+map_Kd Lvl_dwarven_plc_stone42[D].xbmp
+newmtl xcgv
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_crumble_B[D].xbmp
+map_Kd Sm_crumble_B[D].xbmp

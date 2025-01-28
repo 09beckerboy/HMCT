@@ -1,0 +1,12 @@
+[ Resources : 8 ]
+ { Name:s                                   }
+// ----------------------------------------
+   "FX/SHADOWDISC.XBMP"                    
+   "CHAR_STONEGIANT_TXTR COPY[D].XBMP"     
+   "CHARACTERS/STONEGIANTANIMS.CHARANIM"   
+   "PROPS/ROCK_TROLL.RGEOM"                
+   "CHAR_STONEGIANT_BIND.NPCGEOM"          
+   "AI/CREATURELIST.INFO"                  
+   "AI/STONEGIANTSTATES.INFO"              
+   "AI/STONEGIANTANIMS.INFO"               
+   

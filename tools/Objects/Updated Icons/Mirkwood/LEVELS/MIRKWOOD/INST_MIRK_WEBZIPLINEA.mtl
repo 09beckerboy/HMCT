@@ -1,0 +1,24 @@
+newmtl Material_#3639
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka climb_Web[RGBA].xbmp
+map_Kd climb_Web[RGBA].xbmp
+newmtl Material_#3625
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka SB_QueenWeb[RGBA].xbmp
+map_Kd SB_QueenWeb[RGBA].xbmp
+newmtl cliffy
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Mirk_BARK[D].xbmp
+map_Kd Mirk_BARK[D].xbmp
+newmtl treebark2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Lvl_Swordlight_CornerWeb_Mip0[RGBA].xbmp
+map_Kd Lvl_Swordlight_CornerWeb_Mip0[RGBA].xbmp

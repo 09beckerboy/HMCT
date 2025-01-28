@@ -1,0 +1,6 @@
+newmtl Material_#66707
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Sm_red ray of sun[D].xbmp
+map_Kd Sm_red ray of sun[D].xbmp

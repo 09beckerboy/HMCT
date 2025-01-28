@@ -1,0 +1,12 @@
+[ Resources : 8 ]
+ { Name:s                               }
+// ------------------------------------
+   "FX/SHADOWDISC.XBMP"                
+   "CHAR_IMP[D].XBMP"                  
+   "CHARACTERS/GOBLINANIMS.CHARANIM"   
+   "PROPS/GOBPICKAX.RGEOM"             
+   "CHAR_IMP_BIND.NPCGEOM"             
+   "AI/CREATURELIST.INFO"              
+   "AI/IMPSTATES.INFO"                 
+   "AI/IMPANIMS.INFO"                  
+   

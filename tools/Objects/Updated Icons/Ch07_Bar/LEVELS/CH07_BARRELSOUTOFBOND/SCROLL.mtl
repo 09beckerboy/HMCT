@@ -1,0 +1,6 @@
+newmtl TeaCakeIngList
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka scroll[D].xbmp
+map_Kd scroll[D].xbmp

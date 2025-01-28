@@ -1,0 +1,12 @@
+newmtl df
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka MirK_GRASSA[D].xbmp
+map_Kd MirK_GRASSA[D].xbmp
+newmtl Default_Standard
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka mirk_sky[D].xbmp
+map_Kd mirk_sky[D].xbmp

@@ -1,0 +1,12 @@
+newmtl WaterChurned-river2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_mGlossMap2[RGBA].xbmp
+map_Kd EKH_mGlossMap2[RGBA].xbmp
+newmtl Material_#121
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka EKH_mWaterchurnedB_Mip0[RGBA].xbmp
+map_Kd EKH_mWaterchurnedB_Mip0[RGBA].xbmp

@@ -1,0 +1,6 @@
+newmtl Material_#3609
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka MirK_GRASSA[D].xbmp
+map_Kd MirK_GRASSA[D].xbmp

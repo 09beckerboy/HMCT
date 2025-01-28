@@ -1,0 +1,24 @@
+newmtl wood_planks
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_plank_01[D].xbmp
+map_Kd wood_plank_01[D].xbmp
+newmtl chair_seat
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka wood_seat_03[D].xbmp
+map_Kd wood_seat_03[D].xbmp
+newmtl Material_#135
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka end_table_side_01[D].xbmp
+map_Kd end_table_side_01[D].xbmp
+newmtl Chair_weave
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka chair_weave_02[D].xbmp
+map_Kd chair_weave_02[D].xbmp

@@ -1,0 +1,31 @@
+[ AnimList : 16 ]
+ { AnimName:s				AnimType:s			YawRate:f	BlendFactor:f	SpeedScalar:f	DistanceScalar:f	AnimRotation:f  NoiseLevel:f	Flags:d }
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
+"Walk"						"WALK"				4.0			0.25			1.0				1.0					0.0				0.0				0
+"Idle"						"IDLE"			    0.0			0.25			1.0				1.0					0.0				0.0				0
+"Lookup"					"IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"ScratchFace"				"IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"KickDirt"				    "IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"GrabHips"				    "IDLEANIM"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"Hobbit_SideStep"			"STRAFE_LEFT"		8.0			0.25			1.0				1.0					0.0				0.0				0
+"Anger"					    "ATTACK"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"Sweep"			            "SPECIAL"			0.0			0.25			1.0				1.0					0.0				0.0				0
+"HeadTracking"			    "HEAD_TRACKING"		0.0			0.0			    1.0				1.0					0.0				0.0				0
+
+"LipSync"					"LIP_SYNC"			0.0			0.00			1.0				1.0					0.0				0.0				0
+"Conversation"				"SPECIAL"			0.0			0.00			1.0				1.0					0.0				0.0				0
+"TurnLeft45"				"TURN"	            0.0			0.25			1.0				1.0					0.0				0.0				0
+"TurnRight45"				"TURN"	            0.0			0.25			1.0				1.0					0.0				0.0				0
+"HobartShears"				"SPECIAL"	        0.0			0.25			1.0				1.0					0.0				0.0				0
+
+"SandymanSaws"				"SPECIAL"	        0.0			0.25			1.0				1.0					0.0				0.0				0
+
+[ AnimFileName ]
+ { FileName:s }
+// ---------------
+  "HOBBIT"
+
+/*
+*/
+

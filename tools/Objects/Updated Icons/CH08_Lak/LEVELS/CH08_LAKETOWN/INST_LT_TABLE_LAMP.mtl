@@ -1,0 +1,12 @@
+newmtl lamp_shade_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lamp_cover_01[D].xbmp
+map_Kd lamp_cover_01[D].xbmp
+newmtl lamp_base_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka lamp_stand_01[D].xbmp
+map_Kd lamp_stand_01[D].xbmp

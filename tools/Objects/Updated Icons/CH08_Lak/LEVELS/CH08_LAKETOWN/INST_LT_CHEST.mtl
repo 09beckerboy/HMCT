@@ -1,0 +1,12 @@
+newmtl chest_front
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka chest_front_01[D].xbmp
+map_Kd chest_front_01[D].xbmp
+newmtl chest_side_01
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka chest_side_01[D].xbmp
+map_Kd chest_side_01[D].xbmp

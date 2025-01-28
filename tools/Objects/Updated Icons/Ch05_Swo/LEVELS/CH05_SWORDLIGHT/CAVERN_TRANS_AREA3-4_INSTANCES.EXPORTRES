@@ -1,0 +1,8 @@
+[ Resources : 4 ]
+ { Name:s                                     }
+// ------------------------------------------
+   "LVL_SWORDLIGHT_CRATE_DESTR[D].XBMP"      
+   "INST_SWORDLIGHT_CRATE-DESTR_ANI.ANIM"    
+   "INST_SWORDLIGHT_CRATE-DESTR.RGEOM"       
+   "INST_SWORDLIGHT_CRATE-DESTR_ANI.RGEOM"   
+   

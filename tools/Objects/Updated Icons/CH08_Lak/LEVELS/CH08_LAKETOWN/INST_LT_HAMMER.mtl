@@ -1,0 +1,12 @@
+newmtl sawHorse
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_sawHorse[D].xbmp
+map_Kd Inst_LT_sawHorse[D].xbmp
+newmtl oar
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Inst_LT_Oar[D].xbmp
+map_Kd Inst_LT_Oar[D].xbmp

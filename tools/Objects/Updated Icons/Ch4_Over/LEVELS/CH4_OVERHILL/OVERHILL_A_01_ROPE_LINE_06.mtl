@@ -1,0 +1,6 @@
+newmtl bridge_rope
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka Over_Hill_rope[D].xbmp
+map_Kd Over_Hill_rope[D].xbmp

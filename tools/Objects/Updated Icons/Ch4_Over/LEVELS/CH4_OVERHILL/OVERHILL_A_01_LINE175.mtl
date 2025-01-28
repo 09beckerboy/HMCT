@@ -1,0 +1,6 @@
+newmtl Dwarf_Stone
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka OH_Dwarf_Floor01[D].xbmp
+map_Kd OH_Dwarf_Floor01[D].xbmp

@@ -1,0 +1,36 @@
+newmtl Alarm_Pedestal_self_Illum
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka AlarmPedestal[D].xbmp
+map_Kd AlarmPedestal[D].xbmp
+newmtl Alarm_Pedestal
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka AlarmPedestal[D].xbmp
+map_Kd AlarmPedestal[D].xbmp
+newmtl alarmPed2
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka AlarmPedestal[D].xbmp
+map_Kd AlarmPedestal[D].xbmp
+newmtl leaf
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BR_smallLeaf[D].xbmp
+map_Kd LVL_BR_smallLeaf[D].xbmp
+newmtl smallBark
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BR_smallBark[D].xbmp
+map_Kd LVL_BR_smallBark[D].xbmp
+newmtl dark_bark
+illum 1
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+map_Ka LVL_BR_darkBark[D].xbmp
+map_Kd LVL_BR_darkBark[D].xbmp
