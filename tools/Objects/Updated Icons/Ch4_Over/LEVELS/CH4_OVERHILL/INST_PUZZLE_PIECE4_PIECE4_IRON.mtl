@@ -1,6 +1,0 @@
-newmtl Piece4_Iron
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka OH_Crank_arm_01[D].xbmp
-map_Kd OH_Crank_arm_01[D].xbmp

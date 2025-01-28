@@ -1,6 +1,0 @@
-newmtl new_crystal
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka crystal_new_02[RGBA].xbmp
-map_Kd crystal_new_02[RGBA].xbmp

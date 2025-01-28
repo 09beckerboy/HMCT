@@ -1,6 +1,0 @@
-newmtl plant
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka EKH_poison_plantA_01[RGBA].xbmp
-map_Kd EKH_poison_plantA_01[RGBA].xbmp

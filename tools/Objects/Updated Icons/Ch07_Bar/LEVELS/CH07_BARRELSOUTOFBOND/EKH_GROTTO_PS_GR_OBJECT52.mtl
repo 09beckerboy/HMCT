@@ -1,6 +1,0 @@
-newmtl Wall_Stream_Blend
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka EKH_river_bottom_01[D].xbmp
-map_Kd EKH_river_bottom_01[D].xbmp

@@ -1,6 +1,0 @@
-newmtl 22_-_Default
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka waterfall1a[RGBA].xbmp
-map_Kd waterfall1a[RGBA].xbmp

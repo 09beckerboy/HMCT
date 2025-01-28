@@ -1,6 +1,0 @@
-newmtl Material_#944
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka planks_nails_03wet[D].xbmp
-map_Kd planks_nails_03wet[D].xbmp

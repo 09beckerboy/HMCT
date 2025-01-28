@@ -1,6 +1,0 @@
-newmtl 11_-_Default
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka root_01[D].xbmp
-map_Kd root_01[D].xbmp

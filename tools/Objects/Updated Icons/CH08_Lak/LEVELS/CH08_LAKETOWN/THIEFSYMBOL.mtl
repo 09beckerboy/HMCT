@@ -1,6 +1,0 @@
-newmtl thief_symbol
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka ThiefSymbol[RGBA].xbmp
-map_Kd ThiefSymbol[RGBA].xbmp

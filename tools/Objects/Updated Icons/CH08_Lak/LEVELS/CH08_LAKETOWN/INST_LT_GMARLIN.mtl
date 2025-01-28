@@ -1,6 +1,0 @@
-newmtl Green_marlin
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka green_marlin_01[D].xbmp
-map_Kd green_marlin_01[D].xbmp

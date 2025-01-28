@@ -1,6 +1,0 @@
-newmtl 3_-_Default
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka hobbit_female2_model[D].xbmp
-map_Kd hobbit_female2_model[D].xbmp

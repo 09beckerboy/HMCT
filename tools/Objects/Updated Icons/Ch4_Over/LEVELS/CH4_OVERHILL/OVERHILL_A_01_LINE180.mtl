@@ -1,6 +1,0 @@
-newmtl Edge_grab_01
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka OH_edge_grab_04[RGBA].xbmp
-map_Kd OH_edge_grab_04[RGBA].xbmp

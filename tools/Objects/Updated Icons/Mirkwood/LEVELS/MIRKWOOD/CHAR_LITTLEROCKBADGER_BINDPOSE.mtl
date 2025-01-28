@@ -1,6 +1,0 @@
-newmtl 16_-_Default
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka char_badger1_txtr[D].xbmp
-map_Kd char_badger1_txtr[D].xbmp

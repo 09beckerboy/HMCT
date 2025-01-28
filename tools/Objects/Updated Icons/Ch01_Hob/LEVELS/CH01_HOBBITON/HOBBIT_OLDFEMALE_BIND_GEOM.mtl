@@ -1,6 +1,0 @@
-newmtl hobbit_feamle
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka oldfemale[D].xbmp
-map_Kd oldfemale[D].xbmp

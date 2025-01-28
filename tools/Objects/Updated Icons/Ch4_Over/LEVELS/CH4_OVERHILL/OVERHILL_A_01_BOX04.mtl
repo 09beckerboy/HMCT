@@ -1,6 +1,0 @@
-newmtl Wall_Grass_Blend
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka OH_grass_04[D].xbmp
-map_Kd OH_grass_04[D].xbmp

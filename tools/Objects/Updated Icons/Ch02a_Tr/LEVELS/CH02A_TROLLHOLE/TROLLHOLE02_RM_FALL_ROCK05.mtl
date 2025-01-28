@@ -1,6 +1,0 @@
-newmtl lVL_roast_m_ground03
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka lVL_roast_m_ground03[D].xbmp
-map_Kd lVL_roast_m_ground03[D].xbmp

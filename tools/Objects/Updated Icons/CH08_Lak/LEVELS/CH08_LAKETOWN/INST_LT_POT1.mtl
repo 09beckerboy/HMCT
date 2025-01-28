@@ -1,6 +1,0 @@
-newmtl pot_01
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka pot_02[D].xbmp
-map_Kd pot_02[D].xbmp

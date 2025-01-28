@@ -1,6 +1,0 @@
-newmtl webb
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka SB_WEBB[RGBA].xbmp
-map_Kd SB_WEBB[RGBA].xbmp

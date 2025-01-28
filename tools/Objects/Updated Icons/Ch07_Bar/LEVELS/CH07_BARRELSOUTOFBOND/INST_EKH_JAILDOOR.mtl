@@ -1,6 +1,0 @@
-newmtl Jail_door_01
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka EKH_jail_door_02 [D].xbmp
-map_Kd EKH_jail_door_02 [D].xbmp

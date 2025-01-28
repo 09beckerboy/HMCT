@@ -1,6 +1,0 @@
-newmtl window
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka window_02 _Lit[D].xbmp
-map_Kd window_02 _Lit[D].xbmp

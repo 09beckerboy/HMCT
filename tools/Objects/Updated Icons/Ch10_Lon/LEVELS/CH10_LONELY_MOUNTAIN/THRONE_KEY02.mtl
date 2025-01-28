@@ -1,6 +1,0 @@
-newmtl Default_Standard
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka Lvl_dwarven_plc_gold_dif[D].xbmp
-map_Kd Lvl_dwarven_plc_gold_dif[D].xbmp

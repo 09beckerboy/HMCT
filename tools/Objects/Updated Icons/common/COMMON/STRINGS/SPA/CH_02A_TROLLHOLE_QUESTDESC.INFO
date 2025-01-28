@@ -1,9 +1,0 @@
-[ Strings : 5 ]
- { StringID:s                  }
-// ---------------------------
-   "A_FIND_HOLE"              
-   "B_FIND_KEY"               
-   "C_FIND_WATERS"            
-   "D_RETURN_WATERS"          
-   "ID_QUEST_NAME_MAX_CH02"   
-   

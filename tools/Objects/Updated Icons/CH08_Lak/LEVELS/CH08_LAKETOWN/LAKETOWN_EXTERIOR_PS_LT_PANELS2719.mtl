@@ -1,6 +1,0 @@
-newmtl wood_panel
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka panel_02[D].xbmp
-map_Kd panel_02[D].xbmp

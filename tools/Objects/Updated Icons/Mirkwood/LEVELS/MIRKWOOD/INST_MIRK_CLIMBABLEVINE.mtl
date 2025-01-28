@@ -1,6 +1,0 @@
-newmtl x
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka Mirk_ClimableA[RGBA].xbmp
-map_Kd Mirk_ClimableA[RGBA].xbmp

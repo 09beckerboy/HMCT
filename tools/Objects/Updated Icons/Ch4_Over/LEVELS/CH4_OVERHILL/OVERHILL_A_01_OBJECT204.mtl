@@ -1,6 +1,0 @@
-newmtl Dwarf_Stone_Step
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka Over_Hill_step_01[D].xbmp
-map_Kd Over_Hill_step_01[D].xbmp

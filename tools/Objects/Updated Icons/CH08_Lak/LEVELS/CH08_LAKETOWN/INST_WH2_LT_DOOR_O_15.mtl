@@ -1,6 +1,0 @@
-newmtl barn_door
-illum 1
-Ka 0.0 0.0 0.0
-Kd 1.0 1.0 1.0
-map_Ka barn_door_01[D].xbmp
-map_Kd barn_door_01[D].xbmp
