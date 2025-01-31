@@ -15,6 +15,14 @@ from tkinter import filedialog
 import importlib
 import sv_ttk
 import threading
+import logging
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# class Command:
+#     def __init__(self, name, function):
+#         self.name = "Default"
+#         self.function = "doNothing"
 
 def doNothing(): messagebox.showwarning(title="Nothing happened...", message="This feature is not currently implemented")
 
@@ -24,7 +32,7 @@ def _previewFile(x):
     # if project_tree.focus().endswith(".dds"):
     #     preview_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
     #     preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-    #     #hmct.iconphoto(False, preview_image)
+    #     #hmct_window.iconphoto(False, preview_image)
     #     #preview_image_canvas.config(image=preview_image)
     #     preview_image_canvas.delete('all')
     #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
@@ -32,7 +40,7 @@ def _previewFile(x):
     #     preview_image_canvas.pack(side=TOP, anchor=W)
     #     #temp_image =  #.convert("RGBA") #Image.open(projectTree.focus()
     #     preview_image = ImageTk.PhotoImage(Image.open(project_tree.focus())) #.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST)
-    #     #hmct.iconphoto(False, preview_image)
+    #     #hmct_window.iconphoto(False, preview_image)
     #     #preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
     #     #preview_image_canvas.config(preview_image, image=temp_image)
     #     preview_image_canvas.delete('all')
@@ -51,7 +59,7 @@ def _previewFile(x):
     # else:
     #     preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA") #Image.open(projectTree.focus()
     #     preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-    #     hmct.iconphoto(False, preview_image)
+    #     hmct_window.iconphoto(False, preview_image)
     #     preview_image_canvas.config(image=preview_image)
     #     preview_image_canvas.delete('all')
     #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
@@ -108,11 +116,11 @@ def _loadProject(project_name):
         project_config = json.load(read_file)
     printGUI('Loaded project: "{}"'.format(project_name))
     refreshProjectTree("*")
-    hmct.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
+    hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
 
 def _newProject():
-    new_project_window = Toplevel(hmct)
-    new_project_window.lift(hmct)
+    new_project_window = Toplevel(hmct_window)
+    new_project_window.lift(hmct_window)
     new_project_window.geometry("350x650")
     new_project_window.title("New Project")
     new_project_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -154,7 +162,7 @@ def _deleteProject(project):
         refreshAllMenus()
         project_tree.delete(*project_tree.get_children())
         printGUI('Deleted project: "{}"'.format(project))
-        hmct.title("HMCT v2.0 | {}".format(splash_text))
+        hmct_window.title("HMCT v2.0 | {}".format(splash_text))
 
 def _importMod():
     project_path = filedialog.askopenfilename(initialdir = "\\", title = "Select a Mod to Import", filetypes = (("Zipped Mod", "*.zip"), ("HOBM Mod", "*.hobm")))
@@ -193,8 +201,8 @@ def _exportMod(project_name):
     os.chdir(script_dir)
     if os.path.exists("{0}/exported mods/{1}".format(script_dir, project_name)): pass
     else: os.mkdir("{0}/exported mods/{1}".format(script_dir, project_name))
-    export_mod_window = Toplevel(hmct)
-    export_mod_window.lift(hmct)
+    export_mod_window = Toplevel(hmct_window)
+    export_mod_window.lift(hmct_window)
     export_mod_window.geometry("650x350")
     export_mod_window.title("Export Mod")
     export_mod_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -205,7 +213,7 @@ def _exportMod(project_name):
     compress = BooleanVar()
     compress_button = Checkbutton(export_options_frame, variable=compress, text="Compress after export")
     game_dir = Entry(export_options_frame)
-    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); export_mod_window.lift(hmct)
+    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); export_mod_window.lift(hmct_window)
     browse_files = Button(export_options_frame, text = "Browse", command = browse)
     launch_game = BooleanVar()
     launch_game_button = Checkbutton(export_options_frame, variable=launch_game, text="Launch game after export")
@@ -292,6 +300,7 @@ def _exportMod(project_name):
 def convertXBMPDDS():
     def convert():
         if project_config["texture_state"] == "xbmp":
+            printGUI("Converting textures to DDS...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -304,6 +313,7 @@ def convertXBMPDDS():
                 outfile.write(json_object)
             printGUI("Converted textures to DDS")
         elif project_config["texture_state"] == "dds":
+            printGUI("Converting textures to XBMP...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -315,15 +325,16 @@ def convertXBMPDDS():
             with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
                 outfile.write(json_object)
             printGUI("Converted textures to XBMP")
+        hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
     t1.start()
-    hmct.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
 
 def convertXBMPPNG(): doNothing()
 
 def convertEXPORTTXT():
     def convert():
         if project_config["export_state"] == "export":
+            printGUI("Converting export files to TXT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("export_to_text.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -336,6 +347,7 @@ def convertEXPORTTXT():
                 outfile.write(json_object)
             printGUI("Converted export files to TXT")
         elif project_config["export_state"] == "txt":
+            printGUI("Converting export files to EXPORT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_export.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -347,13 +359,14 @@ def convertEXPORTTXT():
             with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
                 outfile.write(json_object)
             printGUI("Converted export files to EXPORT")
+        hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
     t1.start()
-    hmct.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
 
 def convertEXPORTJSON():
     def convert():
         if project_config["export_state"] == "export":
+            printGUI("Converting export files to JSON...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("export_to_json.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -366,6 +379,7 @@ def convertEXPORTJSON():
                 outfile.write(json_object)
             printGUI("Converted export files to JSON")
         elif project_config["export_state"] == "json":
+            printGUI("Converting export files to EXPORT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("json_to_export.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -377,13 +391,14 @@ def convertEXPORTJSON():
             with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
                 outfile.write(json_object)
             printGUI("Converted export files to EXPORT")
+        hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
     t1.start()
-    hmct.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
 
 def convertSUBTITLETXT():
     def convert():
         if project_config["subtitle_state"] == "bin":
+            printGUI("Converting subtitle files to TXT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("subtitle_to_text.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -396,6 +411,7 @@ def convertSUBTITLETXT():
                 outfile.write(json_object)
             printGUI("Converted subtitle files to TXT")
         elif project_config["subtitle_state"] == "txt":
+            printGUI("Converting subtitle files to BIN...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_subtitle.bat"); os.chdir(script_dir)
             project_tree.delete(*project_tree.get_children())
@@ -407,13 +423,13 @@ def convertSUBTITLETXT():
             with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
                 outfile.write(json_object)
             printGUI("Converted subtitle files to BIN")
+        hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
     t1.start()
-    hmct.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
 
 def _addLevel():
-    add_level_window = Toplevel(hmct)
-    add_level_window.lift(hmct)
+    add_level_window = Toplevel(hmct_window)
+    add_level_window.lift(hmct_window)
     add_level_window.geometry("350x650")
     add_level_window.title("Add Level(s)")
     add_level_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -436,8 +452,8 @@ def _addLevel():
     Button(add_level_window, text="Add selected level(s)", command=selectButton).pack(side=TOP)
 
 def _removeLevel():
-    delete_level_window = Toplevel(hmct)
-    delete_level_window.lift(hmct)
+    delete_level_window = Toplevel(hmct_window)
+    delete_level_window.lift(hmct_window)
     delete_level_window.geometry("350x650")
     delete_level_window.title("Remove Level(s)")
     delete_level_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -535,8 +551,8 @@ def openGlobalsEditor(): os.chdir("{}/tools".format(script_dir)); os.system("glo
 
 def openSettingsWindow():
     printGUI(bool(settings["debug_mode"]))
-    settings_window = Toplevel(hmct)
-    settings_window.lift(hmct)
+    settings_window = Toplevel(hmct_window)
+    settings_window.lift(hmct_window)
     settings_window.geometry("500x400")
     settings_window.title("Settings")
     settings_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
@@ -547,7 +563,7 @@ def openSettingsWindow():
     game_dir.delete(0,END)
     game_dir.insert(0, settings["game_directory"])
     game_dir.pack(side=TOP, anchor=W, fill=X)
-    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); settings_window.lift(hmct)
+    def browse(): game_dir.delete(0,END); game_dir.insert(0,filedialog.askdirectory(initialdir = "/", title = "Select the Game Directory")); settings_window.lift(hmct_window)
     Button(settings_frame, text="Browse", command=browse).pack(side=TOP, anchor=W)
     # debug_mode_enabled = BooleanVar() #value=eval(str(settings["debug_mode"]))
     # debug_mode = Checkbutton(settings_frame, variable=debug_mode_enabled, text="Debug Mode")
@@ -558,53 +574,56 @@ def openSettingsWindow():
         with open("settings.json", "w") as outfile:
             outfile.write(json_object)
         messagebox.showinfo(title="Settings Saved!", message="Settings saved successfully")
-        settings_window.lift(hmct)
+        settings_window.lift(hmct_window)
     Button(settings_window, text="Save", command=saveSettings).pack(side=TOP, anchor=W)
 
 def openHelpWindow():
-    help_window = Toplevel(hmct)
-    help_window.lift(hmct)
+    help_window = Toplevel(hmct_window)
+    help_window.lift(hmct_window)
     help_window.geometry("400x400")
     help_window.title("Help")
     help_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
     Label(help_window, text="Made by 09beckerboy").pack(side=LEFT, anchor=N)
 
-def _pluginSetup(plugin_name, commands, seperators):
-    plugin_menu = Menu(plugins_menu, tearoff=0)
-    plugins_menu.add_cascade(label=plugin_name, menu=plugin_menu)
+# def _importPlugins():
+#     for file in os.listdir("{0}/plugins".format(script_dir)):
+#         if file.endswith(".py"):
+#             plugin = importlib.import_module(file.split(".")[0])
+#             if "__all__" in plugin.__dict__:
+#                 names = plugin.__dict__["__all__"]
+#             else:
+#                 names = [x for x in plugin.__dict__ if not x.startswith("_")]
+#             globals().update({k: getattr(plugin, k) for k in names})
+#             # if os.path.exists("{0}/plugins/{1}.runtime".format(script_dir, file.split(".")[0])):
+#             #     exec(open("{0}/plugins/{1}".format(script_dir, file)).read())
+#             plugin_menu = Menu(plugins_menu, tearoff=0)
+#             plugins_menu.add_cascade(label=file.split(".")[0], menu=plugin_menu)
+#             for x in plugin.__dict__:
+#                 if not x.startswith("_"):
+#                     plugin_menu.add_command(label=x, command=x)
 
 if __name__ == '__main__':
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    sys.path.append("{0}/plugins".format(script_dir))
+    #sys.path.append("{0}/plugins".format(script_dir))
     
+    logging.basicConfig(filename='latest.log', level=logging.DEBUG)
+
     splashes = []
     with open("splashes.txt", "r") as f:
         for line in f.readlines():
             splashes.append(line[:-1])
     splash_text = random.choice(splashes)
 
-    # for file in os.listdir("{0}/plugins".format(script_dir)):
-    #     if file.endswith("-gui.py"):
-    #         plugin = importlib.import_module(file.split(".")[0])
-    #         if "__all__" in plugin.__dict__:
-    #             names = plugin.__dict__["__all__"]
-    #         else:
-    #             names = [x for x in plugin.__dict__ if not x.startswith("_")]
-    #         globals().update({k: getattr(plugin, k) for k in names})
-    #         if os.path.exists("{0}/plugins/{1}.runtime".format(script_dir, file.split(".")[0])):
-    #             exec(open("{0}/plugins/{1}".format(script_dir, file)).read())
-
     with open("settings.json", "r") as read_file:
         settings = json.load(read_file)
 
     #Set up window
-    hmct = Tk()  
-    hmct.title("HMCT v2.0 | {}".format(splash_text))
-    hmct.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
-    hmct.geometry("1800x1000")
+    hmct_window = Tk()  
+    hmct_window.title("HMCT v2.0 | {}".format(splash_text))
+    hmct_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
+    hmct_window.geometry("1800x1000")
 
     #Set up console thingy
-    console_frame = Frame(hmct, height=20, width=1800, relief=SUNKEN)
+    console_frame = Frame(hmct_window, height=20, width=1800, relief=SUNKEN)
     console_frame.pack(side=BOTTOM, fill=X, padx=(5,5))
     console_frame.pack_propagate(False)
     console_text = Entry(console_frame)
@@ -615,7 +634,7 @@ if __name__ == '__main__':
     printGUI("Welcome to HMCT!")
 
     #Set up top bar
-    top_bar = Frame(hmct, bd=5, height=75, width=1800)
+    top_bar = Frame(hmct_window, bd=5, height=75, width=1800)
     top_bar.pack(side=TOP, fill=X)
     top_bar.pack_propagate(False)
     open_image = ImageTk.PhotoImage(Image.open("{}/assets/open.png".format(script_dir)).convert("RGBA"))
@@ -638,7 +657,7 @@ if __name__ == '__main__':
     delete_level_button.pack(side=LEFT, padx=(5,0))
 
     #Set up mod file structure window
-    file_window = Frame(hmct, bd=5, width=500, relief=SUNKEN)
+    file_window = Frame(hmct_window, bd=5, width=500, relief=SUNKEN)
     file_window.pack(side=LEFT, fill=Y, padx=(5,0), pady=(0,0))
     ttk.Label(file_window, text ="Project Files").pack(side=TOP)
     file_window_top = Frame(file_window)
@@ -664,7 +683,7 @@ if __name__ == '__main__':
     project_tree.bind('<Double-1>', _previewFile)
 
     #Set up file preview window
-    preview_frame = Frame(hmct, bd=5, relief=SUNKEN, height=1000, width=1285)
+    preview_frame = Frame(hmct_window, bd=5, relief=SUNKEN, height=1000, width=1285)
     #preview_frame.pack_propagate(False)
     preview_frame.pack(side=TOP, fill=BOTH, padx=(15,5), pady=(0,0))
     ttk.Label(preview_frame, text ="File Preview").pack(side=TOP, fill=Y)
@@ -677,7 +696,7 @@ if __name__ == '__main__':
 
     preview_text = Text(preview_frame, state='disabled', width=1285, height=1000)
 
-    menu_bar = Menu(hmct)
+    menu_bar = Menu(hmct_window)
 
     project_menu = Menu(menu_bar, tearoff=0)
     project_menu.add_command(label="New Project", command=_newProject)
@@ -718,11 +737,13 @@ if __name__ == '__main__':
 
     menu_bar.add_command(label="Help", command=openHelpWindow)
 
+    #_importPlugins()
+
     #Load project
     #sv_ttk.set_theme("dark")
-    hmct.config(menu=menu_bar)
-    hmct.state("zoomed")
-    hmct.mainloop()
+    hmct_window.config(menu=menu_bar)
+    hmct_window.state("zoomed")
+    hmct_window.mainloop()
 
 #TODO
 #Plugins
