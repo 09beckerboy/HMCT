@@ -1914,3 +1914,366 @@ DEBUG:PIL.Image:Importing WmfImagePlugin
 DEBUG:PIL.Image:Importing XbmImagePlugin
 DEBUG:PIL.Image:Importing XpmImagePlugin
 DEBUG:PIL.Image:Importing XVThumbImagePlugin
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 98
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 91 3
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 106 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 127 123
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 66
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 291
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 379
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 217
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 279
+DEBUG:PIL.Image:Importing BlpImagePlugin
+DEBUG:PIL.Image:Importing BmpImagePlugin
+DEBUG:PIL.Image:Importing BufrStubImagePlugin
+DEBUG:PIL.Image:Importing CurImagePlugin
+DEBUG:PIL.Image:Importing DcxImagePlugin
+DEBUG:PIL.Image:Importing DdsImagePlugin
+DEBUG:PIL.Image:Importing EpsImagePlugin
+DEBUG:PIL.Image:Importing FitsImagePlugin
+DEBUG:PIL.Image:Importing FliImagePlugin
+DEBUG:PIL.Image:Importing FpxImagePlugin
+DEBUG:PIL.Image:Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing FtexImagePlugin
+DEBUG:PIL.Image:Importing GbrImagePlugin
+DEBUG:PIL.Image:Importing GifImagePlugin
+DEBUG:PIL.Image:Importing GribStubImagePlugin
+DEBUG:PIL.Image:Importing Hdf5StubImagePlugin
+DEBUG:PIL.Image:Importing IcnsImagePlugin
+DEBUG:PIL.Image:Importing IcoImagePlugin
+DEBUG:PIL.Image:Importing ImImagePlugin
+DEBUG:PIL.Image:Importing ImtImagePlugin
+DEBUG:PIL.Image:Importing IptcImagePlugin
+DEBUG:PIL.Image:Importing JpegImagePlugin
+DEBUG:PIL.Image:Importing Jpeg2KImagePlugin
+DEBUG:PIL.Image:Importing McIdasImagePlugin
+DEBUG:PIL.Image:Importing MicImagePlugin
+DEBUG:PIL.Image:Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing MpegImagePlugin
+DEBUG:PIL.Image:Importing MpoImagePlugin
+DEBUG:PIL.Image:Importing MspImagePlugin
+DEBUG:PIL.Image:Importing PalmImagePlugin
+DEBUG:PIL.Image:Importing PcdImagePlugin
+DEBUG:PIL.Image:Importing PcxImagePlugin
+DEBUG:PIL.Image:Importing PdfImagePlugin
+DEBUG:PIL.Image:Importing PixarImagePlugin
+DEBUG:PIL.Image:Importing PngImagePlugin
+DEBUG:PIL.Image:Importing PpmImagePlugin
+DEBUG:PIL.Image:Importing PsdImagePlugin
+DEBUG:PIL.Image:Importing QoiImagePlugin
+DEBUG:PIL.Image:Importing SgiImagePlugin
+DEBUG:PIL.Image:Importing SpiderImagePlugin
+DEBUG:PIL.Image:Importing SunImagePlugin
+DEBUG:PIL.Image:Importing TgaImagePlugin
+DEBUG:PIL.Image:Importing TiffImagePlugin
+DEBUG:PIL.Image:Importing WebPImagePlugin
+DEBUG:PIL.Image:Importing WmfImagePlugin
+DEBUG:PIL.Image:Importing XbmImagePlugin
+DEBUG:PIL.Image:Importing XpmImagePlugin
+DEBUG:PIL.Image:Importing XVThumbImagePlugin
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 98
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 91 3
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 106 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 127 123
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 66
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 291
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 379
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 217
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 279
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 98
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 91 3
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 106 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 127 123
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 66
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 291
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 379
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 217
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 279
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 98
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 91 3
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 106 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 127 123
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 66
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 291
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 379
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 217
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 279
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 691
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 98
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 91 3
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 106 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 127 123
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 66
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 291
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 379
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 217
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 279
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 691
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 98
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 91 3
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 106 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 127 123
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'PLTE' 70 6
+DEBUG:PIL.PngImagePlugin:STREAM b'tRNS' 88 2
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 102 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 123 66
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 291
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 379
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 217
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sBIT' 41 4
+DEBUG:PIL.PngImagePlugin:b'sBIT' 41 4 (unknown)
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 57 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 70 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 86 9
+DEBUG:PIL.PngImagePlugin:STREAM b'tEXt' 107 25
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 144 279
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'sRGB' 41 1
+DEBUG:PIL.PngImagePlugin:STREAM b'gAMA' 54 4
+DEBUG:PIL.PngImagePlugin:STREAM b'pHYs' 70 9
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 91 691

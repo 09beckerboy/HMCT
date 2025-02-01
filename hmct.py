@@ -31,7 +31,6 @@ def _previewFile(x):
     printGUI(project_tree.focus())
     if project_tree.focus().endswith(".dds"):
         preview_image = Image.open(project_tree.focus()).convert("RGBA")
-        #preview_image.putalpha(ImageEnhance.Brightness(preview_image.split()[3]).enhance(1)) #Image.open(projectTree.focus()
         preview_image.putalpha(255)
         if preview_image.height >= preview_image.width: preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.width*int(891/preview_image.height)), 891), Image.NEAREST))
         else : preview_image = ImageTk.PhotoImage(preview_image.resize((1157, (preview_image.height*int(1157/preview_image.width))), Image.NEAREST))
@@ -41,13 +40,6 @@ def _previewFile(x):
         preview_image_canvas.delete('all')
         preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
         preview_image_canvas.config(image=preview_image)
-        #temp_image =  #.convert("RGBA") #Image.open(projectTree.focus()
-        #preview_image = ImageTk.PhotoImage(Image.open(project_tree.focus())) #.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST)
-        #hmct_window.iconphoto(False, preview_image)
-        #preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
-        #preview_image_canvas.config(preview_image, image=temp_image)
-        #preview_image_canvas.delete('all')
-        #preview_image_canvas.create_image(0, 0, anchor=NW, image=preview_image)
     if str(project_tree.focus()).lower().endswith(".png"):
         pass
     if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json") or str(project_tree.focus()).lower().endswith(".bin") or str(project_tree.focus()).lower().endswith(".h"):
@@ -85,21 +77,26 @@ def _makeProjectTree(path, depth, parent, filter):
                 if extension[0] not in values: filter_dropdown["values"] = values + extension
 
 def refreshProjectTree(filter):
+    project_tree.delete(*project_tree.get_children())
+    project_tree.insert("", "0", current_project, text=current_project + "/")
     t1 = threading.Thread(target=_makeProjectTree, args=("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, filter,))
     t1.start()
 
 def _moveTools(project_name):
-    shutil.copy2("{0}\\tools\\dds_to_xbmp.bat".format(script_dir), "{0}\\projects\\{1}\\dds_to_xbmp.bat".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\xbmp_to_dds.bat".format(script_dir), "{0}\\projects\\{1}\\xbmp_to_dds.bat".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\xbmpconverter.exe".format(script_dir), "{0}\\projects\\{1}\\xbmpconverter.exe".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\dfs.exe".format(script_dir), "{0}\\projects\\{1}\\dfs.exe".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\exporttool.exe".format(script_dir), "{0}\\projects\\{1}\\exporttool.exe".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\export_to_text.bat".format(script_dir), "{0}\\projects\\{1}\\export_to_text.bat".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\text_to_export.bat".format(script_dir), "{0}\\projects\\{1}\\text_to_export.bat".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\json_to_export.bat".format(script_dir), "{0}\\projects\\{1}\\json_to_export.bat".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\export_to_json.bat".format(script_dir), "{0}\\projects\\{1}\\export_to_json.bat".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\rgeom2obj.exe".format(script_dir), "{0}\\projects\\{1}\\rgeom2obj.exe".format(script_dir, project_name))
-    shutil.copy2("{0}\\tools\\subtitletool.exe".format(script_dir), "{0}\\projects\\{1}\\subtitletool.exe".format(script_dir, project_name))
+    def move():
+        shutil.copy2("{0}\\tools\\dds_to_xbmp.bat".format(script_dir), "{0}\\projects\\{1}\\dds_to_xbmp.bat".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\xbmp_to_dds.bat".format(script_dir), "{0}\\projects\\{1}\\xbmp_to_dds.bat".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\xbmpconverter.exe".format(script_dir), "{0}\\projects\\{1}\\xbmpconverter.exe".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\dfs.exe".format(script_dir), "{0}\\projects\\{1}\\dfs.exe".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\exporttool.exe".format(script_dir), "{0}\\projects\\{1}\\exporttool.exe".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\export_to_text.bat".format(script_dir), "{0}\\projects\\{1}\\export_to_text.bat".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\text_to_export.bat".format(script_dir), "{0}\\projects\\{1}\\text_to_export.bat".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\json_to_export.bat".format(script_dir), "{0}\\projects\\{1}\\json_to_export.bat".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\export_to_json.bat".format(script_dir), "{0}\\projects\\{1}\\export_to_json.bat".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\rgeom2obj.exe".format(script_dir), "{0}\\projects\\{1}\\rgeom2obj.exe".format(script_dir, project_name))
+        shutil.copy2("{0}\\tools\\subtitletool.exe".format(script_dir), "{0}\\projects\\{1}\\subtitletool.exe".format(script_dir, project_name))
+    t1 = threading.Thread(target=move)
+    t1.start()
 
 def _loadProject(project_name):
     global selected
@@ -112,8 +109,6 @@ def _loadProject(project_name):
     project_file_extensions = []
     global project_config
     project_config= {}
-    project_tree.delete(*project_tree.get_children())
-    project_tree.insert("", "0", project_name, text=project_name + "/")
     filter_dropdown["values"] = ("All")
     with open("{0}/projects/{1}/config.json".format(script_dir, project_name), "r") as read_file:
         project_config = json.load(read_file)
@@ -144,14 +139,11 @@ def _newProject():
             for level in level_checklist.keys():
                 if level_checklist[level].get() == 1:
                     shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level), "{0}\\projects\\{1}\\{2}".format(script_dir, project_name.get(), level))
-            
             new_project_config = {"texture_state": "xbmp", "export_state": "export", "subtitle_state": "bin"}
             json_object = json.dumps(new_project_config, indent=4)
             with open("{0}/projects/{1}/config.json".format(script_dir, project_name.get()), "w") as outfile:
                 outfile.write(json_object)
-            t1 = threading.Thread(target=_moveTools, args=(project_name.get(),))
-            t1.start()
-            #_moveTools(project_name.get())
+            _moveTools(project_name.get())
             refreshAllMenus()
             printGUI('Created project: "{}"'.format(project_name.get()))
             _loadProject(project_name.get())
@@ -188,9 +180,7 @@ def _importMod():
                     os.remove("{0}".format(name))
                     os.remove("{0}.000".format(name.split(".")[0]))
                     os.chdir(script_dir)
-            t1 = threading.Thread(target=_moveTools, args=(project_name,))
-            t1.start()
-            #_moveTools(project_name)
+            _moveTools(project_name)
         except Exception as e: printGUI(e)
         refreshAllMenus()
         printGUI('Imported mod: "{}"'.format(project_name))
@@ -306,33 +296,59 @@ def convertXBMPDDS():
             printGUI("Converting textures to DDS...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["texture_state"] = "dds"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted textures to DDS")
         elif project_config["texture_state"] == "dds":
             printGUI("Converting textures to XBMP...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["texture_state"] = "xbmp"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted textures to XBMP")
         hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
     t1.start()
 
-def convertXBMPPNG(): doNothing()
+def convertDDSPNG():
+    def convert():
+        if project_config["texture_state"] == "dds":
+            printGUI("Converting textures to PNG...")
+            for root, dirs, files in os.walk(script_dir):
+                for filename in files:
+                    if filename.endswith(".dds"):
+                        file_path = os.path.join(root, filename)
+                        result_name = filename.split(".")[0]
+                        im = Image.open(file_path).convert('RGBA')
+                        alpha = im.split()[3]
+                        alpha = ImageEnhance.Brightness(alpha).enhance(1)
+                        im.putalpha(alpha)
+                        im.save("{0}/{1}.png".format(root, result_name))
+                        os.remove(file_path)
+                    else: continue
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+            project_config["texture_state"] = "png"
+            saveProjectConfig()
+            printGUI("Converted textures to PNG")
+        elif project_config["texture_state"] == "png":
+            printGUI("Converting textures to DDS...")
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+            project_config["texture_state"] = "dds"
+            saveProjectConfig()
+            printGUI("Converted textures to DDS")
+        hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
+    t1 = threading.Thread(target=convert)
+    t1.start()
 
 def convertEXPORTTXT():
     def convert():
@@ -340,27 +356,19 @@ def convertEXPORTTXT():
             printGUI("Converting export files to TXT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("export_to_text.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "txt"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted export files to TXT")
         elif project_config["export_state"] == "txt":
             printGUI("Converting export files to EXPORT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_export.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "export"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted export files to EXPORT")
         hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
@@ -372,27 +380,19 @@ def convertEXPORTJSON():
             printGUI("Converting export files to JSON...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("export_to_json.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "json"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted export files to JSON")
         elif project_config["export_state"] == "json":
             printGUI("Converting export files to EXPORT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("json_to_export.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "export"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted export files to EXPORT")
         hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
@@ -404,27 +404,19 @@ def convertSUBTITLETXT():
             printGUI("Converting subtitle files to TXT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("subtitle_to_text.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["subtitle_state"] = "txt"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted subtitle files to TXT")
         elif project_config["subtitle_state"] == "txt":
             printGUI("Converting subtitle files to BIN...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_subtitle.bat"); os.chdir(script_dir)
-            project_tree.delete(*project_tree.get_children())
-            project_tree.insert("", "0", current_project, text=current_project + "/")
             filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["subtitle_state"] = "bin"
-            json_object = json.dumps(project_config, indent=4)
-            with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
-                outfile.write(json_object)
+            saveProjectConfig()
             printGUI("Converted subtitle files to BIN")
         hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     t1 = threading.Thread(target=convert)
@@ -433,6 +425,51 @@ def convertSUBTITLETXT():
 def convertAUDIOPKG():
     doNothing()
 
+def syncFiletypes():
+    def sync():
+        printGUI("Syncing all filetypes...")
+        if project_config["texture_state"] == "xbmp":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        elif project_config["texture_state"] == "dds":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        if project_config["export_state"] == "export":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("text_to_export.bat"); os.chdir(script_dir)
+            os.system("json_to_export.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        elif project_config["export_state"] == "txt":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("json_to_export.bat"); os.chdir(script_dir)
+            os.system("export_to_text.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        elif project_config["export_state"] == "json":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("text_to_export.bat"); os.chdir(script_dir)
+            os.system("export_to_json.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        if project_config["subtitle_state"] == "bin":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("text_to_subtitle.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        elif project_config["subtitle_state"] == "txt":
+            os.chdir("{0}/projects/{1}".format(script_dir, current_project))
+            os.system("subtitle_to_text.bat"); os.chdir(script_dir)
+            filter_dropdown["values"] = ("All")
+            refreshProjectTree("*")
+        hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
+        printGUI("Filetypes synced")
+    t1 = threading.Thread(target=sync)
+    t1.start()
 
 def _addLevel():
     add_level_window = Toplevel(hmct_window)
@@ -452,8 +489,6 @@ def _addLevel():
             if level_checklist[level].get() == 1:
                 if not os.path.exists("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level)):
                     shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level), "{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level))
-        project_tree.delete(*project_tree.get_children())
-        project_tree.insert("", "0", current_project, text=current_project + "/")
         filter_dropdown["values"] = ("All"); 
         refreshProjectTree("*")
     Button(add_level_window, text="Add selected level(s)", command=selectButton).pack(side=TOP)
@@ -476,8 +511,6 @@ def _removeLevel():
             if level_checklist[level].get() == 1:
                 if os.path.exists("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level)):
                     shutil.rmtree("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level))
-        project_tree.delete(*project_tree.get_children())
-        project_tree.insert("", "0", current_project, text=current_project + "/")
         filter_dropdown["values"] = ("All"); 
         refreshProjectTree("*")
     Button(delete_level_window, text="Remove selected level(s)", command=selectButton).pack(side=TOP)
@@ -517,16 +550,12 @@ def collapseTree():
 
 def _searchTree():
     try:
-        project_tree.delete(*project_tree.get_children())
-        project_tree.insert("", "0", current_project, text=current_project + "/")
         filter_dropdown["values"] = ("All"); 
         refreshProjectTree(str(search_box.get()))
     except Exception: pass
 
 def _filterTree(*none):
     try:
-        project_tree.delete(*project_tree.get_children())
-        project_tree.insert("", "0", current_project, text=current_project + "/")
         if str(filter_dropdown.get()).lower() == "all": filter_dropdown["values"] = ("All"); refreshProjectTree("*")
         else: filter_dropdown["values"] = ("All"); refreshProjectTree(str(filter_dropdown.get()))
     except Exception: pass
@@ -592,6 +621,11 @@ def openHelpWindow():
     help_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
     Label(help_window, text="Made by 09beckerboy\nRGeomView made by Modera\nGlobals Editor made by king174rus and Mr_Kliff").pack(side=LEFT, anchor=N)
 
+def saveProjectConfig():
+    json_object = json.dumps(project_config, indent=4)
+    with open("{0}/projects/{1}/config.json".format(script_dir, current_project), "w") as outfile:
+        outfile.write(json_object)
+
 # def _importPlugins():
 #     for file in os.listdir("{0}/plugins".format(script_dir)):
 #         if file.endswith(".py"):
@@ -623,13 +657,11 @@ if __name__ == '__main__':
     with open("settings.json", "r") as read_file:
         settings = json.load(read_file)
 
-    #Set up window
     hmct_window = Tk()  
     hmct_window.title("HMCT v2.0 | {}".format(splash_text))
     hmct_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
     hmct_window.geometry("1800x1000")
 
-    #Set up console thingy
     console_frame = Frame(hmct_window, height=20, width=1800, relief=SUNKEN)
     console_frame.pack(side=BOTTOM, fill=X, padx=(5,5))
     console_frame.pack_propagate(False)
@@ -640,7 +672,6 @@ if __name__ == '__main__':
 
     printGUI("Welcome to HMCT!")
 
-    #Set up top bar
     top_bar = Frame(hmct_window, bd=5, height=75, width=1800)
     top_bar.pack(side=TOP, fill=X)
     top_bar.pack_propagate(False)
@@ -663,7 +694,6 @@ if __name__ == '__main__':
     delete_level_button = Button(top_bar, text="Remove Level", font=("Segoe UI", 11), image=delete_level_image, compound=LEFT, command=_removeLevel, height=75, width=150)
     delete_level_button.pack(side=LEFT, padx=(5,0))
 
-    #Set up mod file structure window
     file_window = Frame(hmct_window, bd=5, width=500, relief=SUNKEN)
     file_window.pack(side=LEFT, fill=Y, padx=(5,0), pady=(0,0))
     ttk.Label(file_window, text ="Project Files").pack(side=TOP)
@@ -684,22 +714,20 @@ if __name__ == '__main__':
     filter_dropdown.pack(side=RIGHT)
     filter_dropdown["values"] = ("All")
 
-    #Set up file tree
     project_tree.pack(side=LEFT, fill=BOTH)  
     project_tree.column("#0", minwidth=0, width=400, stretch=NO)
     project_tree.bind('<Double-1>', _previewFile)
 
-    #Set up file preview window
     preview_frame = Frame(hmct_window, bd=5, relief=SUNKEN, height=1000, width=1285)
     #preview_frame.pack_propagate(False)
     preview_frame.pack(side=TOP, fill=BOTH, padx=(15,5), pady=(0,0))
     ttk.Label(preview_frame, text ="File Preview").pack(side=TOP, fill=Y)
 
     preview_image_canvas = Canvas(preview_frame, height=990, width=1285)
-    #preview_image_canvas.pack(side=TOP, anchor=W)
-    # preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA")
-    # preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-    # preview_image = preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+    preview_image = Image.open("{}/assets/no_preview.png".format(script_dir)).convert("RGBA")
+    preview_image = ImageTk.PhotoImage(preview_image.resize((1157, (preview_image.width*int(1157/preview_image.height))), Image.NEAREST))
+    preview_image = preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+    preview_image_canvas.pack(side=TOP, anchor=W)
 
     preview_text = Text(preview_frame, state='disabled', width=1285, height=1000)
 
@@ -725,7 +753,7 @@ if __name__ == '__main__':
     tools_menu = Menu(menu_bar, tearoff=0)
     convert_menu = Menu(tools_menu, tearoff=0)
     convert_menu.add_command(label="XBMP <-> DDS", command=convertXBMPDDS)
-    #convert_menu.add_command(label="XBMP <-> PNG", command=convertXBMPPNG)
+    #convert_menu.add_command(label="DDS <-> PNG", command=convertDDSPNG)
     convert_menu.add_separator()
     convert_menu.add_command(label="EXPORT <-> TXT", command=convertEXPORTTXT)
     convert_menu.add_command(label="EXPORT <-> JSON", command=convertEXPORTJSON)
@@ -733,6 +761,8 @@ if __name__ == '__main__':
     convert_menu.add_command(label="SUBTITLE <-> TXT", command=convertSUBTITLETXT)
     convert_menu.add_separator()
     convert_menu.add_command(label="AUDIOPKG <-> AUDIO", command=convertAUDIOPKG)
+    convert_menu.add_separator()
+    convert_menu.add_command(label="Sync Filetypes", command=syncFiletypes)
     tools_menu.add_cascade(label="Convert", menu=convert_menu)
     tools_menu.add_separator()
     tools_menu.add_command(label="RGeomView", command=openRGeomView)
@@ -748,7 +778,6 @@ if __name__ == '__main__':
 
     #_importPlugins()
 
-    #Load project
     #sv_ttk.set_theme("dark")
     hmct_window.config(menu=menu_bar)
     hmct_window.state("zoomed")
@@ -762,7 +791,7 @@ if __name__ == '__main__':
 #TODO CLEANUP
 #Get rid of bad comments
 #Make good comments
-#Add logging statements
+#Add logging statements (Exceptions)
 
 #TODO FEATURE CREEP
 #Plugins
@@ -770,3 +799,4 @@ if __name__ == '__main__':
 #Open game in blender
 #Sync all copies of files
 #File management (create, delete)
+#Dark Mode
