@@ -29,22 +29,25 @@ def doNothing(): messagebox.showwarning(title="Nothing happened...", message="Th
 def _previewFile(x):
     console_text.delete(0, END)
     printGUI(project_tree.focus())
-    # if project_tree.focus().endswith(".dds"):
-    #     preview_image = Image.open(project_tree.focus()).convert("RGBA") #Image.open(projectTree.focus()
-    #     preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.size[0]*int(1157/preview_image.size[0])), (preview_image.size[1]*int(891/preview_image.size[1]))), Image.NEAREST))
-    #     #hmct_window.iconphoto(False, preview_image)
-    #     #preview_image_canvas.config(image=preview_image)
-    #     preview_image_canvas.delete('all')
-    #     preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
-    # preview_text.pack_forget()
-    #     preview_image_canvas.pack(side=TOP, anchor=W)
-    #     #temp_image =  #.convert("RGBA") #Image.open(projectTree.focus()
-    #     preview_image = ImageTk.PhotoImage(Image.open(project_tree.focus())) #.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST)
-    #     #hmct_window.iconphoto(False, preview_image)
-    #     #preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
-    #     #preview_image_canvas.config(preview_image, image=temp_image)
-    #     preview_image_canvas.delete('all')
-    #     preview_image_canvas.create_image(0, 0, anchor=NW, image=preview_image)
+    if project_tree.focus().endswith(".dds"):
+        preview_image = Image.open(project_tree.focus()).convert("RGBA")
+        #preview_image.putalpha(ImageEnhance.Brightness(preview_image.split()[3]).enhance(1)) #Image.open(projectTree.focus()
+        preview_image.putalpha(255)
+        if preview_image.height >= preview_image.width: preview_image = ImageTk.PhotoImage(preview_image.resize(((preview_image.width*int(891/preview_image.height)), 891), Image.NEAREST))
+        else : preview_image = ImageTk.PhotoImage(preview_image.resize((1157, (preview_image.height*int(1157/preview_image.width))), Image.NEAREST))
+        #hmct_window.iconphoto(False, preview_image)
+        preview_text.pack_forget()
+        preview_image_canvas.pack(side=TOP, anchor=W)
+        preview_image_canvas.delete('all')
+        preview_image_canvas.create_image(0,0, anchor=NW, image=preview_image)
+        preview_image_canvas.config(image=preview_image)
+        #temp_image =  #.convert("RGBA") #Image.open(projectTree.focus()
+        #preview_image = ImageTk.PhotoImage(Image.open(project_tree.focus())) #.resize(((temp_image.size[0]*int(1157/temp_image.size[0])), (temp_image.size[1]*int(891/temp_image.size[1]))), Image.NEAREST)
+        #hmct_window.iconphoto(False, preview_image)
+        #preview_image = ImageTk.PhotoImage(file = str(project_tree.focus()))
+        #preview_image_canvas.config(preview_image, image=temp_image)
+        #preview_image_canvas.delete('all')
+        #preview_image_canvas.create_image(0, 0, anchor=NW, image=preview_image)
     if str(project_tree.focus()).lower().endswith(".png"):
         pass
     if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json") or str(project_tree.focus()).lower().endswith(".bin") or str(project_tree.focus()).lower().endswith(".h"):
@@ -427,6 +430,10 @@ def convertSUBTITLETXT():
     t1 = threading.Thread(target=convert)
     t1.start()
 
+def convertAUDIOPKG():
+    doNothing()
+
+
 def _addLevel():
     add_level_window = Toplevel(hmct_window)
     add_level_window.lift(hmct_window)
@@ -583,7 +590,7 @@ def openHelpWindow():
     help_window.geometry("400x400")
     help_window.title("Help")
     help_window.iconphoto(False, PhotoImage(file="{}/assets/hmct_icon.png".format(script_dir)))
-    Label(help_window, text="Made by 09beckerboy").pack(side=LEFT, anchor=N)
+    Label(help_window, text="Made by 09beckerboy\nRGeomView made by Modera\nGlobals Editor made by king174rus and Mr_Kliff").pack(side=LEFT, anchor=N)
 
 # def _importPlugins():
 #     for file in os.listdir("{0}/plugins".format(script_dir)):
@@ -724,6 +731,8 @@ if __name__ == '__main__':
     convert_menu.add_command(label="EXPORT <-> JSON", command=convertEXPORTJSON)
     convert_menu.add_separator()
     convert_menu.add_command(label="SUBTITLE <-> TXT", command=convertSUBTITLETXT)
+    convert_menu.add_separator()
+    convert_menu.add_command(label="AUDIOPKG <-> AUDIO", command=convertAUDIOPKG)
     tools_menu.add_cascade(label="Convert", menu=convert_menu)
     tools_menu.add_separator()
     tools_menu.add_command(label="RGeomView", command=openRGeomView)
@@ -745,11 +754,19 @@ if __name__ == '__main__':
     hmct_window.state("zoomed")
     hmct_window.mainloop()
 
-#TODO
+#TODO IMPORTANT
+#Audio Conversion
+#Image preview + PNG conversion
+#Keep tree state/filters in settings
+
+#TODO CLEANUP
+#Get rid of bad comments
+#Make good comments
+#Add logging statements
+
+#TODO FEATURE CREEP
 #Plugins
-#File preview
-# PNG
-# DDS
-#Delete files
-#Sync all copies of files
+#Parser
 #Open game in blender
+#Sync all copies of files
+#File management (create, delete)
