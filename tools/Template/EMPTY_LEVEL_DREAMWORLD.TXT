@@ -1,0 +1,24 @@
+[ Globals : 1 ]
+ { GUID:s              BilboStartYaw:f BilboStartPos:fff           FogColor:dddd FogStart:f  FogEnd:f      FogEnabled:d LevelName:s       'Number of Quests:d' OpeningCinema:g   Ambient0:dddd Ambient1:dddd Ambient2:dddd Ambient3:dddd Ambient4:dddd Ambient5:dddd Ambient6:dddd Ambient7:dddd }
+   "0D811AD0_1176E406" 0.00            0.000000 30.000000 0.000000 90 90 170 255 2000.000000 130000.000000 1            "Ch00_DreamWorld" 0                    00000000_00000000 20 20 32 255  0 0 0 255     0 0 0 255     0 0 0 255     0 0 0 255     0 0 0 255     0 0 0 255     0 0 0 255     
+[ AIManager : 1 ]
+ { TriggerCount:d ActionCount:d LinkCount:d }
+1 1 1 
+[ Trigger0 : 1 ]
+{ TriggerType0:d TriggerName0:s }
+0 "Empty trigger"    
+[ Action0 : 1 ]
+{ ActionType0:d ActionName0:s }
+0 "Empty Action"    
+[ Link0 : 1 ]
+{ LinkRepeats0:d LinkState0:d LogicType0:d LinkTriggerCount0:d LinkActionCount0:d }
+0 0 0 0 0 
+[ ConversationMgr : 1 ]
+ { ConversationCount:d ConversationListCount:d DialogListCount:d }
+   0                   0                       0                 
+[ CameraMgr : 1 ]
+ { ChaseOffset:fff            }
+   0.000000 0.000000 0.000000 
+[ Skybox : 1 ]
+ { GUID:s              OffsetScale:fff            Center:fff                 AnimSpeed:f Name:s   AnimationResource:s GeometryResource:s        Pos:fff                              Ambient:dddd    Orient:fff                 Scale:fff                  BBox:ffffff                                                               HasLOD:d IsLadder:d IsVine:d IsHoistable:d IsLeafPile:d IsAnimating:d IsMovingPlatform:d IsAutoEdgeGrabbable:d DoesNotCollide:d DoesFloat:d FloatYTweak:f LightingType:d AnimSpeed_:f AnimOffset_:f LoopDelay:f Looping:d Interpolate:d Destructible:d DestructibleByNPC:d DestructibleByBilbo:d IsPlant:d PainOnDestroy:d HasPrivData:d HasSurfaceFlags:d DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff             Orientation:fff            LocalBoundingBox:ffffff                                             ObjSaveFlag:d ObjName:s IsGoldPile:d IsHidden:d Decals:d IsSqueakyChickenBoard:d 'Surface Type:s' }
+   "0D8AD451_173CA000" 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000    "Skybox" ""                  "cb_skybox_cloud01.rgeom" -5219.228516 353.413147 -3336.546387 255 255 255 255 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 -5491.196289 331.494263 -3614.431641 -4921.224121 564.597839 -3044.459473 0        0          0        0             0            1             0                  0                     0                0           0.000000      0              1.000000     0.000000      0.000000    1         1             0              0                   0                     0         0               0             0                 0                1                1               8608          ""               0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -271.967773 -21.918884 -277.885254 298.004395 211.184692 292.086914 0             "Skybox"  0            0          0        0                       "Dirt"           

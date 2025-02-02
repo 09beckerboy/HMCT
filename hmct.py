@@ -517,16 +517,19 @@ def _removeLevel():
 
 def openFile():
     file = str(project_tree.focus())
-    if file.endswith("ALLUSEDLAYERS.TXT"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
-    if file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+    if file.endswith("ALLUSEDLAYERS.TXT"): 
+        if messagebox.askyesno(title="Open in RGeomView?", message="Open {} in RGeomView?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+        else: os.startfile(file)
+    elif file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+    elif file.endswith("GLOBALS.EXPORT.TXT") or file.endswith("GLOBALSOBJECT.EXPORT.TXT") or file.endswith("GLOBALOBJECT.EXPORT.TXT"):
+        if messagebox.askyesno(title="Open in Globals Editor?", message="Open {} in Globals Editor?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system("globals-editor.exe {0} {1}".format(file, file)); os.chdir(script_dir)
+        else: os.startfile(file)
     else: os.startfile(file)
 
 def openSelected(): 
     for file in project_tree.get_checked():
         if not os.path.isdir(file):
-            if file.endswith("ALLUSEDLAYERS.TXT"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
-            if file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
-            else: os.startfile(file)
+            openFile(file)
 
 def printGUI(output): 
     console_text.delete(0, END)
@@ -789,7 +792,6 @@ if __name__ == '__main__':
 #Keep tree state/filters in settings
 
 #TODO CLEANUP
-#Get rid of bad comments
 #Make good comments
 #Add logging statements (Exceptions)
 
