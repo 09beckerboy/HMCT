@@ -515,14 +515,15 @@ def _removeLevel():
         refreshProjectTree("*")
     Button(delete_level_window, text="Remove selected level(s)", command=selectButton).pack(side=TOP)
 
-def openFile():
-    file = str(project_tree.focus())
+def openFile(*args):
+    try: file = args[0]
+    except IndexError: file = str(project_tree.focus())
     if file.endswith("ALLUSEDLAYERS.TXT"): 
         if messagebox.askyesno(title="Open in RGeomView?", message="Open {} in RGeomView?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
         else: os.startfile(file)
     elif file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
     elif file.endswith("GLOBALS.EXPORT.TXT") or file.endswith("GLOBALSOBJECT.EXPORT.TXT") or file.endswith("GLOBALOBJECT.EXPORT.TXT"):
-        if messagebox.askyesno(title="Open in Globals Editor?", message="Open {} in Globals Editor?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system("globals-editor.exe {0} {1}".format(file, file)); os.chdir(script_dir)
+        if messagebox.askyesno(title="Open in Globals Editor?", message="Open {} in Globals Editor?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system('globals-editor.exe "{0}"'.format(file, file)); os.chdir(script_dir)
         else: os.startfile(file)
     else: os.startfile(file)
 
@@ -557,7 +558,7 @@ def _searchTree():
         refreshProjectTree(str(search_box.get()))
     except Exception: pass
 
-def _filterTree(*none):
+def _filterTree():
     try:
         if str(filter_dropdown.get()).lower() == "all": filter_dropdown["values"] = ("All"); refreshProjectTree("*")
         else: filter_dropdown["values"] = ("All"); refreshProjectTree(str(filter_dropdown.get()))
@@ -802,3 +803,4 @@ if __name__ == '__main__':
 #Sync all copies of files
 #File management (create, delete)
 #Dark Mode
+#Effects Editor
