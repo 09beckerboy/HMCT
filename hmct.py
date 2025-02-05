@@ -42,7 +42,7 @@ def _previewFile(x):
         preview_image_canvas.config(image=preview_image)
     if str(project_tree.focus()).lower().endswith(".png"):
         pass
-    if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json") or str(project_tree.focus()).lower().endswith(".bin") or str(project_tree.focus()).lower().endswith(".h"):
+    if str(project_tree.focus()).lower().endswith(".txt") or str(project_tree.focus()).lower().endswith(".json") or str(project_tree.focus()).lower().endswith(".bin") or str(project_tree.focus()).lower().endswith(".h") or str(project_tree.focus()).lower().endswith(".info"):
         preview_image_canvas.pack_forget()
         preview_text.pack(side=TOP, anchor=W, fill=BOTH)
         with open(project_tree.focus(), "r") as text_file:
@@ -519,11 +519,11 @@ def openFile(*args):
     try: file = args[0]
     except IndexError: file = str(project_tree.focus())
     if file.endswith("ALLUSEDLAYERS.TXT"): 
-        if messagebox.askyesno(title="Open in RGeomView?", message="Open {} in RGeomView?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
+        if messagebox.askyesno(title="Open in RGeomView?", message="Open {} in RGeomView?\nSelecting 'No' will open as a text file".format(file)): openRGeomView(file)
         else: os.startfile(file)
     elif file.endswith(".RGEOM") or file.endswith(".NPCGEOM"): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe {}".format(file)); os.chdir(script_dir)
     elif file.endswith("GLOBALS.EXPORT.TXT") or file.endswith("GLOBALSOBJECT.EXPORT.TXT") or file.endswith("GLOBALOBJECT.EXPORT.TXT"):
-        if messagebox.askyesno(title="Open in Globals Editor?", message="Open {} in Globals Editor?\nSelecting 'No' will open as a text file".format(file)): os.chdir("{}/tools".format(script_dir)); os.system('globals-editor.exe "{0}"'.format(file, file)); os.chdir(script_dir)
+        if messagebox.askyesno(title="Open in Globals Editor?", message="Open {} in Globals Editor?\nSelecting 'No' will open as a text file".format(file)): openGlobalsEditor(file)
         else: os.startfile(file)
     else: os.startfile(file)
 
@@ -552,13 +552,13 @@ def collapseTree():
     try: collapse(current_project)
     except Exception: pass
 
-def _searchTree():
+def _searchTree(*none):
     try:
         filter_dropdown["values"] = ("All"); 
         refreshProjectTree(str(search_box.get()))
     except Exception: pass
 
-def _filterTree():
+def _filterTree(*none):
     try:
         if str(filter_dropdown.get()).lower() == "all": filter_dropdown["values"] = ("All"); refreshProjectTree("*")
         else: filter_dropdown["values"] = ("All"); refreshProjectTree(str(filter_dropdown.get()))
@@ -585,9 +585,27 @@ def refreshAllMenus():
 
 def _exitTool(): sys.exit()
 
-def openRGeomView(): os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe"); os.chdir(script_dir)
+def openRGeomView(*args):
+    def open():
+        try:
+            file = args[0]
+            os.chdir("{}/tools".format(script_dir))
+            os.system("rgeomview.exe {}".format(file))
+            os.chdir(script_dir)
+        except IndexError: os.chdir("{}/tools".format(script_dir)); os.system("rgeomview.exe"); os.chdir(script_dir)
+    t1 = threading.Thread(target=open)
+    t1.start()
 
-def openGlobalsEditor(): os.chdir("{}/tools".format(script_dir)); os.system("globals-editor.exe"); os.chdir(script_dir)
+def openGlobalsEditor(*args):
+    def open():
+        try:
+            file = args[0]
+            os.chdir("{}/tools".format(script_dir))
+            os.system('globals-editor.exe "{0}"'.format(file))
+            os.chdir(script_dir)
+        except IndexError: os.chdir("{}/tools".format(script_dir)); os.system("globals-editor.exe"); os.chdir(script_dir)
+    t1 = threading.Thread(target=open)
+    t1.start()
 
 def openSettingsWindow():
     printGUI(bool(settings["debug_mode"]))
@@ -708,6 +726,7 @@ if __name__ == '__main__':
     collapse_tree_button = Button(file_window_top, text="↑", command=partial(collapseTree)).pack(side=LEFT)
     search_box = Entry(file_window_top)
     search_box.pack(side=LEFT)
+    search_box.bind('<Return>', _searchTree)
 
     project_tree = CheckboxTreeview(file_window)
     search_button = Button(file_window_top, text="Search", command=_searchTree).pack(side=LEFT, padx=(0, 50))
@@ -790,7 +809,6 @@ if __name__ == '__main__':
 #TODO IMPORTANT
 #Audio Conversion
 #Image preview + PNG conversion
-#Keep tree state/filters in settings
 
 #TODO CLEANUP
 #Make good comments
@@ -804,3 +822,4 @@ if __name__ == '__main__':
 #File management (create, delete)
 #Dark Mode
 #Effects Editor
+#Keep tree state/filters in settings
