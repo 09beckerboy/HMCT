@@ -69,6 +69,8 @@ def _makeProjectTree(path, depth, parent, filter):
             t1 = threading.Thread(target=_makeProjectTree, args=(file_path, depth, file_path, filter,))
             t1.start()
         elif depth != 1:
+            if str(filter).lower().startswith("~"):
+                pass #search file content
             if filter == "*" or str(filter).lower() in str(file).lower() or str(file).lower().endswith(str(filter).lower()):
                 project_tree.insert(parent, "0", file_path, text = file)
                 project_tree.move(file_path, parent, "end")
@@ -77,6 +79,7 @@ def _makeProjectTree(path, depth, parent, filter):
                 if extension[0] not in values: filter_dropdown["values"] = values + extension
 
 def refreshProjectTree(filter):
+    #if not filter_dropdown["values"] == ("All"): filter_dropdown["values"] = ("All")
     project_tree.delete(*project_tree.get_children())
     project_tree.insert("", "0", current_project, text=current_project + "/")
     t1 = threading.Thread(target=_makeProjectTree, args=("{0}/projects/{1}".format(script_dir, current_project), 0, current_project, filter,))
@@ -109,7 +112,6 @@ def _loadProject(project_name):
     project_file_extensions = []
     global project_config
     project_config= {}
-    filter_dropdown["values"] = ("All")
     with open("{0}/projects/{1}/config.json".format(script_dir, project_name), "r") as read_file:
         project_config = json.load(read_file)
     printGUI('Loaded project: "{}"'.format(project_name))
@@ -153,9 +155,11 @@ def _newProject():
 
 def _deleteProject(project): 
     if messagebox.askquestion("Don't be a Silly Goose!", 'Are you sure you want to delete the project: "{}"?'.format(project)) == "yes":
+        printGUI('Deleting project "{}"...'.format(project))
         shutil.rmtree("{0}\\projects\\{1}".format(script_dir, project))
         refreshAllMenus()
-        project_tree.delete(*project_tree.get_children())
+        refreshProjectTree()
+        #project_tree.delete(*project_tree.get_children())
         printGUI('Deleted project: "{}"'.format(project))
         hmct_window.title("HMCT v2.0 | {}".format(splash_text))
 
@@ -186,14 +190,21 @@ def _importMod():
         printGUI('Imported mod: "{}"'.format(project_name))
         _loadProject(project_name)
 
-def _exportMod(project_name):
+def _exportMod(project_name):#make only export loaded mod
+    printGUI("Preparing project for export...")
     os.chdir("{0}/projects/{1}".format(script_dir, project_name))
     os.system("dds_to_xbmp.bat")
+    project_config["texture_state"] = "xbmp"
     os.system("text_to_export.bat")
+    project_config["texture_state"] = "export"
     os.system("text_to_subtitle.bat")
+    project_config["texture_state"] = "bin"
+    saveProjectConfig()
+    hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     os.chdir(script_dir)
-    if os.path.exists("{0}/exported mods/{1}".format(script_dir, project_name)): pass
+    if os.path.exists("{0}/exported mods/{1}".format(script_dir, project_name)): pass #prompt to overwrite
     else: os.mkdir("{0}/exported mods/{1}".format(script_dir, project_name))
+    printGUI("Project ready for export")
     export_mod_window = Toplevel(hmct_window)
     export_mod_window.lift(hmct_window)
     export_mod_window.geometry("650x350")
@@ -251,6 +262,7 @@ def _exportMod(project_name):
                 if name.endswith(".000") or name.endswith(".DFS"):
                     shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), "{0}\\exported mods\\{1}\\{2}".format(script_dir, project_name, name))
             if compress.get() == 1: shutil.make_archive(project_name, 'zip', "{0}\\exported mods\\{1}".format(script_dir, project_name))
+            printGUI("Exported mod in Classic format")
         elif export_type.get() == 2:
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
                 if name != "Common-" or name != "Extras":
@@ -262,11 +274,13 @@ def _exportMod(project_name):
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
                 if name == "Common-": shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], "Common"))
                 if name == "Extras":
-                    for item in os.listdir("{0}/projects/{1}/Extras"): shutil.move("{0}\\projects\\{1}\\Extras\\{2}".format(script_dir, project_name, item), os.path.join(settings["game_directory"], item))
+                    for item in os.listdir("{0}/projects/{1}/Extras".format(script_dir, project_name)): shutil.move("{0}\\projects\\{1}\\Extras\\{2}".format(script_dir, project_name, item), os.path.join(settings["game_directory"], item))
                 if name.endswith(".000") or name.endswith(".DFS"):
                     shutil.move("{0}\\projects\\{1}\\{2}".format(script_dir, project_name, name), os.path.join(settings["game_directory"], name))
-            if launch_game.get() == 1: os.chdir(settings["game_directory"]); os.startfile("Meridian.exe"); os.chdir(script_dir)
+            if launch_game.get() == 1: os.chdir(settings["game_directory"]); os.startfile("Meridian.exe"); os.chdir(script_dir) #add threading
         elif export_type.get() == 3:
+            shutil.copy2("{0}\\tools\\exporttool.exe".format(script_dir), "{0}\\exported mods\\{1}\\exporttool.exe".format(script_dir, project_name))
+            shutil.copy2("{0}\\tools\\export_to_json.bat".format(script_dir), "{0}\\exported mods\\{1}\\export_to_json.bat".format(script_dir, project_name))
             for name in os.listdir("{0}/projects/{1}".format(script_dir, project_name)):
                 level = os.path.join("{0}/projects/{1}".format(script_dir, project_name), name)
                 if os.path.isdir(level):
@@ -280,6 +294,11 @@ def _exportMod(project_name):
                             if os.path.getsize(full_path) == os.path.getsize("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, rel_path)):
                                 if filecmp.cmp(full_path, "{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, rel_path), shallow=False):
                                     os.remove(full_path)
+            os.chdir("{0}/exported mods/{1}".format(script_dir, project_name))
+            os.system("export_to_json.bat")
+            os.chdir(script_dir)
+            os.remove("{0}\\exported mods\\{1}\\exporttool.exe".format(script_dir, project_name))
+            os.remove("{0}\\exported mods\\{1}\\export_to_json.bat".format(script_dir, project_name))
             with zipfile.ZipFile("{0}\\exported mods\\{1}.zip".format(script_dir, project_name), mode="w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as zipped_file:
                 rootlen = len("{0}\\exported mods\\{1}.zip".format(script_dir, project_name)) - 3
                 for root, dirs, files in os.walk("{0}/exported mods/{1}/".format(script_dir, project_name)):
@@ -288,6 +307,7 @@ def _exportMod(project_name):
                         zipped_file.write(path, path[rootlen:])
             shutil.rmtree("{0}\\exported mods\\{1}".format(script_dir, project_name))
             os.rename("{0}\\exported mods\\{1}.zip".format(script_dir, project_name), "{0}\\exported mods\\{1}.hobm".format(script_dir, project_name))
+            printGUI("Exported mod in HOBM format")
     export_button = Button(export_mod_window, text="Export", command=export).pack(anchor=W, side=TOP)
 
 def convertXBMPDDS():
@@ -296,7 +316,6 @@ def convertXBMPDDS():
             printGUI("Converting textures to DDS...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["texture_state"] = "dds"
             saveProjectConfig()
@@ -305,7 +324,6 @@ def convertXBMPDDS():
             printGUI("Converting textures to XBMP...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["texture_state"] = "xbmp"
             saveProjectConfig()
@@ -332,7 +350,6 @@ def convertDDSPNG():
                     else: continue
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["texture_state"] = "png"
             saveProjectConfig()
@@ -341,7 +358,6 @@ def convertDDSPNG():
             printGUI("Converting textures to DDS...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["texture_state"] = "dds"
             saveProjectConfig()
@@ -356,7 +372,6 @@ def convertEXPORTTXT():
             printGUI("Converting export files to TXT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("export_to_text.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "txt"
             saveProjectConfig()
@@ -365,7 +380,6 @@ def convertEXPORTTXT():
             printGUI("Converting export files to EXPORT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_export.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "export"
             saveProjectConfig()
@@ -380,7 +394,6 @@ def convertEXPORTJSON():
             printGUI("Converting export files to JSON...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("export_to_json.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "json"
             saveProjectConfig()
@@ -389,7 +402,6 @@ def convertEXPORTJSON():
             printGUI("Converting export files to EXPORT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("json_to_export.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["export_state"] = "export"
             saveProjectConfig()
@@ -404,7 +416,6 @@ def convertSUBTITLETXT():
             printGUI("Converting subtitle files to TXT...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("subtitle_to_text.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["subtitle_state"] = "txt"
             saveProjectConfig()
@@ -413,7 +424,6 @@ def convertSUBTITLETXT():
             printGUI("Converting subtitle files to BIN...")
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_subtitle.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
             project_config["subtitle_state"] = "bin"
             saveProjectConfig()
@@ -431,40 +441,33 @@ def syncFiletypes():
         if project_config["texture_state"] == "xbmp":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         elif project_config["texture_state"] == "dds":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("xbmp_to_dds.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         if project_config["export_state"] == "export":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_export.bat"); os.chdir(script_dir)
             os.system("json_to_export.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         elif project_config["export_state"] == "txt":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("json_to_export.bat"); os.chdir(script_dir)
             os.system("export_to_text.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         elif project_config["export_state"] == "json":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_export.bat"); os.chdir(script_dir)
             os.system("export_to_json.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         if project_config["subtitle_state"] == "bin":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("text_to_subtitle.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         elif project_config["subtitle_state"] == "txt":
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("subtitle_to_text.bat"); os.chdir(script_dir)
-            filter_dropdown["values"] = ("All")
             refreshProjectTree("*")
         hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
         printGUI("Filetypes synced")
@@ -489,7 +492,6 @@ def _addLevel():
             if level_checklist[level].get() == 1:
                 if not os.path.exists("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level)):
                     shutil.copytree("{0}\\The Hobbit(TM)\\PC\\{1}".format(script_dir, level), "{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level))
-        filter_dropdown["values"] = ("All"); 
         refreshProjectTree("*")
     Button(add_level_window, text="Add selected level(s)", command=selectButton).pack(side=TOP)
 
@@ -511,7 +513,6 @@ def _removeLevel():
             if level_checklist[level].get() == 1:
                 if os.path.exists("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level)):
                     shutil.rmtree("{0}\\projects\\{1}\\{2}".format(script_dir, current_project, level))
-        filter_dropdown["values"] = ("All"); 
         refreshProjectTree("*")
     Button(delete_level_window, text="Remove selected level(s)", command=selectButton).pack(side=TOP)
 
@@ -554,14 +555,13 @@ def collapseTree():
 
 def _searchTree(*none):
     try:
-        filter_dropdown["values"] = ("All"); 
         refreshProjectTree(str(search_box.get()))
     except Exception: pass
 
 def _filterTree(*none):
     try:
-        if str(filter_dropdown.get()).lower() == "all": filter_dropdown["values"] = ("All"); refreshProjectTree("*")
-        else: filter_dropdown["values"] = ("All"); refreshProjectTree(str(filter_dropdown.get()))
+        if str(filter_dropdown.get()).lower() == "all": refreshProjectTree("*")
+        else: refreshProjectTree(str(filter_dropdown.get()))
     except Exception: pass
 
 def refreshAllMenus():
@@ -809,6 +809,8 @@ if __name__ == '__main__':
 #TODO IMPORTANT
 #Audio Conversion
 #Image preview + PNG conversion
+#HOBM Format - mod_config.json, mod_icon.gif
+#"all" button when making project
 
 #TODO CLEANUP
 #Make good comments
