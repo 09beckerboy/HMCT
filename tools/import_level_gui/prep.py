@@ -5,6 +5,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 def prep():
     try:
+        os.system("prep.bat")
         os.chdir("{0}/level_files".format(script_dir))
         directory = os.getcwd()
         for filename in os.listdir(directory):
@@ -21,7 +22,6 @@ def prep():
             else:
                 continue
         os.chdir(script_dir)
-        os.system("convert_xbmp_to_dds.bat")
         for filename in os.listdir("{0}/level_files".format(script_dir)):
             if filename.endswith(".dds"):
                 file_path = os.path.join("{0}/level_files".format(script_dir), filename)
