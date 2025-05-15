@@ -1,0 +1,27 @@
+[ NPC : 1 ]
+ { GUID:s              CreatureType:s IsSmooth:d GeometryResource:s     Name:s              Team:d Position:fff                        Rotation:fff               LogStates:d LogAnimation:d WeaponProp:s RangedProp:s ShieldProp:s HeldAmmo:s PersonalSpaceRadius:f MaxHitPoints:f CouragePts:d DeathCinema:g     ActivitySphereRadius:f DieImmediately:d Sleeps:d Pushable:d Invulnerable:d RootToPosition:d DoRender:d DoShadow:d DoCollision:d DoStateControl:d DoPhysControl:d DoSenses:d }
+   "CA3DDC51_06A66801" "FireBat"      0          "firebat_geom.npcgeom" "Firebat_Area1-003" 2      6983.828613 3589.731934 8773.492188 0.000000 0.000000 0.000000 0           0              "NONE"       "gobbag"     "NONE"       "NONE"     20.000000             5.000000       15           00000000_00000000 0.000000               0                1        1          0              0                1          1          1             1                1               1          
+[ PhysControl : 1 ]
+ { MinGroundDist:f MaxGroundDist:f IdleAnim:s BodyMaskAnim:s }
+   10.000000       100.000000      "idle"     "NONE"         
+[ StateControl : 1 ]
+ { TriggeredConversationName:s TriggeredCinema:g EelColony:g       BlockPercent:d EvadePercent:d ShovePercent:d StrafePercent:d bCanBlockStones:d BlockDamageModifier:f ShieldBlockDamageModifier:f IdleLeashRadius:f IdleAnimDelay:f WanderDelay:f PatrolCount:d WayPointVolume0:g GoalListSet0:s NextWayPointName0:s NextWayPointID0:d NextWayPointCount0:d NextWayPoint0-0:d WayPointVolume1:g GoalListSet1:s  NextWayPointName1:s NextWayPointID1:d NextWayPointCount1:d NextWayPoint1-0:d IdleGoalListName:s AlertDuration1:f AlertDuration2:f GotoSound:d AlertGoalListName:s AttackDelay:f AttackIdleRadius:f AttackRadius:f AttackTimeoutDuration:f BatAttackGoalListName:s RangedAttackNavPoint:g MeleeRadius:f RangedAttackDelay:f RangedAttackRange:f RangedAttackTimeoutDuration:f RangedAttackGoalListName:s FleeNavPoint:g    FleeGoalListName:s GoalListCount:d }
+   "NONE"                      00000000_00000000 00000000_00000000 25             25             25             66              0                 0.250000              0.001000                    20.000000         3.000000        5.000000      2             87654321_0000000B "NO LIST"      "WayPoint 1"        1                 1                    1                 C0CFA20B_08DDDC01 "bat hang set" "WayPoint 0"        0                 1                    0                 ""                 5.000000         5.000000         1           ""                  5.000000      400.000000         400.000000     6.000000                ""                      00000000_00000000      500.000000    4.000000            2000.000000         5.000000                      ""                         00000000_00000000 ""                 1                                
+[ GoalList0 : 1 ]
+ { GoalListName0:s GoalListLooping0:d GoalListLoopStart0:d GoalListCollision0:d GoalListMustComplete0:d GoalListRestartFromBeginning0:d GoalListGoalCount0:d }
+   "Bat Hang"      0                  0                    0                    0                       1                               3                    
+[ GoalList0GoalHeader1818612 : 1 ]
+ { GoalList0Goal0:d List0Goal0MustSuceed:d List0Goal0Target:g }
+   0                0                      C0CFA20B_08DDDC01  
+[ GoalList0GoalHeader1818612 : 1 ]
+ { GoalList0Goal1:d List0Goal1MustSuceed:d List0Goal1ActionName:s List0Goal1PlayTime:f }
+   2                0                      "stick_to_ceiling"     3.000000             
+[ GoalList0GoalHeader1818612 : 1 ]
+ { GoalList0Goal2:d List0Goal2MustSuceed:d List0Goal2ActionName:s List0Goal2PlayTime:f GoalListSetCount:d }
+   2                0                      "ceiling_idle"         6.000000             1        
+[ GoalListSet0 : 1 ]
+ { GoalListSetName0:s GoalListGoalCount0:d GoalListSet0GoalListName0:s GoalListSet0GoalListWeight0:d }
+   "bat hang set"     1                    "Bat Hang"                  100                                                
+[ SenseControl : 1 ]
+ { DoLOS:d SightRange:f HearingRange:f LoudHearingRange:f SmellRange:f DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff                      Orientation:fff            LocalBoundingBox:ffffff                                        ObjSaveFlag:d ObjName:s           }
+   1       2000.000000  3000.000000    5000.000000        100.000000   0                0                1               384           ""               6983.828613 3589.731934 8773.492188 0.000000 0.000000 0.000000 -70.000000 -50.000000 -70.000000 70.000000 50.000000 70.000000 1             "Firebat_Area1-003" 

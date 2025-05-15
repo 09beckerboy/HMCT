@@ -17,7 +17,8 @@ import sv_ttk
 import threading
 import logging
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
+#script_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = sys.executable
 
 # class Command:
 #     def __init__(self, name, function):
@@ -191,14 +192,18 @@ def _importMod():
         _loadProject(project_name)
 
 def _exportMod(project_name):#make only export loaded mod
+    #Move this to after export button is pressed
     printGUI("Preparing project for export...")
     os.chdir("{0}/projects/{1}".format(script_dir, project_name))
+    printGUI("Preparing project for export...Converting textures to XBMP...")
     os.system("dds_to_xbmp.bat")
     project_config["texture_state"] = "xbmp"
+    printGUI("Preparing project for export...Converting layers to EXPORT...")
     os.system("text_to_export.bat")
-    project_config["texture_state"] = "export"
+    project_config["export_state"] = "export"
+    printGUI("Preparing project for export...Converting subtitles to BIN...")
     os.system("text_to_subtitle.bat")
-    project_config["texture_state"] = "bin"
+    project_config["subtitle_state"] = "bin"
     saveProjectConfig()
     hmct_window.title("HMCT v2.0 | {0} | {1} | {2}".format(project_config["texture_state"], project_config["export_state"], project_config["subtitle_state"]))
     os.chdir(script_dir)
@@ -336,7 +341,7 @@ def convertDDSPNG():
     def convert():
         if project_config["texture_state"] == "dds":
             printGUI("Converting textures to PNG...")
-            for root, dirs, files in os.walk(script_dir):
+            for root, dirs, files in os.walk("{0}/projects/{1}".format(script_dir, current_project)):
                 for filename in files:
                     if filename.endswith(".dds"):
                         file_path = os.path.join(root, filename)
@@ -356,6 +361,28 @@ def convertDDSPNG():
             printGUI("Converted textures to PNG")
         elif project_config["texture_state"] == "png":
             printGUI("Converting textures to DDS...")
+            for root, dirs, files in os.walk("{0}".format("{0}/projects/{1}".format(script_dir, current_project))):
+                for filename in files:
+                    if filename.endswith(".png"):
+                        file_path = os.path.join(root, filename)
+                        #file_path = os.path.join("{0}".format(script_dir), filename)
+                        result_name = filename.split(".")[0]
+                        result_name = result_name + ".dds"
+                        result_path = os.path.join(root, result_name)
+                        im = Image.open(file_path).convert('RGBA')
+                        print("Opened {0}".format(result_name))
+                        print("Converted {0} to RGBA".format(result_name))
+                        #im.putalpha(255) #comment out if you don't want them at max transparency
+                        #alpha = im.split()[3]
+                        #alpha = ImageEnhance.Brightness(alpha).enhance(1)
+                        #im.putalpha(alpha)
+                        #print("Transparency for {0} maxed".format(result_name))
+                        #im = im.transpose(Image.FLIP_TOP_BOTTOM)
+                        #print("{0} flipped".format(result_name))
+                        im.save(result_path)
+                        print("Saved {0}".format(result_name))
+                        os.remove(file_path)
+                    else: continue
             os.chdir("{0}/projects/{1}".format(script_dir, current_project))
             os.system("dds_to_xbmp.bat"); os.chdir(script_dir)
             refreshProjectTree("*")
@@ -811,6 +838,7 @@ if __name__ == '__main__':
 #Image preview + PNG conversion
 #HOBM Format - mod_config.json, mod_icon.gif
 #"all" button when making project
+#Display current mod in title bar
 
 #TODO CLEANUP
 #Make good comments

@@ -1,11 +1,72 @@
 [ LoadTrigger : 1 ]
- { GUID:s              Teleport:d DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff                        Orientation:fff            LocalBoundingBox:ffffff                                        ObjSaveFlag:d ObjName:s      Name:s         Pos:fff                               BBox:ffffff                                                                 Orient:fff                 HalfDimensions:fff            Pain:s }
-   "C4CD734F_F06B6C00" 0          1                1                1               433           ""               -2656.108398 -2170.406982 7148.995605 0.000000 0.000000 0.000000 -50.000000 -50.000000 -50.000000 50.000000 50.000000 50.000000 0             "Load Goblins" "Load Goblins" -2656.108398 -2170.406982 7148.995605 -2706.108398 -2220.406982 7098.995605 -2606.108398 -2120.406982 7198.995605 0.000000 0.000000 0.000000 50.000000 50.000000 50.000000 "none" 
-[ LoadLayers : 0 ]
- { }
-[ UnloadLayer : 0 ]
- { }
-[ LoadResources : 0 ]
- { }
-[ UnloadResources : 0 ]
- { }
+ { GUID:s              Teleport:d DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff                     Orientation:fff            LocalBoundingBox:ffffff                                        ObjSaveFlag:d ObjName:s             Name:s                Pos:fff                            BBox:ffffff                                                           Orient:fff                 HalfDimensions:fff            Pain:s }
+   "0D8AD451_F3BD3801" 1          1                1                1               433           ""               2450.093018 831.985657 3037.052734 0.000000 0.000000 0.000000 -50.000000 -50.000000 -50.000000 50.000000 50.000000 50.000000 0             "Teleporter_SlideNEW" "Teleporter_SlideNEW" 2450.093018 831.985657 3037.052734 2400.093018 781.985657 2987.052734 2500.093018 881.985657 3087.052734 0.000000 0.000000 0.000000 50.000000 50.000000 50.000000 "none" 
+[ LoadLayers : 10 ]
+ { Layer:s                         }
+   "CH07_PS_Caverns"               
+   "CH07_Vines_Caverns"            
+   "CH07_Cinemas_Cine04_Darkwater" 
+   "CH07_PS_Jail-Caverns_Floor"    
+   "CH07_PS_Jail"                  
+   "CH07_NPC_CaveCritters"         
+   "CH07_Pickups_Caverns"          
+   "CH07_Inst_Caverns"             
+   "CH07_PS_Slide"                 
+   "CH07_CheatDeepCellarKeyPU"     
+[ UnloadLayer : 14 ]
+ { UnloadLayer:s                 }
+   "CH07_PS_Ent-Throne_Floor"    
+   "CH07_PS_CY-GR_Floor"         
+   "CH07_PS_Entrance"            
+   "CH07_NPC_Elves_Courtyard"    
+   "CH07_Inst_Courtyard"         
+   "CH07_Fireflies"              
+   "CH07_Skybox"                 
+   "CH07_Limbs_Entrance"         
+   "CH07_LeafClusters_Entrance"  
+   "CH07_MirkTrees_Entrance"     
+   "CH07_Braziers_Entrance"      
+   "CH07_Water_Courtyard"        
+   "CH07_PS_Spider-Grotto_Floor" 
+   "CH07_Inst_CY-THR"            
+[ LoadResources : 11 ]
+ { LoadResources:s                  }
+   "CH07_Breadcrumbs_Caverns_Upper" 
+   "CH07_PS_Caverns"                
+   "CH07_Vines_Caverns"             
+   "CH07_Cinemas_Cine04_Darkwater"  
+   "CH07_PS_Jail-Caverns_Floor"     
+   "CH07_NPC_CaveCritters"          
+   "CH07_NPC_Leapers"               
+   "CH07_Pickups_Caverns"           
+   "CH07_Inst_Caverns"              
+   "CH07_Breadcrumbs_Caverns"       
+   "CH07_CheatDeepCellarKeyPU"      
+[ UnloadResources : 26 ]
+ { UnloadResources:s             }
+   "CH07_PS_Ent-Throne_Floor"    
+   "CH07_PS_CY-GR_Floor"         
+   "CH07_PS_Entrance"            
+   "CH07_NPC_Elves_Courtyard"    
+   "CH07_Inst_Courtyard"         
+   "CH07_Fireflies"              
+   "CH07_Skybox"                 
+   "CH07_Limbs_Entrance"         
+   "CH07_LeafClusters_Entrance"  
+   "CH07_MirkTrees_Entrance"     
+   "CH07_Braziers_Entrance"      
+   "CH07_Water_Courtyard"        
+   "CH07_Inst_Throne"            
+   "CH07_PS_Throne"              
+   "CH07_PS_Throne_Roof"         
+   "CH07_PS_GR-Throne_Floor"     
+   "CH07_PS_GR-Throne_Roof"      
+   "CH07_Water_Throne"           
+   "CH07_Vines_Throne"           
+   "CH07_Switches_Throne"        
+   "CH07_NPC_Elves_Throne"       
+   "CH07_PS_Spider-Grotto_Floor" 
+   "CH07_PS_SpiderRoom"          
+   "CH07_Webs_Grotto"            
+   "CH07_NPC_Spiders"            
+   "CH07_Inst_CY-THR"            

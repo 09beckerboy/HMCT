@@ -1,0 +1,47 @@
+[ WebWall : 1 ]
+ { GUID:s              CommonTexture:d Texture:s                              BlendMode:d Width:d Height:d UTile:f  VTile:f  FreezeDist:f SleepTime:f CollScale:f StingBreak:d StickBreak:d StoneBreak:d AnyPainBreak:d DoesCameraColl:d DoesCameraFade:d LightChannels:d ObjectFlags:d ScriptResource:s InitialPos:fff             Orientation:fff            LocalBoundingBox:ffffff                                          ObjSaveFlag:d ObjName:s Name:s Size:fff                       Pos:fff                               Rot:fff                    ApplyToBilbo:d ApplyToNPC:d ApplyToPushBox:d ApplyToHoisting:d BlocksSight:d Occluder:d CanClimb:d DeathFall:d PlaneNormal:fff            PlaneD:f    ApplyToCamera:d ApplyToGuidsCount:d }
+   "0D8AD60D_2BF05400" 0               "lvl_trollhole_webwall_mip0[rgb].xbmp" 2           6       6        1.000000 1.000000 1000.000000  8.000000    1.000000    0            0            0            0              1                1                1               432           ""               0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -269.000000 -195.810059 -5.000000 269.000000 195.810059 5.000000 1             "Web "    "Web " 269.000031 195.810028 5.000000 -16482.269531 842.319092 -5046.367188 0.000000 0.000000 0.000000 1              1            0                0                 1             0          0          0           0.000000 0.000000 1.000000 5046.367188 0               0                   
+[ VertColors : 42 ]
+ { Color:dddd      }
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
+   138 138 138 255 
